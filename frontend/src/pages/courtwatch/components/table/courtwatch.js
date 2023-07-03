@@ -54,7 +54,7 @@ const AriannaTable = () => {
                             Court Watch Link</a></div>
                         </div>
                         <div>
-                            <div><a href="https://freearianna.org/" target="_blank"></a></div>
+                            <div><a href="https://glitters.app/" target="_blank"></a></div>
                         </div>
                         <div>
                             <div style={{textAlign: 'center'}}>
@@ -83,7 +83,7 @@ const AriannaTable = () => {
                             Court Watch Link</a></div>
                         </div>
                         <div>
-                            <div><a href="/arianna_baran" target="_blank">@arianna_baran</a></div>
+                            <div><a href="/freearianna" target="_blank">@freearianna</a></div>
                         </div>
                         <div>
                             <div style={{textAlign: 'center'}}>

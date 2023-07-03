@@ -174,7 +174,7 @@ const AuthRightNav = (props) => {
                 </div>
             </ActionFormCard>
             
-            <Card style={{background: 'none', border: 0, alignItems: "center", marginTop: '80px'}}>
+            <Card style={{background: 'none', border: 0, alignItems: "center", marginTop: '90px'}}>
                 <Row justify="center" gutter={0} style={{justifyContent: "center"}}>  
                     <Col>
                         <Button type="leftcolumnlink">
@@ -186,7 +186,7 @@ const AuthRightNav = (props) => {
                     <Col>
                         <Button
                             target='_blank'
-                            href='https://twitter.com/freearianna'
+                            href='https://twitter.com/glitter_app'
                             shape="circle"
                             type="primary"
                             color="pink"
@@ -201,14 +201,13 @@ const AuthRightNav = (props) => {
             </Card>
 
             <Card style={{border: 0, background: 'none'}}>
-                <Row gutter={20} justify="center" 
-                style={{justifyContent: breakpoints.lg ? "flex" : "center", paddingTop: 0}}>
+                <Row gutter={20} justify="center" style={{justifyContent: breakpoints.lg ? "flex" : "center", paddingTop: 0}}>
                     <Col>
                         <Link to="/about">About</Link>
                     </Col>
-                    <Col>
+                    {/* <Col>
                         <Link to="/story">Arianna's Story</Link>
-                    </Col>
+                    </Col> */}
                     <Col>
                         <Link to="/about/share">Your Story</Link>
                     </Col>
@@ -222,13 +221,12 @@ const AuthRightNav = (props) => {
                         <Link to="/about/terms">Terms</Link>
                     </Col>
                 </Row>
-                <Row gutter={20} justify="center" 
-                style={{justifyContent: breakpoints.lg ? "flex" : "center", paddingTop: 0}}>
+                <Row gutter={20} justify="center" style={{justifyContent: breakpoints.lg ? "flex" : "center", paddingTop: 0}}>
                     <Col>
                         <Link></Link>
                     </Col>    
                     <Col>
-                        Copyright © Free Arianna 2023
+                        Copyright © Glitter 2023
                     </Col>
                 </Row>
             </Card> 
