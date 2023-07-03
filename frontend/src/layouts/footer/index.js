@@ -80,7 +80,7 @@ const LandingLayoutFooter = () => {
 };
 
 // Cloudflare Web Analytics
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fc1cb0477cc64611af70ccdf625284b0"}'></script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "713708b4f8484a3ca1b88a245dc9cea9"}'></script>
 // End Cloudflare Web Analytics
 
 export default LandingLayoutFooter;

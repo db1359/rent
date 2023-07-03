@@ -47,4 +47,8 @@ const AuthFooter = () => {
     );
 };
 
+// Cloudflare Web Analytics
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "713708b4f8484a3ca1b88a245dc9cea9"}'></script>
+// End Cloudflare Web Analytics
+
 export default AuthFooter;
