@@ -6,7 +6,6 @@ import styled from "styled-components"
 // import BgImage from "../../../assets/img/pink.jpeg"
 import BgImage from "../../../assets/img/courtfraud.jpg"
 
-
 const HomeWrap = styled.div`
   background-image: url(${BgImage});
   background-size: cover;
@@ -17,5 +16,4 @@ const HomeWrap = styled.div`
   justify-content: center;
   flex-direction: column;
 `
-
 export default HomeWrap
