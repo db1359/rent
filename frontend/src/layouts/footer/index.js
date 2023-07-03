@@ -57,7 +57,7 @@ const LandingLayoutFooter = () => {
                                     type="primary"
                                     color="pink"
                                     size="large"
-                                    style={{color: "#ffffff", backgroundColor: "#ce3daf"}}>
+                                    style={{color: "transparent", backgroundColor: "transparent"}}>
                                     <Icon icon="mdi:twitter" style={{width: 32, height: 32}}/>
                                 </Button>
                             </Col>

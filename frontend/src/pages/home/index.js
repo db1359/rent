@@ -36,7 +36,7 @@ const HomePage = () => {
                 {child.toLocaleString()}
             </HomeCounter>
             <HomeSubtitle>
-                Children seperated from Parents to date. Family Courts are Trafficking Kids for Profit.
+                Children seperated from parents to date.
             </HomeSubtitle>
             {/* <HomeSlogan2>
                 DEFUND Family Court

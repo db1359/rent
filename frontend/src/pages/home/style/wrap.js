@@ -3,7 +3,9 @@ import styled from "styled-components"
 // import BgImage from "../../../assets/img/kids.jpg"
 // import BgImage from "../../../assets/img/kids2.jpeg"
 // import BgImage from "../../../assets/img/kids11.jpg"
-import BgImage from "../../../assets/img/pink.jpeg"
+// import BgImage from "../../../assets/img/pink.jpeg"
+import BgImage from "../../../assets/img/courtfraud.jpg"
+
 
 const HomeWrap = styled.div`
   background-image: url(${BgImage});
