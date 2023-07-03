@@ -51,7 +51,7 @@ const AuthHeader = () => {
                     style={{height: "100%"}}>
                     <Col>
                         <LogoText>
-                            <Link to="/">Free Arianna</Link>
+                            <Link to="/">Glitter</Link>
                         </LogoText>
                     </Col>
                     <Col>

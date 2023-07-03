@@ -68,7 +68,7 @@ const LayoutHeader = () => {
                 <Row justify="space-between" align="middle">
                     <Col>
                         <LogoText>
-                            <Link to="/">Free Arianna</Link>
+                            <Link to="/">Glitter</Link>
                         </LogoText>
                     </Col>
                     <Col>

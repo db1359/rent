@@ -30,9 +30,9 @@ const LandingLayoutFooter = () => {
                             <Col>
                                 <Link to="/about">About</Link>
                             </Col>
-                            <Col>
+                            {/* <Col>
                                 <Link to="/story">Arianna's Story</Link>
-                            </Col>
+                            </Col> */}
                             <Col>
                                 <Link to="/about/share">Your Story</Link>
                             </Col>
