@@ -5,8 +5,8 @@ const CircleButton = styled(Button)`
   height: 40px;
   width: 40px;
   padding: 0;
-  background-color: #CE3DAF;
-  border-color: #CE3DAF;
+  background-color: #8f3dce;
+  border-color: #8f3dce;
   border-radius: 40px!important;
   display: flex;
   align-items: center;

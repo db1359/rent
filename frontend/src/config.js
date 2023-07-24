@@ -7,7 +7,7 @@ const config = {
     host_url:
         window.location.hostname === "localhost"
             ? "http://localhost:3000"
-            : "https://www.freearianna.org",
+            : "https://www.glitters.app",
 };
 
 export default config;

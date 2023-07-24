@@ -53,7 +53,7 @@ const FeedPage = () => {
                                     <Avatar
                                         src={comment?.author?.["photo"]}
                                         style={{
-                                            backgroundColor: "#ce3daf",
+                                            backgroundColor: "#ed05bb",
                                             fontSize: 12
                                         }}
                                         size={32}>

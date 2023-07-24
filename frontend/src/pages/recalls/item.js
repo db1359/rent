@@ -51,7 +51,7 @@ const RecallsItem = (props) => {
                             steps={10}
                             showInfo={false}
                             strokeWidth={20}
-                            strokeColor="#CE3DAF"/>
+                            strokeColor="#8f3dce"/>
                         <p className="recall-label">{recall?.signatures?.length || 0} of {recall?.signaturesRequire || 10} signatures</p>
                         <Button
                             block

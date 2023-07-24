@@ -13,18 +13,18 @@ const App = () => {
                 theme={{
                     token: {
                         fontFamily: "'Open Sans', sans-serif",
-                        colorPrimary: "#ce3daf",
+                        colorPrimary: "#8f3dce",
                         //colorPrimary: "#f7ce07",
                         colorPrimaryText: "#000000",
                         colorPrimaryTextActive: "#000000",
-                        colorPrimaryBg: "#ce3daf",
+                        colorPrimaryBg: "#8f3dce",
                         //colorPrimaryBg: "#f7ce07",
                         colorError: "#ff0000",
                         colorErrorText: "#FFFFFF",
                         borderRadius: 0,
                         colorBgLayout: "transparent",
                         colorLink: "#000000",
-                        colorLinkHover: "#cd3dae",
+                        colorLinkHover: "#8f3dce",
                     },
                 }}>
                 <GlobalStyle/>

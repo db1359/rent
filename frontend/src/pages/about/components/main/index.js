@@ -47,7 +47,7 @@ const AboutMain = () => {
                                     size="large"
                                     style={{
                                         color: "#ffffff",
-                                        backgroundColor: "#ce3daf",
+                                        backgroundColor: "#8f3dce",
                                         marginTop: 10,
                                     }}>
                                     <Icon icon="mdi:twitter" style={{width: 32, height: 32}}/>

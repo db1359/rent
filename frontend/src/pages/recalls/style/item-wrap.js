@@ -43,7 +43,7 @@ const RecallItemWrap = styled.div`
     line-height: 12px;
     margin-bottom: 12px;
     font-weight: 700;
-    color: #cd3dae;
+    color: #8f3dce;
     grid-gap: 4px;
     flex-wrap: wrap;
     text-transform: uppercase;

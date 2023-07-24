@@ -191,7 +191,7 @@ const AuthRightNav = (props) => {
                             type="primary"
                             color="pink"
                             size="large"
-                            style={{color: "#ffffff", backgroundColor: "#ce3daf", marginTop: 10,
+                            style={{color: "#ffffff", backgroundColor: "#8f3dce", marginTop: 10,
                                 marginLeft: 0,
                             }}>
                             <Icon icon="mdi:twitter" style={{width: 32, height: 32}}/>

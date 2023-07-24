@@ -116,7 +116,7 @@ const TakeActionForm = () => {
                         {/* <h3>
                             For signing my petition, I will send you periodic updates.
                         </h3> */}
-                        {/* <LogoText style={{color: '#CE3DAF', marginBottom: 24}}>
+                        {/* <LogoText style={{color: '#8f3dce', marginBottom: 24}}>
                             Love Arianna
                         </LogoText> */}
                         {/* <img src={Banner1} alt="" style={{marginBottom: 32}}/>

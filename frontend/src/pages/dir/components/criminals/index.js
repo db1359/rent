@@ -87,7 +87,7 @@ const Criminals = () => {
         colorAxis: {
             min: 0,
             minColor: "#f8dfef",
-            maxColor: "#ce3daf"
+            maxColor: "#8f3dce"
         },
 
         mapNavigation: {

@@ -11,7 +11,7 @@ background-color: #F0F2F5;
     //  margin-bottom: 18px;
     //  font-size: 16px;
     //  font-weight: 600;
-    //  color: #cd3dae;
+    //  color: #8f3dce;
   //   //letter-spacing: 3px;
   //   //text-transform: uppercase;
   // 

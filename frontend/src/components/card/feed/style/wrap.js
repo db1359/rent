@@ -26,7 +26,7 @@ const FeedCardWrap = styled(Card)`
     padding: 10px;
 
     a {
-      color: #ce3daf;
+      color: #8f3dce;
       font-weight: 600;
     }
   }
@@ -105,7 +105,7 @@ const FeedCardWrap = styled(Card)`
           }
 
           :hover, &.active {
-            color: #ce3daf;
+            color: #8f3dce;
           }
         }
       }

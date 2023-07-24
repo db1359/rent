@@ -54,10 +54,10 @@ const SingleRecallPage = () => {
 
                         <Icon icon="ic:round-home" style={{marginTop: '4px', marginRight: '10px'}}/>
 
-                            <Breadcrumb.Item onClick={()=>{navigate('/recalls')}} style={{color: '#ce3daf'}}><b>Recalls</b></Breadcrumb.Item>
+                            <Breadcrumb.Item onClick={()=>{navigate('/recalls')}} style={{color: '#8f3dce'}}><b>Recalls</b></Breadcrumb.Item>
                             {
                                 routeParams?.state && (
-                                    <Breadcrumb.Item onClick={()=>{navigate(`/recalls/${routeParams.state}`)}} style={{color: '#ce3daf'}}><b>{routeParams.state?.toUpperCase()}</b></Breadcrumb.Item>
+                                    <Breadcrumb.Item onClick={()=>{navigate(`/recalls/${routeParams.state}`)}} style={{color: '#8f3dce'}}><b>{routeParams.state?.toUpperCase()}</b></Breadcrumb.Item>
                                 )
                             }
                             {/* {
@@ -67,7 +67,7 @@ const SingleRecallPage = () => {
                             } */}
                             {
                                 recall?.directory?.name && (
-                                    <Breadcrumb.Item onClick={()=>{navigate(`/${routeParams.slug}`)}} style={{color: '#ce3daf'}}><b>{recall?.directory?.name}</b></Breadcrumb.Item>
+                                    <Breadcrumb.Item onClick={()=>{navigate(`/${routeParams.slug}`)}} style={{color: '#8f3dce'}}><b>{recall?.directory?.name}</b></Breadcrumb.Item>
                                 )
                             }
                         </Breadcrumb>
@@ -120,7 +120,7 @@ const SingleRecallPage = () => {
                                         steps={10}
                                         showInfo={false}
                                         strokeWidth={20}
-                                        strokeColor="#CE3DAF"
+                                        strokeColor="#8f3dce"
                                     />
                                     <p className="recall-label">{recall?.['signatures']?.length || 0} of {recall?.signaturesRequire || 10} signatures</p>
                                 </Item>

@@ -54,16 +54,10 @@ const LayoutHeader = () => {
     }, [location]);
 
     return (
-        <Header
-            style={
-                location.pathname === "/" && scroll < 150
-                    ? {
-                        position: "absolute",
-                        width: "100%",
-                        backgroundColor: "transparent",
-                    }
-                    : {}
-            }>
+        <Header style={location.pathname === "/" && scroll < 150
+                    ? {position: "absolute", width: "100%",
+                        backgroundColor: "transparent"}
+                    : {}}>
             <Container>
                 <Row justify="space-between" align="middle">
                     <Col>
@@ -74,6 +68,7 @@ const LayoutHeader = () => {
                     <Col>
                         {breakpoints.lg ? (
                             <Row gutter={20}>
+
                                 {/* <Col>
                                     {user ? (
                                         <nbsp/>
@@ -171,7 +166,7 @@ const LayoutHeader = () => {
                                     title={
                                         <LogoTextLight
                                             onClick={() => {setVisible(false);}}
-                                            style={{color: "#CE3DAF!important"}}
+                                            style={{color: "#8f3dce!important"}}
                                             >
                                             <Link to="/">Free Arianna</Link>
                                         </LogoTextLight>

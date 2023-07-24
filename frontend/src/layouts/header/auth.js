@@ -96,7 +96,7 @@ const AuthHeader = () => {
                                     style={{
                                         fontSize: 20,
                                         cursor: "pointer",
-                                        background: "#ce3daf"
+                                        background: "#8f3dce"
                                     }}
                                     src={auth?.user?.photo}
                                 >

@@ -19,7 +19,7 @@ const AuthLeftNavWrap = styled.div`
       font-size: 14px;
       padding-top: 5px;
       // padding-left: 12px;
-      color: #ce3daf;
+      color: #8f3dce;
     }
   }
 `
