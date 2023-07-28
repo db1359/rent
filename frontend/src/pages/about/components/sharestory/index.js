@@ -40,7 +40,7 @@ const AboutMain = () => {
                                         >
                                     </Card>
                                     <P1><br></br>
-                                        2. In the fields add a photo or video, title and content to your story. From the drop box select State, County and individuals involved in your case. Others are having the same problem you are having with them. Click "Update Story". <i>Don't find the individuals involved in your case? Go to <b><a href='https://www.freearianna.org/dir'>Directory</a></b> and add them</i>.
+                                        2. In the fields add a photo or video, title and content to your story. From the drop box select State, County and individuals involved in your case. Others are having the same problem you are having with them. Click "Update Story". <i>Don't find the individuals involved in your case? Go to <b><a href='https://www.glitters.app/dir'>Directory</a></b> and add them</i>.
                                     </P1>
                                     <Card
                                             bordered={false}

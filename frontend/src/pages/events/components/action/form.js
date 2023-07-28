@@ -87,7 +87,7 @@ const TakeActionForm = () => {
                                     <Checkbox
                                         onChange={(event) => {setChecked(event.target.checked)}}
                                     >
-                                        Receive mobile alerts from VEEV App on behalf of FreeArianna.org. Recurring messages.
+                                        Receive mobile alerts from Glitter App. Recurring messages.
                                         Msg & data rates may apply. Text STOP to 668366 to stop receiving messages. Text HELP to
                                         668366 for more information.
                                         &nbsp;<a href="">Privacy</a>

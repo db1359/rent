@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
       // color: #000000;
 
       :hover {
-        color: #000000;
+        color: #f7ce07;
       }
     }
 

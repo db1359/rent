@@ -170,12 +170,7 @@ const FeedCard = (props) => {
                             <img className="feed-image" src={feed.image} alt=""/>
                         )
                     }
-                    <div
-                        className="feeds-content"
-                        dangerouslySetInnerHTML={{
-                            __html: feed.feed
-                        }}/>
-
+                    <div className="feeds-content" dangerouslySetInnerHTML={{__html: feed.feed}}/>
                     {
                         feed?.preview?.title && (
                             <Card
@@ -224,10 +219,7 @@ const FeedCard = (props) => {
                                         )
                                     }
                                     <div
-                                        className="feeds-content"
-                                        dangerouslySetInnerHTML={{
-                                            __html: feed?.repost.feed
-                                        }}/>
+                                        className="feeds-content" dangerouslySetInnerHTML={{__html: feed?.repost.feed}}/>
                                     {
                                         feed?.repost?.preview?.title && (
                                             <Card

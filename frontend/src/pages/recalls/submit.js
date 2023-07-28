@@ -264,8 +264,7 @@ const RecallSubmissionPage = () => {
                                     name="file"
                                     action={config.base_url + "/file/upload"}
                                     onChange={filesChangeHandle}
-                                    accept="application/pdf"
-                                >
+                                    accept="application/pdf">
                                     <Button
                                         icon={<Icon icon="bi:file-earmark-pdf"/>}
                                         size="large"
@@ -279,19 +278,13 @@ const RecallSubmissionPage = () => {
                                 <Checkbox
                                     checked={checked}
                                     onChange={(e) => {
-                                        setChecked(e.target.checked)
-                                    }}
-                                >
-                                    Receive mobile alerts on behalf of FreeArianna.org. Recurring messages. Msg & data
-                                    rates
-                                    may apply. Text STOP to 668366 to stop receiving messages. Text HELP to 668366 for
-                                    more
-                                    information. Privacy
+                                    setChecked(e.target.checked)}}>
+                                    Receive mobile alerts on behalf of Glitter App. Recurring messages. Msg & data
+                                    rates may apply. Text STOP to 668366 to stop receiving messages. Text HELP to 668366 for
+                                    more information. Privacy
                                 </Checkbox>
                             </Item>
-                            <Item
-                                shouldUpdate
-                            >
+                            <Item shouldUpdate>
                                 {
                                     () => (
                                         <Button
