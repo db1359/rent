@@ -120,7 +120,7 @@ const AboutMain2 = () => {
 const ActionFormCard = styled(Card)`
   box-shadow: none;
   border: none;
-  background: linear-gradient(to top, #f7eaf4, #f7eaf4);
+  background: linear-gradient(to top, #f4e1ff, #f4e1ff);
   border-radius: 12px;
   padding: 0px;
 
