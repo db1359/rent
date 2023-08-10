@@ -12,7 +12,7 @@ export class MailService {
         sgMail.setApiKey(process.env.SENDGRID_API_KEY || "");
         const msg = {
             to: "dbaran@gmail.com",
-            from: "noreply@freearianna.org",
+            from: "noreply@glitters.app",
             subject: "Testing",
             text: "and easy to do anywhere, even with Node.js",
             html: "<strong>and easy to do anywhere, even with Node.js</strong>",
@@ -32,7 +32,7 @@ export class MailService {
 
         try {
             return this.mailerService.sendMail({
-                from: `"Freearianna" <${process.env.MAIL_FROM}>`,
+                from: `"Glitter" <${process.env.MAIL_FROM}>`,
                 to: email,
                 subject: "Email verification",
                 template: "email-verification",
