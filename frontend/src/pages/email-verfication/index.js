@@ -35,9 +35,9 @@ const EmailVerificationPage = () => {
                 title={loading ? "We are confirming your request..." : "Your email address is successfully confirmed!"}
                 subTitle={loading ? "Loading..." : "Thank you."}
                 extra={[
-                    <Button type="primary" key="home" size="large"
-                        onClick={() => {navigate(`/`)}} loading={loading}>
-                        Home
+                    <Button type="primary" key="login" size="large"
+                        onClick={() => {navigate(`/login`)}} loading={loading}>
+                        Login
                     </Button>,
                     <Button key="email" size="large" loading={loading}>Send Again</Button>,
                 ]}
