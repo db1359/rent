@@ -39,7 +39,7 @@ const EmailVerificationPage = () => {
                         onClick={() => {navigate(`/login`)}} loading={loading}>
                         Login
                     </Button>,
-                    <Button key="email" size="large" loading={loading}>Send Again</Button>,
+                    // <Button key="email" size="large" loading={loading}>Send Again</Button>,
                 ]}
             />
         </Container>
