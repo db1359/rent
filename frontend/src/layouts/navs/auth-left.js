@@ -47,7 +47,7 @@ const AuthLeftNav = () => {
             <Button type="leftcolumnlink"
                     onClick={() => {navigate("/");}}
                     className={location.pathname === "/" && "active"}>
-                    Feed
+                    Channel
             </Button>
             <Button type="leftcolumnlink"
                     onClick={() => {navigate(`/${auth?.user?.username}`);}}
