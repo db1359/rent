@@ -64,7 +64,7 @@ const LayoutHeader = () => {
                                             navigate("/about");
                                         }}
                                         className={location.pathname === "/about" && "active"}>
-                                        Defund
+                                        Abolish
                                     </Button>
                                 )}
                             </Col>
