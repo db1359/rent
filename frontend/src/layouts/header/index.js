@@ -168,7 +168,7 @@ const LayoutHeader = () => {
                                             onClick={() => {setVisible(false);}}
                                             style={{color: "#8f3dce!important"}}
                                             >
-                                            <Link to="/">Free Arianna</Link>
+                                            <Link to="/">Glitter</Link>
                                         </LogoTextLight>
                                     }
                                     closeIcon={<></>}
@@ -181,7 +181,7 @@ const LayoutHeader = () => {
                                         ]}
                                         >
                                         {/* <NavHashLink to="/arianna">Arianna's Story</NavHashLink> */}
-                                        <Menu.Item key="story">Arianna's Story</Menu.Item>
+                                        {/* <Menu.Item key="story">Arianna's Story</Menu.Item> */}
                                         <Menu.Item key="about">Abolish Family Court</Menu.Item>
                                         {/* <Menu.Item key="community">Community</Menu.Item> */}
                                         <Menu.Item key="donate" className="btn">DONATE</Menu.Item>
