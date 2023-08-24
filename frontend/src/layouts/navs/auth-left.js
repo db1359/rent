@@ -70,8 +70,7 @@ const AuthLeftNav = () => {
                 <div>    
                 {
                     mGroups.map((i) => (
-                        <a
-                            key={i._id}
+                        <a key={i._id}
                             style={{display: "block", fontSize: 18, fontWeight: 300}}
                             href={"/group/" + i.slug}>
                             #  {i.slug}
