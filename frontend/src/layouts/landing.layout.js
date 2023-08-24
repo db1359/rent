@@ -30,7 +30,9 @@ import EventsPage from "../pages/events";
 import SharePage from "../pages/about/share";
 import PrivacyPage from "../pages/about/privacy";
 import TermsPage from "../pages/about/terms";
-import DirectorySinglePage from "../pages/dir/single";
+import GroupPage from "../pages/group";
+import SingleGroupPage from "../pages/single-group";
+import WaitVerifyPage from "../pages/wait-verify";
 
 const {Content} = Layout
 
@@ -59,6 +61,7 @@ const LandingLayout = () => {
                     <Route path="/courtwatch" element={<CourtWatch/>}/>
                     <Route path="/events" element={<EventsPage/>}/>
                     <Route path="/signup" element={<SignupPage/>}/>
+                    <Route path="/verify" element={<WaitVerifyPage/>}/>
                     <Route path="/login" element={<LoginPage/>}/>
                     <Route path="/legalabusesyndrome" element={<LegalAbuseSyndrome/>}/>
                     <Route path="/donate" element={<DonatePage/>}/>
@@ -68,46 +71,21 @@ const LandingLayout = () => {
                     <Route path="/recalls/:state" element={<RecallPage/>}/>
                     <Route path="/recalls/:state/:id" element={<SingleRecallPage/>}/>
                     <Route path="/dir" element={<DirectoryPage/>}/>
-                    <Route path="/*" element={<NotFoundPage/>}/>
                     <Route path="/:username" element={<ProfilePage/>}/>
                     <Route path="/:username/settings" element={<MySettings/>}/>
                     <Route path="/:username/status/:id" element={<FeedPage/>}/>
+                    <Route path="/group" element={<GroupPage/>}/>
+                    <Route path="/group/:slug" element={<SingleGroupPage/>}/>
+                    <Route path="/*" element={<NotFoundPage/>}/>
                 </Routes>
             </Content>
             {
                 auth.isAuth ? (
                     <AuthFooter/>
-                    
                 ) : (
                     <LandingLayoutFooter/>
                 )
             }
-
-    {/* Want to not display footer on the below pages
-    <Layout>   
-        {
-            auth.isAuth ? (
-                <AuthHeader/>
-            ) : (
-                <></>
-            )
-        }
-        <Content>
-            <Routes>
-                <Route path="/:username" element={<ProfilePage/>}/>
-                <Route path="/:username/settings" element={<MySettings/>}/>
-                <Route path="/:username/status/:id" element={<FeedPage/>}/>
-            </Routes>
-        </Content>
-        {
-            auth.isAuth ? (
-                <AuthFooter/>
-            ) : (
-                <></>
-            )
-        } 
-    </Layout>  */}
-
     </Layout>
     );
 };

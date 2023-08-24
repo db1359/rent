@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
-import mongoose, { Model, mongo } from "mongoose";
+import mongoose, { Model } from "mongoose";
 import { IComment, Comment } from "./comment.schema";
 import { Feed, IFeed } from "../feed/feed.schema";
 

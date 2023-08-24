@@ -9,7 +9,7 @@ export class DirectoryController {
     @Get()
     async getDirectories(@Query() query: any) {
         console.log(query);
-        return this.directoryService.getAllDirectories(query.state);
+        return this.directoryService.getAllDirectories();
     }
 
     @UseGuards(JwtAuthGuard)
@@ -31,7 +31,7 @@ export class DirectoryController {
 
     @UseGuards(JwtAuthGuard)
     @Post("/update")
-    async updateDirectory(@Body() body: any, @Req() req: any) {
+    async updateDirectory(@Body() body: any) {
         return this.directoryService.updateDirectory(body);
     }
 

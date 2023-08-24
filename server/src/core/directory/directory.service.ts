@@ -27,7 +27,7 @@ export class DirectoryService {
         );
     }
 
-    async getAllDirectories(state: string) {
+    async getAllDirectories() {
         return this.directoryModel.find().sort({ createdAt: -1 });
     }
 

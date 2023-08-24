@@ -10,6 +10,7 @@ import { FileModule } from "./core/file/file.module";
 import { CommentModule } from "./core/comment/comment.module";
 import { RecallModule } from "./core/recall/recall.module";
 import { DirectoryModule } from "./core/directory/directory.module";
+import { GroupModule } from "./core/group/group.module";
 
 @Module({
     imports: [
@@ -27,6 +28,7 @@ import { DirectoryModule } from "./core/directory/directory.module";
         CommentModule,
         RecallModule,
         DirectoryModule,
+        GroupModule,
     ],
 })
 export class AppModule {}

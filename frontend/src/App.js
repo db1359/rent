@@ -18,7 +18,6 @@ const App = () => {
                         colorPrimaryText: "#000000",
                         colorPrimaryTextActive: "#000000",
                         colorPrimaryBg: "#8f3dce",
-                        //colorPrimaryBg: "#f7ce07",
                         colorError: "#ff0000",
                         colorErrorText: "#FFFFFF",
                         borderRadius: 0,

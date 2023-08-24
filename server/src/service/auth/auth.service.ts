@@ -56,11 +56,14 @@ export class AuthService {
         });
 
         if (!!u) {
-            const result = await this.mailService.emailVerifyEmail(u.email, u.firstname, token);
-            console.log(result)
+            try {
+                await this.mailService.emailVerifyEmail(u.email, u.firstname, token);
+            } catch (e) {
+                console.warn(e);
+            }
         }
 
-        return this.login(u);
+        return { success: true };
     }
 
     async profile(user) {

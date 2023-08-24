@@ -3,13 +3,13 @@ import {Avatar, Button, Card, Divider, Dropdown, Input, message, Modal, Timeline
 import {FacebookShareButton, TwitterShareButton} from "react-share";
 import {Icon} from "@iconify/react";
 import {useNavigate} from "react-router-dom";
-import {commentsApi, createCommentApi, deleteFeedApi, likeFeedApi} from "../../../api";
+import {commentsApi, createCommentApi, deleteFeedApi, deleteGroupFeedApi, likeFeedApi} from "../../../api";
 import {useSelector} from "react-redux";
 import config from "../../../config";
 import {getOffsetTime} from "../../../utils/helper/time.helper";
 
 const FeedCard = (props) => {
-    const {feed, getHandle} = props
+    const {feed, getHandle, group} = props
 
     const navigate = useNavigate()
 
@@ -49,7 +49,6 @@ const FeedCard = (props) => {
     }
 
     const addCommentHandle = () => {
-
         createCommentApi({
             comment: cmt,
             feed: id,
@@ -82,15 +81,27 @@ const FeedCard = (props) => {
             okText: 'Delete',
             cancelText: 'Cancel',
             onOk: () => {
-                deleteFeedApi(id)
-                    .then(() => {
-                        getHandle()
-                        message.success("Successfully deleted the post.")
-                    })
-                    .catch((e) => {
-                        console.log(e)
-                        message.error("An error was created during delete the post. try again later")
-                    })
+                if(group) {
+                    deleteGroupFeedApi(group, id)
+                        .then(() => {
+                            getHandle()
+                            message.success("Successfully deleted the post.")
+                        })
+                        .catch((e) => {
+                            console.log(e)
+                            message.error("An error was created during delete the post. try again later")
+                        })
+                } else {
+                    deleteFeedApi(id)
+                        .then(() => {
+                            getHandle()
+                            message.success("Successfully deleted the post.")
+                        })
+                        .catch((e) => {
+                            console.log(e)
+                            message.error("An error was created during delete the post. try again later")
+                        })
+                }
             }
         })
     }
@@ -131,7 +142,8 @@ const FeedCard = (props) => {
                                 items: [
                                     {
                                         icon: (
-                                            <a className="react-share__ShareButton social-share-button ant-dropdown-menu-item-icon">
+                                            <a
+                                                className="react-share__ShareButton social-share-button ant-dropdown-menu-item-icon">
                                                 <Icon icon="ic:baseline-remove-red-eye"/>
                                             </a>
                                         ),
