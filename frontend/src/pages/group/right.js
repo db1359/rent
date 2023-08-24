@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import styled from "styled-components";
 import {Avatar, Card, Col, Row, Space} from "antd";
-import {groupChannelsApi, getMyGroupsApi} from "../../api";
+import {groupChannelsApi} from "../../api";
 import {useNavigate} from "react-router-dom";
 
 const GroupRight = () => {
@@ -10,7 +10,6 @@ const GroupRight = () => {
 
     const [mGroups, setMGroups] = useState([])
     const [rGroups, setRGroups] = useState([])
-    const [groups, setGroups] = useState([]);
 
     const getGroups = async () => {
         try {
@@ -23,11 +22,6 @@ const GroupRight = () => {
         }
     }
 
-    const getHandle = async () => {
-        const {data} = await getMyGroupsApi()
-        setGroups(data);
-    }
-
     useEffect(()=>{
         getGroups()
     },[])
@@ -37,10 +31,9 @@ const GroupRight = () => {
             <GroupRightWrap>
                 <Row gutter={[12, 12]}>
                     <Col span={24}>
-                        <h2 style={{textAlign: "center", marginBottom: 0, fontWeight: 700}}>Waiting Approval</h2>
-                        <p style={{textAlign: "center", marginBottom: 0}}>
-                                {group.requests?.length} Members
-                            </p>
+                        <h2 style={{textAlign: "center", color: "red", marginBottom: 0, fontWeight: 700}}>
+                        Waiting Approval
+                        </h2>
                     </Col>
                     {
                         rGroups.map((i) => (
