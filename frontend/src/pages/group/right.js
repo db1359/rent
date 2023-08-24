@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import styled from "styled-components";
-import {Avatar, Card, Col, Row} from "antd";
+import {Avatar, Card, Col, Row, Space} from "antd";
 import {groupChannelsApi} from "../../api";
 import {useNavigate} from "react-router-dom";
 
@@ -35,45 +35,22 @@ const GroupRight = () => {
                     </Col>
                     {
                         rGroups.map((i) => (
-                            <Col key={`R${i._id}`}>
-                                <Avatar
-                                    onClick={()=>{navigate(`/group/${i.slug}`)}}
-                                    size={50}
-                                    style={{
-                                        cursor: "pointer",
-                                        backgroundColor: "#8f3dce",
-                                        borderRadius: "6px"
-                                    }}
-                                    src={i.photo}
-                                    shape="square">
-                                    {i.title?.[0]}
-                                </Avatar>
-                            </Col>
-                        ))
-                    }
-                </Row>
-            </GroupRightWrap>
-
-            <GroupRightWrap>
-                <Row gutter={[12, 12]}>
-                    <Col span={24}>
-                        <h2 style={{textAlign: "center", marginBottom: 0, fontWeight: 700}}>Available Channels</h2>
-                    </Col>
-                    {
-                        mGroups.map((i) => (
-                            <Col key={`M${i._id}`}>
-                                <Avatar
-                                    onClick={()=>{navigate(`/group/${i.slug}`)}}
-                                    size={50}
-                                    src={i.photo}
-                                    style={{
-                                        cursor: "pointer",
-                                        backgroundColor: "#8f3dce",
-                                        borderRadius: "6px"
-                                    }}
-                                    shape="square">
-                                    {i.title?.[0]}
-                                </Avatar>
+                            <Col span={24} key={`R${i._id}`}>
+                                <Space>
+                                    <Avatar
+                                        onClick={()=>{navigate(`/group/${i.slug}`)}}
+                                        size={50}
+                                        style={{
+                                            cursor: "pointer",
+                                            backgroundColor: "#8f3dce",
+                                            borderRadius: "6px"
+                                        }}
+                                        src={i.photo}
+                                        shape="square">
+                                        {i.title?.[0]}
+                                    </Avatar>
+                                    <h5 style={{fontSize: 16, margin: 0}}>{i.title}</h5>
+                                </Space>
                             </Col>
                         ))
                     }
