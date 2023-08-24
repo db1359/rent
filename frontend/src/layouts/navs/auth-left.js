@@ -66,14 +66,15 @@ const AuthLeftNav = () => {
                 </Button>
 
             </AuthLeftNavWrap>
-            <div style={{display: "flex", flexDirection: "column", gap: 12, background: "linear-gradient(to top,rgb(240,242,245),rgb(247,234,244))", padding: 16, borderRadius: 12}}>
+            {/* <div style={{display: "flex", flexDirection: "column", gap: 12, background: "linear-gradient(to top,rgb(240,242,245),rgb(247,234,244))", padding: 16, borderRadius: 12}}> */}
+                <div>    
                 {
                     mGroups.map((i) => (
                         <a
                             key={i._id}
-                            style={{display: "block", fontSize: 18, fontWeight: 700}}
+                            style={{display: "block", fontSize: 18, fontWeight: 300}}
                             href={"/group/" + i.slug}>
-                            #{i.slug}
+                            #  {i.slug}
                         </a>
                     ))
                 }
