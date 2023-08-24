@@ -352,7 +352,7 @@ const SingleGroupPage = () => {
             </Modal>
 
             <Modal
-                title="Access to Group"
+                title="Channel Join Request"
                 footer={false}
                 closeIcon={<></>}
                 centered

@@ -166,7 +166,7 @@ const GroupPage = () => {
                 onCancel={() => {
                     setOpen(false)
                 }}
-                title="Create New Group"
+                title="Create New Channel"
                 footer={false}
                 open={open}>
                 <Form
@@ -176,20 +176,20 @@ const GroupPage = () => {
                     layout="vertical">
                     <Item
                         name="title"
-                        label="Title"
+                        label="Channel Name"
                     >
                         <Input
                             size="large"
-                            placeholder="Group Title"
+                            placeholder="Channel Name"
                         />
                     </Item>
                     <Item
                         name="slug"
-                        label="Group Id"
+                        label="Channel Handle"
                     >
                         <Input
                             size="large"
-                            placeholder="Group Id"
+                            placeholder="Channel Handle"
                         />
                     </Item>
                     <Item>
@@ -197,7 +197,7 @@ const GroupPage = () => {
                             style={{height: 40}}
                             htmlType="submit"
                             type="primary">
-                            Create New Group
+                            Create New Channel
                         </Button>
                     </Item>
                 </Form>
@@ -248,8 +248,8 @@ const GroupPage = () => {
             >
                 <h2><b>Are you sure?</b></h2>
                 <p>
-                    If you delete this group, you can't recover it in the future. All of your posts will be moved to
-                    your own
+                    If you delete this channel, you can't recover it in the future. All of your posts will be moved to
+                    your own channel.
                 </p>
             </Modal>
             {contextHolder}
