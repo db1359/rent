@@ -34,7 +34,7 @@ export class MailService {
             return this.mailerService.sendMail({
                 from: `"Glitter" <${process.env.MAIL_FROM}>`,
                 to: email,
-                subject: "Email verification",
+                subject: "Email Verification",
                 template: "email-verification",
                 context: {
                     firstname: firstname,
