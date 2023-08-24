@@ -83,7 +83,7 @@ const AriannaTable = () => {
                             Court Watch Link</a></div>
                         </div>
                         <div>
-                            <div><a href="/freearianna" target="_blank">@freearianna</a></div>
+                            <div><a href="/" target="_blank">@freearianna</a></div>
                         </div>
                         <div>
                             <div style={{textAlign: 'center'}}>

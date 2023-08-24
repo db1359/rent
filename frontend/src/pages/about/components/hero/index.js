@@ -8,7 +8,7 @@ const KidsHero = () => {
     return (
         <KidsHeroWrap>
             <Container>
-                <h4>Free Arianna Mission</h4>
+                <h4>Glitter Mission</h4>
                 <SectionTitle>
                 Our goal is to save kids lives and stop the destruction of families 
                 </SectionTitle>
