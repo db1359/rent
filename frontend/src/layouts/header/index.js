@@ -168,7 +168,7 @@ const LayoutHeader = () => {
                                             onClick={() => {setVisible(false);}}
                                             style={{color: "#8f3dce!important"}}
                                             >
-                                            <Link to="/">Free Arianna</Link>
+                                            <Link to="/">Glitter</Link>
                                         </LogoTextLight>
                                     }
                                     closeIcon={<></>}

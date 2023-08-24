@@ -59,7 +59,7 @@ const AuthHeader = () => {
                             <Button type="communitylink"
                                     onClick={() => {navigate("/");}}
                                     className={location.pathname === "/" && "active"}>
-                                    Home
+                                    Channel
                             </Button>
                             <Button type="communitylink"
                                     onClick={() => {navigate("/dir");}}
@@ -89,8 +89,7 @@ const AuthHeader = () => {
                                 menu={{
                                     items: items,
                                     onClick: menuChangeHandle,
-                                }}
-                            >
+                                }}>
                                 <Avatar
                                     size="large"
                                     style={{
@@ -98,8 +97,7 @@ const AuthHeader = () => {
                                         cursor: "pointer",
                                         background: "#8f3dce"
                                     }}
-                                    src={auth?.user?.photo}
-                                >
+                                    src={auth?.user?.photo}>
                                     {auth?.user?.firstname?.[0]}
                                 </Avatar>
                             </Dropdown>
