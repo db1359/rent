@@ -3,7 +3,7 @@ const config = {
         window.location.hostname === "localhost"
             ? "http://localhost:8000"
             // ? "https://api.freearianna.org"
-            : "https://api.glitters.app",
+            : "https://api.freearianna.org",
     host_url:
         window.location.hostname === "localhost"
             ? "http://localhost:3000"

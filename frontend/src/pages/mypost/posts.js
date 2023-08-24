@@ -1,11 +1,11 @@
 import React, {Fragment} from 'react';
-import {Divider, Space} from "antd";
+import {Space} from "antd";
 import FeedCardWrap from "../../components/card/feed/style/wrap";
 import FeedCard from "../../components/card/feed";
 
 const MyPosts = (props) => {
 
-    const {feeds, getHandle} = props
+    const {feeds, getHandle, group} = props
 
     return (
         <Space
@@ -18,6 +18,7 @@ const MyPosts = (props) => {
                         feeds.map((feed, key) => (
                             <Fragment key={`feed-${key}`}>
                                 <FeedCard
+                                    group={group}
                                     feed={feed}
                                     getHandle={getHandle}
                                 />

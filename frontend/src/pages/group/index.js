@@ -1,0 +1,262 @@
+import React, {useEffect, useState} from 'react';
+import AuthLayout from "../../layouts/auth.layout";
+import {Avatar, Button, Form, Input, List, Modal, notification, Space} from "antd";
+import {CloseOutlined, CopyOutlined, DeleteOutlined, PlusOutlined, ShareAltOutlined} from "@ant-design/icons";
+import GroupRight from "./right";
+import {createGroupApi, deleteGroupApi, getMyGroupsApi} from "../../api";
+import {Link} from "react-router-dom";
+
+const {Item} = Form;
+
+const GroupPage = () => {
+    const [api, contextHolder] = notification.useNotification();
+
+    const [form] = Form.useForm();
+    const [open, setOpen] = useState(false);
+    const [share, setShare] = useState(false);
+    const [del, setDel] = useState(false);
+    const [title, setTitle] = useState("")
+    const [groups, setGroups] = useState([]);
+    const [gr, setGr] = useState({});
+
+
+    const slugify = str =>
+        str
+            .trim()
+            .replace(/[^\w\s-]/g, '')
+            .replace(/[\s_-]+/g, '')
+            .replace(/^-+|-+$/g, '');
+
+    const openSuccess = () => {
+        api["success"]({
+            message: 'Copy Link Success',
+            description:
+                'The share link was copied to your clipboard. Please paste it.',
+        });
+    };
+
+    const openDeleteSuccess = () => {
+        api["success"]({
+            message: 'Delete Group Success',
+            description:
+                'The Group was deleted successfully!',
+        });
+    }
+
+    const getHandle = async () => {
+        const {data} = await getMyGroupsApi()
+        setGroups(data);
+    }
+
+    const finishHandle = async (values) => {
+        console.log(values)
+        try {
+            const {data} = await createGroupApi(values);
+            console.log(data);
+            setOpen(false);
+            form.resetFields()
+            getHandle()
+        } catch (e) {
+
+        }
+    }
+
+    const changeHandle = () => {
+        if (title !== form.getFieldValue("title")) {
+            setTitle(form.getFieldValue("title"));
+            form.setFieldValue("slug", slugify(form.getFieldValue("title")))
+        }
+    }
+
+    const shareOkHandle = () => {
+        navigator.clipboard.writeText("https://glitters.app/group/" + gr.slug);
+        setShare(false);
+        openSuccess();
+    }
+
+    const deleteHandle = async () => {
+        try {
+            const {data} = await deleteGroupApi(gr._id);
+            if (data.success) {
+                setDel(false);
+                openDeleteSuccess();
+                getHandle();
+            }
+        } catch (e) {
+            console.warn(e)
+        }
+    }
+
+    useEffect(() => {
+        getHandle()
+    }, [])
+
+
+    return (
+        <AuthLayout side={<GroupRight/>}>
+            <Button
+                style={{height: 42, borderRadius: "4px"}}
+                onClick={() => {
+                    setOpen(true)
+                }}
+                icon={<PlusOutlined/>}
+                type="primary">
+                Create Channel
+            </Button>
+
+            <List style={{marginTop: 24}}>
+                {
+                    groups.map((group) => (
+                        <List.Item key={group._id}>
+                            <List.Item.Meta
+                                avatar={
+                                    <Link to={`/group/${group.slug}`}>
+                                        <Avatar
+                                            size={50}
+                                            style={{
+                                                backgroundColor: "#8f3dce",
+                                                borderRadius: "6px"
+                                            }}
+                                            shape="square">
+                                            {group.title?.[0]}
+                                        </Avatar>
+                                    </Link>
+                                }
+                                title={<b>{group.title}</b>}
+                                description={
+                                    <p>
+                                        <b>{group.members.length} Members</b>&nbsp;&nbsp;&nbsp;
+                                        <span
+                                            style={{color: "red"}}>{group.requests.length} Waiting</span>&nbsp;&nbsp;&nbsp;
+                                        <span style={{
+                                            color: "#8f3dce",
+                                            fontWeight: 700
+                                        }}>{group.feeds.length} Feeds</span>
+                                    </p>
+                                }
+
+                            />
+                            <Space>
+                                <Button
+                                    onClick={() => {
+                                        setShare(true);
+                                        setGr(group)
+                                    }}
+                                    icon={<ShareAltOutlined/>}>
+                                    Share
+                                </Button>
+                                <Button
+                                    onClick={() => {
+                                        setDel(true);
+                                        setGr(group)
+                                    }}
+                                    icon={<DeleteOutlined/>}
+                                    danger
+                                    type="primary">
+                                    Delete
+                                </Button>
+                            </Space>
+                        </List.Item>
+                    ))
+                }
+            </List>
+
+            <Modal
+                closeIcon={<CloseOutlined/>}
+                width={600}
+                centered
+                onCancel={() => {
+                    setOpen(false)
+                }}
+                title="Create New Group"
+                footer={false}
+                open={open}>
+                <Form
+                    form={form}
+                    onFinish={finishHandle}
+                    onChange={changeHandle}
+                    layout="vertical">
+                    <Item
+                        name="title"
+                        label="Title"
+                    >
+                        <Input
+                            size="large"
+                            placeholder="Group Title"
+                        />
+                    </Item>
+                    <Item
+                        name="slug"
+                        label="Group Id"
+                    >
+                        <Input
+                            size="large"
+                            placeholder="Group Id"
+                        />
+                    </Item>
+                    <Item>
+                        <Button
+                            style={{height: 40}}
+                            htmlType="submit"
+                            type="primary">
+                            Create New Group
+                        </Button>
+                    </Item>
+                </Form>
+            </Modal>
+
+            <Modal
+                onCancel={() => {
+                    setShare(false)
+                }}
+                centered
+                okText="Copy & Close"
+                cancelText="Close"
+                onOk={shareOkHandle}
+                title="Share Group"
+                open={share}>
+                <Form layout="vertical">
+                    <Item label="Share Link">
+                        <Input
+                            readOnly
+                            suffix={
+                                <Button
+                                    type="link"
+                                    onClick={() => {
+                                        navigator.clipboard.writeText("https://glitters.app/group/" + gr.slug);
+                                        openSuccess()
+                                    }}>
+                                    <CopyOutlined/>
+                                </Button>
+                            }
+                            value={"https://glitters.app/group/" + gr.slug}
+                            size="large"/>
+                    </Item>
+                </Form>
+            </Modal>
+
+            <Modal
+                centered
+                open={del}
+                okType="primary"
+                okButtonProps={{danger: true}}
+                onOk={deleteHandle}
+                title="Delete Group"
+                onCancel={() => {
+                    setDel(false)
+                }}
+                okText="Yes, Delete"
+                cancelText="Close"
+            >
+                <h2><b>Are you sure?</b></h2>
+                <p>
+                    If you delete this group, you can't recover it in the future. All of your posts will be moved to
+                    your own
+                </p>
+            </Modal>
+            {contextHolder}
+        </AuthLayout>
+    );
+};
+
+export default GroupPage;

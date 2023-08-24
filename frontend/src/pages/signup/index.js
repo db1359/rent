@@ -41,12 +41,9 @@ const SignupPage = () => {
             phone: `${short} ${values.phone}`
         })
             .then(({data}) => {
-                const token = data?.['access_token'];
-                const user = data?.['user'];
-                dispatch(loginAction({user, token}))
                 openSuccess(api, "Your account was created successfully. Please verify your email address.")
                 form.resetFields();
-                navigate(redirect ? redirect : "/")
+                navigate(redirect ? redirect : "/verify")
             })
             .catch((e) => {
                 e.response.data.message && e.response.data?.message?.forEach((i) => {

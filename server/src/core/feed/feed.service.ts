@@ -22,8 +22,6 @@ export class FeedService {
     }
 
     async createFeed(attr, user: any) {
-        console.log(attr);
-
         const re = new RegExp("@[a-zA-Z0-9\\-]+");
 
         if (attr.post.match(re)) {
@@ -58,6 +56,27 @@ export class FeedService {
         return this.feedModel
             .find({
                 author: {
+                    $in: ids,
+                },
+            })
+            .populate([
+                {
+                    path: "author",
+                },
+                {
+                    path: "repost",
+                    populate: {
+                        path: "author",
+                    },
+                },
+            ])
+            .sort({ createdAt: -1 });
+    }
+
+    async getGroupFeeds(ids) {
+        return this.feedModel
+            .find({
+                _id: {
                     $in: ids,
                 },
             })
