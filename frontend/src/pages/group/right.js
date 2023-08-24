@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import styled from "styled-components";
 import {Avatar, Card, Col, Row, Space} from "antd";
-import {groupChannelsApi} from "../../api";
+import {groupChannelsApi, getMyGroupsApi} from "../../api";
 import {useNavigate} from "react-router-dom";
 
 const GroupRight = () => {
@@ -10,6 +10,7 @@ const GroupRight = () => {
 
     const [mGroups, setMGroups] = useState([])
     const [rGroups, setRGroups] = useState([])
+    const [groups, setGroups] = useState([]);
 
     const getGroups = async () => {
         try {
@@ -20,6 +21,11 @@ const GroupRight = () => {
         } catch (e) {
             console.warn(e)
         }
+    }
+
+    const getHandle = async () => {
+        const {data} = await getMyGroupsApi()
+        setGroups(data);
     }
 
     useEffect(()=>{

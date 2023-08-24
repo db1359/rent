@@ -10,7 +10,6 @@ const {Item} = Form;
 
 const GroupPage = () => {
     const [api, contextHolder] = notification.useNotification();
-
     const [form] = Form.useForm();
     const [open, setOpen] = useState(false);
     const [share, setShare] = useState(false);
@@ -18,7 +17,6 @@ const GroupPage = () => {
     const [title, setTitle] = useState("")
     const [groups, setGroups] = useState([]);
     const [gr, setGr] = useState({});
-
 
     const slugify = str =>
         str
