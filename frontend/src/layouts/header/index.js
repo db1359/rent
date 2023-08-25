@@ -7,6 +7,7 @@ import HamburgerButton from "../../components/button/hamburger";
 import axios from "axios";
 import config from "../../config";
 import {MenuOutlined} from "@ant-design/icons";
+import Logo from "../../assets/img/glitter1.png";
 
 const {useBreakpoint} = Grid;
 
@@ -61,13 +62,16 @@ const LayoutHeader = () => {
             <Container>
                 <Row justify="space-between" align="middle">
                     <Col>
-                        <LogoText>
+                        {/* <LogoText>
                             <Link to="/">Glitter</Link>
-                        </LogoText>
+                        </LogoText> */}
+                        
+                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '10px'}} alt="Glitter"/></Link>
+                        
                     </Col>
                     <Col>
                         {breakpoints.lg ? (
-                            <Row gutter={20}>
+                            <Row gutter={20} style={{marginTop: '7px'}}>
 
                                 {/* <Col>
                                     {user ? (

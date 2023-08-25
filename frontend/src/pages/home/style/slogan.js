@@ -10,7 +10,6 @@ const HomeSlogan = styled.h1`
   line-height: 1.6;
   margin-top: 48px;
   margin-bottom: 20px;
-
 `
 
 export default HomeSlogan

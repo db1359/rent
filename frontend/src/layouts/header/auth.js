@@ -6,6 +6,7 @@ import {Link, useLocation, useNavigate} from "react-router-dom";
 import {logoutAction} from "../../redux/actions/auth";
 import {useDispatch, useSelector} from "react-redux";
 import {Icon} from "@iconify/react";
+import Logo from "../../assets/img/glitter0.png";
 
 const { Header } = Layout
 
@@ -48,11 +49,12 @@ const AuthHeader = () => {
                 <Row
                     justify="space-between"
                     align="middle"
-                    style={{height: "100%"}}>
+                    style={{height: "100%", marginTop: '0px'}}>
                     <Col>
-                        <LogoText>
+                        {/* <LogoText>
                             <Link to="/">Glitter</Link>
-                        </LogoText>
+                        </LogoText> */}
+                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '10px'}} alt="Glitter"/></Link>
                     </Col>
                     <Col>
                         <Space size={36}>
