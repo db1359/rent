@@ -66,7 +66,7 @@ const LayoutHeader = () => {
                             <Link to="/">Glitter</Link>
                         </LogoText> */}
                         
-                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '10px'}} alt="Glitter"/></Link>
+                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '9px'}} alt="Glitter"/></Link>
                         
                     </Col>
                     <Col>

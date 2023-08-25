@@ -32,7 +32,7 @@ const GroupRight = () => {
                 <Row gutter={[12, 12]}>
                     <Col span={24}>
                         <h2 style={{textAlign: "center", color: "red", marginBottom: 0, fontWeight: 700}}>
-                        Waiting Approval
+                        Approval Pending
                         </h2>
                     </Col>
                     {
