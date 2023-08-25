@@ -61,7 +61,7 @@ const AuthHeader = () => {
                             <Button type="communitylink"
                                     onClick={() => {navigate("/");}}
                                     className={location.pathname === "/" && "active"}>
-                                    Channel
+                                    Home
                             </Button>
                             <Button type="communitylink"
                                     onClick={() => {navigate("/dir");}}
