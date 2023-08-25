@@ -92,7 +92,7 @@ const LayoutHeader = () => {
                                         <Button type="headerlink"
                                             onClick={() => {navigate("/about");}}
                                             className={location.pathname === "/about" && "active"}>
-                                            Defund Family Court
+                                            Abolish Family Court
                                         </Button>
                                     )}
                                 </Col>
@@ -186,7 +186,7 @@ const LayoutHeader = () => {
                                         >
                                         {/* <NavHashLink to="/arianna">Arianna's Story</NavHashLink> */}
                                         <Menu.Item key="story">Arianna's Story</Menu.Item>
-                                        <Menu.Item key="about">Defund Family Court</Menu.Item>
+                                        <Menu.Item key="about">Abolish Family Court</Menu.Item>
                                         {/* <Menu.Item key="community">Community</Menu.Item> */}
                                         <Menu.Item key="donate" className="btn">DONATE</Menu.Item>
                                         {/* <Menu.Item key="login">Login</Menu.Item> */}
