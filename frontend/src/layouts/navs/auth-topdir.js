@@ -5,6 +5,7 @@ import Container from "../../style/container";
 import TopNavWrap from "./style/topnav-wrap";
 import axios from "axios";
 import config from "../../config";
+import {useSelector} from "react-redux";
 
 const LayoutHeader = () => {
     const [visible, setVisible] = useState(false);
@@ -12,6 +13,9 @@ const LayoutHeader = () => {
     const [user, setUser] = useState(null);
     const navigate = useNavigate();
     const location = useLocation();
+    const auth = useSelector(state => state.auth)
+    const [add, setAdd] = useState(false);
+
 
     const navigateHandler = data => {
         setVisible(false);
@@ -61,10 +65,10 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/abolishfamilycourt");
+                                            navigate("/dir");
                                         }}
-                                        className={location.pathname === "/abolishfamilycourt" && "active"}>
-                                        Abolish
+                                        className={location.pathname === "/dir" && "active"}>
+                                        Home
                                     </Button>
                                 )}
                             </Col>
@@ -75,16 +79,14 @@ const LayoutHeader = () => {
                                 ) : (
                                     <Button
                                         type="communitylink"
-                                        onClick={() => {
-                                            navigate("/recalls");
-                                        }}
-                                        className={location.pathname === "/recalls" && "active"}>
-                                        Recalls
+                                        onClick={() => { !auth.isAuth ?
+                                            navigate(`/login/?redirect=/dir`) : setAdd(true)}}>
+                                        Add
                                     </Button>
                                 )}
                             </Col>
 
-                            <Col>
+                            {/* <Col>
                                 {user ? (
                                     <nbsp/>
                                 ) : (
@@ -126,54 +128,6 @@ const LayoutHeader = () => {
                                         className={location.pathname === "/legalabusesyndrome" && "active"}
                                     >
                                         Legal Abuse (coming)
-                                    </Button>
-                                )}
-                            </Col>
-
-                            {/* <Col>
-                                {user ? (
-                                    <nbsp/>
-                                ) : (
-                                    <Button
-                                        type="communitylink"
-                                        onClick={() => {
-                                            navigate("/#");
-                                        }}
-                                        className={location.pathname === "/#" && "active"}
-                                    >
-                                        Legal Abuse (coming)
-                                    </Button>
-                                )}
-                            </Col>
-
-                            <Col>
-                                {user ? (
-                                    <nbsp/>
-                                ) : (
-                                    <Button
-                                        type="communitylink"
-                                        onClick={() => {
-                                            navigate("/#");
-                                        }}
-                                        className={location.pathname === "/#" && "active"}
-                                    >
-                                        Erasing Families (coming)
-                                    </Button>
-                                )}
-                            </Col>
-
-                            <Col>
-                                {user ? (
-                                    <nbsp/>
-                                ) : (
-                                    <Button
-                                        type="communitylink"
-                                        onClick={() => {
-                                            navigate("/#");
-                                        }}
-                                        className={location.pathname === "/#" && "active"}
-                                    >
-                                        Resources (coming)
                                     </Button>
                                 )}
                             </Col> */}

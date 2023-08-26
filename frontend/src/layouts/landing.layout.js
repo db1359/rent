@@ -24,6 +24,7 @@ import ProfitingKidsPage from "../pages/about/kids";
 import EmailVerificationPage from "../pages/email-verfication";
 import FeedPage from "../pages/feed";
 import AboutPage from "../pages/about";
+import AbolishPage from "../pages/abolishfamilycourt";
 import CourtWatch from "../pages/courtwatch";
 import DirectoryPage from "../pages/dir/";
 import EventsPage from "../pages/events";
@@ -55,6 +56,7 @@ const LandingLayout = () => {
                     <Route path="/about/kids" element={<ProfitingKidsPage/>}/>
                     <Route path="/story" element={<AriannaStoryPage/>}/>
                     <Route path="/about" element={<AboutPage/>}/>
+                    <Route path="/abolishfamilycourt" element={<AbolishPage/>}/>
                     <Route path="/about/share" element={<SharePage/>}/>
                     <Route path="/about/privacy" element={<PrivacyPage/>}/>
                     <Route path="/about/terms" element={<TermsPage/>}/>

@@ -90,9 +90,9 @@ const LayoutHeader = () => {
                                         <nbsp/>
                                     ) : (
                                         <Button type="headerlink"
-                                            onClick={() => {navigate("/about");}}
-                                            className={location.pathname === "/about" && "active"}>
-                                            Abolish Family Court
+                                            onClick={() => {navigate("/abolishfamilycourt");}}
+                                            className={location.pathname === "/abolishfamilycourt" && "active"}>
+                                            Abolish Family Courts
                                         </Button>
                                     )}
                                 </Col>
@@ -109,7 +109,7 @@ const LayoutHeader = () => {
                                     )}
                                 </Col>
 
-                                <Col>                           
+                                {/* <Col>                           
                                     {user ? (
                                         <nbsp/>
                                     ) : (
@@ -131,7 +131,7 @@ const LayoutHeader = () => {
                                                 CourtWatch
                                         </Button>
                                     )}
-                                </Col>
+                                </Col> */}
 
                                 <Col>
                                     {user ? (
@@ -186,7 +186,7 @@ const LayoutHeader = () => {
                                         >
                                         {/* <NavHashLink to="/arianna">Arianna's Story</NavHashLink> */}
                                         <Menu.Item key="story">Arianna's Story</Menu.Item>
-                                        <Menu.Item key="about">Abolish Family Court</Menu.Item>
+                                        <Menu.Item key="about">Abolish Family Courts</Menu.Item>
                                         {/* <Menu.Item key="community">Community</Menu.Item> */}
                                         <Menu.Item key="donate" className="btn">DONATE</Menu.Item>
                                         {/* <Menu.Item key="login">Login</Menu.Item> */}

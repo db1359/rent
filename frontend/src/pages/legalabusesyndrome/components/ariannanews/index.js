@@ -14,11 +14,9 @@ const AriannaNews = () => {
                 <Space
                     direction='vertical'
                     size={32}
-                    style={{width: '100%'}}
-                >
+                    style={{width: '100%'}}>
                     <Row
-                        gutter={[32, 32]}
-                    >
+                        gutter={[32, 32]}>
                         <Col lg={{span: 17}} span={24}>
                             <Space direction='vertical' style={{width: '100%'}} size={32}>
                                 <div

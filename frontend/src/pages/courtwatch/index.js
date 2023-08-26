@@ -7,12 +7,12 @@ import AriannaExtortion from "../story/components/extortion";
 import AriannaMine from "../story/components/mine";
 import AriannaTable from "./components/table/courtwatch";
 import SectionTitle from "../../components/heading/section";
-// import CommunityNav from "../../layouts/communitynav";
+import TopNav from "../../layouts/navs/auth-topnav";
 
 const CourtWatch = () => {
     return (
         <Fragment>
-            {/* <CommunityNav/> */}
+            <TopNav/>
             <CourtWatchBanner/>
             {/* <AriannaNews/>
             <AriannaStory/>

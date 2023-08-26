@@ -64,20 +64,25 @@ const AuthHeader = () => {
                                     Home
                             </Button>
                             <Button type="communitylink"
+                                    onClick={() => {navigate("/abolishfamilycourt");}}
+                                    className={location.pathname === "/abolishfamilycourt" && "active"}>
+                                    Family Courts
+                            </Button>
+                            <Button type="communitylink"
                                     onClick={() => {navigate("/dir");}}
                                     className={location.pathname === "/dir" && "active"}>
                                     Directory
                             </Button>
-                            <Button type="communitylink"
+                            {/* <Button type="communitylink"
                                     onClick={() => {navigate("/recalls");}}
                                     className={location.pathname === "/recalls" && "active"}>
                                     Recalls
-                            </Button>
-                            <Button type="communitylink"
+                            </Button> */}
+                            {/* <Button type="communitylink"
                                     onClick={() => {navigate("/courtwatch");}}
                                     className={location.pathname === "/courtwatch" && "active"}>
                                     CourtWatch
-                            </Button>
+                            </Button> */}
                             {/* <Button type="communitylink"
                                     onClick={() => {navigate("/trending");}}
                                     className={location.pathname === "/trending" && "active"}>
