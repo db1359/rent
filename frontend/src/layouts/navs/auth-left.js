@@ -60,9 +60,9 @@ const AuthLeftNav = () => {
                 <Button 
                     type="leftcolumnlink"
                     onClick={() => {
-                        navigate("/group");
+                        navigate("/channel");
                     }}
-                    className={location.pathname?.includes("/group") && "active"}>
+                    className={location.pathname?.includes("/channel") && "active"}>
                     Channels
                 </Button>
 
@@ -73,7 +73,7 @@ const AuthLeftNav = () => {
                     mGroups.map((i) => (
                         <a key={i._id}
                             style={{display: "block", fontSize: 18, fontWeight: 700}}
-                            href={"/group/" + i.slug}>
+                            href={"/channel/" + i.slug}>
                             #  {i.slug}
                         </a>
                     ))

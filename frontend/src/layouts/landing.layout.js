@@ -32,7 +32,9 @@ import SharePage from "../pages/about/share";
 import PrivacyPage from "../pages/about/privacy";
 import TermsPage from "../pages/about/terms";
 import GroupPage from "../pages/group";
+import ChannelPage from "../pages/channel";
 import SingleGroupPage from "../pages/single-group";
+import SingleChannelPage from "../pages/single-channel";
 import WaitVerifyPage from "../pages/wait-verify";
 
 const {Content} = Layout
@@ -78,6 +80,8 @@ const LandingLayout = () => {
                     <Route path="/:username/status/:id" element={<FeedPage/>}/>
                     <Route path="/group" element={<GroupPage/>}/>
                     <Route path="/group/:slug" element={<SingleGroupPage/>}/>
+                    <Route path="/channel" element={<ChannelPage/>}/>
+                    <Route path="/channel/:slug" element={<SingleChannelPage/>}/>
                     <Route path="/*" element={<NotFoundPage/>}/>
                 </Routes>
             </Content>
