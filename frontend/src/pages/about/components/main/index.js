@@ -27,6 +27,9 @@ const AboutMain = () => {
                                         paddingTop: '0%',
                                     }}>
                                     <img src={ChartImage} alt=""/>
+                                    {/* <P1 style={{textAlign: 'center'}}>
+                                        Glitter is a group collaboration app for users to share ideas, discuss and interact.
+                                    </P1> */}
                                 </div>
                             </Space>
                         </Col>
