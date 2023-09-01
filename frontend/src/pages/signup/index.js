@@ -43,7 +43,7 @@ const SignupPage = () => {
             .then(({data}) => {
                 openSuccess(api, "Your account was created successfully. Please verify your email address.")
                 form.resetFields();
-                navigate(redirect ? redirect : "/verify")
+                navigate("/verify")
             })
             .catch((e) => {
                 e.response.data.message && e.response.data?.message?.forEach((i) => {

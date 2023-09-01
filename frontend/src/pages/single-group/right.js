@@ -36,8 +36,6 @@ const SingleGroupRight = ({group, getHandle}) => {
         }
     }
 
-    console.log(authUser.username, "USER AUTHOR")
-    console.log(group?.author?.username, "AUTHOR")
 
     useEffect(()=>{
         if(!auth.isAuth) {

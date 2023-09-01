@@ -352,40 +352,42 @@ const SingleChannelPage = () => {
             </Modal>
 
             <Modal
-                title="Channel Join Request"
+                title={<h5 style={{textAlign: "center", fontSize: 24, fontWeight: 700}}>Channel Join Request</h5>}
                 footer={false}
                 closeIcon={<></>}
                 centered
                 open={permission}>
                 <div style={{padding: 12, textAlign: "center", display: "flex", gap: 6, justifyContent: "center"}}>
+
+
                     <Button
                         onClick={()=>{requestJoinHandle()}}
                         style={{height: 42, padding: "4px 24px"}}
                         type="primary">
                         Request to Join
                     </Button>
-                    <Button
-                        onClick={()=>{navigate("/")}}
-                        style={{height: 42, padding: "4px 24px"}}
-                        type="default"
-                        >
-                        Go Home
-                    </Button>
+                    {/*<Button*/}
+                    {/*    onClick={()=>{navigate("/")}}*/}
+                    {/*    style={{height: 42, padding: "4px 24px"}}*/}
+                    {/*    type="default"*/}
+                    {/*    >*/}
+                    {/*    Go Home*/}
+                    {/*</Button>*/}
                 </div>
             </Modal>
 
             <Modal
-                title="Approval Pending"
+                title={<h5 style={{textAlign: "center", fontSize: 24, fontWeight: 700}}>Approval Pending</h5>}
                 text="center"
                 footer={false}
                 closeIcon={<></>}
                 centered
                 open={rqst}>
-                <div style={{padding: 12, textAlign: "center", display: "flex", gap: 6, justifyContent: "center", flexDirection: "column"}}>
+                <div style={{padding: 12, textAlign: "center", display: "flex", alignItems: "center", gap: 6, justifyContent: "center", flexDirection: "column"}}>
                     <h3>Your request is pending approval.</h3>
                     <Button
                         onClick={()=>{navigate("/")}}
-                        style={{height: 42, padding: "4px 24px"}}
+                        style={{height: 50, padding: "4px 32px"}}
                         type="default">
                         Go Home
                     </Button>

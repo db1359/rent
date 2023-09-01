@@ -12,6 +12,7 @@ const AuthLeftNav = () => {
 
     const [mGroups, setMGroups] = useState([])
     const [rGroups, setRGroups] = useState([])
+    const [myGroups, setMyGroups] = useState([])
 
     const getGroups = async () => {
         try {
@@ -19,6 +20,7 @@ const AuthLeftNav = () => {
             console.log(data, "CHANNELS")
             setRGroups(data.requests)
             setMGroups(data.members)
+            setMyGroups(data.mine)
         } catch (e) {
             console.warn(e)
         }
@@ -68,8 +70,18 @@ const AuthLeftNav = () => {
 
             </AuthLeftNavWrap>
             {/* <div style={{display: "flex", flexDirection: "column", gap: 12, background: "linear-gradient(to top,rgb(240,242,245),rgb(247,234,244))", padding: 16, borderRadius: 12}}> */}
-                <div style={{display: "flex", flexDirection: "column", gap: 12, paddingTop: 12, borderRadius: 12}}>    
-                {
+                <div style={{display: "flex", flexDirection: "column", gap: 12, paddingTop: 12, borderRadius: 12}}>
+
+                    {
+                        myGroups.map((i) => (
+                            <a key={i._id}
+                               style={{display: "block", fontSize: 18, fontWeight: 700}}
+                               href={"/channel/" + i.slug}>
+                                #  {i.slug}
+                            </a>
+                        ))
+                    }
+                    {
                     mGroups.map((i) => (
                         <a key={i._id}
                             style={{display: "block", fontSize: 18, fontWeight: 700}}
@@ -78,7 +90,6 @@ const AuthLeftNav = () => {
                         </a>
                     ))
                 }
-
             </div>
         </div>
     );

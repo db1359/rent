@@ -85,10 +85,12 @@ export class GroupService {
 
     async getChannels(user) {
         const mGroups = await this.groupModel.find({ members: { $in: { _id: user._id } } });
+        const myGroups = await this.groupModel.find({ author: { _id: user._id } });
         const rGroups = await this.groupModel.find({ requests: { $in: { _id: user._id } } });
 
         return {
             requests: rGroups,
+            mine: myGroups,
             members: mGroups,
         };
     }
