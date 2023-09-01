@@ -38,7 +38,7 @@ const AuthLeftNav = () => {
                         navigate("/");
                     }}
                     className={location.pathname === "/" && "active"}>
-                    Feed
+                   Channel
                 </Button>
                 <Button
                     type="leftcolumnlink"
@@ -56,24 +56,25 @@ const AuthLeftNav = () => {
                     className={location.pathname === `/${auth?.user?.username}/settings` && "active"}>
                     Settings
                 </Button>
-                <Button
+                - - - - - - - - - - - - - - - - - - - - 
+                <Button 
                     type="leftcolumnlink"
                     onClick={() => {
-                        navigate("/group");
+                        navigate("/channel");
                     }}
-                    className={location.pathname?.includes("/group") && "active"}>
+                    className={location.pathname?.includes("/channel") && "active"}>
                     Channels
                 </Button>
 
             </AuthLeftNavWrap>
-            <div style={{display: "flex", flexDirection: "column", gap: 12, background: "linear-gradient(to top,rgb(240,242,245),rgb(247,234,244))", padding: 16, borderRadius: 12}}>
+            {/* <div style={{display: "flex", flexDirection: "column", gap: 12, background: "linear-gradient(to top,rgb(240,242,245),rgb(247,234,244))", padding: 16, borderRadius: 12}}> */}
+                <div style={{display: "flex", flexDirection: "column", gap: 12, paddingTop: 12, borderRadius: 12}}>    
                 {
                     mGroups.map((i) => (
-                        <a
-                            key={i._id}
+                        <a key={i._id}
                             style={{display: "block", fontSize: 18, fontWeight: 700}}
-                            href={"/group/" + i.slug}>
-                            #{i.slug}
+                            href={"/channel/" + i.slug}>
+                            #  {i.slug}
                         </a>
                     ))
                 }

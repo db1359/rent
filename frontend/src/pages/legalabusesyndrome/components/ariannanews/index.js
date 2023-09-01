@@ -14,11 +14,9 @@ const AriannaNews = () => {
                 <Space
                     direction='vertical'
                     size={32}
-                    style={{width: '100%'}}
-                >
+                    style={{width: '100%'}}>
                     <Row
-                        gutter={[32, 32]}
-                    >
+                        gutter={[32, 32]}>
                         <Col lg={{span: 17}} span={24}>
                             <Space direction='vertical' style={{width: '100%'}} size={32}>
                                 <div
@@ -52,7 +50,7 @@ const AriannaNews = () => {
                                 </CardTitle>
                                 <CardTitle style={{marginBottom: 32}}>
                                     <img
-                                        src={'https://freearianna.org/static/media/paypalqrcode.9f13c28557abe5d13a0c.png'}
+                                        src={'https://glitters.app/static/media/paypalqrcode.9f13c28557abe5d13a0c.png'}
                                         alt=""/>
                                 </CardTitle>
                             </ActionFormCard>

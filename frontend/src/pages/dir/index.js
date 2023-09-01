@@ -1,12 +1,12 @@
 import React, {Fragment} from 'react';
-// import CommunityNav from "../../layouts/communitynav";
 import DirectoryBanner from "../banners/directory";
+import TopNav from "../../layouts/navs/auth-topdir";
 import Criminals from "./components/criminals";
 
 const ProfitingKidsPage = () => {
     return (
         <Fragment>
-            {/* <CommunityNav/> */}
+            <TopNav/>
             <DirectoryBanner/>
             <Criminals/>
         </Fragment>

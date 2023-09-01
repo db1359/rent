@@ -24,6 +24,7 @@ import ProfitingKidsPage from "../pages/about/kids";
 import EmailVerificationPage from "../pages/email-verfication";
 import FeedPage from "../pages/feed";
 import AboutPage from "../pages/about";
+import AbolishPage from "../pages/abolishfamilycourt";
 import CourtWatch from "../pages/courtwatch";
 import DirectoryPage from "../pages/dir/";
 import EventsPage from "../pages/events";
@@ -31,7 +32,9 @@ import SharePage from "../pages/about/share";
 import PrivacyPage from "../pages/about/privacy";
 import TermsPage from "../pages/about/terms";
 import GroupPage from "../pages/group";
+import ChannelPage from "../pages/channel";
 import SingleGroupPage from "../pages/single-group";
+import SingleChannelPage from "../pages/single-channel";
 import WaitVerifyPage from "../pages/wait-verify";
 
 const {Content} = Layout
@@ -55,6 +58,7 @@ const LandingLayout = () => {
                     <Route path="/about/kids" element={<ProfitingKidsPage/>}/>
                     <Route path="/story" element={<AriannaStoryPage/>}/>
                     <Route path="/about" element={<AboutPage/>}/>
+                    <Route path="/abolishfamilycourt" element={<AbolishPage/>}/>
                     <Route path="/about/share" element={<SharePage/>}/>
                     <Route path="/about/privacy" element={<PrivacyPage/>}/>
                     <Route path="/about/terms" element={<TermsPage/>}/>
@@ -76,6 +80,8 @@ const LandingLayout = () => {
                     <Route path="/:username/status/:id" element={<FeedPage/>}/>
                     <Route path="/group" element={<GroupPage/>}/>
                     <Route path="/group/:slug" element={<SingleGroupPage/>}/>
+                    <Route path="/channel" element={<ChannelPage/>}/>
+                    <Route path="/channel/:slug" element={<SingleChannelPage/>}/>
                     <Route path="/*" element={<NotFoundPage/>}/>
                 </Routes>
             </Content>

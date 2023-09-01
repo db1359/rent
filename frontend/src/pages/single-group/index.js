@@ -352,7 +352,7 @@ const SingleGroupPage = () => {
             </Modal>
 
             <Modal
-                title="Access to Group"
+                title="Channel Join Request"
                 footer={false}
                 closeIcon={<></>}
                 centered
@@ -369,25 +369,25 @@ const SingleGroupPage = () => {
                         style={{height: 42, padding: "4px 24px"}}
                         type="default"
                         >
-                        Go to Home
+                        Go Home
                     </Button>
                 </div>
             </Modal>
 
             <Modal
-                title="Waiting for approval"
+                title="Approval Pending"
+                text="center"
                 footer={false}
                 closeIcon={<></>}
                 centered
                 open={rqst}>
                 <div style={{padding: 12, textAlign: "center", display: "flex", gap: 6, justifyContent: "center", flexDirection: "column"}}>
-                    <h3>You sent the request to access to channel. Please wait until the owner allow you.</h3>
+                    <h3>Your request is pending approval.</h3>
                     <Button
                         onClick={()=>{navigate("/")}}
                         style={{height: 42, padding: "4px 24px"}}
-                        type="default"
-                    >
-                        Go to Home
+                        type="default">
+                        Go Home
                     </Button>
                 </div>
             </Modal>

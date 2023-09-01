@@ -12,8 +12,8 @@ const WaitVerifyPage = () => {
                         <h2 style={{paddingTop: 42}}>
                             Email Verification
                         </h2>
-                        <h5 style={{fontSize: 18, textAlign: "center", padding: "24px 0 42px", fontWeight: 700}}>
-                            A verification email has been sent to your email. Please click to verify to sign in
+                        <h5 style={{fontSize: 18, textAlign: "center", padding: "24px 0 42px", fontWeight: 300}}>
+                            A verification link has been emailed to you.<br/><br/>Please click link to Verify then Login.
                         </h5>
                     </AuthWrap>
                 </Col>

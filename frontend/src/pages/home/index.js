@@ -39,7 +39,7 @@ const HomePage = () => {
                 Children seperated from parents to date.
             </HomeSubtitle>
             {/* <HomeSlogan2>
-                ABOLISH Family Court
+                ABOLISH Family Courts
             </HomeSlogan2> */}
         </HomeWrap>
     );

@@ -12,6 +12,7 @@ import RecallsItem from "./item";
 import {useNavigate, useParams} from "react-router-dom";
 import {allRecallsApi, recallsApi} from "../../api";
 import {Icon} from '@iconify/react';
+import TopNav from "../../layouts/navs/auth-topnav";
 
 drilldow(Highcharts);
 dataModule(Highcharts);
@@ -139,6 +140,7 @@ const RecallPage = () => {
 
     return (
         <RecallPageWrap>
+            <TopNav/>
             <RecallBanner/>
             <Container style={{marginTop: '30px'}}>
                 <Row gutter={[32, 24]}>

@@ -31,7 +31,9 @@ const GroupRight = () => {
             <GroupRightWrap>
                 <Row gutter={[12, 12]}>
                     <Col span={24}>
-                        <h2 style={{textAlign: "center", marginBottom: 0, fontWeight: 700}}>Waiting Access</h2>
+                        <h2 style={{textAlign: "center", color: "red", marginBottom: 0, fontWeight: 700}}>
+                        Approval Pending
+                        </h2>
                     </Col>
                     {
                         rGroups.map((i) => (

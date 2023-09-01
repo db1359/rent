@@ -1,5 +1,6 @@
 import React from 'react';
-import KidsHeroWrap from "./style/greygradient";
+// import KidsHeroWrap from "./style/greygradient";
+import KidsHeroWrap from "./style/grey";
 import Container from "../../components/paper/container";
 import SectionTitle from "../../components/heading/section";
 import P1 from "../../components/paragraph";

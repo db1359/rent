@@ -4,12 +4,12 @@ import Container from "./../../components/paper/container";
 import {Card, Col, Row, Space} from "antd";
 import CardTitle from "./../../components/heading/card";
 import P1 from "./../../components/paragraph";
-// import TopNav from "../../layouts/navs/auth-topnav";
+import TopNav from "../../layouts/navs/auth-topco";
 
 const Privacy = () => {
     return (
         <Fragment>
-            {/* <TopNav/>    */}
+            <TopNav/>   
             <AboutMainWrap>
                 <Container>
                     <Space direction='vertical' size={32} style={{width: '100%', paddingTop: '30px'}}>

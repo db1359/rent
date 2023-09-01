@@ -1,5 +1,5 @@
 import React from 'react';
-import CourtWatch from "./style/pink";
+import CourtWatch from "./style/grey";
 import Container from "../../components/paper/container";
 import SectionTitle from "../../components/heading/section";
 import P1 from "../../components/paragraph";

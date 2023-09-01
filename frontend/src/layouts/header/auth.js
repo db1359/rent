@@ -6,6 +6,7 @@ import {Link, useLocation, useNavigate} from "react-router-dom";
 import {logoutAction} from "../../redux/actions/auth";
 import {useDispatch, useSelector} from "react-redux";
 import {Icon} from "@iconify/react";
+import Logo from "../../assets/img/glitter0.png";
 
 const { Header } = Layout
 
@@ -48,34 +49,40 @@ const AuthHeader = () => {
                 <Row
                     justify="space-between"
                     align="middle"
-                    style={{height: "100%"}}>
+                    style={{height: "100%", marginTop: '0px'}}>
                     <Col>
-                        <LogoText>
+                        {/* <LogoText>
                             <Link to="/">Glitter</Link>
-                        </LogoText>
+                        </LogoText> */}
+                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '10px'}} alt="Glitter"/></Link>
                     </Col>
                     <Col>
                         <Space size={36}>
                             <Button type="communitylink"
                                     onClick={() => {navigate("/");}}
                                     className={location.pathname === "/" && "active"}>
-                                    Channel
+                                    Home
+                            </Button>
+                            <Button type="communitylink"
+                                    onClick={() => {navigate("/abolishfamilycourt");}}
+                                    className={location.pathname === "/abolishfamilycourt" && "active"}>
+                                    Family Courts
                             </Button>
                             <Button type="communitylink"
                                     onClick={() => {navigate("/dir");}}
                                     className={location.pathname === "/dir" && "active"}>
                                     Directory
                             </Button>
-                            <Button type="communitylink"
+                            {/* <Button type="communitylink"
                                     onClick={() => {navigate("/recalls");}}
                                     className={location.pathname === "/recalls" && "active"}>
                                     Recalls
-                            </Button>
-                            <Button type="communitylink"
+                            </Button> */}
+                            {/* <Button type="communitylink"
                                     onClick={() => {navigate("/courtwatch");}}
                                     className={location.pathname === "/courtwatch" && "active"}>
                                     CourtWatch
-                            </Button>
+                            </Button> */}
                             {/* <Button type="communitylink"
                                     onClick={() => {navigate("/trending");}}
                                     className={location.pathname === "/trending" && "active"}>

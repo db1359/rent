@@ -7,6 +7,8 @@ import HamburgerButton from "../../components/button/hamburger";
 import axios from "axios";
 import config from "../../config";
 import {MenuOutlined} from "@ant-design/icons";
+import Logo from "../../assets/img/glitter1.png";
+import Logo2 from "../../assets/img/glitter0.png";
 
 const {useBreakpoint} = Grid;
 
@@ -61,13 +63,16 @@ const LayoutHeader = () => {
             <Container>
                 <Row justify="space-between" align="middle">
                     <Col>
-                        <LogoText>
+                        {/* <LogoText>
                             <Link to="/">Glitter</Link>
-                        </LogoText>
+                        </LogoText> */}
+                        
+                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '9px'}} alt="Glitter"/></Link>
+                        
                     </Col>
                     <Col>
                         {breakpoints.lg ? (
-                            <Row gutter={20}>
+                            <Row gutter={20} style={{marginTop: '7px'}}>
 
                                 {/* <Col>
                                     {user ? (
@@ -86,9 +91,9 @@ const LayoutHeader = () => {
                                         <nbsp/>
                                     ) : (
                                         <Button type="headerlink"
-                                            onClick={() => {navigate("/about");}}
-                                            className={location.pathname === "/about" && "active"}>
-                                            Defund Family Court
+                                            onClick={() => {navigate("/abolishfamilycourt");}}
+                                            className={location.pathname === "/abolishfamilycourt" && "active"}>
+                                            Abolish Family Courts
                                         </Button>
                                     )}
                                 </Col>
@@ -105,7 +110,7 @@ const LayoutHeader = () => {
                                     )}
                                 </Col>
 
-                                <Col>                           
+                                {/* <Col>                           
                                     {user ? (
                                         <nbsp/>
                                     ) : (
@@ -127,7 +132,7 @@ const LayoutHeader = () => {
                                                 CourtWatch
                                         </Button>
                                     )}
-                                </Col>
+                                </Col> */}
 
                                 <Col>
                                     {user ? (
@@ -164,12 +169,13 @@ const LayoutHeader = () => {
                                     visible={visible}
                                     onClose={() => {setVisible(false);}}
                                     title={
-                                        <LogoTextLight
-                                            onClick={() => {setVisible(false);}}
-                                            style={{color: "#8f3dce!important"}}
-                                            >
-                                            <Link to="/">Glitter</Link>
-                                        </LogoTextLight>
+                                        // <LogoTextLight
+                                        //     onClick={() => {setVisible(false);}}
+                                        //     style={{color: "#8f3dce!important"}}
+                                        //     >
+                                        //     <Link to="/">Glitter</Link>
+                                        // </LogoTextLight>
+                                        <Link to="/"><img src={Logo2} style={{height: '40px', marginTop: '9px'}} alt="Glitter"/></Link>
                                     }
                                     closeIcon={<></>}
                                     >
@@ -181,11 +187,9 @@ const LayoutHeader = () => {
                                         ]}
                                         >
                                         {/* <NavHashLink to="/arianna">Arianna's Story</NavHashLink> */}
-                                        <Menu.Item key="story">Arianna's Story</Menu.Item>
-                                        <Menu.Item key="about">Defund Family Court</Menu.Item>
-                                        {/* <Menu.Item key="community">Community</Menu.Item> */}
+                                        <Menu.Item key="abolishfamilycourt">Abolish Family Courts</Menu.Item>
                                         <Menu.Item key="donate" className="btn">DONATE</Menu.Item>
-                                        {/* <Menu.Item key="login">Login</Menu.Item> */}
+                                        <Menu.Item key="login">Login</Menu.Item>
                                     </Menu>
                                 </Drawer>
                             </Fragment>
