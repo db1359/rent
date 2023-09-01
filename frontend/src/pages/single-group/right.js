@@ -1,15 +1,20 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from "styled-components";
 import {Avatar, Button, Card, Col, Modal, Row, Space} from "antd";
 import {useSelector} from "react-redux";
 import {approveRequestGroupApi, removeMemberApi} from "../../api";
+import {useLocation, useNavigate} from "react-router-dom";
 
 const SingleGroupRight = ({group, getHandle}) => {
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const [visible, setVisible] = useState(false);
     const [manage, setManage] = useState(false);
     const [user, setUser] = useState({})
     const authUser = useSelector((state) => state.auth).user
+    const auth = useSelector((state)=>state.auth)
+
 
     const approveHandle = async () => {
         try {
@@ -31,6 +36,14 @@ const SingleGroupRight = ({group, getHandle}) => {
         }
     }
 
+    console.log(authUser.username, "USER AUTHOR")
+    console.log(group?.author?.username, "AUTHOR")
+
+    useEffect(()=>{
+        if(!auth.isAuth) {
+            navigate("/signup?redirect=" + location.pathname)
+        }
+    },[auth])
 
     return (
         <div>
@@ -42,11 +55,25 @@ const SingleGroupRight = ({group, getHandle}) => {
                             {group.members?.length} Members
                         </p>
                     </Col>
+                    <Col>
+                        <Avatar
+                            style={{cursor: "pointer", backgroundColor: "#8f3dce"}}
+                            src={group?.author?.photo}
+                            size={52}>
+                            {group?.author?.firstname?.[0]}
+                        </Avatar>
+                    </Col>
                     {
                         (group.members || [])?.map((member, index) => (
                             <Col  key={`member${member?._id}${index}`}>
                                 <Avatar
-                                    onClick={()=>{setManage(true); setUser(member)}}
+                                    onClick={()=>{
+                                        if(authUser.username === group?.author?.username) {
+                                            setManage(true); setUser(member);
+                                        } else {
+                                            navigate("/" + member.username)
+                                        }
+                                    }}
                                     style={{cursor: "pointer", backgroundColor: "#8f3dce"}}
                                     src={member.photo}
                                     size={52}>
@@ -100,6 +127,7 @@ const SingleGroupRight = ({group, getHandle}) => {
                     style={{textAlign: "center", width: "100%", padding: 24}}>
                     <h5 style={{fontSize: 32, marginBottom: 0, fontWeight: 700}}>{user.username}</h5>
                     <Avatar
+                        onClick={()=>{navigate("/" + user?.username)}}
                         style={{fontSize: 32, backgroundColor: "#8f3dce"}}
                         size={80}
                         src={user?.photo}>
@@ -133,6 +161,7 @@ const SingleGroupRight = ({group, getHandle}) => {
                     style={{textAlign: "center", width: "100%", padding: 24}}>
                     <h5 style={{fontSize: 32, marginBottom: 0, fontWeight: 700}}>{user.username}</h5>
                     <Avatar
+                        onClick={()=>{navigate("/" + user?.username)}}
                         style={{fontSize: 32, backgroundColor: "#8f3dce"}}
                         size={80}
                         src={user?.photo}>
