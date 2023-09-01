@@ -30,18 +30,17 @@ const AuthLeftNav = () => {
         getGroups()
     },[])
 
-
     return (
         <div>
             <AuthLeftNavWrap>
-                <Button
+                {/* <Button
                     type="leftcolumnlink"
                     onClick={() => {
                         navigate("/");
                     }}
                     className={location.pathname === "/" && "active"}>
                    Channel
-                </Button>
+                </Button> */}
                 <Button
                     type="leftcolumnlink"
                     onClick={() => {
@@ -69,9 +68,15 @@ const AuthLeftNav = () => {
                 </Button>
 
             </AuthLeftNavWrap>
-            {/* <div style={{display: "flex", flexDirection: "column", gap: 12, background: "linear-gradient(to top,rgb(240,242,245),rgb(247,234,244))", padding: 16, borderRadius: 12}}> */}
                 <div style={{display: "flex", flexDirection: "column", gap: 12, paddingTop: 12, borderRadius: 12}}>
-
+                    <Button
+                        type="leftcolumnlink" style={{fontSize: 18, fontWeight: 700}}
+                        onClick={() => {
+                            navigate("/");
+                        }}
+                        className={location.pathname === "/" && "active"}>
+                    #  {auth?.user?.username}
+                    </Button>
                     {
                         myGroups.map((i) => (
                             <a key={i._id}
