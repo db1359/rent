@@ -61,9 +61,9 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/abolishfamilycourt");
+                                            navigate("/channels/abolishfamilycourt");
                                         }}
-                                        className={location.pathname === "/abolishfamilycourt" && "active"}>
+                                        className={location.pathname === "/channels/abolishfamilycourt" && "active"}>
                                         Abolish
                                     </Button>
                                 )}
@@ -106,10 +106,10 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/about/share");
+                                            navigate("/channels/yourchannel");
                                         }}
-                                        className={location.pathname === "/about/share" && "active"}>
-                                        Share Your Story
+                                        className={location.pathname === "/channels/yourchannel" && "active"}>
+                                        Your Channel
                                     </Button>
                                 )}
                             </Col>
@@ -121,9 +121,9 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/legalabusesyndrome");
+                                            navigate("/channels/legalabusesyndrome");
                                         }}
-                                        className={location.pathname === "/legalabusesyndrome" && "active"}
+                                        className={location.pathname === "/channels/legalabusesyndrome" && "active"}
                                     >
                                         Legal Abuse (coming)
                                     </Button>

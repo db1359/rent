@@ -57,7 +57,6 @@ const AuthLeftNav = () => {
                     className={location.pathname === `/${auth?.user?.username}/settings` && "active"}>
                     Settings
                 </Button>
-                - - - - - - - - - - - - - - - - - - - - 
                 <Button 
                     type="leftcolumnlink"
                     onClick={() => {

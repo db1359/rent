@@ -40,7 +40,7 @@ const GroupRight = () => {
                             <Col span={24} key={`R${i._id}`}>
                                 <Space>
                                     <Avatar
-                                        onClick={()=>{navigate(`/group/${i.slug}`)}}
+                                        onClick={()=>{navigate(`/channel/${i.slug}`)}}
                                         size={50}
                                         style={{
                                             cursor: "pointer",

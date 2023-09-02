@@ -91,8 +91,8 @@ const LayoutHeader = () => {
                                         <nbsp/>
                                     ) : (
                                         <Button type="headerlink"
-                                            onClick={() => {navigate("/abolishfamilycourt");}}
-                                            className={location.pathname === "/abolishfamilycourt" && "active"}>
+                                            onClick={() => {navigate("channels/abolishfamilycourt");}}
+                                            className={location.pathname === "channels/abolishfamilycourt" && "active"}>
                                             Abolish Family Courts
                                         </Button>
                                     )}
