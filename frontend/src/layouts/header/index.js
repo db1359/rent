@@ -93,7 +93,7 @@ const LayoutHeader = () => {
                                         <Button type="headerlink"
                                             onClick={() => {navigate("channels/abolishfamilycourt");}}
                                             className={location.pathname === "channels/abolishfamilycourt" && "active"}>
-                                            Abolish Family Courts
+                                            Channels
                                         </Button>
                                     )}
                                 </Col>
