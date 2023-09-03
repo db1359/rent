@@ -22,6 +22,12 @@ const AuthHeader = () => {
             navigate('/login')
         } else if(e.key==='myprofile') {
             navigate(`/${auth?.user?.username}`)
+        } else if(e.key==='channels/abolishfamilycourt') {
+            navigate(`/channels/abolishfamilycourt`)
+        } else if(e.key==='about/channels') {
+            navigate(`about/channels`)  
+        } else if(e.key==='about/legalabusesyndrome') {
+            navigate(`about/legalabusesyndrome`)           
         }else {
             navigate(`/${e.key}`)
         }
@@ -40,6 +46,27 @@ const AuthHeader = () => {
             key: 'logout',
             icon: <Icon style={{fontSize: 16}} icon="icon-park-outline:logout"/>,
             label: <span style={{fontSize: 14, fontWeight: 600}}>Logout</span>
+        }
+    ]
+
+    const items2 = [
+        {
+            key: 'channels/abolishfamilycourt',
+            label: <span style={{fontSize: 14, fontWeight: 600}}>Family Court</span>
+        },
+        {
+            type: 'divider',
+        },
+        {
+            key: 'channels/legalabusesyndrome',
+            label: <span style={{fontSize: 14, fontWeight: 600}}>Legal Abuse</span>
+        },
+        {
+            type: 'divider',
+        },
+        {
+            key: 'about/channels',
+            label: <span style={{fontSize: 14, fontWeight: 600}}>Start A Channel</span>
         }
     ]
 
@@ -63,11 +90,28 @@ const AuthHeader = () => {
                                     className={location.pathname === "/" && "active"}>
                                     Home
                             </Button>
-                            <Button type="communitylink"
+                            {/* <Button type="communitylink"
                                     onClick={() => {navigate("/channels/abolishfamilycourt");}}
                                     className={location.pathname === "/channels/abolishfamilycourt" && "active"}>
                                     Browse Channels
-                            </Button>
+                            </Button> */}
+                            <Dropdown
+                                placement="bottomRight"
+                                menu={{
+                                    items: items2,
+                                    onClick: menuChangeHandle,
+                                }}>
+                                <Button
+                                    size="large"
+                                    style={{
+                                        border: "none",
+                                        cursor: "pointer",
+                                        
+                                    }}
+                                    src={auth?.user?.photo}>
+                                    Channels
+                                </Button>
+                            </Dropdown>
                             <Button type="communitylink"
                                     onClick={() => {navigate("/dir");}}
                                     className={location.pathname === "/dir" && "active"}>
