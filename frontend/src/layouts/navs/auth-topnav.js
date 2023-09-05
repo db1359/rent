@@ -106,10 +106,10 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/channels/yourchannel");
+                                            navigate("/channels/legalabusesyndrome");
                                         }}
-                                        className={location.pathname === "/channels/yourchannel" && "active"}>
-                                        Your Channel
+                                        className={location.pathname === "/channels/legalabusesyndrome" && "active"}>
+                                        Legal Abuse
                                     </Button>
                                 )}
                             </Col>
@@ -121,11 +121,10 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/channels/legalabusesyndrome");
+                                            navigate("/about/channels");
                                         }}
-                                        className={location.pathname === "/channels/legalabusesyndrome" && "active"}
-                                    >
-                                        Legal Abuse (coming)
+                                        className={location.pathname === "/about/channels" && "active"}>
+                                        Start A Channel
                                     </Button>
                                 )}
                             </Col>

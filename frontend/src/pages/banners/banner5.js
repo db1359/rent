@@ -1,16 +1,16 @@
 import React from 'react';
 // import KidsHeroWrap from "./style/greygradient";
-import KidsHeroWrap from "./style/grey";
+import BannerWrap from "./style/grey";
 import Container from "../../components/paper/container";
 import SectionTitle from "../../components/heading/section";
 import P1 from "../../components/paragraph";
 import VideoPlayer from "../../components/player";
-import KidsVideosWrap from "./style/greygradient";
+import VideosWrap from "./style/greygradient";
 import {Col, Row, Space} from "antd";
 
-const KidsHero = () => {
+const Banner = () => {
     return (
-        <KidsHeroWrap>
+        <BannerWrap>
             <Container>
                 <P1></P1>
                 <h4>The Family Destruction Act</h4>
@@ -41,8 +41,8 @@ const KidsHero = () => {
                         </P1>
                     </div>
             </Container>
-        </KidsHeroWrap>
+        </BannerWrap>
     );
 };
 
-export default KidsHero;
+export default Banner;

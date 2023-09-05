@@ -9,11 +9,11 @@ const Banner = () => {
         <BannerWrap>
             <Container>
                 <P1></P1>
-                <h4>Abolish Family Courts</h4>
+                <h4>Coming</h4>
                 <SectionTitle>
-                Family Courts Generate $100 Billion Annually Destroying Families
+                text
                 </SectionTitle>
-                <h1 style={{paddingTop: 10, paddingBottom: 0}}>Our mission is to Abolish the corrupt, fraudulent, parasitic Family Courts, stop child trafficking and remove money from divorce.</h1>
+                <h1 style={{paddingTop: 10, paddingBottom: 0}}>text</h1>
             </Container>
         </BannerWrap>
     );

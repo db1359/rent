@@ -8,18 +8,18 @@ import KidsBanner2 from "../../banners/banner2";
 import KidsVideos from "./components/videos";
 import KidsBanner3 from "../../banners/banner3";
 import Cash from "./components/cash";
-import KidsBanner4 from "../../banners/banner4";
-import KidsBanner5 from "../../banners/banner5";
+import Banner4 from "../../banners/banner4";
+import Banner5 from "../../banners/banner5";
 
 const AboutPage = () => {
     return (
         <Fragment>
             <TopNav/>
-            <KidsBanner4/>
+            <Banner4/>
             {/* <KidsChart/> */}
             {/* <KidsHero/> */}
             <AboutMain/>
-            <KidsBanner5/>
+            <Banner5/>
             <KidsBanner2/>
             <KidsVideos/>
             <KidsBanner3/>
