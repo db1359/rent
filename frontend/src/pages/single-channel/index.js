@@ -27,7 +27,7 @@ const SingleChannelPage = () => {
     const location = useLocation();
     const [searchParams] = useSearchParams()
     const user = useSelector((state) => state.auth)?.user
-
+    const auth = useSelector((state)=>state.auth)
     const [group, setGroup] = useState({})
     const [post, setPost] = useState("");
     const [repost, setRepost] = useState(null);
@@ -123,8 +123,13 @@ const SingleChannelPage = () => {
 
     const requestJoinHandle = async () => {
         try {
-            await accessRequestGroupApi({slug: location.pathname?.split("/")[2]})
-            getHandle()
+            if(!auth.isAuth) {
+                navigate("/signup?redirect=" + location.pathname)
+            } else {
+                await accessRequestGroupApi({slug: location.pathname?.split("/")[2]})
+                getHandle()
+            }
+            
         } catch (e) {
             console.warn(e)
         }

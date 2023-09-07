@@ -30,6 +30,8 @@ const AuthLeftNav = () => {
         getGroups()
     },[])
 
+    console.log(location)
+
     return (
         <div>
             <AuthLeftNavWrap>
@@ -62,7 +64,7 @@ const AuthLeftNav = () => {
                     onClick={() => {
                         navigate("/channel");
                     }}
-                    className={location.pathname?.includes("/channel") && "active"}>
+                    className={location.pathname === "/channel" && "active"}>
                     Channels
                 </Button>
 
@@ -79,6 +81,7 @@ const AuthLeftNav = () => {
                     {
                         myGroups.map((i) => (
                             <a key={i._id}
+                                className={location.pathname === "/channel/" + i.slug ? "active" : ""}
                                style={{display: "block", fontSize: 18, fontWeight: 700}}
                                href={"/channel/" + i.slug}>
                                 #  {i.slug}
@@ -89,6 +92,7 @@ const AuthLeftNav = () => {
                     mGroups.map((i) => (
                         <a key={i._id}
                             style={{display: "block", fontSize: 18, fontWeight: 700}}
+                            className={location.pathname === "/channel/" + i.slug ? "active" : ""}
                             href={"/channel/" + i.slug}>
                             #  {i.slug}
                         </a>

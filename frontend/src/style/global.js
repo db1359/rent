@@ -744,6 +744,10 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
+
+  a.active {
+    color: #8f3dce;
+  }
 `
 
 export default GlobalStyle

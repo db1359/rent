@@ -55,6 +55,10 @@ const SingleGroupRight = ({group, getHandle}) => {
                     </Col>
                     <Col>
                         <Avatar
+                            onClick={()=>{
+                                navigate("/" + group.author?.username);
+                                console.log("CLICKED")
+                            }}
                             style={{cursor: "pointer", backgroundColor: "#8f3dce"}}
                             src={group?.author?.photo}
                             size={52}>

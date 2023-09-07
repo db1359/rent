@@ -40,6 +40,9 @@ const AuthLeftNavWrap = styled.div`
       color: #8f3dce;
     }
   }
+  .active {
+    color: #8f3dce;
+  }
 `
 
 export default AuthLeftNavWrap

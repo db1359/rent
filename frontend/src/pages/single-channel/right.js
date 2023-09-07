@@ -37,11 +37,6 @@ const SingleGroupRight = ({group, getHandle}) => {
     }
 
 
-    useEffect(()=>{
-        if(!auth.isAuth) {
-            navigate("/signup?redirect=" + location.pathname)
-        }
-    },[auth])
 
     return (
         <div>
@@ -55,6 +50,7 @@ const SingleGroupRight = ({group, getHandle}) => {
                     </Col>
                     <Col>
                         <Avatar
+                            onClick={()=>{navigate("/" + group?.author?.username)}}
                             style={{cursor: "pointer", backgroundColor: "#8f3dce"}}
                             src={group?.author?.photo}
                             size={52}>
