@@ -81,8 +81,8 @@ const AuthLeftNav = () => {
                     {
                     myGroups.map((i) => (
                     <a key={i._id}
-                        className={location.pathname === "/channel/" + i.slug ? "active" : ""}
                         style={{display: "block", fontSize: 18, fontWeight: 700}}
+                        className={location.pathname === "/channel/" + i.slug ? "active" : ""}
                         href={"/channel/" + i.slug}>
                         #  {i.slug}
                     </a>
@@ -99,9 +99,22 @@ const AuthLeftNav = () => {
                     ))
                     }
                     {
-                        rGroups.map((i) => (
+                    rGroups.map((i) => (
+                    <a key={i._id}
+                        style={{display: "block", fontSize: 18, fontWeight: 700}}
+                        className={location.pathname === "/channel/" + i.title ? "active" : ""}
+                        href={"/channel/" + i.title}>
+                        #  {i.title}
+                    </a>        
                             
-                        <h5 style={{display: "block", fontSize: 18, fontWeight: 700}}>{i.title}</h5>
+                            // <Avatar
+                            //             onClick={()=>{navigate(`/channel/${i.slug}`)}}
+                                    
+                            //             src={i.photo}
+                            //             shape="square">
+                            //             {i.title?.[0]}
+                            //         </Avatar>
+                        // <h5 style={{display: "block", fontSize: 18, fontWeight: 700}}>{i.title}</h5>
                                 
                         ))
                     }
