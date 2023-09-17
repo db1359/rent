@@ -28,7 +28,7 @@ const GroupRight = () => {
 
     return (
         <div>
-            <GroupRightWrap>
+            {/* <GroupRightWrap>
                 <Row gutter={[12, 12]}>
                     <Col span={24}>
                         <h2 style={{textAlign: "center", color: "red", marginBottom: 0, fontWeight: 700}}>
@@ -57,7 +57,7 @@ const GroupRight = () => {
                         ))
                     }
                 </Row>
-            </GroupRightWrap>
+            </GroupRightWrap> */}
         </div>
     );
 };

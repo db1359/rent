@@ -70,14 +70,14 @@ const AuthLeftNav = () => {
 
             </AuthLeftNavWrap>
                 <div style={{display: "flex", flexDirection: "column", gap: 12, paddingTop: 12, borderRadius: 12}}>
-                    <Button
+                    <a
                         type="leftcolumnlink" style={{fontSize: 18, fontWeight: 700}}
                         onClick={() => {
                             navigate("/");
                         }}
                         className={location.pathname === "/" && "active"}>
                     #  {auth?.user?.username}
-                    </Button>
+                    </a>
                     {
                     myGroups.map((i) => (
                     <a key={i._id}
@@ -102,21 +102,11 @@ const AuthLeftNav = () => {
                     rGroups.map((i) => (
                     <a key={i._id}
                         style={{display: "block", fontSize: 18, fontWeight: 700}}
-                        className={location.pathname === "/channel/" + i.title ? "active" : ""}
-                        href={"/channel/" + i.title}>
+                        className={location.pathname === "/channel/" + i.slug ? "active" : ""}
+                        href={"/channel/" + i.slug}>
                         #  {i.title}
-                    </a>        
-                            
-                            // <Avatar
-                            //             onClick={()=>{navigate(`/channel/${i.slug}`)}}
-                                    
-                            //             src={i.photo}
-                            //             shape="square">
-                            //             {i.title?.[0]}
-                            //         </Avatar>
-                        // <h5 style={{display: "block", fontSize: 18, fontWeight: 700}}>{i.title}</h5>
-                                
-                        ))
+                    </a>     
+                    ))
                     }
             </div>
         </div>

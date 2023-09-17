@@ -382,7 +382,7 @@ const SingleChannelPage = () => {
             </Modal>
 
             <Modal
-                title={<h5 style={{textAlign: "center", fontSize: 24, fontWeight: 700}}>Approval Pending</h5>}
+                title={<h5 style={{textAlign: "center", color: "red", fontSize: 24, fontWeight: 700}}>Approval Pending</h5>}
                 text="center"
                 footer={false}
                 closeIcon={<></>}
@@ -392,7 +392,7 @@ const SingleChannelPage = () => {
                     <h3>Your request is pending approval.</h3>
                     <Button
                         onClick={()=>{navigate("/")}}
-                        style={{height: 50, padding: "4px 32px"}}
+                        style={{height: 50, padding: "4px 32px", backgroundColor: "#8f3dce", color: "#ffffff"}}
                         type="default">
                         Go Home
                     </Button>
