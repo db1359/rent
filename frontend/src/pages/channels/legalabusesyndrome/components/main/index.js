@@ -49,7 +49,7 @@ const AboutMain = () => {
                                         backgroundColor: "#8f3dce",
                                         marginTop: 0,
                                     }}>
-                                    Join Group
+                                    Join Channel
                                 </Button>
                             </CardTitle>
 

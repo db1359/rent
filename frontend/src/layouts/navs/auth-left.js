@@ -79,25 +79,32 @@ const AuthLeftNav = () => {
                     #  {auth?.user?.username}
                     </Button>
                     {
-                        myGroups.map((i) => (
-                            <a key={i._id}
-                                className={location.pathname === "/channel/" + i.slug ? "active" : ""}
-                               style={{display: "block", fontSize: 18, fontWeight: 700}}
-                               href={"/channel/" + i.slug}>
-                                #  {i.slug}
-                            </a>
-                        ))
+                    myGroups.map((i) => (
+                    <a key={i._id}
+                        className={location.pathname === "/channel/" + i.slug ? "active" : ""}
+                        style={{display: "block", fontSize: 18, fontWeight: 700}}
+                        href={"/channel/" + i.slug}>
+                        #  {i.slug}
+                    </a>
+                    ))
                     }
                     {
                     mGroups.map((i) => (
-                        <a key={i._id}
-                            style={{display: "block", fontSize: 18, fontWeight: 700}}
-                            className={location.pathname === "/channel/" + i.slug ? "active" : ""}
-                            href={"/channel/" + i.slug}>
-                            #  {i.slug}
-                        </a>
+                    <a key={i._id}
+                        style={{display: "block", fontSize: 18, fontWeight: 700}}
+                        className={location.pathname === "/channel/" + i.slug ? "active" : ""}
+                        href={"/channel/" + i.slug}>
+                        #  {i.slug}
+                    </a>
                     ))
-                }
+                    }
+                    {
+                        rGroups.map((i) => (
+                            
+                        <h5 style={{display: "block", fontSize: 18, fontWeight: 700}}>{i.title}</h5>
+                                
+                        ))
+                    }
             </div>
         </div>
     );
