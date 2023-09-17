@@ -76,7 +76,7 @@ const ProfilePage = () => {
     console.log(user)
 
     return user.username ? (
-        <AuthLayout side={<AuthRight user={user}/>}>
+        <AuthLayout>
             <Tabs
                 defaultActiveKey="activity"
                 type="card"
@@ -124,6 +124,16 @@ const ProfilePage = () => {
                         <p></p>
                         <p></p>
                         <p>Work in progess</p>
+                        
+                        </div>),
+                    },
+                    {
+                        label: `Channels`,
+                        key: 'channels',
+                        children: (<div className="child-area">
+                        <p></p>
+                        <p></p>
+                        <Link><a href="/channel"></a>Goes To Channel Link</Link>
                         
                         </div>),
                     },

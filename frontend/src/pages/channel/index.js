@@ -89,7 +89,6 @@ const GroupPage = () => {
         getHandle()
     }, [])
 
-
     return (
         <AuthLayout side={<GroupRight/>}>
             <Button
@@ -100,6 +99,16 @@ const GroupPage = () => {
                 icon={<PlusOutlined/>}
                 type="primary">
                 Create Channel
+            </Button>
+
+            <Button
+                style={{height: 42, borderRadius: "4px"}}
+                onClick={() => {
+                    setOpen(true)
+                }}
+                icon={<PlusOutlined/>}
+                type="primary">
+                Email Channel
             </Button>
 
             <List style={{marginTop: 24}}>
