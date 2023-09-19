@@ -127,16 +127,16 @@ const ProfilePage = () => {
                         
                         </div>),
                     },
-                    {
-                        label: `Channels`,
-                        key: 'channels',
-                        children: (<div className="child-area">
-                        <p></p>
-                        <p></p>
-                        <Link><a href="/channel"></a>Goes To Channel Link</Link>
+                    // {
+                    //     label: `Channels`,
+                    //     key: 'channels',
+                    //     children: (<div className="child-area">
+                    //     <p></p>
+                    //     <p></p>
+                    //     <Link><a href="/channel"></a>Goes To Channel Link</Link>
                         
-                        </div>),
-                    },
+                    //     </div>),
+                    // },
                 ]}
             />
 

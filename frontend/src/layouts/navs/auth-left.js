@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import AuthLeftNavWrap from "./style/left-wrap";
-import {Button} from "antd";
+import {Avatar, Button} from "antd";
 import {Link, useLocation, useNavigate} from "react-router-dom";
 import {useSelector} from "react-redux";
 import {groupChannelsApi} from "../../api";
+import {Icon} from "@iconify/react";
 
 const AuthLeftNav = () => {
     const auth = useSelector(state => state.auth);
@@ -43,40 +44,32 @@ const AuthLeftNav = () => {
                     className={location.pathname === "/" && "active"}>
                    Channel
                 </Button> */}
-                <Button
-                    type="leftcolumnlink"
-                    onClick={() => {
-                        navigate(`/${auth?.user?.username}`);
-                    }}
-                    className={location.pathname === `/${auth?.user?.username}` && "active"}>
-                    Profile
-                </Button>
-                <Button
-                    type="leftcolumnlink"
-                    onClick={() => {
-                        navigate(`/${auth?.user?.username}/settings`);
-                    }}
-                    className={location.pathname === `/${auth?.user?.username}/settings` && "active"}>
-                    Settings
-                </Button>
                 <Button 
                     type="leftcolumnlink"
                     onClick={() => {
                         navigate("/channel");
                     }}
                     className={location.pathname === "/channel" && "active"}>
-                    Channels
+                    <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:folder-managed-outline"/> Channels
                 </Button>
-
             </AuthLeftNavWrap>
-                <div style={{display: "flex", flexDirection: "column", gap: 12, paddingTop: 12, borderRadius: 12}}>
+                <div style={{display: "flex", flexDirection: "column", gap: 15, paddingTop: 15, borderRadius: 12}}>
                     <a
                         type="leftcolumnlink" style={{fontSize: 18, fontWeight: 700}}
                         onClick={() => {
                             navigate("/");
                         }}
                         className={location.pathname === "/" && "active"}>
-                    #  {auth?.user?.username}
+                        <Avatar
+                            size={25}
+                            style={{
+                                backgroundColor: "#8f3dce",
+                                borderRadius: "6px",
+                                marginRight: "20"
+                            }}
+                            shape="square">
+                            {auth?.user?.username?.[0]}
+                        </Avatar> {auth?.user?.username}
                     </a>
                     {
                     myGroups.map((i) => (
@@ -84,7 +77,16 @@ const AuthLeftNav = () => {
                         style={{display: "block", fontSize: 18, fontWeight: 700}}
                         className={location.pathname === "/channel/" + i.slug ? "active" : ""}
                         href={"/channel/" + i.slug}>
-                        #  {i.slug}
+                        <Avatar
+                            size={25}
+                            style={{
+                                backgroundColor: "#8f3dce",
+                                borderRadius: "6px",
+                                marginRight: "20"
+                            }}
+                            shape="square">
+                            {i.title?.[0]}
+                        </Avatar> {i.slug}
                     </a>
                     ))
                     }
@@ -94,7 +96,16 @@ const AuthLeftNav = () => {
                         style={{display: "block", fontSize: 18, fontWeight: 700}}
                         className={location.pathname === "/channel/" + i.slug ? "active" : ""}
                         href={"/channel/" + i.slug}>
-                        #  {i.slug}
+                        <Avatar
+                            size={25}
+                            style={{
+                                backgroundColor: "#8f3dce",
+                                borderRadius: "6px",
+                                marginRight: "20"
+                            }}
+                            shape="square">
+                            {i.title?.[0]}
+                        </Avatar> {i.slug}
                     </a>
                     ))
                     }
@@ -104,11 +115,38 @@ const AuthLeftNav = () => {
                         style={{display: "block", fontSize: 18, fontWeight: 700}}
                         className={location.pathname === "/channel/" + i.slug ? "active" : ""}
                         href={"/channel/" + i.slug}>
-                        #  {i.title}
+                        <Avatar
+                            size={25}
+                            style={{
+                                backgroundColor: "#8f3dce",
+                                borderRadius: "6px",
+                                marginRight: "20"
+                            }}
+                            shape="square">
+                            {i.title?.[0]}
+                        </Avatar> {i.title}
                     </a>     
                     ))
                     }
-            </div>
+                </div>
+            <AuthLeftNavWrap>
+                <Button
+                    type="leftcolumnlink"
+                    onClick={() => {
+                        navigate(`/${auth?.user?.username}`);
+                    }}
+                    className={location.pathname === `/${auth?.user?.username}` && "active"}>
+                    <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:person-outline"/> Profile
+                </Button>
+                <Button
+                    type="leftcolumnlink"
+                    onClick={() => {
+                        navigate(`/${auth?.user?.username}/settings`);
+                    }}
+                    className={location.pathname === `/${auth?.user?.username}/settings` && "active"}>
+                    <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:settings-outline"/> Settings
+                </Button>
+            </AuthLeftNavWrap>
         </div>
     );
 };

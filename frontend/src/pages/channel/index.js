@@ -90,7 +90,8 @@ const GroupPage = () => {
     }, [])
 
     return (
-        <AuthLayout side={<GroupRight/>}>
+        // <AuthLayout side={<GroupRight/>}>
+        <AuthLayout>
             <Button
                 style={{height: 42, borderRadius: "4px"}}
                 onClick={() => {

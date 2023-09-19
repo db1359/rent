@@ -42,6 +42,13 @@ const AuthHeader = () => {
         {
             type: 'divider',
         },
+        // {
+        //     key: '${auth?.user?.username}/settings',
+        //     label: <span style={{fontSize: 14, fontWeight: 600}}>Settings</span>
+        // },
+        // {
+        //     type: 'divider',
+        // },
         {
             key: 'logout',
             icon: <Icon style={{fontSize: 16}} icon="icon-park-outline:logout"/>,
