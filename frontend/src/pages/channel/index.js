@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import AuthLayout from "../../layouts/auth.layout";
+import AuthLayout from "../../layouts/auth.layoutfull";
 import {Avatar, Button, Form, Input, List, Modal, notification, Space} from "antd";
 import {CloseOutlined, CopyOutlined, DeleteOutlined, PlusOutlined, ShareAltOutlined} from "@ant-design/icons";
 import GroupRight from "./right";

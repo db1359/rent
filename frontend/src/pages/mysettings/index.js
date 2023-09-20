@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Tabs} from "antd";
-import AuthLayout from "../../layouts/auth.layout";
+import AuthLayout from "../../layouts/auth.layoutfull";
 import {useSelector} from "react-redux";
 import MainEdit from "./components/main";
 import ProfilePhotoEdit from "./components/photo";
@@ -76,7 +76,7 @@ const ProfilePage = () => {
     console.log(user)
 
     return user.username ? (
-        <AuthLayout>
+        <AuthLayout side={<AuthRight user={isMe}/>}>
             <Tabs
                 defaultActiveKey="activity"
                 type="card"
@@ -127,16 +127,6 @@ const ProfilePage = () => {
                         
                         </div>),
                     },
-                    // {
-                    //     label: `Channels`,
-                    //     key: 'channels',
-                    //     children: (<div className="child-area">
-                    //     <p></p>
-                    //     <p></p>
-                    //     <Link><a href="/channel"></a>Goes To Channel Link</Link>
-                        
-                    //     </div>),
-                    // },
                 ]}
             />
 
@@ -145,6 +135,7 @@ const ProfilePage = () => {
             <ProfilePhotoEdit visible={photo} setVisible={setPhoto}/>
 
             <ProfileCoverEdit visible={cover} setVisible={setCover}/>
+            
         </AuthLayout>
     ) : (
         <></>

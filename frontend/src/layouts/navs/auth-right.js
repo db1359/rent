@@ -149,14 +149,14 @@ const AuthRightNav = (props) => {
                     </Button>
                 </Fragment>
             </Card>
-        ) : (
+            ) : (
             user?.donate &&
             <Card style={{marginBottom: '55px', textAlign: 'center'}}>
                 <h1><b>Donate</b></h1>
                 <img src={user?.donate} alt=""/>
             </Card>
             )
-        }
+            }
             <ActionFormCard>
                 <h1 style={{marginBottom: 11, textAlign: 'center'}}><b>You Might Like</b></h1>
                 <div style={{marginBottom: 0}}>
