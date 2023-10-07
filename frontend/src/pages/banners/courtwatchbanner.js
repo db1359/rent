@@ -9,9 +9,9 @@ const KidsHero = () => {
         <KidsHeroWrap>
             <Container>
                 <P1></P1>
-                <h4>Glitter</h4>
+                <h4>CourtWatch</h4>
                 <SectionTitle>
-                The Best Group Collaboration App
+                Exposing Corruption & Fraud
                 </SectionTitle>
                 {/* <h1 style={{paddingTop: 10, paddingBottom: 0}}>Our mission is to Abolish the corrupt, fraudulent, parasitic Family Courts, stop child trafficking and remove money from divorce.</h1> */}
             </Container>

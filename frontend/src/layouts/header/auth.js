@@ -86,7 +86,7 @@ const AuthHeader = () => {
                     style={{height: "100%", marginTop: '0px'}}>
                     <Col>
                         {/* <LogoText>
-                            <Link to="/">Glitter</Link>
+                            <Link to="/">CourtWatch</Link>
                         </LogoText> */}
                         <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '0px'}} alt="CourtWatch"/></Link>
                     </Col>

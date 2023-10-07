@@ -69,7 +69,7 @@ const LandingLayoutFooter = () => {
                             gutter={20}
                             style={{justifyContent: "flex-end"}}>
                             <Col>
-                                <Copyright>Copyright © Glitter 2023</Copyright>
+                                <Copyright>Copyright © CourtWatch 2023</Copyright>
                             </Col>
                         </Row>
                     </Col>

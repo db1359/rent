@@ -8,14 +8,14 @@ import KidsBanner2 from "../banners/banner2";
 import KidsVideos from "./components/videos";
 import KidsBanner3 from "../banners/banner3";
 import Cash from "./components/cash";
-import GlitterBanner from "../banners/glitterbanner";
+import CourtWatchBanner from "../banners/courtwatchbanner";
 import KidsBanner5 from "../banners/banner5";
 
 const AboutPage = () => {
     return (
         <Fragment>
             <TopNav/>
-            {/* <GlitterBanner/> */}
+            {/* <CourtWatchBanner/> */}
             <AboutMain/>
         </Fragment>
     );

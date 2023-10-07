@@ -226,7 +226,7 @@ const AuthRightNav = (props) => {
                         <Link></Link>
                     </Col>    
                     <Col>
-                        Copyright © Glitter 2023
+                        Copyright © CourtWatch 2023
                     </Col>
                 </Row>
             </Card> 

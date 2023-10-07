@@ -10,7 +10,7 @@ import Img1 from "../../../../assets/img/painting.jpg"
 import Img2 from "../../../../assets/img/arianna-poster200.png"
 import Img3 from "../../../../assets/img/isaac.jpg"
 import KidsChart from "../../components/chart";
-import ChartImage from '../../../../assets/img/glittersplash.png'
+import ChartImage from '../../../../assets/img/courtwatchsplash.png'
 import styled from "styled-components"
 import {Icon} from '@iconify/react';
 
@@ -28,7 +28,7 @@ const AboutMain = () => {
                                     }}>
                                     <img src={ChartImage} alt=""/>
                                     {/* <P1 style={{textAlign: 'center'}}>
-                                        Glitter is a group collaboration app for users to share ideas, discuss and interact.
+                                        CourtWatch is a group collaboration app for users to share ideas, discuss and interact.
                                     </P1> */}
                                 </div>
                             </Space>

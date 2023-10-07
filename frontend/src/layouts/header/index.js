@@ -66,7 +66,7 @@ const LayoutHeader = () => {
                 <Row justify="space-between" align="middle">
                     <Col>
                         {/* <LogoText>
-                            <Link to="/">Glitter</Link>
+                            <Link to="/">CourtWatch</Link>
                         </LogoText> */}
                         
                         <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '0px'}} alt="CourtWatch"/></Link>
@@ -175,9 +175,9 @@ const LayoutHeader = () => {
                                         //     onClick={() => {setVisible(false);}}
                                         //     style={{color: "#8f3dce!important"}}
                                         //     >
-                                        //     <Link to="/">Glitter</Link>
+                                        //     <Link to="/">CourtWatch</Link>
                                         // </LogoTextLight>
-                                        <Link to="/"><img src={Logo2} style={{height: '40px', marginTop: '9px'}} alt="Glitter"/></Link>
+                                        <Link to="/"><img src={Logo2} style={{height: '40px', marginTop: '9px'}} alt="CourtWatch"/></Link>
                                     }
                                     closeIcon={<></>}
                                     >
