@@ -88,7 +88,7 @@ const AuthHeader = () => {
                         {/* <LogoText>
                             <Link to="/">CourtWatch</Link>
                         </LogoText> */}
-                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '0px'}} alt="CourtWatch"/></Link>
+                        <Link to="/"><img src={Logo} style={{height: '30px', marginTop: '0px'}} alt="CourtWatch"/></Link>
                     </Col>
                     <Col>
                         <Space size={36}>

@@ -30,8 +30,6 @@ const LayoutHeader = () => {
         }
     };
 
-    
-
     useEffect(() => {
         const id = window.localStorage.getItem("@ari_id");
         if (id) {
@@ -69,7 +67,7 @@ const LayoutHeader = () => {
                             <Link to="/">CourtWatch</Link>
                         </LogoText> */}
                         
-                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '0px'}} alt="CourtWatch"/></Link>
+                        <Link to="/"><img src={Logo} style={{height: '30px', marginTop: '0px'}} alt="CourtWatch"/></Link>
                         
                     </Col>
                     <Col>
@@ -177,7 +175,7 @@ const LayoutHeader = () => {
                                         //     >
                                         //     <Link to="/">CourtWatch</Link>
                                         // </LogoTextLight>
-                                        <Link to="/"><img src={Logo2} style={{height: '40px', marginTop: '9px'}} alt="CourtWatch"/></Link>
+                                        <Link to="/"><img src={Logo2} style={{height: '30px', marginTop: '9px'}} alt="CourtWatch"/></Link>
                                     }
                                     closeIcon={<></>}
                                     >
