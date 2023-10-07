@@ -90,8 +90,7 @@ const GroupPage = () => {
     }, [])
 
     return (
-        // <AuthLayout side={<GroupRight/>}>
-        <AuthLayout>
+        <AuthLayout side={<GroupRight/>}>
             <Button
                 style={{height: 42, borderRadius: "4px"}}
                 onClick={() => {
@@ -252,8 +251,7 @@ const GroupPage = () => {
                     setDel(false)
                 }}
                 okText="Yes, Delete"
-                cancelText="Close"
-            >
+                cancelText="Close">
                 <h2><b>Are you sure?</b></h2>
                 <p>
                     If you delete this channel, you can't recover it in the future. All of your posts will be moved to

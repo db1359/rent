@@ -18,23 +18,23 @@ const GroupRight = () => {
     const [gr, setGr] = useState({});
 
 
-    // const [mGroups, setMGroups] = useState([])
-    // const [rGroups, setRGroups] = useState([])
+    const [mGroups, setMGroups] = useState([])
+    const [rGroups, setRGroups] = useState([])
 
-    // const getGroups = async () => {
-    //     try {
-    //         const {data} = await groupChannelsApi();
-    //         console.log(data, "CHANNELS")
-    //         setRGroups(data.requests)
-    //         setMGroups(data.members)
-    //     } catch (e) {
-    //         console.warn(e)
-    //     }
-    // }
+    const getGroups = async () => {
+        try {
+            const {data} = await groupChannelsApi();
+            console.log(data, "CHANNELS")
+            setRGroups(data.requests)
+            setMGroups(data.members)
+        } catch (e) {
+            console.warn(e)
+        }
+    }
 
-    // useEffect(()=>{
-    //     getGroups()
-    // },[])
+    useEffect(()=>{
+        getGroups()
+    },[])
 
     const slugify = str =>
         str
@@ -181,7 +181,7 @@ const GroupRight = () => {
             </List>
 
 
-                    {/* <Col span={24}>
+                    <Col span={24}>
                         <h2 style={{textAlign: "center", color: "red", marginBottom: 0, fontWeight: 700}}>
                         Approval Pending
                         </h2>
@@ -206,7 +206,7 @@ const GroupRight = () => {
                                 </Space>
                             </Col>
                         ))
-                    }*/}
+                    }
                 </Row>
             </GroupRightWrap> 
         </div>

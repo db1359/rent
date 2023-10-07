@@ -7,8 +7,8 @@ import HamburgerButton from "../../components/button/hamburger";
 import axios from "axios";
 import config from "../../config";
 import {MenuOutlined} from "@ant-design/icons";
-import Logo from "../../assets/img/glitter1.png";
-import Logo2 from "../../assets/img/glitter0.png";
+import Logo from "../../assets/img/fontbolt_transparent.png";
+import Logo2 from "../../assets/img/fontbolt_9701FC.png";
 
 const {useBreakpoint} = Grid;
 
@@ -69,7 +69,7 @@ const LayoutHeader = () => {
                             <Link to="/">Glitter</Link>
                         </LogoText> */}
                         
-                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '9px'}} alt="Glitter"/></Link>
+                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '0px'}} alt="CourtWatch"/></Link>
                         
                     </Col>
                     <Col>

@@ -8,13 +8,11 @@ import {useLocation, useNavigate} from "react-router-dom";
 const SingleGroupRight = ({group, getHandle}) => {
     const navigate = useNavigate();
     const location = useLocation();
-
     const [visible, setVisible] = useState(false);
     const [manage, setManage] = useState(false);
     const [user, setUser] = useState({})
     const authUser = useSelector((state) => state.auth).user
     const auth = useSelector((state)=>state.auth)
-
 
     const approveHandle = async () => {
         try {
