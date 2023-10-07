@@ -10,7 +10,7 @@ const KidsHero = () => {
             <Container>
                 <h4>CourtWatch Mission</h4>
                 <SectionTitle>
-                Our goal is expose family court corruption and fraud. By doing so save kids lives and stop the destruction of families 
+                Our goal is expose family court fraud and corruption. By doing so save kids lives and stop the destruction of families 
                 </SectionTitle>
                 <h5>
                 by corrupt, greedy lawyers, judges, fraudulent child services and a slew of bogus experts profiting by destroying families. 
