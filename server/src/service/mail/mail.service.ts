@@ -32,7 +32,7 @@ export class MailService {
 
         try {
             return this.mailerService.sendMail({
-                from: `"Glitter" <${process.env.MAIL_FROM}>`,
+                from: `"CourtWatch" <${process.env.MAIL_FROM}>`,
                 to: email,
                 subject: "Email Verification",
                 template: "email-verification",
