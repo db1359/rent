@@ -19,7 +19,7 @@ const CourtWatch = () => {
             <SectionTitle style={{width: "100%", marginTop: 72, marginBottom: 0}}>Criminals Covering Up Sexual Abuse of Arianna</SectionTitle>
             <AriannaCriminals/>
             <AriannaExtortion/>
-            <AriannaMine/> */}
+            <AriannaMine/> */} 
             <AriannaTable/>
         </Fragment>
     );
