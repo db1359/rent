@@ -27,7 +27,7 @@ const HomePage = () => {
                 Every 60 seconds a child and parent are separated by Family Courts for profit.
             </HomeSlogan> */}
             <HomeSubtitle>
-                <h1>Exposing Family Corruption & Fraud - Test</h1>
+                <h1>Exposing Family Corruption & Fraud</h1>
             </HomeSubtitle>
             <HomeSlogan>
                 Every 60 seconds a child & parent are separated for profit.
