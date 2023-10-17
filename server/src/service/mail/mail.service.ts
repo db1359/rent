@@ -12,7 +12,7 @@ export class MailService {
         sgMail.setApiKey(process.env.SENDGRID_API_KEY || "");
         const msg = {
             to: "dbaran@gmail.com",
-            from: "noreply@glitters.app",
+            from: "noreply@courtwatch.live",
             subject: "Testing",
             text: "and easy to do anywhere, even with Node.js",
             html: "<strong>and easy to do anywhere, even with Node.js</strong>",
