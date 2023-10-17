@@ -94,6 +94,18 @@ const ProfilePage = () => {
                         </div>),
                     },
                     {
+                        label: `CourtWatch`,
+                        key: 'courtwatch',
+                        children: (<div className="child-area">
+                        <p></p>
+                        <p></p>
+                        <p>Email court watch details to hi@courtwatch.live.<br></br>
+                        See CourtWatch Details https://courtwatch.live/courtwatch
+                        </p>
+                        
+                        </div>),
+                    },
+                    {
                         label: `Directory`,
                         key: 'directory-submissions',
                         children: (<div className="child-area">
@@ -114,16 +126,6 @@ const ProfilePage = () => {
                         <p></p>
                         <p></p>
                         <p>Your Recalls</p>
-                        
-                        </div>),
-                    },
-                    {
-                        label: `CourtWatch`,
-                        key: 'courtwatch',
-                        children: (<div className="child-area">
-                        <p></p>
-                        <p></p>
-                        <p>Work in progess</p>
                         
                         </div>),
                     },

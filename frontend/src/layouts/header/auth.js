@@ -82,7 +82,7 @@ const AuthHeader = () => {
         },
         {
             key: 'about/channels',
-            label: <span style={{fontSize: 14, fontWeight: 600}}>Start A Channel</span>
+            label: <span style={{fontSize: 14, fontWeight: 600}}>Start Channel</span>
         }
     ]
 

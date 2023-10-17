@@ -124,7 +124,7 @@ const LayoutHeader = () => {
                                             navigate("/about/channels");
                                         }}
                                         className={location.pathname === "/about/channels" && "active"}>
-                                        Start A Channel
+                                        Start Channel
                                     </Button>
                                 )}
                             </Col>
