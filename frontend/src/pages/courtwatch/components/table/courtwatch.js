@@ -50,15 +50,15 @@ const AriannaTable = () => {
                         </div>
                         <div>
                             <div><a href="https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_OGU1NWMwNmQtZTNhMC00ZjMyLWI1YmUtNzY1YmUyZjYyN2Q2%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522c0a96a14-a905-4caa-8c29-a227571a29a2%2522%252c%2522Oid%2522%253a%2522b89c460a-6578-4101-82c1-38fb2849a293%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=e97800c9-7137-40c4-b4bd-e73a8e0e94fc&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true"
-                            target="_blank">
+                            target="_blank" rel="noreferrer">
                             Court Watch Link</a></div>
                         </div>
                         <div>
-                            <div><a href="https://courtwatch.live/" target="_blank"></a></div>
+                            <div><a href="https://courtwatch.live/" target="_blank" rel="noreferrer"></a></div>
                         </div>
                         <div>
                             <div style={{textAlign: 'center'}}>
-                                <a href="https://twitter.com/intent/tweet?text=Court%20Watch%20for%20Ella%20Taran%20https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NGFiNzZjYTktMTIxYi00YjVkLTg4ZTMtYmNiZTlhMGFjMjhk%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522c0a96a14-a905-4caa-8c29-a227571a29a2%2522%252c%2522Oid%2522%253a%25225a51b742-5dd8-4523-b89c-b69845eb07d9%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=e6be0d23-004e-4d8a-95b4-42c0d3dccc17&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true" target="_blank">
+                                <a href="https://twitter.com/intent/tweet?text=Court%20Watch%20for%20Ella%20Taran%20https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NGFiNzZjYTktMTIxYi00YjVkLTg4ZTMtYmNiZTlhMGFjMjhk%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522c0a96a14-a905-4caa-8c29-a227571a29a2%2522%252c%2522Oid%2522%253a%25225a51b742-5dd8-4523-b89c-b69845eb07d9%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=e6be0d23-004e-4d8a-95b4-42c0d3dccc17&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true" target="_blank" rel="noreferrer">
                                 <Icon icon="mdi:twitter" style={{width: 30, height: 30}}/>
                                 </a>
                             </div>
@@ -79,7 +79,7 @@ const AriannaTable = () => {
                         </div>
                         <div>
                             <div><a href="https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NGFiNzZjYTktMTIxYi00YjVkLTg4ZTMtYmNiZTlhMGFjMjhk%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522c0a96a14-a905-4caa-8c29-a227571a29a2%2522%252c%2522Oid%2522%253a%25225a51b742-5dd8-4523-b89c-b69845eb07d9%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=e6be0d23-004e-4d8a-95b4-42c0d3dccc17&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true"
-                            target="_blank">
+                            target="_blank" rel="noreferrer">
                             Court Watch Link</a></div>
                         </div>
                         <div>
@@ -87,7 +87,7 @@ const AriannaTable = () => {
                         </div>
                         <div>
                             <div style={{textAlign: 'center'}}>
-                                <a href="https://twitter.com/intent/tweet?text=Court%20Watch%20for%20Daya%20Baran%20https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NGFiNzZjYTktMTIxYi00YjVkLTg4ZTMtYmNiZTlhMGFjMjhk%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522c0a96a14-a905-4caa-8c29-a227571a29a2%2522%252c%2522Oid%2522%253a%25225a51b742-5dd8-4523-b89c-b69845eb07d9%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=e6be0d23-004e-4d8a-95b4-42c0d3dccc17&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true" target="_blank">
+                                <a href="https://twitter.com/intent/tweet?text=Court%20Watch%20for%20Daya%20Baran%20https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NGFiNzZjYTktMTIxYi00YjVkLTg4ZTMtYmNiZTlhMGFjMjhk%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522c0a96a14-a905-4caa-8c29-a227571a29a2%2522%252c%2522Oid%2522%253a%25225a51b742-5dd8-4523-b89c-b69845eb07d9%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=e6be0d23-004e-4d8a-95b4-42c0d3dccc17&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true" target="_blank" rel="noreferrer">
                                 <Icon icon="mdi:twitter" style={{width: 30, height: 30}}/>
                                 </a>
                             </div>
@@ -109,7 +109,7 @@ const AriannaTable = () => {
                         <div>
                             <div><a href="https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_YmRhZTM2ZDMtOWI4YS00MTVlLThmYmYtNTBlN2NkMzA1YzJk%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522c0a96a14-a905-4caa-8c29-a227571a29a2%2522%252c%2522Oid%2522%253a%2522f22a2e10-b8a4-4725-aa75-d8c71eb432a6%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=897ee582-74a6-437b-9c30-4bf18cffceeb&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true"
                             target="_blank"
-                            style={{backgroundColor: "transparent", border: 0}}>
+                            style={{backgroundColor: "transparent", border: 0}} rel="noreferrer">
                             Court Watch Link</a></div>
                         </div>
                         <div>
@@ -117,7 +117,7 @@ const AriannaTable = () => {
                         </div>
                         <div>
                             <div style={{textAlign: 'center'}}>
-                                <a href="https://twitter.com/intent/tweet?text=Court%20Watch%20for%20Jeff%20Haskell%20https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NGFiNzZjYTktMTIxYi00YjVkLTg4ZTMtYmNiZTlhMGFjMjhk%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522c0a96a14-a905-4caa-8c29-a227571a29a2%2522%252c%2522Oid%2522%253a%25225a51b742-5dd8-4523-b89c-b69845eb07d9%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=e6be0d23-004e-4d8a-95b4-42c0d3dccc17&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true" target="_blank">
+                                <a href="https://twitter.com/intent/tweet?text=Court%20Watch%20for%20Jeff%20Haskell%20https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NGFiNzZjYTktMTIxYi00YjVkLTg4ZTMtYmNiZTlhMGFjMjhk%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522c0a96a14-a905-4caa-8c29-a227571a29a2%2522%252c%2522Oid%2522%253a%25225a51b742-5dd8-4523-b89c-b69845eb07d9%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=e6be0d23-004e-4d8a-95b4-42c0d3dccc17&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true" target="_blank" rel="noreferrer">
                                 <Icon icon="mdi:twitter" style={{width: 30, height: 30}}/>
                                 </a>
                             </div>

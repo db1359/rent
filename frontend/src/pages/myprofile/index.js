@@ -221,7 +221,7 @@ const ProfilePage = () => {
                         </Dropdown>
                     </p>
                     <p onClick={() => {edit && setMain(true)}}>
-                        <a href={user?.website} target="_blank">{user?.website}</a> {edit && <Icon icon="material-symbols:edit"/>}
+                        <a href={user?.website} target="_blank" rel="noreferrer">{user?.website}</a> {edit && <Icon icon="material-symbols:edit"/>}
                     </p>
                 </Card>
             </ProfileTopWrap>
