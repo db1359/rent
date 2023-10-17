@@ -24,6 +24,8 @@ const AuthHeader = () => {
             navigate(`/${auth?.user?.username}`)
         } else if(e.key==='channels/abolishfamilycourt') {
             navigate(`/channels/abolishfamilycourt`)
+        } else if(e.key==='/courtwatch') {
+            navigate(`/courtwatch`)    
         } else if(e.key==='about/channels') {
             navigate(`about/channels`)  
         } else if(e.key==='about/legalabusesyndrome') {
@@ -57,6 +59,13 @@ const AuthHeader = () => {
     ]
 
     const items2 = [
+        {
+            key: '/courtwatch',
+            label: <span style={{fontSize: 14, fontWeight: 600}}>CourtWatch</span>
+        },
+        {
+            type: 'divider',
+        },
         {
             key: 'channels/abolishfamilycourt',
             label: <span style={{fontSize: 14, fontWeight: 600}}>Family Court</span>
