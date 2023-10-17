@@ -47,7 +47,7 @@ const AriannaNews = () => {
                                 </CardTitle>
                                 <CardTitle style={{marginBottom: 32}}>
                                     <img
-                                        src={'https://glitters.app/static/media/paypalqrcode.9f13c28557abe5d13a0c.png'}
+                                        src={'https://courtwatch.live/static/media/paypalqrcode.9f13c28557abe5d13a0c.png'}
                                         alt=""/>
                                 </CardTitle>
                             </ActionFormCard>

@@ -85,7 +85,7 @@ const GroupRight = () => {
     }
 
     const shareOkHandle = () => {
-        navigator.clipboard.writeText("https://glitters.app/channel/" + gr.slug);
+        navigator.clipboard.writeText("https://courtwatch.live/channel/" + gr.slug);
         setShare(false);
         openSuccess();
     }

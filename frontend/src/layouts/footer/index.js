@@ -52,7 +52,7 @@ const LandingLayoutFooter = () => {
                             <Col>
                                 <Button
                                     target='_blank'
-                                    href='https://twitter.com/glitter_app'
+                                    href='https://twitter.com/courtwatchlive'
                                     shape="circle"
                                     type="primary"
                                     color="pink"

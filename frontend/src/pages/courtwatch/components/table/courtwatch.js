@@ -54,7 +54,7 @@ const AriannaTable = () => {
                             Court Watch Link</a></div>
                         </div>
                         <div>
-                            <div><a href="https://glitters.app/" target="_blank"></a></div>
+                            <div><a href="https://courtwatch.live/" target="_blank"></a></div>
                         </div>
                         <div>
                             <div style={{textAlign: 'center'}}>

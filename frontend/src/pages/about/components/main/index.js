@@ -39,7 +39,7 @@ const AboutMain = () => {
                                     Follow<br/>
                                     <Button
                                     target='_blank'
-                                    href='https://twitter.com/glitter_app'
+                                    href='https://twitter.com/courtwatchlive'
                                     shape="circle"
                                     type="primary"
                                     color="pink"
@@ -59,7 +59,7 @@ const AboutMain = () => {
                                 </CardTitle>
                                 <CardTitle style={{marginBottom: 20}}>
                                     <img
-                                        src={'https://glitters.app/static/media/paypalqrcode.9f13c28557abe5d13a0c.png'}
+                                        src={'https://courtwatch.live/static/media/paypalqrcode.9f13c28557abe5d13a0c.png'}
                                         alt=""/>
                                 </CardTitle>
                             </ActionFormCard>
