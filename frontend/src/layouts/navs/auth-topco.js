@@ -80,21 +80,6 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/about/channels");
-                                        }}
-                                        className={location.pathname === "/about/channels" && "active"}>
-                                        Channels
-                                    </Button>
-                                )}
-                            </Col>
-
-                            <Col>
-                                {user ? (
-                                    <nbsp/>
-                                ) : (
-                                    <Button
-                                        type="communitylink"
-                                        onClick={() => {
                                             navigate("/about/privacy");
                                         }}
                                         className={location.pathname === "/about/privacy" && "active"}>
@@ -114,6 +99,21 @@ const LayoutHeader = () => {
                                         }}
                                         className={location.pathname === "/about/terms" && "active"}>
                                         Terms
+                                    </Button>
+                                )}
+                            </Col>
+
+                            <Col>
+                                {user ? (
+                                    <nbsp/>
+                                ) : (
+                                    <Button
+                                        type="communitylink"
+                                        onClick={() => {
+                                            navigate("/channels/start");
+                                        }}
+                                        className={location.pathname === "/channels/start" && "active"}>
+                                        Channels
                                     </Button>
                                 )}
                             </Col>

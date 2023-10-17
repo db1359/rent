@@ -121,9 +121,9 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/about/channels");
+                                            navigate("/channels/start");
                                         }}
-                                        className={location.pathname === "/about/channels" && "active"}>
+                                        className={location.pathname === "/channels/start" && "active"}>
                                         Start Channel
                                     </Button>
                                 )}

@@ -9,7 +9,7 @@ import HomePage from "../pages/home";
 import SignupPage from "../pages/signup";
 import LoginPage from "../pages/login";
 import AbolishPage from "../pages/channels/abolishfamilycourt";
-import YourChannelPage from "../pages/channels/yourchannel";
+import StartChannelPage from "../pages/channels/start";
 import LegalAbuse from '../pages/channels/legalabusesyndrome';
 import NotFoundPage from "../pages/404";
 import ProfilePage from "../pages/myprofile";
@@ -29,7 +29,7 @@ import AboutPage from "../pages/about";
 import CourtWatch from "../pages/courtwatch";
 import DirectoryPage from "../pages/dir/";
 import EventsPage from "../pages/events";
-import ChannelsPage from "../pages/about/channels";
+import ChannelsPage from "../pages/channels/start";
 import PrivacyPage from "../pages/about/privacy";
 import TermsPage from "../pages/about/terms";
 import GroupPage from "../pages/group";
@@ -60,9 +60,9 @@ const LandingLayout = () => {
                     <Route path="/story" element={<AriannaStoryPage/>}/>
                     <Route path="/about" element={<AboutPage/>}/>
                     <Route path="/channels/abolishfamilycourt" element={<AbolishPage/>}/>
-                    <Route path="/channels/yourchannel" element={<YourChannelPage/>}/>
+                    <Route path="/channels/start" element={<StartChannelPage/>}/>
                     <Route path="/channels/legalabusesyndrome" element={<LegalAbuse/>}/>
-                    <Route path="/about/channels" element={<ChannelsPage/>}/>
+                    <Route path="/channels/start" element={<ChannelsPage/>}/>
                     <Route path="/about/privacy" element={<PrivacyPage/>}/>
                     <Route path="/about/terms" element={<TermsPage/>}/>
                     <Route path="/courtwatch" element={<CourtWatch/>}/>

@@ -26,8 +26,8 @@ const AuthHeader = () => {
             navigate(`/channels/abolishfamilycourt`)
         } else if(e.key==='/courtwatch') {
             navigate(`/courtwatch`)    
-        } else if(e.key==='about/channels') {
-            navigate(`about/channels`)  
+        } else if(e.key==='channels/start') {
+            navigate(`channels/start`)  
         } else if(e.key==='about/legalabusesyndrome') {
             navigate(`about/legalabusesyndrome`)           
         }else {
@@ -81,7 +81,7 @@ const AuthHeader = () => {
             type: 'divider',
         },
         {
-            key: 'about/channels',
+            key: 'channels/start',
             label: <span style={{fontSize: 14, fontWeight: 600}}>Start Channel</span>
         }
     ]
