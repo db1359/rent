@@ -16,8 +16,6 @@ const GroupRight = () => {
     const [title, setTitle] = useState("")
     const [groups, setGroups] = useState([]);
     const [gr, setGr] = useState({});
-
-
     const [mGroups, setMGroups] = useState([])
     const [rGroups, setRGroups] = useState([])
 

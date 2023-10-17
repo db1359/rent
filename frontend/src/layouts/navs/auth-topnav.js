@@ -79,7 +79,7 @@ const LayoutHeader = () => {
                                             navigate("/courtwatch");
                                         }}
                                         className={location.pathname === "/courtwatch" && "active"}>
-                                        Court Watch
+                                        CourtWatch
                                     </Button>
                                 )}
                             </Col>

@@ -101,7 +101,7 @@ const GroupPage = () => {
                 Create Channel
             </Button>
 
-            <Button
+            {/* <Button
                 style={{height: 42, borderRadius: "4px"}}
                 onClick={() => {
                     setOpen(true)
@@ -109,7 +109,7 @@ const GroupPage = () => {
                 icon={<PlusOutlined/>}
                 type="primary">
                 Email Channel
-            </Button>
+            </Button> */}
 
             <List style={{marginTop: 24}}>
                 {
