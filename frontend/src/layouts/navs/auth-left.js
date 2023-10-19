@@ -36,24 +36,63 @@ const AuthLeftNav = () => {
     return (
         <div>
             <AuthLeftNavWrap>
-                {/* <Button
+                
+                
+            </AuthLeftNavWrap>
+                <Button 
                     type="leftcolumnlink"
                     onClick={() => {
                         navigate("/");
                     }}
                     className={location.pathname === "/" && "active"}>
-                   Channel
-                </Button> */}
+                    <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:folder-managed-outline"/> {auth?.user?.username}
+                </Button>
+                    {
+                    myGroups.map((i) => (    
+                <Button key={i._id}
+                    type="leftcolumnlink"
+                    onClick={() => {
+                        navigate("/channel/" + i.slug);
+                    }}
+                    className={location.pathname === "/channel/" + i.slug ? "active" : ""}>
+                    <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:folder-managed-outline"/> {i.slug}
+                </Button>
+                    ))
+                    }
+                    {
+                    mGroups.map((i) => (
+                    <Button key={i._id}
+                        type="leftcolumnlink"
+                        onClick={() => {
+                            navigate("/channel/" + i.slug);
+                        }}
+                        className={location.pathname === "/channel/" + i.slug ? "active" : ""}>
+                        <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:folder-managed-outline"/> {i.slug}
+                    </Button>
+                    ))
+                    }
+                    {
+                    rGroups.map((i) => (
+                <Button key={i._id}
+                    type="leftcolumnlink"
+                    onClick={() => {
+                        navigate("/channel/" + i.slug);
+                    }}
+                    className={location.pathname === "/channel/" + i.slug ? "active" : ""}
+                    href={"/channel/" + i.slug}>
+                    <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:folder-managed-outline"/> {i.title}
+                </Button> 
+                    ))
+                    }
                 <Button 
                     type="leftcolumnlink"
                     onClick={() => {
                         navigate("/channel");
                     }}
                     className={location.pathname === "/channel" && "active"}>
-                    <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:folder-managed-outline"/> Channels
+                    <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:add-circle-outline"/> Create Channel
                 </Button>
-            </AuthLeftNavWrap>
-                <div style={{display: "flex", flexDirection: "column", gap: 15, paddingTop: 15, borderRadius: 12}}>
+                {/* <div style={{display: "flex", flexDirection: "column", gap: 15, paddingTop: 15, borderRadius: 12}}>
                     <a
                         type="leftcolumnlink" style={{fontSize: 18, fontWeight: 700}}
                         onClick={() => {
@@ -128,7 +167,7 @@ const AuthLeftNav = () => {
                     </a>     
                     ))
                     }
-                </div>
+                </div> */}
             <AuthLeftNavWrap>
                 <Button
                     type="leftcolumnlink"
