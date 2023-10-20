@@ -35,17 +35,13 @@ const AuthLeftNav = () => {
 
     return (
         <div>
-            <AuthLeftNavWrap>
-                
-                
-            </AuthLeftNavWrap>
                 <Button 
                     type="leftcolumnlink"
                     onClick={() => {
                         navigate("/");
                     }}
                     className={location.pathname === "/" && "active"}>
-                    <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:folder-managed-outline"/> {auth?.user?.username}
+                    <Icon style={{marginRight: 5, fontSize: 25}} icon="majesticons:home-line"/> {auth?.user?.username}
                 </Button>
                     {
                     myGroups.map((i) => (    
@@ -55,7 +51,7 @@ const AuthLeftNav = () => {
                         navigate("/channel/" + i.slug);
                     }}
                     className={location.pathname === "/channel/" + i.slug ? "active" : ""}>
-                    <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:folder-managed-outline"/> {i.slug}
+                    <Icon style={{marginRight: 5, fontSize: 25}} icon="ic:outline-group"/> {i.slug}
                 </Button>
                     ))
                     }
@@ -67,7 +63,7 @@ const AuthLeftNav = () => {
                             navigate("/channel/" + i.slug);
                         }}
                         className={location.pathname === "/channel/" + i.slug ? "active" : ""}>
-                        <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:folder-managed-outline"/> {i.slug}
+                        <Icon style={{marginRight: 5, fontSize: 25}} icon="ic:outline-group"/> {i.slug}
                     </Button>
                     ))
                     }
@@ -80,7 +76,7 @@ const AuthLeftNav = () => {
                     }}
                     className={location.pathname === "/channel/" + i.slug ? "active" : ""}
                     href={"/channel/" + i.slug}>
-                    <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:folder-managed-outline"/> {i.title}
+                    <Icon style={{marginRight: 5, fontSize: 25}} icon="ic:outline-group"/> {i.title}
                 </Button> 
                     ))
                     }
@@ -90,7 +86,7 @@ const AuthLeftNav = () => {
                         navigate("/channel");
                     }}
                     className={location.pathname === "/channel" && "active"}>
-                    <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:add-circle-outline"/> Create Channel
+                    <Icon style={{marginRight: 5, fontSize: 25}} icon="iconamoon:sign-plus-bold"/> Create Channel
                 </Button>
                 {/* <div style={{display: "flex", flexDirection: "column", gap: 15, paddingTop: 15, borderRadius: 12}}>
                     <a
