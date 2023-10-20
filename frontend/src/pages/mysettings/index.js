@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Tabs} from "antd";
-import AuthLayout from "../../layouts/auth.layoutfull";
+import AuthLayout from "../../layouts/auth.layout";
 import {useSelector} from "react-redux";
 import MainEdit from "./components/main";
 import ProfilePhotoEdit from "./components/photo";
@@ -100,7 +100,7 @@ const ProfilePage = () => {
                         <p></p>
                         <p></p>
                         <p>Email court watch details to hi@courtwatch.live.<br></br>
-                        See CourtWatch Details https://courtwatch.live/courtwatch
+                        See CourtWatch Details <a href="/courtwatch"><b>CourtWatch</b></a>
                         </p>
                         
                         </div>),
