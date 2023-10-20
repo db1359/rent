@@ -1,38 +1,25 @@
 import React, {useEffect, useState} from 'react';
 import styled from "styled-components";
-import {Avatar, Card, Button, List, Form, Col, Row, notification, Space} from "antd";
+import {Avatar, Button, Card, Form, List, Input, notification, Modal, Space} from "antd";
 import {CloseOutlined, CopyOutlined, DeleteOutlined, PlusOutlined, ShareAltOutlined} from "@ant-design/icons";
 import {groupChannelsApi} from "../../api";
-import {createGroupApi, deleteGroupApi, getMyGroupsApi} from "../../api";
 import {useNavigate, Link} from "react-router-dom";
+import {createGroupApi, deleteGroupApi, getMyGroupsApi} from "../../api"
 
 const GroupRight = () => {
+
+    const {Item} = Form;
+
+    const navigate = useNavigate();
+
     const [api, contextHolder] = notification.useNotification();
     const [form] = Form.useForm();
-    const navigate = useNavigate();
     const [open, setOpen] = useState(false);
     const [share, setShare] = useState(false);
     const [del, setDel] = useState(false);
     const [title, setTitle] = useState("")
     const [groups, setGroups] = useState([]);
     const [gr, setGr] = useState({});
-    const [mGroups, setMGroups] = useState([])
-    const [rGroups, setRGroups] = useState([])
-
-    const getGroups = async () => {
-        try {
-            const {data} = await groupChannelsApi();
-            console.log(data, "CHANNELS")
-            setRGroups(data.requests)
-            setMGroups(data.members)
-        } catch (e) {
-            console.warn(e)
-        }
-    }
-
-    useEffect(()=>{
-        getGroups()
-    },[])
 
     const slugify = str =>
         str
@@ -105,10 +92,10 @@ const GroupRight = () => {
         getHandle()
     }, [])
 
+
     return (
         <div>
             <GroupRightWrap>
-                <Row gutter={[12, 12]}>
 
                 <Button
                 style={{height: 42, borderRadius: "4px"}}
@@ -119,15 +106,15 @@ const GroupRight = () => {
                 type="primary">
                 Create Channel
                 </Button>
-
-                <List style={{marginTop: 24}}>
+                
+                <div style={{marginTop: 24,}}>
                 {
                     groups.map((group) => (
                         <List.Item key={group._id}>
                             <List.Item.Meta
                                 avatar={
                                     <Link to={`/channel/${group.slug}`}>
-                                        {/* <Avatar
+                                        <Avatar
                                             size={50}
                                             style={{
                                                 backgroundColor: "#8f3dce",
@@ -135,11 +122,10 @@ const GroupRight = () => {
                                             }}
                                             shape="square">
                                             {group.title?.[0]}
-                                        </Avatar> */}
-                                        {<b>{group.title}</b>}
+                                        </Avatar>
                                     </Link>
                                 }
-                                // title={<b>{group.title}</b>}
+                                title={<b>{group.title}</b>}
                                 description={
                                     <p>
                                         <b>{group.members.length} Members</b>&nbsp;&nbsp;&nbsp;
@@ -153,7 +139,7 @@ const GroupRight = () => {
                                 }
 
                             />
-                            <Space>
+                            <Space style={{marginBottom: 24,}}>
                                 <Button
                                     onClick={() => {
                                         setShare(true);
@@ -172,41 +158,105 @@ const GroupRight = () => {
                                     type="primary">
                                     Delete
                                 </Button>
-                            </Space>
+                            </Space> 
                         </List.Item>
                     ))
                 }
-            </List>
+            </div>
+            
+            <Modal
+                closeIcon={<CloseOutlined/>}
+                width={600}
+                centered
+                onCancel={() => {
+                    setOpen(false)
+                }}
+                title="Create New Channel"
+                footer={false}
+                open={open}>
+                <Form
+                    form={form}
+                    onFinish={finishHandle}
+                    onChange={changeHandle}
+                    layout="vertical">
+                    <Item
+                        name="title"
+                        label="Channel Name">
+                        <Input
+                            size="large"
+                            placeholder="Channel Name"
+                        />
+                    </Item>
+                    <Item
+                        name="slug"
+                        label="Channel Handle">
+                        <Input
+                            size="large"
+                            placeholder="Channel Handle"
+                        />
+                    </Item>
+                    <Item>
+                        <Button
+                            style={{height: 40}}
+                            htmlType="submit"
+                            type="primary">
+                            Create New Channel
+                        </Button>
+                    </Item>
+                </Form>
+            </Modal>
 
+            <Modal
+                onCancel={() => {
+                    setShare(false)
+                }}
+                centered
+                okText="Copy & Close"
+                cancelText="Close"
+                onOk={shareOkHandle}
+                title="Share Channel"
+                open={share}>
+                <Form layout="vertical">
+                    <Item label="Share Link">
+                        <Input
+                            readOnly
+                            suffix={
+                                <Button
+                                    type="link"
+                                    onClick={() => {
+                                        navigator.clipboard.writeText("https://courtwatch.live/channel/" + gr.slug);
+                                        openSuccess()
+                                    }}>
+                                    <CopyOutlined/>
+                                </Button>
+                            }
+                            value={"https://courtwatch.live/channel/" + gr.slug}
+                            size="large"/>
+                    </Item>
+                </Form>
+            </Modal>
 
-                    <Col span={24}>
-                        <h2 style={{textAlign: "center", color: "red", marginBottom: 0, fontWeight: 700}}>
-                        Approval Pending
-                        </h2>
-                    </Col>
-                    {
-                        rGroups.map((i) => (
-                            <Col span={24} key={`R${i._id}`}>
-                                <Space>
-                                    <Avatar
-                                        onClick={()=>{navigate(`/channel/${i.slug}`)}}
-                                        size={50}
-                                        style={{
-                                            cursor: "pointer",
-                                            backgroundColor: "#8f3dce",
-                                            borderRadius: "6px"
-                                        }}
-                                        src={i.photo}
-                                        shape="square">
-                                        {i.title?.[0]}
-                                    </Avatar>
-                                    <h5 style={{fontSize: 16, margin: 0}}>{i.title}</h5>
-                                </Space>
-                            </Col>
-                        ))
-                    }
-                </Row>
-            </GroupRightWrap> 
+            <Modal
+                centered
+                open={del}
+                okType="primary"
+                okButtonProps={{danger: true}}
+                onOk={deleteHandle}
+                title="Delete Channel"
+                onCancel={() => {
+                    setDel(false)
+                }}
+                okText="Yes, Delete"
+                cancelText="Close"
+            >
+                <h2><b>Are you sure?</b></h2>
+                <p>
+                    If you delete this channel, you can&apos;t recover it in the future. All of your posts will be moved to
+                    your own channel.
+                </p>
+            </Modal>
+            {contextHolder}
+            </GroupRightWrap>
         </div>
     );
 };

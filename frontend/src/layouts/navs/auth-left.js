@@ -35,6 +35,7 @@ const AuthLeftNav = () => {
 
     return (
         <div>
+            <AuthLeftNavWrap>
                 <Button 
                     type="leftcolumnlink"
                     onClick={() => {
@@ -43,8 +44,17 @@ const AuthLeftNav = () => {
                     className={location.pathname === "/" && "active"}>
                     <Icon style={{marginRight: 5, fontSize: 25}} icon="majesticons:home-line"/> {auth?.user?.username}
                 </Button>
-                    {
-                    myGroups.map((i) => (    
+                <Button 
+                    type="leftcolumnlink"
+                    onClick={() => {
+                        navigate("/channel");
+                    }}
+                    className={location.pathname === "/channel" && "active"}>
+                    <Icon style={{marginRight: 5, fontSize: 25}} icon="iconamoon:sign-plus-bold"/> Channels
+                </Button>
+            </AuthLeftNavWrap>
+                {
+                myGroups.map((i) => (    
                 <Button key={i._id}
                     type="leftcolumnlink"
                     onClick={() => {
@@ -57,14 +67,14 @@ const AuthLeftNav = () => {
                     }
                     {
                     mGroups.map((i) => (
-                    <Button key={i._id}
-                        type="leftcolumnlink"
-                        onClick={() => {
-                            navigate("/channel/" + i.slug);
-                        }}
-                        className={location.pathname === "/channel/" + i.slug ? "active" : ""}>
-                        <Icon style={{marginRight: 5, fontSize: 25}} icon="ic:outline-group"/> {i.slug}
-                    </Button>
+                <Button key={i._id}
+                    type="leftcolumnlink"
+                    onClick={() => {
+                        navigate("/channel/" + i.slug);
+                    }}
+                    className={location.pathname === "/channel/" + i.slug ? "active" : ""}>
+                    <Icon style={{marginRight: 5, fontSize: 25}} icon="ic:outline-group"/> {i.slug}<br>s</br>
+                </Button>
                     ))
                     }
                     {
@@ -78,92 +88,8 @@ const AuthLeftNav = () => {
                     href={"/channel/" + i.slug}>
                     <Icon style={{marginRight: 5, fontSize: 25}} icon="ic:outline-group"/> {i.title}
                 </Button> 
-                    ))
-                    }
-                <Button 
-                    type="leftcolumnlink"
-                    onClick={() => {
-                        navigate("/channel");
-                    }}
-                    className={location.pathname === "/channel" && "active"}>
-                    <Icon style={{marginRight: 5, fontSize: 25}} icon="iconamoon:sign-plus-bold"/> Create Channel
-                </Button>
-                {/* <div style={{display: "flex", flexDirection: "column", gap: 15, paddingTop: 15, borderRadius: 12}}>
-                    <a
-                        type="leftcolumnlink" style={{fontSize: 18, fontWeight: 700}}
-                        onClick={() => {
-                            navigate("/");
-                        }}
-                        className={location.pathname === "/" && "active"}>
-                        <Avatar
-                            size={25}
-                            style={{
-                                backgroundColor: "#8f3dce",
-                                borderRadius: "6px",
-                                marginRight: "20"
-                            }}
-                            shape="square">
-                            {auth?.user?.username?.[0]}
-                        </Avatar> {auth?.user?.username}
-                    </a>
-                    {
-                    myGroups.map((i) => (
-                    <a key={i._id}
-                        style={{display: "block", fontSize: 18, fontWeight: 700}}
-                        className={location.pathname === "/channel/" + i.slug ? "active" : ""}
-                        href={"/channel/" + i.slug}>
-                        <Avatar
-                            size={25}
-                            style={{
-                                backgroundColor: "#8f3dce",
-                                borderRadius: "6px",
-                                marginRight: "20"
-                            }}
-                            shape="square">
-                            {i.title?.[0]}
-                        </Avatar> {i.slug}
-                    </a>
-                    ))
-                    }
-                    {
-                    mGroups.map((i) => (
-                    <a key={i._id}
-                        style={{display: "block", fontSize: 18, fontWeight: 700}}
-                        className={location.pathname === "/channel/" + i.slug ? "active" : ""}
-                        href={"/channel/" + i.slug}>
-                        <Avatar
-                            size={25}
-                            style={{
-                                backgroundColor: "#8f3dce",
-                                borderRadius: "6px",
-                                marginRight: "20"
-                            }}
-                            shape="square">
-                            {i.title?.[0]}
-                        </Avatar> {i.slug}
-                    </a>
-                    ))
-                    }
-                    {
-                    rGroups.map((i) => (
-                    <a key={i._id}
-                        style={{display: "block", fontSize: 18, fontWeight: 700}}
-                        className={location.pathname === "/channel/" + i.slug ? "active" : ""}
-                        href={"/channel/" + i.slug}>
-                        <Avatar
-                            size={25}
-                            style={{
-                                backgroundColor: "#8f3dce",
-                                borderRadius: "6px",
-                                marginRight: "20"
-                            }}
-                            shape="square">
-                            {i.title?.[0]}
-                        </Avatar> {i.title}
-                    </a>     
-                    ))
-                    }
-                </div> */}
+                ))
+                }
             <AuthLeftNavWrap>
                 <Button
                     type="leftcolumnlink"

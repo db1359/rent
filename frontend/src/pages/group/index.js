@@ -5,6 +5,7 @@ import {CloseOutlined, CopyOutlined, DeleteOutlined, PlusOutlined, ShareAltOutli
 import GroupRight from "./right";
 import {createGroupApi, deleteGroupApi, getMyGroupsApi} from "../../api";
 import {Link} from "react-router-dom";
+import CardTitle from "../../components/heading/card";
 
 const {Item} = Form;
 
@@ -92,7 +93,54 @@ const GroupPage = () => {
 
     return (
         <AuthLayout side={<GroupRight/>}>
-            <Button
+            <List style={{marginTop: 10,}}>
+                <CardTitle style={{paddingBottom: 20,}}>
+                Channel List<br></br><br></br>
+                    <Button
+                        href='/channel/AbolishFamilyCourt'
+                        shape="rectangle"
+                        type="primary"
+                        color="pink"
+                        size="large"
+                        style={{
+                            color: "#ffffff",
+                            backgroundColor: "#8f3dce",
+                            marginRight: 30,
+                        }}>
+                        Abolish Family Court - Join
+                    </Button>
+
+                    <Button
+                        href='/channel/CourtWatch'
+                        shape="rectangle"
+                        type="primary"
+                        color="pink"
+                        size="large"
+                        style={{
+                            color: "#ffffff",
+                            backgroundColor: "#8f3dce",
+                            marginRight: 30,
+                        }}>
+                        CourtWatch - Join
+                    </Button>
+
+                    <Button
+                        href='/channel/Recalls'
+                        shape="rectangle"
+                        type="primary"
+                        color="pink"
+                        size="large"
+                        style={{
+                            color: "#ffffff",
+                            backgroundColor: "#8f3dce",
+                            marginRight: 30,
+                        }}>
+                        Recall - Join
+                    </Button>
+                </CardTitle>
+            </List>  
+            
+            {/* <Button
                 style={{height: 42, borderRadius: "4px"}}
                 onClick={() => {
                     setOpen(true)
@@ -246,11 +294,11 @@ const GroupPage = () => {
             >
                 <h2><b>Are you sure?</b></h2>
                 <p>
-                    If you delete this channel, you can't recover it in the future. All of your posts will be moved to
+                    If you delete this channel, you can&apos;t recover it in the future. All of your posts will be moved to
                     your own channel.
                 </p>
             </Modal>
-            {contextHolder}
+            {contextHolder} */}
         </AuthLayout>
     );
 };
