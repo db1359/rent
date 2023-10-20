@@ -261,7 +261,6 @@ const GroupRight = () => {
     );
 };
 
-
 const GroupRightWrap = styled(Card)`
   box-shadow: none;
   border: none;

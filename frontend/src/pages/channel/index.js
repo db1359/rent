@@ -95,7 +95,7 @@ const GroupPage = () => {
         <AuthLayout side={<GroupRight/>}>
             <List style={{marginTop: 10,}}>
                 <CardTitle style={{paddingBottom: 20,}}>
-                Channel List<br></br><br></br>
+                Channels<br></br><br></br>
                     <Button
                         href='/channel/AbolishFamilyCourt'
                         shape="rectangle"
