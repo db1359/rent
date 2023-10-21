@@ -99,13 +99,13 @@ const GroupRight = () => {
         <div>
             <GroupRightWrap>
                 <Button
-                style={{height: 42, borderRadius: "4px"}}
+                style={{height: 42, borderRadius: "4px",}}
                 onClick={() => {
                     setOpen(true)
                 }}
                 icon={<PlusOutlined/>}
                 type="primary">
-                Create Channel
+                Start Channel
                 </Button>
                 
                 <div style={{marginTop: 24,}}>

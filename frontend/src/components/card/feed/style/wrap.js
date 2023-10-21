@@ -4,6 +4,7 @@ import {Card} from "antd";
 const FeedCardWrap = styled(Card)`
   .ant-card-body {
     padding: 24px;
+    align-items: center;
   }
 
   .ant-avatar {

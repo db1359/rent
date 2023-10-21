@@ -83,6 +83,13 @@ const AuthHeader = () => {
         {
             key: 'channels/start',
             label: <span style={{fontSize: 14, fontWeight: 600}}>Start Channel</span>
+        },
+        {
+            type: 'divider',
+        },
+        {
+            key: 'channel',
+            label: <span style={{fontSize: 14, fontWeight: 600}}>Find Channel</span>
         }
     ]
 
@@ -106,11 +113,6 @@ const AuthHeader = () => {
                                     className={location.pathname === "/" && "active"}>
                                     Home
                             </Button>
-                            {/* <Button type="communitylink"
-                                    onClick={() => {navigate("/channels/abolishfamilycourt");}}
-                                    className={location.pathname === "/channels/abolishfamilycourt" && "active"}>
-                                    Browse Channels
-                            </Button> */}
                             <Dropdown
                                 placement="bottomRight"
                                 menu={{
@@ -133,16 +135,6 @@ const AuthHeader = () => {
                                     className={location.pathname === "/dir" && "active"}>
                                     Directory
                             </Button>
-                            {/* <Button type="communitylink"
-                                    onClick={() => {navigate("/recalls");}}
-                                    className={location.pathname === "/recalls" && "active"}>
-                                    Recalls
-                            </Button> */}
-                            {/* <Button type="communitylink"
-                                    onClick={() => {navigate("/courtwatch");}}
-                                    className={location.pathname === "/courtwatch" && "active"}>
-                                    CourtWatch
-                            </Button> */}
                             {/* <Button type="communitylink"
                                     onClick={() => {navigate("/trending");}}
                                     className={location.pathname === "/trending" && "active"}>
