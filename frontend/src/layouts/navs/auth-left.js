@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import AuthLeftNavWrap from "./style/left-wrap";
+import AuthLeftNavWrap2 from "./style/left-wrap2";
 import {Avatar, Button} from "antd";
 import {Link, useLocation, useNavigate} from "react-router-dom";
 import {useSelector} from "react-redux";
@@ -53,6 +54,7 @@ const AuthLeftNav = () => {
                     <Icon style={{marginRight: 5, fontSize: 25}} icon="iconamoon:sign-plus-bold"/> Channels
                 </Button>
             </AuthLeftNavWrap>
+            <AuthLeftNavWrap2>
                 {
                 myGroups.map((i) => (    
                 <Button key={i._id}
@@ -63,22 +65,22 @@ const AuthLeftNav = () => {
                     className={location.pathname === "/channel/" + i.slug ? "active" : ""}>
                     <Icon style={{marginRight: 5, fontSize: 25}} icon="ic:outline-group"/> {i.slug}
                 </Button>
-                    ))
-                    }
-                    {
-                    mGroups.map((i) => (
+                ))
+                }
+                {
+                mGroups.map((i) => (
                 <Button key={i._id}
                     type="leftcolumnlink"
                     onClick={() => {
                         navigate("/channel/" + i.slug);
                     }}
                     className={location.pathname === "/channel/" + i.slug ? "active" : ""}>
-                    <Icon style={{marginRight: 5, fontSize: 25}} icon="ic:outline-group"/> {i.slug}<br>s</br>
+                    <Icon style={{marginRight: 5, fontSize: 25}} icon="ic:outline-group"/> {i.slug}
                 </Button>
-                    ))
-                    }
-                    {
-                    rGroups.map((i) => (
+                ))
+                }
+                {
+                rGroups.map((i) => (
                 <Button key={i._id}
                     type="leftcolumnlink"
                     onClick={() => {
@@ -90,6 +92,7 @@ const AuthLeftNav = () => {
                 </Button> 
                 ))
                 }
+            </AuthLeftNavWrap2>       
             <AuthLeftNavWrap>
                 <Button
                     type="leftcolumnlink"

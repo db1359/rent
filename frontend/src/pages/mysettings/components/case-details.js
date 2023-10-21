@@ -14,7 +14,6 @@ import config from "../../../config";
 const {Item} = Form;
 const {Dragger} = Upload;
 
-
 const CaseDetails = (props) => {
     const {user, getHandle} = props;
 

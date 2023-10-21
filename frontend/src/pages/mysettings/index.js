@@ -77,10 +77,7 @@ const ProfilePage = () => {
 
     return user.username ? (
         <AuthLayout side={<AuthRight user={isMe}/>}>
-            <Tabs
-                defaultActiveKey="activity"
-                type="card"
-                style={{marginTop: 24}}
+            <Tabs defaultActiveKey="activity" type="ca rd" style={{marginTop: 24}}
                 items={[
                     {
                         label: `Settings`,
