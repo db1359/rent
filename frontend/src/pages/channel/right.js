@@ -108,7 +108,7 @@ const GroupRight = () => {
                 Start Channel
                 </Button>
                 
-                <div style={{marginTop: 24,}}>
+                <div style={{marginTop: 24, }}>
                     {
                         groups.map((group) => (
                             <List.Item key={group._id}>
@@ -119,11 +119,14 @@ const GroupRight = () => {
                                                 size={50}
                                                 style={{
                                                     backgroundColor: "#8f3dce",
-                                                    borderRadius: "6px"
+                                                    borderRadius: "6px",
+                                                    marginRight: "10px",
                                                 }}
                                                 shape="square">
-                                                {group.title?.[0]}
-                                            </Avatar> {<b>{group.title}</b>}
+                                                {/* {group.title?.[0]} */}
+                                                <Icon style={{marginTop: 10, fontSize: 30}} icon="ic:outline-group"/> 
+                                            </Avatar> 
+                                             {<b>{group.title}</b>}
                                         </Link>
                                     }
                                     
