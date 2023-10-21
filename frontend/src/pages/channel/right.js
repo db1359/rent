@@ -123,10 +123,10 @@ const GroupRight = () => {
                                                 }}
                                                 shape="square">
                                                 {group.title?.[0]}
-                                            </Avatar>
+                                            </Avatar> {<b>{group.title}</b>}
                                         </Link>
                                     }
-                                    title={<b>{group.title}</b>}
+                                    
                                     description={
                                         <p>
                                             <b>{group.members.length} Members</b>&nbsp;&nbsp;&nbsp;
