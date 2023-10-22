@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
-import Banner1LAS from "../../banners/banner1Las";
-import Main from "../components/las/las";
-import TopNav from "../../../layouts/navs/auth-topnav";
+import Banner1LAS from "../banners/banner1Las";
+import Main from "./components/las/las";
+import TopNav from "../../layouts/navs/auth-topnav";
 
 const LegalAbuseSyndrome = () => {
     return (
