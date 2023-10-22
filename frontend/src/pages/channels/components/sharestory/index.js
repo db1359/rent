@@ -1,12 +1,12 @@
 import React from 'react';
 import AboutMainWrap from "./style/wrap";
-import Container from "../../../../../components/paper/container";
+import Container from "../../../../components/paper/container";
 import {Card, Col, Row, Space} from "antd";
-import CardTitle from "../../../../../components/heading/card";
-import P1 from "../../../../../components/paragraph";
-import Img1 from "../../../../../assets/img/sharestory1.png"
-import Img2 from "../../../../../assets/img/sharestory2.png"
-import Img3 from "../../../../../assets/img/sharestory3.png"
+import CardTitle from "../../../../components/heading/card";
+import P1 from "../../../../components/paragraph";
+import Img1 from "../../../../assets/img/sharestory1.png"
+import Img2 from "../../../../assets/img/sharestory2.png"
+import Img3 from "../../../../assets/img/sharestory3.png"
 
 const AboutMain = () => {
     return (
@@ -40,7 +40,7 @@ const AboutMain = () => {
                                         >
                                     </Card>
                                     <P1><br></br>
-                                        2. In the fields add a photo or video, title and content to your story. From the drop box select State, County and individuals involved in your case. Others are having the same problem you are having with them. Click "Update Story". <i>Don't find the individuals involved in your case? Go to <b><a href='https://courtwatch.live/dir'>Directory</a></b> and add them</i>.
+                                        2. In the fields add a photo or video, title and content to your story. From the drop box select State, County and individuals involved in your case. Others are having the same problem you are having with them. Click &quot;Update Story&quot;. <i>Don&apos;t find the individuals involved in your case? Go to <b><a href='https://courtwatch.live/dir'>Directory</a></b> and add them</i>.
                                     </P1>
                                     <Card
                                             bordered={false}
@@ -49,7 +49,7 @@ const AboutMain = () => {
                                         >
                                     </Card>
                                     <P1><br></br>
-                                        3. To get donations from the community add a QR code and click "Upload Donate Image".
+                                        3. To get donations from the community add a QR code and click &quot;Upload Donate Image&quot;.
                                     </P1>
                                     <Card
                                             bordered={false}

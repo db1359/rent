@@ -60,7 +60,7 @@ const AuthHeader = () => {
 
     const items2 = [
         {
-            key: '/courtwatch',
+            key: 'channels/courtwatch',
             label: <span style={{fontSize: 14, fontWeight: 600}}>CourtWatch</span>
         },
         {
@@ -81,15 +81,8 @@ const AuthHeader = () => {
             type: 'divider',
         },
         {
-            key: 'channels/start',
-            label: <span style={{fontSize: 14, fontWeight: 600}}>Start Channel</span>
-        },
-        {
-            type: 'divider',
-        },
-        {
             key: 'channel',
-            label: <span style={{fontSize: 14, fontWeight: 600}}>Find Channel</span>
+            label: <span style={{fontSize: 14, fontWeight: 600}}>More Channels</span>
         }
     ]
 

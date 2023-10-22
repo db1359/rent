@@ -11,6 +11,7 @@ import LoginPage from "../pages/login";
 import AbolishPage from "../pages/channels/abolishfamilycourt";
 import StartChannelPage from "../pages/channels/start";
 import LegalAbuse from '../pages/channels/legalabusesyndrome';
+import CourtWatch from "../pages/channels/courtwatch";
 import NotFoundPage from "../pages/404";
 import ProfilePage from "../pages/myprofile";
 import MySettings from "../pages/mysettings";
@@ -26,10 +27,8 @@ import ProfitingKidsPage from "../pages/about/kids";
 import EmailVerificationPage from "../pages/email-verfication";
 import FeedPage from "../pages/feed";
 import AboutPage from "../pages/about";
-import CourtWatch from "../pages/courtwatch";
 import DirectoryPage from "../pages/dir/";
 import EventsPage from "../pages/events";
-import ChannelsPage from "../pages/channels/start";
 import PrivacyPage from "../pages/about/privacy";
 import TermsPage from "../pages/about/terms";
 import ChannelPage from "../pages/channel";
@@ -61,10 +60,9 @@ const LandingLayout = () => {
                     <Route path="/channels/abolishfamilycourt" element={<AbolishPage/>}/>
                     <Route path="/channels/start" element={<StartChannelPage/>}/>
                     <Route path="/channels/legalabusesyndrome" element={<LegalAbuse/>}/>
-                    <Route path="/channels/start" element={<ChannelsPage/>}/>
                     <Route path="/about/privacy" element={<PrivacyPage/>}/>
                     <Route path="/about/terms" element={<TermsPage/>}/>
-                    <Route path="/courtwatch" element={<CourtWatch/>}/>
+                    <Route path="/channels/courtwatch" element={<CourtWatch/>}/>
                     <Route path="/events" element={<EventsPage/>}/>
                     <Route path="/signup" element={<SignupPage/>}/>
                     <Route path="/verify" element={<WaitVerifyPage/>}/>

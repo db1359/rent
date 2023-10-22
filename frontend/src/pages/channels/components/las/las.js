@@ -1,16 +1,16 @@
 import React from 'react';
-import AboutMainWrap from "./style/wrap";
-import Container from "../../../../../components/paper/container";
-import SectionTitle from "../../../../../components/heading/section";
+import AboutMainWrap from "../main/style/wrap";
+import Container from "../../../../components/paper/container";
+import SectionTitle from "../../../../components/heading/section";
 import {Button, Card, Col, Row, Space} from "antd";
-import VideoPlayer from "../../../../../components/player";
-import CardTitle from "../../../../../components/heading/card";
-import P1 from "../../../../../components/paragraph";
-import Img1 from "../../../../../assets/img/painting.jpg"
-import Img2 from "../../../../../assets/img/arianna-poster200.png"
-import Img3 from "../../../../../assets/img/isaac.jpg"
-import KidsChart from "../chart";
-import ChartImage from '../../../../../assets/img/chart.png'
+import VideoPlayer from "../../../../components/player";
+import CardTitle from "../../../../components/heading/card";
+import P1 from "../../../../components/paragraph";
+import Img1 from "../../../../assets/img/painting.jpg"
+import Img2 from "../../../../assets/img/arianna-poster200.png"
+import Img3 from "../../../../assets/img/isaac.jpg"
+// import KidsChart from "../chart";
+// import ChartImage from '../../../../../assets/img/chart.png'
 import styled from "styled-components"
 import {Icon} from '@iconify/react';
 
@@ -22,7 +22,7 @@ const AboutMain = () => {
                     <Row gutter={[32, 32]}>
                         <Col lg={{span: 18}} span={24}>
                             <Space direction='vertical' style={{width: '100%'}} size={32}>
-                                <div style={{
+                                {/* <div style={{
                                         position: 'relative',
                                         paddingTop: '0%',
                                     }}>
@@ -31,7 +31,7 @@ const AboutMain = () => {
                                         Divorce industry revenues increased 100 fold from $1 billion to $100 billion after Bill Clinton's "Kids for Cash" legistlation to seperates kids from families.
                                         It incentivized corrupt judges, attorneys, DAs, therapists and slew of money hungry frauds to massively profit by destroying kids and families. It continues to financially benefit the Clinton campaingn & Foundations to this day.
                                     </P1>
-                                </div>
+                                </div> */}
                             </Space>
                         </Col>
                         <Col lg={{span: 6}} span={24} style={{width: '100%', paddingTop: '30px'}}>

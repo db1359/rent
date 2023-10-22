@@ -1,14 +1,14 @@
 import React from 'react';
 import AboutMainWrap from "./style/wrap";
-import Container from "../../../../../components/paper/container";
-import SectionTitle from "../../../../../components/heading/section";
+import Container from "../../../../components/paper/container";
+import SectionTitle from "../../../../components/heading/section";
 import {Button, Card, Col, Row, Space} from "antd";
-import VideoPlayer from "../../../../../components/player";
-import CardTitle from "../../../../../components/heading/card";
-import P1 from "../../../../../components/paragraph";
-import Img1 from "../../../../../assets/img/painting.jpg"
-import Img2 from "../../../../../assets/img/arianna-poster200.png"
-import Img3 from "../../../../../assets/img/isaac.jpg"
+import VideoPlayer from "../../../../components/player";
+import CardTitle from "../../../../components/heading/card";
+import P1 from "../../../../components/paragraph";
+import Img1 from "../../../../assets/img/painting.jpg"
+import Img2 from "../../../../assets/img/arianna-poster200.png"
+import Img3 from "../../../../assets/img/isaac.jpg"
 // import KidsChart from "../chart";
 // import ChartImage from '../../../../../assets/img/chart.png'
 import styled from "styled-components"

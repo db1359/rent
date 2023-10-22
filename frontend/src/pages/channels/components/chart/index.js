@@ -1,9 +1,9 @@
 import React from 'react';
 import KidsChartWrap from "./style/wrap";
-import Container from "../../../../../components/paper/container";
-import SectionTitle from "../../../../../components/heading/section";
-import P1 from "../../../../../components/paragraph";
-import ChartImage from '../../../../../assets/img/chart.png'
+import Container from "../../../../components/paper/container";
+import SectionTitle from "../../../../components/heading/section";
+import P1 from "../../../../components/paragraph";
+import ChartImage from '../../../../assets/img/chart.png'
 
 const KidsChart = () => {
     return (
@@ -15,7 +15,7 @@ const KidsChart = () => {
                 </SectionTitle>
                 <P1>
                     Seeing the riches the Biden
-                    Crime Family was racking in locking up black men, the Clinton's decided to build their own empire
+                    Crime Family was racking in locking up black men, the Clinton&apos;s decided to build their own empire
                     targeting black women with
                     <a
                         rel="noreferrer"

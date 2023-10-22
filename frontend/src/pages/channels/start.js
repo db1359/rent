@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import ShareBanner from "../banners/share";
-import ShareStory from "./abolishfamilycourt/components/sharestory";
+import ShareStory from "./components/sharestory";
 import TopNav from "../../layouts/navs/auth-topnav";
 
 const AboutPage = () => {

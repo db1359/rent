@@ -1,16 +1,16 @@
 import React from 'react';
 import AboutMainWrap from "./style/wrap";
-import Container from "../../../../../components/paper/container";
-import SectionTitle from "../../../../../components/heading/section";
+import Container from "../../../../components/paper/container";
+import SectionTitle from "../../../../components/heading/section";
 import {Card, Col, Row, Space} from "antd";
-import VideoPlayer from "../../../../../components/player";
-import CardTitle from "../../../../../components/heading/card";
-import P1 from "../../../../../components/paragraph";
-import Img1 from "../../../../../assets/img/painting.jpg"
-import Img2 from "../../../../../assets/img/arianna-poster200.png"
-import Img3 from "../../../../../assets/img/isaac.jpg"
+import VideoPlayer from "../../../../components/player";
+import CardTitle from "../../../../components/heading/card";
+import P1 from "../../../../components/paragraph";
+import Img1 from "../../../../assets/img/painting.jpg"
+import Img2 from "../../../../assets/img/arianna-poster200.png"
+import Img3 from "../../../../assets/img/isaac.jpg"
 import KidsChart from "../chart";
-import ChartImage from '../../../../../assets/img/chart.png'
+import ChartImage from '../../../../assets/img/chart.png'
 import styled from "styled-components"
 
 const AboutMain2 = () => {
@@ -48,7 +48,7 @@ const AboutMain2 = () => {
                                         Hollywood March For Kids
                                     </CardTitle>
                                     <P1>
-                                        02/19/2022 - AdvocateTV's Susan Schofield, reporting from Hollywood with Daya Baran about his daughter Arianna's child sexual abuse coverup by
+                                        02/19/2022 - AdvocateTV&apos;s Susan Schofield, reporting from Hollywood with Daya Baran about his daughter Arianna&apos;s child sexual abuse coverup by
                                         California AG Rob Bonta, corrupt judge Cynthia Lie, unscrupulous fraudsters BJ
                                         Fadem, Kathrina Ohde, extortionists Nathalie Ferro Da Costa, Kevin Boileau, Joe
                                         Perez, Shalini Venktash, child abusers Reshma Kumar, Vikaash Kumar & 
@@ -86,7 +86,7 @@ const AboutMain2 = () => {
                                     hundreds of people they victimized in one of the worst judicial scandals in U.S. history. 
                                     <a rel="noreferrer"
                                         href="https://www.usnews.com/news/politics/articles/2022-08-17/kids-for-cash-judges-ordered-to-pay-more-than-200m"
-                                        target={"_blank"}> More >>
+                                        target={"_blank"}> More
                                     </a>
                                     </P1>
                                 </div>

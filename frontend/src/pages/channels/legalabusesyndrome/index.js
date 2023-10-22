@@ -1,13 +1,6 @@
 import React, {Fragment} from 'react';
 import Banner1LAS from "../../banners/banner1Las";
-import Main from "./components/main";
-import AriannaStory from "./components/story";
-import AriannaNews from "./components/ariannanews";
-import AriannaCriminals from "./components/criminals";
-import AriannaExtortion from "./components/extortion";
-import AriannaMine from "./components/mine";
-import AriannaTable from "./components/table";
-import SectionTitle from "../../../components/heading/section";
+import Main from "../components/las/las";
 import TopNav from "../../../layouts/navs/auth-topnav";
 
 const LegalAbuseSyndrome = () => {
