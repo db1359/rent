@@ -90,7 +90,6 @@ const GroupPage = () => {
         getHandle()
     }, [])
 
-
     return (
         <AuthLayout side={<GroupRight/>}>
             <List style={{marginTop: 10,}}>

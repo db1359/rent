@@ -31,7 +31,7 @@ import DirectoryPage from "../pages/dir/";
 import EventsPage from "../pages/events";
 import PrivacyPage from "../pages/about/privacy";
 import TermsPage from "../pages/about/terms";
-import ChannelPage from "../pages/channel";
+import ChannelPage from "../pages/mychannel";
 import SingleGroupPage from "../pages/single-group";
 import SingleChannelPage from "../pages/single-channel";
 import WaitVerifyPage from "../pages/wait-verify";
