@@ -1,10 +1,10 @@
 import React from 'react';
 import AriannaNewsWrap from "./style/wrap";
-import Container from "../../../../../components/paper/container";
+import Container from "../../../../components/paper/container";
 import {Card, Col, Row, Space} from "antd";
-import CardTitle from "../../../../../components/heading/card";
-import P1 from "../../../../../components/paragraph";
-import VideoPlayer from "../../../../../components/player";
+import CardTitle from "../../../../components/heading/card";
+import P1 from "../../../../components/paragraph";
+import VideoPlayer from "../../../../components/player";
 import styled from "styled-components"
 
 const AriannaNews = () => {
@@ -34,7 +34,7 @@ const AriannaNews = () => {
                                             Daddy Daughter Visit
                                         </CardTitle>
                                         <P1>
-                                            Arianna's mother dropped off a little girl in the middle of a massive
+                                            Arianna`&apos;s mother dropped off a little girl in the middle of a massive
                                             noisy Whole Foods and left. She was lost searching. Arianna is being
                                             used by her mother, Cynthia Lie, BJ Fadem, Nathelie Ferro and others as
                                             their ATM to extort money from her dad.

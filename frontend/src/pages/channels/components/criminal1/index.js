@@ -100,9 +100,9 @@ const KidsCriminal1 = () => {
                         to siphoned money from families.
                     </P1>
                     <P1>
-                        Lie is using the courts to get revenge against men, against fathers', against kids, against
+                        Lie is using the courts to get revenge against men, against fathers&apos;, against kids, against
                         families because of spiteful hatred her empty LGBTQ life has dealtt her. Lie, has to be removed,
-                        charged and prosecuted. All Lie's cases have to be vacated. They are all fraudulent, pay for
+                        charged and prosecuted. All Lie&apos;s cases have to be vacated. They are all fraudulent, pay for
                         play, kids for cash, illegal child trafficking schemes. Where kids are used by lawyers using
                         falsely obtained orders from corrupt frauds like Cynthia Lie. Lie has violated the oath of
                         office, abuse of power, abuse the power of the courts, lacks moral character and is a threat to

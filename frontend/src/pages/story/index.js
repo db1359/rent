@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import BannerStory from "../banners/story";
 import AriannaStory from "./components/story";
-import AriannaNews from "./components/ariannanews";
+import AriannaNews from "../channels/components/ariannanews";
 import AriannaCriminals from "./components/criminals";
 import AriannaExtortion from "./components/extortion";
 import AriannaMine from "./components/mine";

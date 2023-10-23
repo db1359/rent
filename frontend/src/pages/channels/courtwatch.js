@@ -1,7 +1,6 @@
 import React, {Fragment} from 'react';
 import CourtWatchBanner from "../banners/courtwatch";
 import AriannaStory from "../story/components/story";
-import AriannaNews from "../story/components/ariannanews";
 import AriannaCriminals from "../story/components/criminals";
 import AriannaExtortion from "../story/components/extortion";
 import AriannaMine from "../story/components/mine";
@@ -14,7 +13,7 @@ const CourtWatch = () => {
         <Fragment>
             <TopNav/>
             <CourtWatchBanner/>
-            {/* <AriannaNews/>
+            {/*
             <AriannaStory/>
             <SectionTitle style={{width: "100%", marginTop: 72, marginBottom: 0}}>Criminals Covering Up Sexual Abuse of Arianna</SectionTitle>
             <AriannaCriminals/>

@@ -1,6 +1,6 @@
 import React from 'react';
 import VideoPlayer from "../../../../components/player";
-import KidsVideosWrap from "./style/wrap";
+import KidsVideosWrap from "../style/wrap";
 import Container from "../../../../components/paper/container";
 import {Col, Row, Space} from "antd";
 import P1 from "../../../../components/paragraph";

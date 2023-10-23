@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutMainWrap from "./style/wrap";
+import AboutMainWrap from "../style/wrap";
 import Container from "../../../../components/paper/container";
 import SectionTitle from "../../../../components/heading/section";
 import {Button, Card, Col, Row, Space} from "antd";

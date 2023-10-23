@@ -49,7 +49,7 @@ const KidsCriminal2 = () => {
                         <Avatar src={Image1} size={200}/>
                         <div>
                             <h3>
-                                "BJ" Fadem
+                            `&quot;BJ`&quot; Fadem
                             </h3>
                             <P1>
                                 Cynthia Lie, is in serious and egregious civil rights and color of law violations. Lie
@@ -62,7 +62,7 @@ const KidsCriminal2 = () => {
 
                     </P1>
                     <P1>
-                        Lie is using the courts to get revenge against men, against fathers', against kids, against
+                        Lie is using the courts to get revenge against men, against fathers&quot;, against kids, against
 
                     </P1>
                 </Container>
