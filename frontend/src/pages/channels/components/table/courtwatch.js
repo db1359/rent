@@ -37,6 +37,35 @@ const AriannaTable = () => {
                     </div>
                     <div>
                         <div>
+                            <div>10/25/2023</div>
+                        </div>
+                        <div>
+                            <div>1:30 PM</div>
+                        </div>
+                        <div>
+                            <div>Daya Baran</div>
+                        </div>
+                        <div>
+                            <div>Dep 64</div>
+                        </div>
+                        <div>
+                            <div><a href="https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_YThiMjc1NmYtY2Q1OS00OWU4LTgzNzYtNTY0ZjI5MzQ4M2Iy%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522c0a96a14-a905-4caa-8c29-a227571a29a2%2522%252c%2522Oid%2522%253a%25225a51b742-5dd8-4523-b89c-b69845eb07d9%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=eabd5c08-84b2-474b-aa76-53c542e5316e&directDl=true&msLaunch=true&enableMobilePage=false&suppressPrompt=true"
+                            target="_blank" rel="noreferrer">
+                            Court Watch Link</a></div>
+                        </div>
+                        <div>
+                            <div><a href="https://courtwatch.live/" target="_blank" rel="noreferrer"></a></div>
+                        </div>
+                        <div>
+                            <div style={{textAlign: 'center'}}>
+                                <a href="https://twitter.com/intent/tweet?text=Court%20Watch%20for%20Ella%20Taran%20https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NGFiNzZjYTktMTIxYi00YjVkLTg4ZTMtYmNiZTlhMGFjMjhk%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522c0a96a14-a905-4caa-8c29-a227571a29a2%2522%252c%2522Oid%2522%253a%25225a51b742-5dd8-4523-b89c-b69845eb07d9%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=e6be0d23-004e-4d8a-95b4-42c0d3dccc17&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true" target="_blank" rel="noreferrer">
+                                <Icon icon="mdi:twitter" style={{width: 30, height: 30}}/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
                             <div>05/23/2023</div>
                         </div>
                         <div>
