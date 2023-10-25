@@ -58,7 +58,7 @@ const AriannaTable = () => {
                         </div>
                         <div>
                             <div style={{textAlign: 'center'}}>
-                                <a href="https://twitter.com/intent/tweet?text=Court%20Watch%20for%20Ella%20Taran%20https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NGFiNzZjYTktMTIxYi00YjVkLTg4ZTMtYmNiZTlhMGFjMjhk%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522c0a96a14-a905-4caa-8c29-a227571a29a2%2522%252c%2522Oid%2522%253a%25225a51b742-5dd8-4523-b89c-b69845eb07d9%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=e6be0d23-004e-4d8a-95b4-42c0d3dccc17&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true" target="_blank" rel="noreferrer">
+                                <a href="https://twitter.com/intent/tweet?text=Court%20Watch%20for%20FreeArianna%20https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NGFiNzZjYTktMTIxYi00YjVkLTg4ZTMtYmNiZTlhMGFjMjhk%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522c0a96a14-a905-4caa-8c29-a227571a29a2%2522%252c%2522Oid%2522%253a%25225a51b742-5dd8-4523-b89c-b69845eb07d9%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=e6be0d23-004e-4d8a-95b4-42c0d3dccc17&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true" target="_blank" rel="noreferrer">
                                 <Icon icon="mdi:twitter" style={{width: 30, height: 30}}/>
                                 </a>
                             </div>
