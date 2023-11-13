@@ -101,11 +101,9 @@ const ProfilePage = () => {
                                 </Button>
                             )} 
                         </div>
-                    }
-                >
+                    }>
                     <Row
-                        style={{justifyContent: "space-between"}}
-                    >
+                        style={{justifyContent: "space-between"}}>
                         <Col>
                             <div>
                                 <Avatar
