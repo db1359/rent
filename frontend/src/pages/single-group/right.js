@@ -57,7 +57,7 @@ const SingleGroupRight = ({group, getHandle}) => {
                                 navigate("/" + group.author?.username);
                                 console.log("CLICKED")
                             }}
-                            style={{cursor: "pointer", backgroundColor: "#8f3dce"}}
+                            style={{cursor: "pointer", backgroundColor: "#9701fc"}}
                             src={group?.author?.photo}
                             size={52}>
                             {group?.author?.firstname?.[0]}
@@ -74,7 +74,7 @@ const SingleGroupRight = ({group, getHandle}) => {
                                             navigate("/" + member.username)
                                         }
                                     }}
-                                    style={{cursor: "pointer", backgroundColor: "#8f3dce"}}
+                                    style={{cursor: "pointer", backgroundColor: "#9701fc"}}
                                     src={member.photo}
                                     size={52}>
                                     {member?.firstname?.[0]}
@@ -99,7 +99,7 @@ const SingleGroupRight = ({group, getHandle}) => {
                             (group.requests || [])?.map((member, index) => (
                                 <Col key={`requesting${member?._id}${index}`}>
                                     <Avatar
-                                        style={{cursor: "pointer", backgroundColor: "#8f3dce"}}
+                                        style={{cursor: "pointer", backgroundColor: "#9701fc"}}
                                         onClick={()=>{
                                             setUser(member);
                                             setVisible(true)
@@ -128,7 +128,7 @@ const SingleGroupRight = ({group, getHandle}) => {
                     <h5 style={{fontSize: 32, marginBottom: 0, fontWeight: 700}}>{user.username}</h5>
                     <Avatar
                         onClick={()=>{navigate("/" + user?.username)}}
-                        style={{fontSize: 32, backgroundColor: "#8f3dce"}}
+                        style={{fontSize: 32, backgroundColor: "#9701fc"}}
                         size={80}
                         src={user?.photo}>
                         {user?.firstname?.[0] || "A"}
@@ -162,7 +162,7 @@ const SingleGroupRight = ({group, getHandle}) => {
                     <h5 style={{fontSize: 32, marginBottom: 0, fontWeight: 700}}>{user.username}</h5>
                     <Avatar
                         onClick={()=>{navigate("/" + user?.username)}}
-                        style={{fontSize: 32, backgroundColor: "#8f3dce"}}
+                        style={{fontSize: 32, backgroundColor: "#9701fc"}}
                         size={80}
                         src={user?.photo}>
                         {user?.firstname?.[0] || "A"}

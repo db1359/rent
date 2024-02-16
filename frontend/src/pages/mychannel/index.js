@@ -103,7 +103,7 @@ const GroupPage = () => {
                         size="large"
                         style={{
                             color: "#ffffff",
-                            backgroundColor: "#8f3dce",
+                            backgroundColor: "#9701fc",
                             marginRight: 30,
                         }}>
                         Abolish Family Court - Join
@@ -117,7 +117,7 @@ const GroupPage = () => {
                         size="large"
                         style={{
                             color: "#ffffff",
-                            backgroundColor: "#8f3dce",
+                            backgroundColor: "#9701fc",
                             marginRight: 30,
                         }}>
                         CourtWatch - Join
@@ -131,7 +131,7 @@ const GroupPage = () => {
                         size="large"
                         style={{
                             color: "#ffffff",
-                            backgroundColor: "#8f3dce",
+                            backgroundColor: "#9701fc",
                             marginRight: 30,
                         }}>
                         Recall - Join
@@ -159,7 +159,7 @@ const GroupPage = () => {
                                         <Avatar
                                             size={50}
                                             style={{
-                                                backgroundColor: "#8f3dce",
+                                                backgroundColor: "#9701fc",
                                                 borderRadius: "6px"
                                             }}
                                             shape="square">
@@ -174,7 +174,7 @@ const GroupPage = () => {
                                         <span
                                             style={{color: "red"}}>{group.requests.length} Waiting</span>&nbsp;&nbsp;&nbsp;
                                         <span style={{
-                                            color: "#8f3dce",
+                                            color: "#9701fc",
                                             fontWeight: 700
                                         }}>{group.feeds.length} Feeds</span>
                                     </p>

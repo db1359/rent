@@ -15,7 +15,7 @@ export const LogoTextLight = styled.h1`
   line-height: 1;
   text-align: center;
   a {
-    color: #8f3dce;
+    color: #9701fc;
     font-family: 'Kaushan Script', cursive;
     font-size: 32px;
     :focus, :hover {

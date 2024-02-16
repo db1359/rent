@@ -46,7 +46,7 @@ const AboutMain = () => {
                                     size="large"
                                     style={{
                                         color: "#ffffff",
-                                        backgroundColor: "#8f3dce",
+                                        backgroundColor: "#9701fc",
                                         marginTop: 0,
                                     }}>
                                     Join Channel

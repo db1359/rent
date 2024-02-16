@@ -62,7 +62,7 @@ const RecallPage = () => {
         colorAxis: {
             min: 0,
             minColor: "#f8dfef",
-            maxColor: "#8f3dce"
+            maxColor: "#9701fc"
         },
 
         mapNavigation: {
@@ -152,7 +152,7 @@ const RecallPage = () => {
                             <Breadcrumb.Item onClick={()=>{navigate('/recalls')}}><b>Recalls</b></Breadcrumb.Item>
                             {
                                 routeParams?.state && (
-                                    <Breadcrumb.Item onClick={()=>{navigate(`/recalls/${routeParams.state}`)}} style={{color: '#8f3dce'}}><b>{routeParams.state?.toUpperCase()}</b></Breadcrumb.Item>
+                                    <Breadcrumb.Item onClick={()=>{navigate(`/recalls/${routeParams.state}`)}} style={{color: '#9701fc'}}><b>{routeParams.state?.toUpperCase()}</b></Breadcrumb.Item>
                                 )
                             }
                             {

@@ -392,7 +392,7 @@ const SingleChannelPage = () => {
                     <h3>Your request is pending approval.</h3>
                     <Button
                         onClick={()=>{navigate("/")}}
-                        style={{height: 50, padding: "4px 32px", backgroundColor: "#8f3dce", color: "#ffffff"}}
+                        style={{height: 50, padding: "4px 32px", backgroundColor: "#9701fc", color: "#ffffff"}}
                         type="default">
                         Go Home
                     </Button>

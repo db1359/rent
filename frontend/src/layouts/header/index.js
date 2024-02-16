@@ -7,8 +7,9 @@ import HamburgerButton from "../../components/button/hamburger";
 import axios from "axios";
 import config from "../../config";
 import {MenuOutlined} from "@ant-design/icons";
-import Logo from "../../assets/img/fontbolt_transparent.png";
-import Logo2 from "../../assets/img/fontbolt_9701FC.png";
+// import Logo from "../../assets/img/fontbolt_transparent.png";
+import Logo from "../../assets/img/fontbolt.png";
+import Logo2 from "../../assets/img/fontbolt_9701_F_C.png";
 
 const {useBreakpoint} = Grid;
 
@@ -57,16 +58,16 @@ const LayoutHeader = () => {
 
     return (
         <Header style={location.pathname === "/" && scroll < 150
-                    ? {position: "absolute", width: "100%",
+                    ? {position: "absolute", width: "100%", height: "100%",
                         backgroundColor: "transparent"}
                     : {}}>
             <Container>
                 <Row justify="space-between" align="middle">
                     <Col>
                         {/* <LogoText>
-                            <Link to="/">CourtWatch</Link>
+                            <Link to="/">Boycott</Link>
                         </LogoText> */}
-                        <Link to="/"><img src={Logo} style={{height: '30px', marginTop: '0px'}} alt="CourtWatch"/></Link>
+                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '0px'}} alt="Boycott"/></Link>
                     </Col>
                     <Col>
                         {breakpoints.lg ? (
@@ -91,6 +92,18 @@ const LayoutHeader = () => {
                                         <Button type="headerlink"
                                             onClick={() => {navigate("channels/abolishfamilycourt");}}
                                             className={location.pathname === "channels/abolishfamilycourt" && "active"}>
+                                            Companies
+                                        </Button>
+                                    )}
+                                </Col>
+
+                                <Col>
+                                    {user ? (
+                                        <nbsp/>
+                                    ) : (
+                                        <Button type="headerlink"
+                                            onClick={() => {navigate("channels/abolishfamilycourt");}}
+                                            className={location.pathname === "channels/abolishfamilycourt" && "active"}>
                                             Channels
                                         </Button>
                                     )}
@@ -103,7 +116,7 @@ const LayoutHeader = () => {
                                         <Button type="headerlink"
                                             onClick={() => {navigate("/dir");}}
                                             className={location.pathname === "/dir" && "active"}>
-                                            Directory
+                                            Criminals
                                         </Button>
                                     )}
                                 </Col>
@@ -169,11 +182,11 @@ const LayoutHeader = () => {
                                     title={
                                         // <LogoTextLight
                                         //     onClick={() => {setVisible(false);}}
-                                        //     style={{color: "#8f3dce!important"}}
+                                        //     style={{color: "#9701fc!important"}}
                                         //     >
                                         //     <Link to="/">CourtWatch</Link>
                                         // </LogoTextLight>
-                                        <Link to="/"><img src={Logo2} style={{height: '30px', marginTop: '9px'}} alt="CourtWatch"/></Link>
+                                        <Link to="/"><img src={Logo2} style={{height: '30px', marginTop: '9px'}} alt="Boycott"/></Link>
                                     }
                                     closeIcon={<></>}
                                     >

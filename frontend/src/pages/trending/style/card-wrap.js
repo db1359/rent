@@ -45,7 +45,7 @@ const ProfileCardWrap = styled(Card)`
       &.followings {
         margin-top: 18px;
         margin-bottom: 12px;
-        color: #8f3dce;
+        color: #9701fc;
         font-weight: 600;
         display: flex;
         align-items: center;

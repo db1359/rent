@@ -6,7 +6,8 @@ import {Link, useLocation, useNavigate} from "react-router-dom";
 import {logoutAction} from "../../redux/actions/auth";
 import {useDispatch, useSelector} from "react-redux";
 import {Icon} from "@iconify/react";
-import Logo from "../../assets/img/fontbolt_9701FC.png";
+// import Logo from "../../assets/img/fontbolt_9701fc.png";
+import Logo from "../../assets/img/boycottlogo.png";
 
 const { Header } = Layout
 
@@ -97,7 +98,7 @@ const AuthHeader = () => {
                         {/* <LogoText>
                             <Link to="/">CourtWatch</Link>
                         </LogoText> */}
-                        <Link to="/"><img src={Logo} style={{height: '30px', marginTop: '0px'}} alt="CourtWatch"/></Link>
+                        <Link to="/"><img src={Logo} style={{height: '30px', marginTop: '0px'}} alt="Boycott"/></Link>
                     </Col>
                     <Col>
                         <Space size={36}>
@@ -147,7 +148,7 @@ const AuthHeader = () => {
                                     style={{
                                         fontSize: 20,
                                         cursor: "pointer",
-                                        background: "#8f3dce"
+                                        background: "#9701fc"
                                     }}
                                     src={auth?.user?.photo}>
                                     {auth?.user?.firstname?.[0]}

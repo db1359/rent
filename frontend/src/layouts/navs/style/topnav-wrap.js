@@ -12,7 +12,7 @@ background-color: #e4dfe8;
     //  margin-bottom: 18px;
     //  font-size: 16px;
     //  font-weight: 600;
-    //  color: #8f3dce;
+    //  color: #9701fc;
   //   //letter-spacing: 3px;
   //   //text-transform: uppercase;
   // 
