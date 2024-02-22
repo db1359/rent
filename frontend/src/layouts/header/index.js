@@ -9,7 +9,8 @@ import config from "../../config";
 import {MenuOutlined} from "@ant-design/icons";
 // import Logo from "../../assets/img/fontbolt_transparent.png";
 import Logo from "../../assets/img/fontbolt.png";
-import Logo2 from "../../assets/img/fontbolt_9701_F_C.png";
+import Logo2 from "../../assets/img/fontbolt.png";
+// import Logo2 from "../../assets/img/fontbolt_9701_F_C.png";
 
 const {useBreakpoint} = Grid;
 
@@ -90,8 +91,8 @@ const LayoutHeader = () => {
                                         <nbsp/>
                                     ) : (
                                         <Button type="headerlink"
-                                            onClick={() => {navigate("channels/abolishfamilycourt");}}
-                                            className={location.pathname === "channels/abolishfamilycourt" && "active"}>
+                                            onClick={() => {navigate("/companies");}}
+                                            className={location.pathname === "/companies" && "active"}>
                                             Companies
                                         </Button>
                                     )}
@@ -102,9 +103,9 @@ const LayoutHeader = () => {
                                         <nbsp/>
                                     ) : (
                                         <Button type="headerlink"
-                                            onClick={() => {navigate("channels/abolishfamilycourt");}}
-                                            className={location.pathname === "channels/abolishfamilycourt" && "active"}>
-                                            Channels
+                                            onClick={() => {navigate("/channels/abolishfamilycourt");}}
+                                            className={location.pathname === "/channels/abolishfamilycourt" && "active"}>
+                                            Causes
                                         </Button>
                                     )}
                                 </Col>
@@ -114,8 +115,8 @@ const LayoutHeader = () => {
                                         <nbsp/>
                                     ) : (
                                         <Button type="headerlink"
-                                            onClick={() => {navigate("/dir");}}
-                                            className={location.pathname === "/dir" && "active"}>
+                                            onClick={() => {navigate("/criminal");}}
+                                            className={location.pathname === "/criminal" && "active"}>
                                             Criminals
                                         </Button>
                                     )}
@@ -198,7 +199,7 @@ const LayoutHeader = () => {
                                         ]}
                                         >
                                         {/* <NavHashLink to="/arianna">Arianna's Story</NavHashLink> */}
-                                        <Menu.Item key="abolishfamilycourt">Abolish Family Courts</Menu.Item>
+                                        <Menu.Item key="abolishfamilycourt">Family Courts</Menu.Item>
                                         <Menu.Item key="donate" className="btn">DONATE</Menu.Item>
                                         <Menu.Item key="login">Login</Menu.Item>
                                     </Menu>

@@ -1,4 +1,4 @@
-# CourtWatch
+# iBoycott
 ## Frontend
 `react.js`
 

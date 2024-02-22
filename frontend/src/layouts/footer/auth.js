@@ -55,14 +55,14 @@ const AuthFooter = () => {
                             <Col>
                                 <Link to="/">Home</Link>
                             </Col>
-                            <Col>
+                            {/* <Col>
                                 <Link to="/about">About</Link>
-                            </Col>
+                            </Col> */}
                             {/* <Col>
                                 <Link to="/story">Arianna's Story</Link>
                             </Col> */}
                             <Col>
-                                <Link to="/channels/abolishfamilycourt">Channels</Link>
+                                <Link to="/channels/abolishfamilycourt">Causes</Link>
                             </Col>
                             <Col>
                                 <Link to="/donate">Donate</Link>
@@ -97,7 +97,7 @@ const AuthFooter = () => {
                             gutter={20}
                             style={{justifyContent: "flex-end"}}>
                             <Col>
-                                <Copyright>Copyright © CourtWatch 2023</Copyright>
+                                <Copyright>Copyright © iBoycott 2024</Copyright>
                             </Col>
                         </Row>
                     </Col>

@@ -81,7 +81,7 @@ const LayoutHeader = () => {
                                         type="communitylink"
                                         onClick={() => { !auth.isAuth ?
                                             navigate(`/login/?redirect=/dir`) : setAdd(true)}}>
-                                        Add
+                                        Expose Them
                                     </Button>
                                 )}
                             </Col>

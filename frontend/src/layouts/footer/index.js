@@ -27,9 +27,9 @@ const LandingLayoutFooter = () => {
                             <Col>
                                 <Link to="/">Home</Link>
                             </Col>
-                            <Col>
+                            {/* <Col>
                                 <Link to="/about">About</Link>
-                            </Col>
+                            </Col> */}
                             {/* <Col>
                                 <Link to="/story">Arianna's Story</Link>
                             </Col> */}
@@ -69,7 +69,7 @@ const LandingLayoutFooter = () => {
                             gutter={20}
                             style={{justifyContent: "flex-end"}}>
                             <Col>
-                                <Copyright>© CourtWatch 2023</Copyright>
+                                <Copyright>© iBoycott 2024</Copyright>
                             </Col>
                         </Row>
                     </Col>

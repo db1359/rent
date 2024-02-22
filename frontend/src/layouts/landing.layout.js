@@ -10,7 +10,8 @@ import SignupPage from "../pages/signup";
 import LoginPage from "../pages/login";
 import AbolishPage from "../pages/channels/abolishfamilycourt";
 import StartChannelPage from "../pages/channels/start";
-import LegalAbuse from '../pages/channels/legalabusesyndrome';
+import Genocide from '../pages/channels/genocide';
+import AnimalRights from '../pages/channels/animalrights';
 import CourtWatch from "../pages/channels/courtwatch";
 import NotFoundPage from "../pages/404";
 import ProfilePage from "../pages/myprofile";
@@ -27,7 +28,8 @@ import ProfitingKidsPage from "../pages/about/kids";
 import EmailVerificationPage from "../pages/email-verfication";
 import FeedPage from "../pages/feed";
 import AboutPage from "../pages/about";
-import DirectoryPage from "../pages/dir/";
+import CriminalPage from "../pages/dir";
+import CompaniesPage from "../pages/companies";
 import EventsPage from "../pages/events";
 import PrivacyPage from "../pages/about/privacy";
 import TermsPage from "../pages/about/terms";
@@ -59,7 +61,8 @@ const LandingLayout = () => {
                     <Route path="/about" element={<AboutPage/>}/>
                     <Route path="/channels/abolishfamilycourt" element={<AbolishPage/>}/>
                     <Route path="/channels/start" element={<StartChannelPage/>}/>
-                    <Route path="/channels/legalabusesyndrome" element={<LegalAbuse/>}/>
+                    <Route path="/channels/genocide" element={<Genocide/>}/>
+                    <Route path="/channels/animalrights" element={<AnimalRights/>}/>
                     <Route path="/about/privacy" element={<PrivacyPage/>}/>
                     <Route path="/about/terms" element={<TermsPage/>}/>
                     <Route path="/channels/courtwatch" element={<CourtWatch/>}/>
@@ -73,7 +76,8 @@ const LandingLayout = () => {
                     <Route path="/recalls/submit" element={<RecallSubmissionPage/>}/>
                     <Route path="/recalls/:state" element={<RecallPage/>}/>
                     <Route path="/recalls/:state/:id" element={<SingleRecallPage/>}/>
-                    <Route path="/dir" element={<DirectoryPage/>}/>
+                    <Route path="/criminal" element={<CriminalPage/>}/>
+                    <Route path="/companies" element={<CompaniesPage/>}/>
                     <Route path="/:username" element={<ProfilePage/>}/>
                     <Route path="/:username/settings" element={<MySettings/>}/>
                     <Route path="/:username/status/:id" element={<FeedPage/>}/>

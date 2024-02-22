@@ -7,7 +7,7 @@ import {logoutAction} from "../../redux/actions/auth";
 import {useDispatch, useSelector} from "react-redux";
 import {Icon} from "@iconify/react";
 // import Logo from "../../assets/img/fontbolt_9701fc.png";
-import Logo from "../../assets/img/boycottlogo.png";
+import Logo from "../../assets/img/fontbolt.png";
 
 const { Header } = Layout
 

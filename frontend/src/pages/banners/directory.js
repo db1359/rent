@@ -9,11 +9,11 @@ const KidsHero = () => {
         <KidsHeroWrap>
             <Container>
                 <P1></P1>
-                <h4>Directory</h4>
+                <h4>Criminals Profiting From</h4>
                 <SectionTitle>
-                Corrupt Judges, Lawyers, Therapists, DAs, Public Officals
+                Genocide, War Crimes, Apartheid, Corruption, Fraud, Terrorism
                 </SectionTitle>
-                <h1 style={{paddingTop: 10, paddingBottom: 0}}>Add To Directoy & Expose Corrupt Frauds</h1>
+                <h1 style={{paddingTop: 10, paddingBottom: 0}}>Expose Them</h1>
             </Container>
         </KidsHeroWrap>
     );

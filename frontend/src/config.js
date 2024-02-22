@@ -7,7 +7,7 @@ const config = {
     host_url:
         window.location.hostname === "localhost"
             ? "http://localhost:3000"
-            : "https://courtwatch.live",
+            : "https://iboycott.org",
 };
 
 export default config;

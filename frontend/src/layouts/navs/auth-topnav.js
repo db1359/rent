@@ -61,10 +61,40 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
+                                            navigate("/channels/genocide");
+                                        }}
+                                        className={location.pathname === "/channels/genocide" && "active"}>
+                                        Genocide
+                                    </Button>
+                                )}
+                            </Col>
+
+                            <Col>
+                                {user ? (
+                                    <nbsp/>
+                                ) : (
+                                    <Button
+                                        type="communitylink"
+                                        onClick={() => {
                                             navigate("/channels/abolishfamilycourt");
                                         }}
                                         className={location.pathname === "/channels/abolishfamilycourt" && "active"}>
-                                        Abolish
+                                        Family Courts
+                                    </Button>
+                                )}
+                            </Col>
+
+                            <Col>
+                                {user ? (
+                                    <nbsp/>
+                                ) : (
+                                    <Button
+                                        type="communitylink"
+                                        onClick={() => {
+                                            navigate("/channels/animalrights");
+                                        }}
+                                        className={location.pathname === "/channels/animalrights" && "active"}>
+                                        Animal Rights
                                     </Button>
                                 )}
                             </Col>
@@ -99,7 +129,7 @@ const LayoutHeader = () => {
                                 )}
                             </Col>
 
-                            <Col>
+                            {/* <Col>
                                 {user ? (
                                     <nbsp/>
                                 ) : (
@@ -112,7 +142,7 @@ const LayoutHeader = () => {
                                         Legal Abuse
                                     </Button>
                                 )}
-                            </Col>
+                            </Col> */}
 
                             <Col>
                                 {user ? (
