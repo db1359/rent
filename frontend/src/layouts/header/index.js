@@ -7,10 +7,8 @@ import HamburgerButton from "../../components/button/hamburger";
 import axios from "axios";
 import config from "../../config";
 import {MenuOutlined} from "@ant-design/icons";
-// import Logo from "../../assets/img/fontbolt_transparent.png";
-import Logo from "../../assets/img/fontbolt.png";
-import Logo2 from "../../assets/img/fontbolt.png";
-// import Logo2 from "../../assets/img/fontbolt_9701_F_C.png";
+import Logo from "../../assets/img/fontbolt_transparent.png";
+import Logo2 from "../../assets/img/fontbolt_9701FC.png";
 
 const {useBreakpoint} = Grid;
 
@@ -59,16 +57,16 @@ const LayoutHeader = () => {
 
     return (
         <Header style={location.pathname === "/" && scroll < 150
-                    ? {position: "absolute", width: "100%", height: "100%",
+                    ? {position: "absolute", width: "100%",
                         backgroundColor: "transparent"}
                     : {}}>
             <Container>
                 <Row justify="space-between" align="middle">
                     <Col>
                         {/* <LogoText>
-                            <Link to="/">Boycott</Link>
+                            <Link to="/">CourtWatch</Link>
                         </LogoText> */}
-                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '0px'}} alt="Boycott"/></Link>
+                        <Link to="/"><img src={Logo} style={{height: '30px', marginTop: '0px'}} alt="CourtWatch"/></Link>
                     </Col>
                     <Col>
                         {breakpoints.lg ? (
@@ -91,21 +89,9 @@ const LayoutHeader = () => {
                                         <nbsp/>
                                     ) : (
                                         <Button type="headerlink"
-                                            onClick={() => {navigate("/companies");}}
-                                            className={location.pathname === "/companies" && "active"}>
-                                            Companies
-                                        </Button>
-                                    )}
-                                </Col>
-
-                                <Col>
-                                    {user ? (
-                                        <nbsp/>
-                                    ) : (
-                                        <Button type="headerlink"
-                                            onClick={() => {navigate("/channels/abolishfamilycourt");}}
-                                            className={location.pathname === "/channels/abolishfamilycourt" && "active"}>
-                                            Causes
+                                            onClick={() => {navigate("channels/abolishfamilycourt");}}
+                                            className={location.pathname === "channels/abolishfamilycourt" && "active"}>
+                                            Channels
                                         </Button>
                                     )}
                                 </Col>
@@ -115,9 +101,9 @@ const LayoutHeader = () => {
                                         <nbsp/>
                                     ) : (
                                         <Button type="headerlink"
-                                            onClick={() => {navigate("/criminal");}}
-                                            className={location.pathname === "/criminal" && "active"}>
-                                            Criminals
+                                            onClick={() => {navigate("/dir");}}
+                                            className={location.pathname === "/dir" && "active"}>
+                                            Directory
                                         </Button>
                                     )}
                                 </Col>
@@ -183,11 +169,11 @@ const LayoutHeader = () => {
                                     title={
                                         // <LogoTextLight
                                         //     onClick={() => {setVisible(false);}}
-                                        //     style={{color: "#9701fc!important"}}
+                                        //     style={{color: "#8f3dce!important"}}
                                         //     >
                                         //     <Link to="/">CourtWatch</Link>
                                         // </LogoTextLight>
-                                        <Link to="/"><img src={Logo2} style={{height: '30px', marginTop: '9px'}} alt="Boycott"/></Link>
+                                        <Link to="/"><img src={Logo2} style={{height: '30px', marginTop: '9px'}} alt="CourtWatch"/></Link>
                                     }
                                     closeIcon={<></>}
                                     >
@@ -199,7 +185,7 @@ const LayoutHeader = () => {
                                         ]}
                                         >
                                         {/* <NavHashLink to="/arianna">Arianna's Story</NavHashLink> */}
-                                        <Menu.Item key="abolishfamilycourt">Family Courts</Menu.Item>
+                                        <Menu.Item key="abolishfamilycourt">Abolish Family Courts</Menu.Item>
                                         <Menu.Item key="donate" className="btn">DONATE</Menu.Item>
                                         <Menu.Item key="login">Login</Menu.Item>
                                     </Menu>
