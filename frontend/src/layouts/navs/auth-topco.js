@@ -98,7 +98,7 @@ const LayoutHeader = () => {
                                             navigate("/about/terms");
                                         }}
                                         className={location.pathname === "/about/terms" && "active"}>
-                                        Terms 
+                                        Terms
                                     </Button>
                                 )}
                             </Col>

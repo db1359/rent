@@ -1,1 +1,1 @@
-# Court Watch Frontend
+# iBoycott Frontend

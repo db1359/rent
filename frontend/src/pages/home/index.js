@@ -26,7 +26,7 @@ const HomePage = () => {
             {/* <HomeSlogan>
                 Every 60 seconds a child and parent are separated by Family Courts for profit.
             </HomeSlogan> */}
-            <HomeSubtitle>
+            {/* <HomeSubtitle>
                 <h1>Exposing Family Corruption & Fraud</h1>
             </HomeSubtitle>
             <HomeSlogan>
@@ -37,7 +37,10 @@ const HomePage = () => {
             </HomeCounter>
             <HomeSubtitle>
                 Children seperated from parents to date.
-            </HomeSubtitle>
+            </HomeSubtitle> */}
+            {/* <HomeSlogan2>
+                ABOLISH Family Courts
+            </HomeSlogan2> */}
         </HomeWrap>
     );
 };
