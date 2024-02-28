@@ -9,7 +9,7 @@ const Banner = () => {
         <BannerWrap>
             <Container>
                 <P1></P1>
-                <h4>Abolish Family Courts</h4>
+                <h4>Abolish Family Courts </h4>
                 <SectionTitle>
                 Family Courts Generate $100 Billion Annually Destroying Families
                 </SectionTitle>
