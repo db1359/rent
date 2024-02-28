@@ -8,7 +8,7 @@ import axios from "axios";
 import config from "../../config";
 import {MenuOutlined} from "@ant-design/icons";
 import Logo from "../../assets/img/fontbolt_transparent.png";
-import Logo2 from "../../assets/img/fontbolt_9701FC.png";
+import Logo2 from "../../assets/img/fontbolt_9701fc.png";
 
 const {useBreakpoint} = Grid;
 
