@@ -68,7 +68,7 @@ const GroupPage = () => {
     }
 
     const shareOkHandle = () => {
-        navigator.clipboard.writeText("https://courtwatch.live/channel/" + gr.slug);
+        navigator.clipboard.writeText("https://iboycott.org/channel/" + gr.slug);
         setShare(false);
         openSuccess();
     }
@@ -266,13 +266,13 @@ const GroupPage = () => {
                                 <Button
                                     type="link"
                                     onClick={() => {
-                                        navigator.clipboard.writeText("https://courtwatch.live/channel/" + gr.slug);
+                                        navigator.clipboard.writeText("https://iboycott.org/channel/" + gr.slug);
                                         openSuccess()
                                     }}>
                                     <CopyOutlined/>
                                 </Button>
                             }
-                            value={"https://courtwatch.live/channel/" + gr.slug}
+                            value={"https://iboycott.org/channel/" + gr.slug}
                             size="large"/>
                     </Item>
                 </Form>

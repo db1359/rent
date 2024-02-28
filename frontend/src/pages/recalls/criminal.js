@@ -214,7 +214,7 @@ const SingleRecallPage = () => {
                                     <Checkbox
                                         checked={checked}
                                         onChange={(e)=>{setChecked(e.target.checked)}}>
-                                        Receive mobile alerts from CourtWatch. Recurring messages. Msg & data rates
+                                        Receive mobile alerts from iBoycott.org. Recurring messages. Msg & data rates
                                         may apply. Text STOP to 668366 to stop receiving messages. Text HELP to 668366
                                         for more information. Privacy
                                     </Checkbox>

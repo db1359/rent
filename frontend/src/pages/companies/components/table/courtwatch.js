@@ -54,7 +54,7 @@ const AriannaTable = () => {
                             Court Watch Link</a></div>
                         </div>
                         <div>
-                            <div><a href="https://courtwatch.live/" target="_blank" rel="noreferrer"></a></div>
+                            <div><a href="https://iboycott.org/" target="_blank" rel="noreferrer"></a></div>
                         </div>
                         <div>
                             <div style={{textAlign: 'center'}}>
@@ -83,7 +83,7 @@ const AriannaTable = () => {
                             Court Watch Link</a></div>
                         </div>
                         <div>
-                            <div><a href="https://courtwatch.live/" target="_blank" rel="noreferrer"></a></div>
+                            <div><a href="https://iboycott.org/" target="_blank" rel="noreferrer"></a></div>
                         </div>
                         <div>
                             <div style={{textAlign: 'center'}}>

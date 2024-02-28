@@ -279,7 +279,7 @@ const RecallSubmissionPage = () => {
                                     checked={checked}
                                     onChange={(e) => {
                                     setChecked(e.target.checked)}}>
-                                    Receive mobile alerts on behalf of CourtWatch. Recurring messages. Msg & data
+                                    Receive mobile alerts on behalf of iBoycott.org. Recurring messages. Msg & data
                                     rates may apply. Text STOP to 668366 to stop receiving messages. Text HELP to 668366 for
                                     more information. Privacy
                                 </Checkbox>

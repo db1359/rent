@@ -72,7 +72,7 @@ const GroupRight = () => {
     }
 
     const shareOkHandle = () => {
-        navigator.clipboard.writeText("https://courtwatch.live/channel/" + gr.slug);
+        navigator.clipboard.writeText("https://iboycott.org/channel/" + gr.slug);
         setShare(false);
         openSuccess();
     }
@@ -228,13 +228,13 @@ const GroupRight = () => {
                                     <Button
                                         type="link"
                                         onClick={() => {
-                                            navigator.clipboard.writeText("https://courtwatch.live/channel/" + gr.slug);
+                                            navigator.clipboard.writeText("https://iboycott.org/channel/" + gr.slug);
                                             openSuccess()
                                         }}>
                                         <CopyOutlined/>
                                     </Button>
                                 }
-                                value={"https://courtwatch.live/channel/" + gr.slug}
+                                value={"https://iboycott.org/channel/" + gr.slug}
                                 size="large"/>
                         </Item>
                     </Form>
@@ -274,7 +274,7 @@ const GroupRight = () => {
                     <Col>
                         <Button
                             target='_blank'
-                            href='https://twitter.com/courtwatchlive'
+                            href='https://twitter.com/iboycottnow'
                             shape="circle"
                             type="primary"
                             color="pink"
@@ -310,7 +310,7 @@ const GroupRight = () => {
                         <Link></Link>
                     </Col>    
                     <Col>
-                        Copyright © CourtWatch 2023
+                        Copyright © iBoycott 2024
                     </Col>
                 </Row>
             </Card> 
