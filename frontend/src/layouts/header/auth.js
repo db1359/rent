@@ -6,7 +6,7 @@ import {Link, useLocation, useNavigate} from "react-router-dom";
 import {logoutAction} from "../../redux/actions/auth";
 import {useDispatch, useSelector} from "react-redux";
 import {Icon} from "@iconify/react";
-import Logo from "../../assets/img/fontbolt_9701fc.png";
+import Logo from "../../assets/img/fontbolt_9701FC.png";
 
 const { Header } = Layout
 
