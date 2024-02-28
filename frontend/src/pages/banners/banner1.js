@@ -11,7 +11,7 @@ const KidsHero = () => {
                 <P1></P1>
                 <h4>$100 Billion Divorce Industry</h4>
                 {/* <SectionTitle>
-                    Profiting Off Kids
+                    Profiting Off Kids 
                 </SectionTitle> */}
                 <P1>
                     Divorce industry revenues increased 100 fold from $1 billion to $100 billion after Bill Clinton's "Kids for Cash" legistlation to seperates kids from families.
