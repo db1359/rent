@@ -4,8 +4,11 @@ import {Avatar, Button, Form, Input, List, Modal, notification, Space} from "ant
 import {CloseOutlined, CopyOutlined, DeleteOutlined, PlusOutlined, ShareAltOutlined} from "@ant-design/icons";
 import GroupRight from "./right";
 import {createGroupApi, deleteGroupApi, getMyGroupsApi} from "../../api";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
+import {Link, useLocation, useNavigate} from "react-router-dom";
 import CardTitle from "../../components/heading/card";
+import {groupChannelsApi} from "../../api";
+import AuthLeftNavWrap2 from "../../layouts/navs/style/left-wrap2";
 
 const {Item} = Form;
 
@@ -18,6 +21,11 @@ const GroupPage = () => {
     const [title, setTitle] = useState("")
     const [groups, setGroups] = useState([]);
     const [gr, setGr] = useState({});
+    const [mGroups, setMGroups] = useState([])
+    const [rGroups, setRGroups] = useState([])
+    const [myGroups, setMyGroups] = useState([])
+    const navigate = useNavigate()
+    const location = useLocation();
 
     const slugify = str =>
         str
@@ -86,6 +94,18 @@ const GroupPage = () => {
         }
     }
 
+    const getGroups = async () => {
+        try {
+            const {data} = await groupChannelsApi();
+            console.log(data, "CHANNELS")
+            setRGroups(data.requests)
+            setMGroups(data.members)
+            setMyGroups(data.mine)
+        } catch (e) {
+            console.warn(e)
+        }
+    }
+
     useEffect(() => {
         getHandle()
     }, [])
@@ -94,48 +114,7 @@ const GroupPage = () => {
         <AuthLayout side={<GroupRight/>}>
             <List style={{marginTop: 10,}}>
                 <CardTitle style={{paddingBottom: 20,}}>
-                Channels<br></br><br></br>
-                    <Button
-                        href='/channel/AbolishFamilyCourt'
-                        shape="rectangle"
-                        type="primary"
-                        color="pink"
-                        size="large"
-                        style={{
-                            color: "#ffffff",
-                            backgroundColor: "#9701fc",
-                            marginRight: 30,
-                        }}>
-                        Abolish Family Court - Join
-                    </Button>
-
-                    <Button
-                        href='/channel/CourtWatch'
-                        shape="rectangle"
-                        type="primary"
-                        color="pink"
-                        size="large"
-                        style={{
-                            color: "#ffffff",
-                            backgroundColor: "#9701fc",
-                            marginRight: 30,
-                        }}>
-                        CourtWatch - Join
-                    </Button>
-
-                    <Button
-                        href='/channel/Recalls'
-                        shape="rectangle"
-                        type="primary"
-                        color="pink"
-                        size="large"
-                        style={{
-                            color: "#ffffff",
-                            backgroundColor: "#9701fc",
-                            marginRight: 30,
-                        }}>
-                        Recall - Join
-                    </Button>
+                Your Channels<br></br>
                 </CardTitle>
             </List>  
             
@@ -147,7 +126,7 @@ const GroupPage = () => {
                 icon={<PlusOutlined/>}
                 type="primary">
                 Create Channel
-            </Button>
+            </Button> */}
 
             <List style={{marginTop: 24}}>
                 {
@@ -205,6 +184,46 @@ const GroupPage = () => {
                     ))
                 }
             </List>
+
+            <AuthLeftNavWrap2>
+                {
+                myGroups.map((i) => (    
+                <Button key={i._id}
+                    type="leftcolumnlink"
+                    onClick={() => {
+                        navigate("/channel/" + i.slug);
+                    }}
+                    className={location.pathname === "/channel/" + i.slug ? "active" : ""}>
+                     {i.slug}
+                </Button>
+                ))
+                }
+                {
+                mGroups.map((i) => (
+                <Button key={i._id}
+                    type="leftcolumnlink"
+                    onClick={() => {
+                        navigate("/channel/" + i.slug);
+                    }}
+                    className={location.pathname === "/channel/" + i.slug ? "active" : ""}>
+                     {i.slug}
+                </Button>
+                ))
+                }
+                {
+                rGroups.map((i) => (
+                <Button key={i._id}
+                    type="leftcolumnlink"
+                    onClick={() => {
+                        navigate("/channel/" + i.slug);
+                    }}
+                    className={location.pathname === "/channel/" + i.slug ? "active" : ""}
+                    href={"/channel/" + i.slug}>
+                     {i.title}
+                </Button> 
+                ))
+                }
+            </AuthLeftNavWrap2>   
 
             <Modal
                 closeIcon={<CloseOutlined/>}
@@ -297,7 +316,7 @@ const GroupPage = () => {
                     your own channel.
                 </p>
             </Modal>
-            {contextHolder} */}
+            {contextHolder}
         </AuthLayout>
     );
 };

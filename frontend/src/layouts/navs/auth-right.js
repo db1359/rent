@@ -186,7 +186,7 @@ const AuthRightNav = (props) => {
                     <Col>
                         <Button
                             target='_blank'
-                            href='https://twitter.com/courtwatchlive'
+                            href='https://twitter.com/iboycott'
                             shape="circle"
                             type="primary"
                             color="pink"
@@ -226,7 +226,7 @@ const AuthRightNav = (props) => {
                         <Link></Link>
                     </Col>    
                     <Col>
-                        Copyright © CourtWatch 2023
+                        Copyright © iBoycott 2024
                     </Col>
                 </Row>
             </Card> 

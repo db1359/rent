@@ -80,7 +80,7 @@ const AuthFooter = () => {
                             <Col>
                                 <Button
                                     target='_blank'
-                                    href='https://twitter.com/courtwatchlive'
+                                    href='https://twitter.com/iboycott'
                                     shape="circle"
                                     type="primary"
                                     color="pink"

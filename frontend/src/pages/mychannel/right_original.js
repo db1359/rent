@@ -94,18 +94,17 @@ const GroupRight = () => {
         getHandle()
     }, [])
 
-
     return (
         <div>
             <GroupRightWrap>
                 <Button
-                style={{height: 42, borderRadius: "4px",}}
+                style={{height: 42, borderRadius: "4px"}}
                 onClick={() => {
                     setOpen(true)
                 }}
                 icon={<PlusOutlined/>}
                 type="primary">
-                Start Channel
+                Create Channel
                 </Button>
                 
                 <div style={{marginTop: 24, }}>
@@ -327,7 +326,5 @@ const GroupRightWrap = styled(Card)`
   padding: 0;
   margin-top: 24px;
   margin-bottom: 34px;
-
 `
-
 export default GroupRight;
