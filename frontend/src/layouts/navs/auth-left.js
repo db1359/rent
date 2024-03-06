@@ -43,7 +43,7 @@ const AuthLeftNav = () => {
                         navigate("/");
                     }}
                     className={location.pathname === "/" && "active"}>
-                    <Icon style={{marginRight: 5, fontSize: 25}} icon="majesticons:home-line"/> {auth?.user?.username}
+                    <Icon style={{marginRight: 5, fontSize: 40}} icon="majesticons:home-line"/> Home
                 </Button>
                 <Button 
                     type="leftcolumnlink"
@@ -51,7 +51,7 @@ const AuthLeftNav = () => {
                         navigate("/channel");
                     }}
                     className={location.pathname === "/channel" && "active"}>
-                    <Icon style={{marginRight: 5, fontSize: 25}} icon="iconamoon:sign-plus-bold"/> Channels
+                    <Icon style={{marginRight: 5, fontSize: 40}} icon="iconamoon:sign-plus-bold"/> Channels
                 </Button>
             </AuthLeftNavWrap>
             <AuthLeftNavWrap2>
@@ -63,7 +63,7 @@ const AuthLeftNav = () => {
                         navigate("/channel/" + i.slug);
                     }}
                     className={location.pathname === "/channel/" + i.slug ? "active" : ""}>
-                    <Icon style={{marginRight: 5, fontSize: 25}} icon="ic:outline-group"/> {i.slug}
+                    <Icon style={{marginRight: 5, fontSize: 40}} icon="quill:chat"/> {i.slug}
                 </Button>
                 ))
                 }
@@ -75,7 +75,7 @@ const AuthLeftNav = () => {
                         navigate("/channel/" + i.slug);
                     }}
                     className={location.pathname === "/channel/" + i.slug ? "active" : ""}>
-                    <Icon style={{marginRight: 5, fontSize: 25}} icon="ic:outline-group"/> {i.slug}
+                    <Icon style={{marginRight: 5, fontSize: 40}} icon="quill:chat"/> {i.slug}
                 </Button>
                 ))
                 }
@@ -88,27 +88,46 @@ const AuthLeftNav = () => {
                     }}
                     className={location.pathname === "/channel/" + i.slug ? "active" : ""}
                     href={"/channel/" + i.slug}>
-                    <Icon style={{marginRight: 5, fontSize: 25}} icon="ic:outline-group"/> {i.title}
+                    <Icon style={{marginRight: 5, fontSize: 40}} icon="quill:chat"/> {i.title}
                 </Button> 
                 ))
                 }
             </AuthLeftNavWrap2>       
             <AuthLeftNavWrap>
-                <Button
+                {/* <Button
                     type="leftcolumnlink"
                     onClick={() => {
                         navigate(`/${auth?.user?.username}`);
                     }}
                     className={location.pathname === `/${auth?.user?.username}` && "active"}>
-                    <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:person-outline"/> Profile
-                </Button>
+                    <Icon style={{marginRight: 5, fontSize: 40}} icon="material-symbols:person-outline"/> Profile
+                </Button> */}
                 <Button
                     type="leftcolumnlink"
                     onClick={() => {
                         navigate(`/${auth?.user?.username}/settings`);
                     }}
                     className={location.pathname === `/${auth?.user?.username}/settings` && "active"}>
-                    <Icon style={{marginRight: 5, fontSize: 25}} icon="material-symbols:settings-outline"/> Settings
+                    <Icon style={{marginRight: 5, fontSize: 40}} icon="material-symbols:settings-outline"/> Settings
+                </Button>
+                <Button 
+                    type="leftcolumnlink"
+                    onClick={() => {
+                        navigate(`/${auth?.user?.username}`);
+                    }}
+                    className={location.pathname === `/${auth?.user?.username}` && "active"}>
+                    <Avatar
+                        size="large"
+                        style={{
+                            fontSize: 20,
+                            marginRight: 5,
+                            cursor: "pointer",
+                            background: "#9701fc"
+                        }}
+                        src={auth?.user?.photo}>
+                        {auth?.user?.firstname?.[0]}
+                    </Avatar>
+                     {auth?.user?.username}
                 </Button>
             </AuthLeftNavWrap>
         </div>

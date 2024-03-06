@@ -94,52 +94,11 @@ const GroupPage = () => {
         <AuthLayout side={<GroupRight/>}>
             <List style={{marginTop: 10,}}>
                 <CardTitle style={{paddingBottom: 20,}}>
-                Channels<br></br><br></br>
-                    <Button
-                        href='/channel/AbolishFamilyCourt'
-                        shape="rectangle"
-                        type="primary"
-                        color="pink"
-                        size="large"
-                        style={{
-                            color: "#ffffff",
-                            backgroundColor: "#9701fc",
-                            marginRight: 30,
-                        }}>
-                        Abolish Family Court - Join
-                    </Button>
-
-                    <Button
-                        href='/channel/CourtWatch'
-                        shape="rectangle"
-                        type="primary"
-                        color="pink"
-                        size="large"
-                        style={{
-                            color: "#ffffff",
-                            backgroundColor: "#9701fc",
-                            marginRight: 30,
-                        }}>
-                        CourtWatch - Join
-                    </Button>
-
-                    <Button
-                        href='/channel/Recalls'
-                        shape="rectangle"
-                        type="primary"
-                        color="pink"
-                        size="large"
-                        style={{
-                            color: "#ffffff",
-                            backgroundColor: "#9701fc",
-                            marginRight: 30,
-                        }}>
-                        Recall - Join
-                    </Button>
+                Your Channels<br></br>
                 </CardTitle>
             </List>  
             
-            {/* <Button
+            <Button
                 style={{height: 42, borderRadius: "4px"}}
                 onClick={() => {
                     setOpen(true)
@@ -297,7 +256,7 @@ const GroupPage = () => {
                     your own channel.
                 </p>
             </Modal>
-            {contextHolder} */}
+            {contextHolder}
         </AuthLayout>
     );
 };

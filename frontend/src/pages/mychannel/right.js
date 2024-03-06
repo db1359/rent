@@ -94,79 +94,18 @@ const GroupRight = () => {
         getHandle()
     }, [])
 
-
     return (
         <div>
             <GroupRightWrap>
                 <Button
-                style={{height: 42, borderRadius: "4px",}}
+                style={{height: 42, borderRadius: "4px"}}
                 onClick={() => {
                     setOpen(true)
                 }}
                 icon={<PlusOutlined/>}
                 type="primary">
-                Start Channel
+                Create Channel
                 </Button>
-                
-                <div style={{marginTop: 24, }}>
-                    {
-                        groups.map((group) => (
-                            <List.Item key={group._id}>
-                                <List.Item.Meta
-                                    avatar={
-                                        <Link to={`/channel/${group.slug}`}>
-                                            <Avatar
-                                                size={50}
-                                                style={{
-                                                    backgroundColor: "#9701fc",
-                                                    borderRadius: "6px",
-                                                    marginRight: "10px",
-                                                }}
-                                                shape="square">
-                                                {/* {group.title?.[0]} */}
-                                                <Icon style={{marginTop: 10, fontSize: 30}} icon="ic:outline-group"/> 
-                                            </Avatar> 
-                                             {<b>{group.title}</b>}
-                                        </Link>
-                                    }
-                                    
-                                    description={
-                                        <p>
-                                            <b>{group.members.length} Members</b>&nbsp;&nbsp;&nbsp;
-                                            <span
-                                                style={{color: "red"}}>{group.requests.length} Waiting</span>&nbsp;&nbsp;&nbsp;
-                                            <span style={{
-                                                color: "#9701fc",
-                                                fontWeight: 700
-                                            }}>{group.feeds.length} Feeds</span>
-                                        </p>
-                                    }
-
-                                />
-                                <Space style={{marginBottom: 24,}}>
-                                    <Button
-                                        onClick={() => {
-                                            setShare(true);
-                                            setGr(group)
-                                        }}
-                                        icon={<ShareAltOutlined/>}>
-                                        Share
-                                    </Button>
-                                    <Button
-                                        onClick={() => {
-                                            setDel(true);
-                                            setGr(group)
-                                        }}
-                                        icon={<DeleteOutlined/>}
-                                        danger
-                                        type="primary">
-                                        Delete
-                                    </Button>
-                                </Space> 
-                            </List.Item>
-                        ))
-                    }
-                </div>
             
                 <Modal
                     closeIcon={<CloseOutlined/>}
@@ -327,7 +266,5 @@ const GroupRightWrap = styled(Card)`
   padding: 0;
   margin-top: 24px;
   margin-bottom: 34px;
-
 `
-
 export default GroupRight;
