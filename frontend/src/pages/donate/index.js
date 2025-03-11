@@ -1,6 +1,7 @@
-import React, {useEffect} from 'react';
+import React, {Fragment, useEffect} from 'react';
 import Code from '../../assets/img/paypalqrcode.png'
 import Container from "../../style/container";
+import TopNav from "../../layouts/navs/auth-topabout";
 
 const DonatePage = () => {
     useEffect(() => {
@@ -18,7 +19,8 @@ const DonatePage = () => {
     }, []);
 
     return (
-        <Container>
+        <Fragment>
+            <TopNav/> 
             <div style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -31,7 +33,7 @@ const DonatePage = () => {
 
                 <img src={Code} alt="" width={300}/>
             </div>
-        </Container>
+        </Fragment>
     );
 };
 

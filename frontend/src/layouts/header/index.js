@@ -8,8 +8,8 @@ import axios from "axios";
 import config from "../../config";
 import {MenuOutlined} from "@ant-design/icons";
 // import Logo from "../../assets/img/fontbolt_transparent.png";
-import Logo from "../../assets/img/fontbolt.png";
-import Logo2 from "../../assets/img/fontbolt.png";
+import Logo from "../../assets/img/ednlogo.png";
+import Logo2 from "../../assets/img/ednlogo.png";
 // import Logo2 from "../../assets/img/fontbolt_9701_F_C.png";
 
 const {useBreakpoint} = Grid;
@@ -66,7 +66,7 @@ const LayoutHeader = () => {
                 <Row justify="space-between" align="middle">
                     <Col>
                         {/* <LogoText>
-                            <Link to="/">Boycott</Link>
+                            <Link to="/">EDN</Link>
                         </LogoText> */}
                         <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '0px'}} alt="Boycott"/></Link>
                     </Col>
@@ -74,26 +74,14 @@ const LayoutHeader = () => {
                         {breakpoints.lg ? (
                             <Row gutter={20} style={{marginTop: '7px'}}>
 
-                                {/* <Col>
-                                    {user ? (
-                                        <nbsp/>
-                                    ) : (
-                                        <Button type="headerlink"
-                                            onClick={() => {navigate("/story");}}
-                                            className={location.pathname === "/story" && "active"}>
-                                            Arianna's Story
-                                        </Button>
-                                    )}
-                                </Col> */}
-
                                 <Col>
                                     {user ? (
                                         <nbsp/>
                                     ) : (
                                         <Button type="headerlink"
-                                            onClick={() => {navigate("/companies");}}
-                                            className={location.pathname === "/companies" && "active"}>
-                                            Companies
+                                            onClick={() => {navigate("/evictions/");}}
+                                            className={location.pathname === "/evictions/" && "active"}>
+                                            Evictions
                                         </Button>
                                     )}
                                 </Col>
@@ -103,9 +91,9 @@ const LayoutHeader = () => {
                                         <nbsp/>
                                     ) : (
                                         <Button type="headerlink"
-                                            onClick={() => {navigate("/channels/abolishfamilycourt");}}
-                                            className={location.pathname === "/channels/abolishfamilycourt" && "active"}>
-                                            Causes
+                                            onClick={() => {navigate("/rentals");}}
+                                            className={location.pathname === "/rentals" && "active"}>
+                                            Rentals
                                         </Button>
                                     )}
                                 </Col>
@@ -115,44 +103,20 @@ const LayoutHeader = () => {
                                         <nbsp/>
                                     ) : (
                                         <Button type="headerlink"
-                                            onClick={() => {navigate("/criminal");}}
-                                            className={location.pathname === "/criminal" && "active"}>
-                                            Criminals
+                                            onClick={() => {navigate("/resources");}}
+                                            className={location.pathname === "/resources" && "active"}>
+                                            Resources
                                         </Button>
                                     )}
                                 </Col>
-
-                                {/* <Col>                           
-                                    {user ? (
-                                        <nbsp/>
-                                    ) : (
-                                        <Button type="headerlink"
-                                                onClick={() => {navigate("/recalls");}}
-                                                className={location.pathname === "/recalls" && "active"}>
-                                                Recalls
-                                        </Button>
-                                    )}
-                                </Col>
-
-                                <Col>
-                                    {user ? (
-                                        <nbsp/>
-                                    ) : (
-                                        <Button type="headerlink"
-                                                onClick={() => {navigate("/courtwatch");}}
-                                                className={location.pathname === "/courtwatch" && "active"}>
-                                                CourtWatch
-                                        </Button>
-                                    )}
-                                </Col> */}
 
                                 <Col>
                                     {user ? (
                                         <nbsp/>
                                     ) : (
                                         <Button type="donate" style={{marginLeft: 18}}
-                                            onClick={() => {navigate("/donate");}}>
-                                            DONATE
+                                            onClick={() => {navigate("/intake");}}>
+                                            INTAKE
                                         </Button>
                                     )}
                                 </Col>
@@ -183,7 +147,7 @@ const LayoutHeader = () => {
                                     title={
                                         // <LogoTextLight
                                         //     onClick={() => {setVisible(false);}}
-                                        //     style={{color: "#9701fc!important"}}
+                                        //     style={{color: "rgb(249, 147, 4)!important"}}
                                         //     >
                                         //     <Link to="/">CourtWatch</Link>
                                         // </LogoTextLight>

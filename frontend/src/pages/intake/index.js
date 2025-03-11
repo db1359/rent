@@ -1,0 +1,14 @@
+import React, {Fragment} from 'react';
+import AboutMain from "./components/main/index";
+import TopNav from "../../layouts/navs/auth-topintake";
+
+const IntakePage = () => {
+    return (
+        <Fragment>
+            <TopNav/> 
+            <AboutMain/>
+        </Fragment>
+    );
+};
+
+export default IntakePage;

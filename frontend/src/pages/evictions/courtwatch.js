@@ -1,0 +1,17 @@
+import React, {Fragment} from 'react';
+import CourtWatchBanner from "../banners/courtwatch";
+import AriannaTable from "./components/table/courtwatch";
+import SectionTitle from "../../components/heading/section";
+import TopNav from "../../layouts/navs/auth-topevictions";
+
+const CourtWatch = () => {
+    return (
+        <Fragment>
+            <TopNav/>
+            <CourtWatchBanner/>
+            <AriannaTable/>
+        </Fragment>
+    );
+};
+
+export default CourtWatch;

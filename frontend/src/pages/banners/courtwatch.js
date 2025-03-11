@@ -11,9 +11,9 @@ const CourtWatchBanner = () => {
                 <P1></P1>
                 <h4>CourtWatch</h4>
                 <SectionTitle>
-                Email: hello@iboycott.org
+                courtwatch@edn.la
                 </SectionTitle>
-                <h1 style={{paddingTop: 10, paddingBottom: 0}}>court watch date, time, party name, court watch link etc</h1>
+                <h1 style={{paddingTop: 10, paddingBottom: 0}}>Go To Court & Watch Eviction Cases</h1>
             </Container>
         </CourtWatch>
     );

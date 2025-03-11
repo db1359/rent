@@ -13,7 +13,7 @@ import BannerImage from "../../assets/img/banner.jpg"
 import CaseDetails from "./components/case-details";
 import {useLocation, useNavigate, useParams} from "react-router-dom";
 import AuthRight from "../../layouts/navs/auth-right";
-import DirectorySinglePage from "../dir/single";
+// import DirectorySinglePage from "../dir/single";
 
 const ProfilePage = () => {
     const auth = useSelector(state => state.auth)

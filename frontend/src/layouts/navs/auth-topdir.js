@@ -65,15 +65,15 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/dir");
+                                            navigate("/resources");
                                         }}
-                                        className={location.pathname === "/dir" && "active"}>
+                                        className={location.pathname === "/resources" && "active"}>
                                         Home
                                     </Button>
                                 )}
                             </Col>
 
-                            <Col>
+                            {/* <Col>
                                 {user ? (
                                     <nbsp/>
                                 ) : (
@@ -84,7 +84,7 @@ const LayoutHeader = () => {
                                         Expose Them
                                     </Button>
                                 )}
-                            </Col>
+                            </Col> */}
 
                             {/* <Col>
                                 {user ? (

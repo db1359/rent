@@ -1,4 +1,4 @@
-# iBoycott
+# EDN
 ## Frontend
 `react.js`
 

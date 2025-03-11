@@ -8,34 +8,27 @@ import AuthFooter from "./footer/auth";
 import HomePage from "../pages/home";
 import SignupPage from "../pages/signup";
 import LoginPage from "../pages/login";
-import AbolishPage from "../pages/channels/abolishfamilycourt";
-import StartChannelPage from "../pages/channels/start";
-import Genocide from '../pages/channels/genocide';
-import AnimalRights from '../pages/channels/animalrights';
-import CourtWatch from "../pages/channels/courtwatch";
+import EvictionsPage from "../pages/evictions";
+import StartChannelPage from "../pages/evictions/start";
+import CourtWatch from "../pages/evictions/courtwatch";
 import NotFoundPage from "../pages/404";
 import ProfilePage from "../pages/myprofile";
 import MySettings from "../pages/mysettings";
 import MyPostPage from "../pages/mypost";
 import {useSelector} from "react-redux"
-import TrendingPage from "../pages/trending";
 import DonatePage from "../pages/donate";
-import RecallPage from "../pages/recalls";
-import RecallSubmissionPage from "../pages/recalls/submit";
-import SingleRecallPage from "../pages/recalls/criminal";
-import AriannaStoryPage from "../pages/story";
-import ProfitingKidsPage from "../pages/about/kids";
+import IntakePage from "../pages/intake";
 import EmailVerificationPage from "../pages/email-verfication";
-import FeedPage from "../pages/feed";
+// import FeedPage from "../pages/feed";
 import AboutPage from "../pages/about";
-import CriminalPage from "../pages/dir";
-import CompaniesPage from "../pages/companies";
-import EventsPage from "../pages/events";
 import PrivacyPage from "../pages/about/privacy";
 import TermsPage from "../pages/about/terms";
+import ResourcePage from "../pages/resources";
+import WebinarPage from "../pages/resources/webinars";
+import FormsPage from "../pages/resources/forms";
+import RentalsPage from "../pages/rentals/listings";
+import RentalsListingsPage from "../pages/rentals";
 import ChannelPage from "../pages/mychannel";
-import SingleGroupPage from "../pages/single-group";
-import SingleChannelPage from "../pages/single-channel";
 import WaitVerifyPage from "../pages/wait-verify";
 
 const {Content} = Layout
@@ -56,34 +49,26 @@ const LandingLayout = () => {
                 <Routes>
                     <Route path="/" element={auth?.isAuth ? <MyPostPage/> : <HomePage/>}/>
                     <Route path="/email-verification" element={<EmailVerificationPage/>}/>
-                    <Route path="/about/kids" element={<ProfitingKidsPage/>}/>
-                    <Route path="/story" element={<AriannaStoryPage/>}/>
                     <Route path="/about" element={<AboutPage/>}/>
-                    <Route path="/channels/abolishfamilycourt" element={<AbolishPage/>}/>
-                    <Route path="/channels/start" element={<StartChannelPage/>}/>
-                    <Route path="/channels/genocide" element={<Genocide/>}/>
-                    <Route path="/channels/animalrights" element={<AnimalRights/>}/>
                     <Route path="/about/privacy" element={<PrivacyPage/>}/>
                     <Route path="/about/terms" element={<TermsPage/>}/>
+                    <Route path="/evictions/" element={<EvictionsPage/>}/>
+                    <Route path="/channels/start" element={<StartChannelPage/>}/>
                     <Route path="/channels/courtwatch" element={<CourtWatch/>}/>
-                    <Route path="/events" element={<EventsPage/>}/>
                     <Route path="/signup" element={<SignupPage/>}/>
                     <Route path="/verify" element={<WaitVerifyPage/>}/>
                     <Route path="/login" element={<LoginPage/>}/>
                     <Route path="/donate" element={<DonatePage/>}/>
-                    <Route path="/trending" element={<TrendingPage/>}/>
-                    <Route path="/recalls" element={<RecallPage/>}/>
-                    <Route path="/recalls/submit" element={<RecallSubmissionPage/>}/>
-                    <Route path="/recalls/:state" element={<RecallPage/>}/>
-                    <Route path="/recalls/:state/:id" element={<SingleRecallPage/>}/>
-                    <Route path="/criminal" element={<CriminalPage/>}/>
-                    <Route path="/companies" element={<CompaniesPage/>}/>
+                    <Route path="/intake" element={<IntakePage/>}/>
+                    <Route path="/resources" element={<ResourcePage/>}/>
+                    <Route path="/resources/forms" element={<FormsPage/>}/>
+                    <Route path="/resources/webinars" element={<WebinarPage/>}/>
+                    <Route path="/rentals" element={<RentalsPage/>}/>
+                    <Route path="/rentals/listings" element={<RentalsListingsPage/>}/>
                     <Route path="/:username" element={<ProfilePage/>}/>
                     <Route path="/:username/settings" element={<MySettings/>}/>
-                    <Route path="/:username/status/:id" element={<FeedPage/>}/>
-                    <Route path="/group/:slug" element={<SingleGroupPage/>}/>
+                    {/* <Route path="/:username/status/:id" element={<FeedPage/>}/> */}
                     <Route path="/channel" element={<ChannelPage/>}/>
-                    <Route path="/channel/:slug" element={<SingleChannelPage/>}/>
                     <Route path="/*" element={<NotFoundPage/>}/>
                 </Routes>
             </Content>

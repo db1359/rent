@@ -80,7 +80,7 @@ const AuthFooter = () => {
                             <Col>
                                 <Button
                                     target='_blank'
-                                    href='https://twitter.com/iboycott'
+                                    href='https://twitter.com/EDN'
                                     shape="circle"
                                     type="primary"
                                     color="pink"
@@ -97,7 +97,7 @@ const AuthFooter = () => {
                             gutter={20}
                             style={{justifyContent: "flex-end"}}>
                             <Col>
-                                <Copyright>Copyright © iBoycott 2024</Copyright>
+                                <Copyright>Copyright © EDN 2024</Copyright>
                             </Col>
                         </Row>
                     </Col>

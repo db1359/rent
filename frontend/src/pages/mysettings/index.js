@@ -96,8 +96,8 @@ const ProfilePage = () => {
                         children: (<div className="child-area">
                         <p></p>
                         <p></p>
-                        <p>Email court watch details to hello@iboycott.org.<br></br>
-                        See iBoycott.org Details <a href="/courtwatch"><b>iBoycott</b></a>
+                        <p>Email court watch details to hello@EDN.<br></br>
+                        See EDN Details <a href="/courtwatch"><b>EDN</b></a>
                         </p>
                         
                         </div>),

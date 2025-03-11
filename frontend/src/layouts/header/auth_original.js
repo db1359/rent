@@ -151,7 +151,7 @@ const AuthHeader = () => {
                                     style={{
                                         fontSize: 20,
                                         cursor: "pointer",
-                                        background: "#9701fc"
+                                        background: "rgb(249, 147, 4)"
                                     }}
                                     src={auth?.user?.photo}>
                                     {auth?.user?.firstname?.[0]}

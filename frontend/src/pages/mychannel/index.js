@@ -68,7 +68,7 @@ const GroupPage = () => {
     }
 
     const shareOkHandle = () => {
-        navigator.clipboard.writeText("https://iboycott.org/channel/" + gr.slug);
+        navigator.clipboard.writeText("https://EDN/channel/" + gr.slug);
         setShare(false);
         openSuccess();
     }
@@ -118,7 +118,7 @@ const GroupPage = () => {
                                         <Avatar
                                             size={50}
                                             style={{
-                                                backgroundColor: "#9701fc",
+                                                backgroundColor: "rgb(249, 147, 4)",
                                                 borderRadius: "6px"
                                             }}
                                             shape="square">
@@ -133,7 +133,7 @@ const GroupPage = () => {
                                         <span
                                             style={{color: "red"}}>{group.requests.length} Waiting</span>&nbsp;&nbsp;&nbsp;
                                         <span style={{
-                                            color: "#9701fc",
+                                            color: "rgb(249, 147, 4)",
                                             fontWeight: 700
                                         }}>{group.feeds.length} Feeds</span>
                                     </p>
@@ -225,13 +225,13 @@ const GroupPage = () => {
                                 <Button
                                     type="link"
                                     onClick={() => {
-                                        navigator.clipboard.writeText("https://iboycott.org/channel/" + gr.slug);
+                                        navigator.clipboard.writeText("https://EDN/channel/" + gr.slug);
                                         openSuccess()
                                     }}>
                                     <CopyOutlined/>
                                 </Button>
                             }
-                            value={"https://iboycott.org/channel/" + gr.slug}
+                            value={"https://EDN/channel/" + gr.slug}
                             size="large"/>
                     </Item>
                 </Form>

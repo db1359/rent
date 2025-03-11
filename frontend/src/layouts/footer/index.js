@@ -27,23 +27,17 @@ const LandingLayoutFooter = () => {
                             <Col>
                                 <Link to="/">Home</Link>
                             </Col>
-                            {/* <Col>
+                            <Col>
                                 <Link to="/about">About</Link>
-                            </Col> */}
-                            {/* <Col>
-                                <Link to="/story">Arianna's Story</Link>
-                            </Col> */}
-                            <Col>
-                                <Link to="/channels/abolishfamilycourt">Channels</Link>
-                            </Col>
-                            <Col>
-                                <Link to="/donate">Donate</Link>
                             </Col>
                             <Col>
                                 <Link to="/about/privacy">Privacy</Link>
                             </Col>
                             <Col>
                                 <Link to="/about/terms">Terms</Link>
+                            </Col>
+                            <Col>
+                                <Link to="/donate">Donate</Link>
                             </Col>
                         </Row>
                     </Col>
@@ -52,7 +46,7 @@ const LandingLayoutFooter = () => {
                             <Col>
                                 <Button
                                     target='_blank'
-                                    href='https://twitter.com/iboycott'
+                                    href='https://twitter.com/edn'
                                     shape="circle"
                                     type="primary"
                                     color="pink"
@@ -69,7 +63,7 @@ const LandingLayoutFooter = () => {
                             gutter={20}
                             style={{justifyContent: "flex-end"}}>
                             <Col>
-                                <Copyright>© iBoycott 2024</Copyright>
+                                <Copyright>© EDN 2025</Copyright>
                             </Col>
                         </Row>
                     </Col>

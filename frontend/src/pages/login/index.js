@@ -116,7 +116,7 @@ const LoginPage = () => {
                                 )}
                             </Item>
                             <Divider>
-                                Don't you have an account?
+                                Don&apos;t you have an account?
                             </Divider>
                             <Button
                                 type="link"

@@ -72,7 +72,7 @@ const GroupRight = () => {
     }
 
     const shareOkHandle = () => {
-        navigator.clipboard.writeText("https://iboycott.org/channel/" + gr.slug);
+        navigator.clipboard.writeText("https://EDN/channel/" + gr.slug);
         setShare(false);
         openSuccess();
     }
@@ -117,7 +117,7 @@ const GroupRight = () => {
                                             <Avatar
                                                 size={50}
                                                 style={{
-                                                    backgroundColor: "#9701fc",
+                                                    backgroundColor: "rgb(249, 147, 4)",
                                                     borderRadius: "6px",
                                                     marginRight: "10px",
                                                 }}
@@ -135,7 +135,7 @@ const GroupRight = () => {
                                             <span
                                                 style={{color: "red"}}>{group.requests.length} Waiting</span>&nbsp;&nbsp;&nbsp;
                                             <span style={{
-                                                color: "#9701fc",
+                                                color: "rgb(249, 147, 4)",
                                                 fontWeight: 700
                                             }}>{group.feeds.length} Feeds</span>
                                         </p>
@@ -227,13 +227,13 @@ const GroupRight = () => {
                                     <Button
                                         type="link"
                                         onClick={() => {
-                                            navigator.clipboard.writeText("https://iboycott.org/channel/" + gr.slug);
+                                            navigator.clipboard.writeText("https://EDN/channel/" + gr.slug);
                                             openSuccess()
                                         }}>
                                         <CopyOutlined/>
                                     </Button>
                                 }
-                                value={"https://iboycott.org/channel/" + gr.slug}
+                                value={"https://EDN/channel/" + gr.slug}
                                 size="large"/>
                         </Item>
                     </Form>
@@ -273,12 +273,12 @@ const GroupRight = () => {
                     <Col>
                         <Button
                             target='_blank'
-                            href='https://twitter.com/iboycottnow'
+                            href='https://twitter.com/EDNnow'
                             shape="circle"
                             type="primary"
                             color="pink"
                             size="large"
-                            style={{color: "#ffffff", backgroundColor: "#9701fc", marginTop: 10,
+                            style={{color: "#ffffff", backgroundColor: "rgb(249, 147, 4)", marginTop: 10,
                                 marginLeft: 0,
                             }}>
                             <Icon icon="mdi:twitter" style={{width: 32, height: 32}}/>
@@ -309,7 +309,7 @@ const GroupRight = () => {
                         <Link></Link>
                     </Col>    
                     <Col>
-                        Copyright © iBoycott 2024
+                        Copyright © EDN 2024
                     </Col>
                 </Row>
             </Card> 

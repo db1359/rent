@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import AboutMain from "./components/main/index";
-import TopNav from "../../layouts/navs/auth-topco";
+import TopNav from "../../layouts/navs/auth-topabout";
 
 const AboutPage = () => {
     return (

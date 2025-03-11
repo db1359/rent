@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 const TopNavWrap = styled.div`
-// background-color: #F0F2F5;
-background-color: #e4dfe8;
+background-color: rgb(249, 147, 4);
   // text-align: center;
   // padding-top: 18px;
   // padding-bottom: 18px;
@@ -12,7 +11,7 @@ background-color: #e4dfe8;
     //  margin-bottom: 18px;
     //  font-size: 16px;
     //  font-weight: 600;
-    //  color: #9701fc;
+    //  color: #ffffff;
   //   //letter-spacing: 3px;
   //   //text-transform: uppercase;
   // 

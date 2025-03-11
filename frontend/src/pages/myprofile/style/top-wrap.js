@@ -26,7 +26,7 @@ const ProfileTopWrap = styled.div`
   
   .profile-username {
     font-size: 14px;
-    color: #9701fc;
+    color: rgb(249, 147, 4);
     font-weight: 500;
   }
   
