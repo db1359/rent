@@ -62,6 +62,7 @@ const LoginPage = () => {
         <Container>
             <Row>
                 <Col span={10} offset={7}>
+                {/* <Col span={20} offset={2}> mobile */}
                     <AuthWrap>
                         {contextHolder}
                         <Form
