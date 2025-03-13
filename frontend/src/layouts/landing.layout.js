@@ -54,7 +54,7 @@ const LandingLayout = () => {
                     <Route path="/about/terms" element={<TermsPage/>}/>
                     <Route path="/evictions/" element={<EvictionsPage/>}/>
                     <Route path="/channels/start" element={<StartChannelPage/>}/>
-                    <Route path="/channels/courtwatch" element={<CourtWatch/>}/>
+                    <Route path="/evictions/courtwatch" element={<CourtWatch/>}/>
                     <Route path="/signup" element={<SignupPage/>}/>
                     <Route path="/verify" element={<WaitVerifyPage/>}/>
                     <Route path="/login" element={<LoginPage/>}/>

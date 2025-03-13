@@ -88,52 +88,6 @@ const LayoutHeader = () => {
                                 )}
                             </Col>
 
-                            {/* <Col>
-                                {user ? (
-                                    <nbsp/>
-                                ) : (
-                                    <Button
-                                        type="communitylink"
-                                        onClick={() => {
-                                            navigate("/courtwatch");
-                                        }}
-                                        className={location.pathname === "/courtwatch" && "active"}>
-                                        Text
-                                    </Button>
-                                )}
-                            </Col>
-
-                            <Col>
-                                {user ? (
-                                    <nbsp/>
-                                ) : (
-                                    <Button
-                                        type="communitylink"
-                                        onClick={() => {
-                                            navigate("/about/share");
-                                        }}
-                                        className={location.pathname === "/about/share" && "active"}>
-                                        Text
-                                    </Button>
-                                )}
-                            </Col>
-
-                            <Col>
-                                {user ? (
-                                    <nbsp/>
-                                ) : (
-                                    <Button
-                                        type="communitylink"
-                                        onClick={() => {
-                                            navigate("/legalabusesyndrome");
-                                        }}
-                                        className={location.pathname === "/legalabusesyndrome" && "active"}
-                                    >
-                                        Text
-                                    </Button>
-                                )}
-                            </Col> */}
-
                         </Row>
                     </Col>
                     {/* <Col lg={{span: 12}} span={24}>

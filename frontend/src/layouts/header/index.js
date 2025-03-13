@@ -79,8 +79,8 @@ const LayoutHeader = () => {
                                         <nbsp/>
                                     ) : (
                                         <Button type="headerlink"
-                                            onClick={() => {navigate("/evictions/");}}
-                                            className={location.pathname === "/evictions/" && "active"}>
+                                            onClick={() => {navigate("/evictions");}}
+                                            className={location.pathname === "/evictions" && "active"}>
                                             Evictions
                                         </Button>
                                     )}
@@ -169,7 +169,7 @@ const LayoutHeader = () => {
                                                 INTAKE
                                             </Button>
                                         </Menu.Item>
-                                        <Menu.Item key="evictions">Evictions</Menu.Item>
+                                        <Menu.Item key="evictions/">Evictions</Menu.Item>
                                         <Menu.Item key="rentals">Rentals</Menu.Item>
                                         <Menu.Item key="resources">Resources</Menu.Item>
                                         <Menu.Item key="donate" className="btn">DONATE</Menu.Item>
