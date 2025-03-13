@@ -163,7 +163,15 @@ const LayoutHeader = () => {
                                         ]}
                                         >
                                         {/* <NavHashLink to="/arianna">Arianna's Story</NavHashLink> */}
-                                        <Menu.Item key="abolishfamilycourt">Family Courts</Menu.Item>
+                                        <Menu.Item key="intake">
+                                            <Button type="donate" style={{marginLeft: 0}}
+                                                onClick={() => {navigate("/intake");}}>
+                                                INTAKE
+                                            </Button>
+                                        </Menu.Item>
+                                        <Menu.Item key="evictions">Evictions</Menu.Item>
+                                        <Menu.Item key="rentals">Rentals</Menu.Item>
+                                        <Menu.Item key="resources">Resources</Menu.Item>
                                         <Menu.Item key="donate" className="btn">DONATE</Menu.Item>
                                         <Menu.Item key="login">Login</Menu.Item>
                                     </Menu>
