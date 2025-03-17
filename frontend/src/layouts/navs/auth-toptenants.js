@@ -61,10 +61,10 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/evictions");
+                                            navigate("/tenants");
                                         }}
-                                        className={location.pathname === "/evictions" && "active"}>
-                                        Home
+                                        className={location.pathname === "/tenants" && "active"}>
+                                        Rental Applications
                                     </Button>
                                 )}
                             </Col>
@@ -76,10 +76,10 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/evictions/success");
+                                            navigate("/tenants/success");
                                         }}
-                                        className={location.pathname === "/evictions/success" && "active"}>
-                                        Success
+                                        className={location.pathname === "/tenants/success" && "active"}>
+                                        Rental Profile
                                     </Button>
                                 )}
                             </Col>
@@ -91,45 +91,45 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/evictions/courtwatch");
+                                            navigate("/tenants/courtwatch");
                                         }}
-                                        className={location.pathname === "/evictions/courtwatch" && "active"}>
-                                        CourtWatch
+                                        className={location.pathname === "/tenants/courtwatch" && "active"}>
+                                        Pay Rent
+                                    </Button>
+                                )}
+                            </Col>
+
+                            <Col>
+                                {user ? (
+                                    <nbsp/>
+                                ) : (
+                                    <Button
+                                        type="communitylink"
+                                        onClick={() => {
+                                            navigate("/tenants/maintenance");
+                                        }}
+                                        className={location.pathname === "/tenants/maintenance" && "active"}>
+                                        Maintenance Requests
+                                    </Button>
+                                )}
+                            </Col>
+
+                            <Col>
+                                {user ? (
+                                    <nbsp/>
+                                ) : (
+                                    <Button
+                                        type="communitylink"
+                                        onClick={() => {
+                                            navigate("/tenants/evictions");
+                                        }}
+                                        className={location.pathname === "/tenants/evictions" && "active"}>
+                                        Evictions
                                     </Button>
                                 )}
                             </Col>
 
                             {/* <Col>
-                                {user ? (
-                                    <nbsp/>
-                                ) : (
-                                    <Button
-                                        type="communitylink"
-                                        onClick={() => {
-                                            navigate("/channels/abolishfamilycourt");
-                                        }}
-                                        className={location.pathname === "/channels/abolishfamilycourt" && "active"}>
-                                        Family Courts
-                                    </Button>
-                                )}
-                            </Col>
-
-                            <Col>
-                                {user ? (
-                                    <nbsp/>
-                                ) : (
-                                    <Button
-                                        type="communitylink"
-                                        onClick={() => {
-                                            navigate("/channels/animalrights");
-                                        }}
-                                        className={location.pathname === "/channels/animalrights" && "active"}>
-                                        Animal Rights
-                                    </Button>
-                                )}
-                            </Col>
-
-                            <Col>
                                 {user ? (
                                     <nbsp/>
                                 ) : (

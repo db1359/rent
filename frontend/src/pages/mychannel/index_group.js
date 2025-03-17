@@ -138,7 +138,7 @@ const GroupPage = () => {
                                         <Avatar
                                             size={50}
                                             style={{
-                                                backgroundColor: "rgb(249, 147, 4)",
+                                                backgroundColor: "#9701fc",
                                                 borderRadius: "6px"
                                             }}
                                             shape="square">
@@ -153,7 +153,7 @@ const GroupPage = () => {
                                         <span
                                             style={{color: "red"}}>{group.requests.length} Waiting</span>&nbsp;&nbsp;&nbsp;
                                         <span style={{
-                                            color: "rgb(249, 147, 4)",
+                                            color: "#9701fc",
                                             fontWeight: 700
                                         }}>{group.feeds.length} Feeds</span>
                                     </p>

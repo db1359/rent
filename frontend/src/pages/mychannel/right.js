@@ -218,7 +218,7 @@ const GroupRight = () => {
                             type="primary"
                             color="pink"
                             size="large"
-                            style={{color: "#ffffff", backgroundColor: "rgb(249, 147, 4)", marginTop: 10,
+                            style={{color: "#ffffff", backgroundColor: "#9701fc", marginTop: 10,
                                 marginLeft: 0,
                             }}>
                             <Icon icon="mdi:twitter" style={{width: 32, height: 32}}/>

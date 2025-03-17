@@ -6,7 +6,10 @@ import {Button, Card, Col, Row, Space} from "antd";
 import VideoPlayer from "../../../../components/player";
 import CardTitle from "../../../../components/heading/card";
 import P1 from "../../../../components/paragraph";
-import ChartImage from '../../../../assets/img/edn_about.png'
+// import Img1 from "../../../../assets/img/painting.jpg"
+// import Img2 from "../../../../assets/img/arianna-poster200.png"
+// import Img3 from "../../../../assets/img/isaac.jpg"
+import ChartImage from '../../../../assets/img/rentalapp.jpg'
 import styled from "styled-components"
 import {Icon} from '@iconify/react';
 
@@ -23,9 +26,7 @@ const AboutMain = () => {
                                         paddingTop: '0%',
                                     }}>
                                     <img src={ChartImage} alt=""/>
-                                    {/* <P1 style={{textAlign: 'center'}}>
-                                        CourtWatch is a group collaboration app for users to share ideas, discuss and interact.
-                                    </P1> */}
+                                    
                                 </div>
                             </Space>
                         </Col>

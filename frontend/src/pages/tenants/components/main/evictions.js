@@ -6,9 +6,6 @@ import {Button, Card, Col, Row, Space} from "antd";
 import VideoPlayer from "../../../../components/player";
 import CardTitle from "../../../../components/heading/card";
 import P1 from "../../../../components/paragraph";
-import Img1 from "../../../../assets/img/painting.jpg"
-import Img2 from "../../../../assets/img/arianna-poster200.png"
-import Img3 from "../../../../assets/img/isaac.jpg"
 // import KidsChart from "../chart";
 import ChartImage from '../../../../assets/img/evictionnotice.jpg'
 import styled from "styled-components"
@@ -45,7 +42,7 @@ const AboutMain = () => {
                                     size="large"
                                     style={{
                                         color: "#ffffff",
-                                        backgroundColor: "rgb(249, 147, 4)",
+                                        backgroundColor: "#9701fc",
                                         marginTop: 0,
                                     }}>
                                     Start Intake

@@ -13,7 +13,7 @@ const HamburgerButton = styled(Button)`
   box-shadow: none;
   span {
     font-size: 24px;
-    color: #000;
+    color: #ffffff;
     transition: all 0.3s;
   }
   :hover {

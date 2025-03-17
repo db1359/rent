@@ -63,7 +63,7 @@ const LandingLayoutFooter = () => {
                             gutter={20}
                             style={{justifyContent: "flex-end"}}>
                             <Col>
-                                <Copyright>© EDN 2025</Copyright>
+                                <Copyright>© Renter.com 2025</Copyright>
                             </Col>
                         </Row>
                     </Col>

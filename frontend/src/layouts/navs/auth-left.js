@@ -122,7 +122,7 @@ const AuthLeftNav = () => {
                             fontSize: 20,
                             marginRight: 5,
                             cursor: "pointer",
-                            background: "rgb(249, 147, 4)"
+                            background: "#9701fc"
                         }}
                         src={auth?.user?.photo}>
                         {auth?.user?.firstname?.[0]}

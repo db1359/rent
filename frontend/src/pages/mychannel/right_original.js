@@ -117,7 +117,7 @@ const GroupRight = () => {
                                             <Avatar
                                                 size={50}
                                                 style={{
-                                                    backgroundColor: "rgb(249, 147, 4)",
+                                                    backgroundColor: "#9701fc",
                                                     borderRadius: "6px",
                                                     marginRight: "10px",
                                                 }}
@@ -135,7 +135,7 @@ const GroupRight = () => {
                                             <span
                                                 style={{color: "red"}}>{group.requests.length} Waiting</span>&nbsp;&nbsp;&nbsp;
                                             <span style={{
-                                                color: "rgb(249, 147, 4)",
+                                                color: "#9701fc",
                                                 fontWeight: 700
                                             }}>{group.feeds.length} Feeds</span>
                                         </p>
@@ -278,7 +278,7 @@ const GroupRight = () => {
                             type="primary"
                             color="pink"
                             size="large"
-                            style={{color: "#ffffff", backgroundColor: "rgb(249, 147, 4)", marginTop: 10,
+                            style={{color: "#ffffff", backgroundColor: "#9701fc", marginTop: 10,
                                 marginLeft: 0,
                             }}>
                             <Icon icon="mdi:twitter" style={{width: 32, height: 32}}/>

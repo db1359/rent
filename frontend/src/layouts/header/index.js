@@ -8,8 +8,8 @@ import axios from "axios";
 import config from "../../config";
 import {MenuOutlined} from "@ant-design/icons";
 // import Logo from "../../assets/img/fontbolt_transparent.png";
-import Logo from "../../assets/img/ednlogo.png";
-import Logo2 from "../../assets/img/ednlogo.png";
+import Logo from "../../assets/img/renter_logo.png";
+import Logo2 from "../../assets/img/renter_logo2.png";
 // import Logo2 from "../../assets/img/fontbolt_9701_F_C.png";
 
 const {useBreakpoint} = Grid;
@@ -79,8 +79,20 @@ const LayoutHeader = () => {
                                         <nbsp/>
                                     ) : (
                                         <Button type="headerlink"
-                                            onClick={() => {navigate("/evictions");}}
-                                            className={location.pathname === "/evictions" && "active"}>
+                                            onClick={() => {navigate("/tenants");}}
+                                            className={location.pathname === "/tenants" && "active"}>
+                                            Tenants
+                                        </Button>
+                                    )}
+                                </Col>
+
+                                <Col>
+                                    {user ? (
+                                        <nbsp/>
+                                    ) : (
+                                        <Button type="headerlink"
+                                            onClick={() => {navigate("/tenants/evictions");}}
+                                            className={location.pathname === "/tenants/" && "active"}>
                                             Evictions
                                         </Button>
                                     )}
@@ -103,9 +115,9 @@ const LayoutHeader = () => {
                                         <nbsp/>
                                     ) : (
                                         <Button type="headerlink"
-                                            onClick={() => {navigate("/resources");}}
-                                            className={location.pathname === "/resources" && "active"}>
-                                            Resources
+                                            onClick={() => {navigate("/landlords");}}
+                                            className={location.pathname === "/landlords" && "active"}>
+                                            Landlords
                                         </Button>
                                     )}
                                 </Col>
@@ -115,8 +127,8 @@ const LayoutHeader = () => {
                                         <nbsp/>
                                     ) : (
                                         <Button type="donate" style={{marginLeft: 18}}
-                                            onClick={() => {navigate("/intake");}}>
-                                            INTAKE
+                                            onClick={() => {navigate("/signup");}}>
+                                            SIGN UP
                                         </Button>
                                     )}
                                 </Col>
@@ -142,16 +154,17 @@ const LayoutHeader = () => {
                                     <MenuOutlined/>
                                 </HamburgerButton>
                                 <Drawer
+                                    // backgroundColor="#9701fc"
                                     visible={visible}
                                     onClose={() => {setVisible(false);}}
                                     title={
                                         // <LogoTextLight
                                         //     onClick={() => {setVisible(false);}}
-                                        //     style={{color: "rgb(249, 147, 4)!important"}}
+                                        //     style={{color: "#9701fc!important"}}
                                         //     >
-                                        //     <Link to="/">CourtWatch</Link>
+                                        //     <Link to="/">Renter.com</Link>
                                         // </LogoTextLight>
-                                        <Link to="/"><img src={Logo2} style={{height: '30px', marginTop: '9px'}} alt="Boycott"/></Link>
+                                        <Link to="/"><img src={Logo2} style={{height: '30px', marginTop: '9px'}} alt="DYI"/></Link>
                                     }
                                     closeIcon={<></>}
                                     >
@@ -163,16 +176,17 @@ const LayoutHeader = () => {
                                         ]}
                                         >
                                         {/* <NavHashLink to="/arianna">Arianna's Story</NavHashLink> */}
-                                        <Menu.Item key="intake">
+                                        <Menu.Item key="signup">
                                             <Button type="donate" style={{marginLeft: 0}}
-                                                onClick={() => {navigate("/intake");}}>
-                                                INTAKE
+                                                onClick={() => {navigate("/signup");}}>
+                                                SIGN UP
                                             </Button>
                                         </Menu.Item>
-                                        <Menu.Item key="evictions/">Evictions</Menu.Item>
+                                        <Menu.Item key="tenants/">Tenants</Menu.Item>
+                                        <Menu.Item key="tenants/evictions/">Evictions</Menu.Item>
                                         <Menu.Item key="rentals">Rentals</Menu.Item>
-                                        <Menu.Item key="resources">Resources</Menu.Item>
-                                        <Menu.Item key="donate" className="btn">DONATE</Menu.Item>
+                                        <Menu.Item key="landlords">Landlords</Menu.Item>
+                                        {/* <Menu.Item key="donate" className="btn">DONATE</Menu.Item> */}
                                         <Menu.Item key="login">Login</Menu.Item>
                                     </Menu>
                                 </Drawer>

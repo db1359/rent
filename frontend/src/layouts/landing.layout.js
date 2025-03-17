@@ -8,9 +8,12 @@ import AuthFooter from "./footer/auth";
 import HomePage from "../pages/home";
 import SignupPage from "../pages/signup";
 import LoginPage from "../pages/login";
-import EvictionsPage from "../pages/evictions";
-import SuccessPage from "../pages/evictions/success";
-import CourtWatch from "../pages/evictions/courtwatch";
+import TenantsPage from "../pages/tenants/index";
+import CourtWatch from "../pages/tenants/courtwatch";
+import EvictionsPage from "../pages/tenants/evictions";
+import MaintenancePage from "../pages/tenants/maintenance";
+import SuccessPage from "../pages/tenants/success";
+import LandlordsPage from "../pages/landlords";
 import NotFoundPage from "../pages/404";
 import ProfilePage from "../pages/myprofile";
 import MySettings from "../pages/mysettings";
@@ -52,9 +55,12 @@ const LandingLayout = () => {
                     <Route path="/about" element={<AboutPage/>}/>
                     <Route path="/about/privacy" element={<PrivacyPage/>}/>
                     <Route path="/about/terms" element={<TermsPage/>}/>
-                    <Route path="/evictions/" element={<EvictionsPage/>}/>
-                    <Route path="/evictions/success" element={<SuccessPage/>}/>
-                    <Route path="/evictions/courtwatch" element={<CourtWatch/>}/>
+                    <Route path="/tenants/" element={<TenantsPage/>}/>
+                    <Route path="/tenants/courtwatch" element={<CourtWatch/>}/>
+                    <Route path="/tenants/evictions" element={<EvictionsPage/>}/>
+                    <Route path="/tenants/maintenance" element={<MaintenancePage/>}/>
+                    <Route path="/tenants/success" element={<SuccessPage/>}/>
+                    <Route path="/landlords/" element={<LandlordsPage/>}/>
                     <Route path="/signup" element={<SignupPage/>}/>
                     <Route path="/verify" element={<WaitVerifyPage/>}/>
                     <Route path="/login" element={<LoginPage/>}/>

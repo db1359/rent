@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
     grid-gap: 4px;
 
     &.ant-btn-primary {
-      // color: #000000;
+      // color: #ffffff;
 
       :hover {
         color: #f7ce07;
@@ -35,26 +35,27 @@ const GlobalStyle = createGlobalStyle`
     }
 
     &.ant-btn-donate {
-      background-color: #000000;
-      color:rgb(249, 147, 4);
+      // background-color: #9701fc;
+      background-color: #f7ce07;
+      color: #000000;
       font-weight: bold;
 
       :hover {
-        background-color: rgb(249, 147, 4);
-        color: #ffffff;
+        background-color: #000000;
+        color: #f7ce07;
         font-weight: bold;
       }
     }
 
     &.ant-btn-headerlink {
-      color: #000000;
+      color: #ffffff;
       font-weight: 600;
       letter-spacing: 1px;
       font-size: 14px;ƒ
       padding: 0 8px;
 
       :hover, &.active {
-        color:rgb(249, 147, 4);
+        color: #f7ce07;
       }
     }
 
@@ -71,7 +72,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 16px;
 
       :hover, &.active {
-        color: #ffffff;
+        color: #9701fc;
       }
     }
 
@@ -88,7 +89,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 20px;
 
       :hover, &.active {
-        color: rgb(249, 147, 4);
+        color: blue;
       }
     }
 
@@ -122,7 +123,7 @@ const GlobalStyle = createGlobalStyle`
 
   .ant-layout {
     .ant-layout-header {
-      background: #ffffff;
+      background: #9701fc;
       padding: 0;
       min-height: 72px;
 
@@ -146,7 +147,7 @@ const GlobalStyle = createGlobalStyle`
         z-index: 1000;
 
         a {
-          color: rgb(249, 147, 4);
+          color: #9701fc;
           letter-spacing: 1px;
         }
       }
@@ -173,7 +174,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 15px;
 
         :hover, &.active {
-          color: rgb(249, 147, 4);
+          color: #9701fc;
         }
       }
     }
@@ -313,7 +314,7 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
 
     .ant-card-cover {
-      background-color: rgb(249, 147, 4);
+      background-color: #9701fc;
       border-top-left-radius: 16px;
       border-bottom-left-radius: 16px;
 
@@ -351,7 +352,7 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
 
     .ant-card-cover {
-      background-color: rgb(249, 147, 4);
+      background-color: #9701fc;
       border-top-left-radius: 16px;
       border-top-right-radius: 16px;
 
@@ -391,7 +392,7 @@ const GlobalStyle = createGlobalStyle`
 
           &.ant-btn-primary {
             // background-color: #f7ce07;
-            background-color: rgb(249, 147, 4);
+            background-color: #9701fc;
           }
         }
       }
@@ -404,7 +405,7 @@ const GlobalStyle = createGlobalStyle`
 
   .my-network-status {
     .ant-card-head {
-      background-color: rgb(249, 147, 4);
+      background-color: #9701fc;
 
       .ant-card-head-title {
         color: #ffffff;
@@ -418,7 +419,7 @@ const GlobalStyle = createGlobalStyle`
     grid-gap: 18px;
 
     .right-menu-item {
-      color: rgb(249, 147, 4);
+      color: #9701fc;
       font-size: 18px;
       display: flex;
       align-items: center;
@@ -441,7 +442,7 @@ const GlobalStyle = createGlobalStyle`
       border-bottom: none;
 
       &::before {
-        border: 0.4px solid rgb(249, 147, 4);
+        border: 0.4px solid #9701fc;
       }
 
       .ant-tabs-nav-wrap {
@@ -452,12 +453,12 @@ const GlobalStyle = createGlobalStyle`
             align-items: center;
             justify-content: center;
             background-color: transparent;
-            border: 1px solid rgb(249, 147, 4);
+            border: 1px solid #9701fc;
             margin-left: 0 !important;
 
             &.ant-tabs-tab-active {
-              border: 1px solid rgb(249, 147, 4);
-              background-color: rgb(249, 147, 4);
+              border: 1px solid #9701fc;
+              background-color: #9701fc;
 
               .ant-tabs-tab-btn {
                 color: #ffffff;
@@ -465,7 +466,7 @@ const GlobalStyle = createGlobalStyle`
             }
 
             .ant-tabs-tab-btn {
-              color: rgb(249, 147, 4);
+              color: #9701fc;
               font-weight: 700;
               background-color: transparent;
               border: none;
@@ -532,7 +533,7 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         align-items: center;
         grid-gap: 4px;
-        color: rgb(249, 147, 4);
+        color: #9701fc;
       }
     }
   }
@@ -557,7 +558,7 @@ const GlobalStyle = createGlobalStyle`
 
     .ant-card {
       .ant-card-head {
-        background-color: rgb(249, 147, 4);
+        background-color: #9701fc;
 
         .ant-card-head-title {
           color: #ffffff;
@@ -736,7 +737,7 @@ const GlobalStyle = createGlobalStyle`
           }
 
           :hover, &.active {
-            color: rgb(249, 147, 4);
+            color: #9701fc;
           }
         }
       }
@@ -744,7 +745,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a.active {
-    color: rgb(249, 147, 4);
+    color: #9701fc;
   }
 `
 

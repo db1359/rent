@@ -1,0 +1,16 @@
+import React, {Fragment} from 'react';
+import AboutMain from "./components/main/index";
+import TopNav from "../../layouts/navs/auth-toplandlords";
+import BannerLandlordRentalApp from "../banners/landlordrentalapp";
+
+const AboutPage = () => {
+    return (
+        <Fragment>
+            <TopNav/>
+            <BannerLandlordRentalApp/>
+            <AboutMain/>
+        </Fragment>
+    );
+};
+
+export default AboutPage;

@@ -9,8 +9,7 @@ import P1 from "../../../../components/paragraph";
 import Img1 from "../../../../assets/img/painting.jpg"
 import Img2 from "../../../../assets/img/arianna-poster200.png"
 import Img3 from "../../../../assets/img/isaac.jpg"
-// import KidsChart from "../chart";
-import ChartImage from '../../../../assets/img/home.jpg'
+import ChartImage from '../../../../assets/img/rentalapp.jpg'
 import styled from "styled-components"
 import {Icon} from '@iconify/react';
 
@@ -45,7 +44,7 @@ const AboutMain = () => {
                                     size="large"
                                     style={{
                                         color: "#ffffff",
-                                        backgroundColor: "rgb(249, 147, 4)",
+                                        backgroundColor: "#9701fc",
                                         marginTop: 0,
                                     }}>
                                     Start Intake

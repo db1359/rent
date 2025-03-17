@@ -25,7 +25,7 @@ export const Styles = styled.div`
         height: 100%;
 
         a {
-          color: #000;
+          color: #fff;
           font-size: 16px;
           font-weight: 600;
           text-decoration: none;

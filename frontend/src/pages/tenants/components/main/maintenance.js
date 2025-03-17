@@ -6,11 +6,8 @@ import {Button, Card, Col, Row, Space} from "antd";
 import VideoPlayer from "../../../../components/player";
 import CardTitle from "../../../../components/heading/card";
 import P1 from "../../../../components/paragraph";
-import Img1 from "../../../../assets/img/painting.jpg"
-import Img2 from "../../../../assets/img/arianna-poster200.png"
-import Img3 from "../../../../assets/img/isaac.jpg"
 // import KidsChart from "../chart";
-import ChartImage from '../../../../assets/img/chart.png'
+import ChartImage from "../../../../assets/img/maintenance.jpg"
 import styled from "styled-components"
 import {Icon} from '@iconify/react';
 
@@ -26,10 +23,9 @@ const AboutMain = () => {
                                         position: 'relative',
                                         paddingTop: '0%',
                                     }}>
-                                    <img src={ChartImage} alt="Divorce industry revenue since bill clinton made 'kids for cash' law"/>
-                                    <P1>
-                                        Divorce industry revenues increased 100 fold from $1 billion to $100 billion after Bill Clinton&apos;s &quot;Kids for Cash&quot; legistlation to seperates kids from families.
-                                        It incentivized corrupt judges, attorneys, DAs, therapists and slew of money hungry frauds to massively profit by destroying kids and families. It continues to financially benefit the Clinton campaingn & Foundations to this day.
+                                    <img src={ChartImage} alt=""/>
+                                    <P1><br></br>
+                                    Eviction is a legal process where a landlord seeks to remove a tenant from a rental property, typically after a notice period and potentially a court case. Eviction notices can be for various reasons, including non-payment of rent, lease violations, or no-fault reasons like owner move-in or property withdrawal. 
                                     </P1>
                                 </div>
                             </Space>
@@ -49,11 +45,11 @@ const AboutMain = () => {
                                         backgroundColor: "#9701fc",
                                         marginTop: 0,
                                     }}>
-                                    Join Channel
+                                    Start Intake
                                 </Button>
                             </CardTitle>
 
-                            <ActionFormCard>
+                            {/* <ActionFormCard>
                                 <CardTitle style={{marginBottom: 20}}>
                                     Donate
                                 </CardTitle>
@@ -62,7 +58,7 @@ const AboutMain = () => {
                                         src={'https://EDN/static/media/paypalqrcode.9f13c28557abe5d13a0c.png'}
                                         alt=""/>
                                 </CardTitle>
-                            </ActionFormCard>
+                            </ActionFormCard> */}
                                 {/* <CardTitle>
                                     20,904,371
                                 </CardTitle>

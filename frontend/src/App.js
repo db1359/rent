@@ -1,4 +1,5 @@
 import {ConfigProvider} from "antd";
+import React from 'react';
 import {Provider} from "react-redux";
 import GlobalStyle from "./style/global";
 import LandingLayout from "./layouts/landing.layout";

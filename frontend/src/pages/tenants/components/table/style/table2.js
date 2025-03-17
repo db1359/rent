@@ -10,7 +10,7 @@ const TableContent = styled.div`
       grid-template-columns: 1fr;
     }
     &:nth-child(even) {
-      // background-color: rgb(249, 147, 4);
+      // background-color: #9701fc;
       background-color: #f0f2f5;
     }
     &>div {
@@ -24,7 +24,7 @@ const TableContent = styled.div`
     }
 
     a {
-      color: rgb(249, 147, 4);
+      color: #9701fc;
       font-weight: 500;
       font-size: 15px;
 

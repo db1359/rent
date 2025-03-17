@@ -1,11 +1,5 @@
 import styled from "styled-components"
-//import BgImage from "../../../assets/img/arianna-poster.jpg"
-// import BgImage from "../../../assets/img/kids.jpg"
-// import BgImage from "../../../assets/img/kids2.jpeg"
-// import BgImage from "../../../assets/img/kids11.jpg"
-// import BgImage from "../../../assets/img/pink.jpeg"
-// import BgImage from "../../../assets/img/courtfraud.jpg"
-import BgImage from "../../../assets/img/boycott2.jpg"
+import BgImage from "../../../assets/img/landingpage.jpg"
 
 const HomeWrap = styled.div`
   background-image: url(${BgImage});

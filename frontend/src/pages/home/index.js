@@ -23,24 +23,24 @@ const HomePage = () => {
 
     return (
         <HomeWrap>
+            <HomeSlogan2>
+            DIY Rental Service
+            </HomeSlogan2>
             {/* <HomeSlogan>
-                Every 60 seconds a child and parent are separated by Family Courts for profit.
+                DIY Rental Service
             </HomeSlogan> */}
-            {/* <HomeSubtitle>
-                <h1>Exposing Family Corruption & Fraud</h1>
-            </HomeSubtitle>
-            <HomeSlogan>
-                Every 60 seconds a child & parent are separated for profit.
-            </HomeSlogan>
-            <HomeCounter>
-                {child.toLocaleString()}
-            </HomeCounter>
             <HomeSubtitle>
+                <h1>For Tenants & Landlords</h1>
+            </HomeSubtitle>
+            {/* <HomeSlogan>
+                Every 60 seconds a child & parent are separated for profit.
+            </HomeSlogan> */}
+            {/* <HomeCounter>
+                {child.toLocaleString()}
+            </HomeCounter> */}
+            {/* <HomeSubtitle>
                 Children seperated from parents to date.
             </HomeSubtitle> */}
-            {/* <HomeSlogan2>
-                ABOLISH Family Courts
-            </HomeSlogan2> */}
         </HomeWrap>
     );
 };
