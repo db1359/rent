@@ -35,14 +35,13 @@ const GlobalStyle = createGlobalStyle`
     }
 
     &.ant-btn-donate {
-      // background-color: #9701fc;
       background-color: #f7ce07;
       color: #000000;
       font-weight: bold;
 
       :hover {
-        background-color: #000000;
-        color: #f7ce07;
+        background-color: #ffffff;
+        color: #000000;
         font-weight: bold;
       }
     }
@@ -123,7 +122,7 @@ const GlobalStyle = createGlobalStyle`
 
   .ant-layout {
     .ant-layout-header {
-      background: #9701fc;
+      background: #000000;
       padding: 0;
       min-height: 72px;
 

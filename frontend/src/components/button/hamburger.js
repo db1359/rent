@@ -18,7 +18,7 @@ const HamburgerButton = styled(Button)`
   }
   :hover {
     span {
-      color: #e9a4ed;
+      color: #f7ce07;
       transition: all 0.3s;
     }
   }

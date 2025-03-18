@@ -37,7 +37,7 @@ const AuthLeftNavWrap2 = styled.div`
       font-size: 14px;
       padding-top: 5px;
       // padding-left: 12px;
-      color: #9701fc;
+      color: #f7ce07;
     }
   }
   .active {
