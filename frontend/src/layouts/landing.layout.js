@@ -2,7 +2,7 @@ import React from 'react';
 import {Layout} from "antd";
 import {Route, Routes} from "react-router-dom";
 import LandingLayoutHeader from "./header";
-import LandingLayoutFooter from "./footer";
+import LandingLayoutFooter from "./footer/";
 import AuthHeader from "./header/auth";
 import AuthFooter from "./footer/auth";
 import HomePage from "../pages/home";

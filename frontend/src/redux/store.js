@@ -4,7 +4,6 @@ import RootReducer from "./redux/root";
 import { composeWithDevTools } from 'redux-devtools-extension'
 import {loadState, saveState} from "../utils/helper/storage.helper";
 
-
 const persistedState = loadState()
 
 export const store = createStore(

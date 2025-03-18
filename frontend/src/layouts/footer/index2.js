@@ -21,7 +21,7 @@ const LandingLayoutFooter = () => {
         <Footer className={(location.pathname === "/" && !auth.isAuth) ? "fixed-footer" : ""}>
             <Container>
                 <Row align='middle' justify='space-between' gutter={[20, 12]}>
-                    <Col lg={{span: 19}} span={24}>
+                    <Col lg={{span: 11}} span={24}>
                         <Row gutter={20} justify="center"
                             style={{justifyContent: breakpoints.lg ? "flex-start" : "center"}}>
                             <Col>
@@ -37,7 +37,7 @@ const LandingLayoutFooter = () => {
                                 <Link to="/about/terms">Terms</Link>
                             </Col>
                             <Col>
-                                <Link to="/donate">Donate</Link>
+                                <Link to="/donate">Test</Link>
                             </Col>
                         </Row>
                     </Col>
@@ -57,11 +57,10 @@ const LandingLayoutFooter = () => {
                             </Col>
                         </Row>
                     </Col>
-                    <Col lg={{span: 3}} span={24}>
-                        <Row
-                            justify="center"
+                    <Col lg={{span: 11}} span={24}>
+                        <Row justify="flex-end"
                             gutter={20}
-                            style={{justifyContent: "center"}}>
+                            style={{justifyContent: "flex-end"}}>
                             <Col>
                                 <Copyright>© Renter.com 2025</Copyright>
                             </Col>

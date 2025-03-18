@@ -173,7 +173,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 15px;
 
         :hover, &.active {
-          color: #9701fc;
+          color: #f7ce07;;
         }
       }
     }
