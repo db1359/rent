@@ -1,4 +1,4 @@
-# EDN *
+# RENT
 ## Frontend
 `react.js`
 

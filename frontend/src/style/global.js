@@ -66,12 +66,12 @@ const GlobalStyle = createGlobalStyle`
       padding-left: 0px;
       padding-right: 0px;
 
-      color: #000000;
+      color:rgb(255, 255, 255);
       font-weight: 600;
       font-size: 16px;
 
       :hover, &.active {
-        color: #9701fc;
+        color:rgb(0, 0, 0);
       }
     }
 

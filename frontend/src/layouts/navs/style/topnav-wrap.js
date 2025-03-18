@@ -17,7 +17,7 @@ background-color: #f7ce07;
   // 
   // a {
   //   :hover, &.active {
-  //     color: #000000;
+  //     color:rgb(181, 30, 30);
   //   }
 }
 `
