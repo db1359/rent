@@ -66,7 +66,7 @@ const LayoutHeader = () => {
                 <Row justify="space-between" align="middle">
                     <Col>
                         {/* <LogoText>
-                            <Link to="/">EDN</Link>
+                            <Link to="/">MOGUL</Link>
                         </LogoText> */}
                         <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '0px'}} alt="Boycott"/></Link>
                     </Col>

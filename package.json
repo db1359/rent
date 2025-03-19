@@ -1,5 +1,5 @@
 {
-  "name": "edn",
+  "name": "mogul",
   "version": "1.0.0",
   "description": "## Frontend `react.js`",
   "main": "index.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/db1359/edn.git"
+    "url": "git+https://github.com/db1359/rent.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/db1359/edn/issues"
+    "url": "https://github.com/db1359/rent/issues"
   },
-  "homepage": "https://github.com/db1359/edn#readme"
+  "homepage": "https://github.com/db1359/rent#readme"
 }

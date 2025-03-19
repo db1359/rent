@@ -76,7 +76,7 @@ const GroupPage = () => {
     }
 
     const shareOkHandle = () => {
-        navigator.clipboard.writeText("https://EDN/channel/" + gr.slug);
+        navigator.clipboard.writeText("https://mogul/channel/" + gr.slug);
         setShare(false);
         openSuccess();
     }
@@ -285,13 +285,13 @@ const GroupPage = () => {
                                 <Button
                                     type="link"
                                     onClick={() => {
-                                        navigator.clipboard.writeText("https://EDN/channel/" + gr.slug);
+                                        navigator.clipboard.writeText("https://mogul/channel/" + gr.slug);
                                         openSuccess()
                                     }}>
                                     <CopyOutlined/>
                                 </Button>
                             }
-                            value={"https://EDN/channel/" + gr.slug}
+                            value={"https://mogul/channel/" + gr.slug}
                             size="large"/>
                     </Item>
                 </Form>

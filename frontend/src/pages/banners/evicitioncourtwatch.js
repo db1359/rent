@@ -11,7 +11,7 @@ const CourtWatchBanner = () => {
                 <P1></P1>
                 <h4>CourtWatch</h4>
                 <SectionTitle>
-                courtwatch@edn.la
+                courtwatch@mogul.rental
                 </SectionTitle>
                 <h1 style={{paddingTop: 10, paddingBottom: 0}}>Go To Court & Watch Eviction Cases</h1>
             </Container>

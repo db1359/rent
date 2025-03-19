@@ -46,7 +46,7 @@ const LandingLayoutFooter = () => {
                             <Col>
                                 <Button
                                     target='_blank'
-                                    href='https://twitter.com/edn'
+                                    href='https://twitter.com/mogul'
                                     shape="circle"
                                     type="primary"
                                     color="pink"
