@@ -24,16 +24,16 @@ const HomePage = () => {
     return (
         <HomeWrap>
             <HomeSlogan2>
-            DIY Rental Service
+            MOGUL
             </HomeSlogan2>
             {/* <HomeSlogan>
-                DIY Rental Service
+                MOGUL
             </HomeSlogan> */}
             <HomeSubtitle>
-                <h1>For Tenants & Landlords</h1>
+                <h1>DIY Rental Service For Tenants & Landlords</h1>
             </HomeSubtitle>
             {/* <HomeSlogan>
-                Every 60 seconds a child & parent are separated for profit.
+                MOGUL
             </HomeSlogan> */}
             {/* <HomeCounter>
                 {child.toLocaleString()}
