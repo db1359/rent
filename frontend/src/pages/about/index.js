@@ -6,7 +6,7 @@ const AboutPage = () => {
     return (
         <Fragment>
             <TopNav/> 
-            {/* <AboutMain/> */}
+            {/* <AboutMain/>  */}
         </Fragment>
     );
 };
