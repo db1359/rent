@@ -92,7 +92,7 @@ const LayoutHeader = () => {
                                     ) : (
                                         <Button type="headerlink"
                                             onClick={() => {navigate("/tenants/evictions");}}
-                                            className={location.pathname === "/tenants/" && "active"}>
+                                            className={location.pathname === "/tenants/evictions" && "active"}>
                                             Evictions
                                         </Button>
                                     )}
@@ -182,8 +182,8 @@ const LayoutHeader = () => {
                                                 SIGN UP
                                             </Button>
                                         </Menu.Item>
-                                        <Menu.Item key="tenants/">Tenants</Menu.Item>
-                                        <Menu.Item key="tenants/evictions/">Evictions</Menu.Item>
+                                        <Menu.Item key="tenants">Tenants</Menu.Item>
+                                        <Menu.Item key="tenants/evictions">Evictions</Menu.Item>
                                         <Menu.Item key="rentals">Rentals</Menu.Item>
                                         <Menu.Item key="landlords">Landlords</Menu.Item>
                                         {/* <Menu.Item key="donate" className="btn">DONATE</Menu.Item> */}
