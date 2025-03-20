@@ -4,6 +4,7 @@ import HomeSlogan from "./style/slogan";
 import HomeSlogan2 from "./style/slogan2";
 import HomeCounter from "./style/counter";
 import HomeSubtitle from "./style/subtitle";
+import ChartImage from '../../assets/img/mogul150.png'
 
 const HomePage = () => {
 
@@ -23,14 +24,20 @@ const HomePage = () => {
 
     return (
         <HomeWrap>
-            <HomeSlogan2>
+            <div style={{
+                    position: 'relative',
+                    paddingTop: '0%',
+                }}>
+                <img src={ChartImage} alt=""/>
+            </div>
+            {/* <HomeSlogan2>
             MOGUL
-            </HomeSlogan2>
+            </HomeSlogan2> */}
             {/* <HomeSlogan>
                 MOGUL
             </HomeSlogan> */}
             <HomeSubtitle>
-                <h1>DIY Rental Service For Tenants & Landlords</h1>
+                <h1>AI Rental Service For Tenants & Landlords</h1>
             </HomeSubtitle>
             {/* <HomeSlogan>
                 MOGUL
