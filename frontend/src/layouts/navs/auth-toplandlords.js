@@ -80,9 +80,9 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/resources/forms");
+                                            navigate("#");
                                         }}
-                                        className={location.pathname === "/resources/forms" && "active"}>
+                                        className={location.pathname === "#" && "active"}>
                                         Tenant Screening
                                     </Button>
                                 )}
@@ -95,9 +95,9 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/resources/webinars");
+                                            navigate("#");
                                         }}
-                                        className={location.pathname === "/resources/webinars" && "active"}>
+                                        className={location.pathname === "#" && "active"}>
                                         Leases
                                     </Button>
                                 )}
@@ -110,9 +110,9 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/resources/webinars");
+                                            navigate("#");
                                         }}
-                                        className={location.pathname === "/resources/webinars" && "active"}>
+                                        className={location.pathname === "#" && "active"}>
                                         Online Rent Payments
                                     </Button>
                                 )}
@@ -125,9 +125,9 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/resources/webinars");
+                                            navigate("#");
                                         }}
-                                        className={location.pathname === "/resources/webinars" && "active"}>
+                                        className={location.pathname === "#" && "active"}>
                                         Maintence Requests
                                     </Button>
                                 )}
@@ -140,9 +140,9 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/resources/webinars");
+                                            navigate("#");
                                         }}
-                                        className={location.pathname === "/resources/webinars" && "active"}>
+                                        className={location.pathname === "#" && "active"}>
                                         Tenants Notices
                                     </Button>
                                 )}

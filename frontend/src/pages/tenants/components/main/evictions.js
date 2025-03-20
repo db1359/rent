@@ -41,11 +41,11 @@ const AboutMain = () => {
                                     color="pink"
                                     size="large"
                                     style={{
-                                        color: "#ffffff",
-                                        backgroundColor: "#9701fc",
+                                        color: "#000000",
+                                        backgroundColor: "#f7ce07",
                                         marginTop: 0,
                                     }}>
-                                    Start Intake
+                                    Sign Up
                                 </Button>
                             </CardTitle>
 

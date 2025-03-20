@@ -390,8 +390,7 @@ const GlobalStyle = createGlobalStyle`
           border-radius: 0;
 
           &.ant-btn-primary {
-            // background-color: #f7ce07;
-            background-color: #9701fc;
+            background-color: #f7ce07;
           }
         }
       }
