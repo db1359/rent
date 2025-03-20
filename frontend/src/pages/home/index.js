@@ -37,7 +37,7 @@ const HomePage = () => {
                 MOGUL
             </HomeSlogan> */}
             <HomeSubtitle>
-                <h1>AI Rental Service For Tenants & Landlords</h1>
+                <h1>Ai Rental Service For Tenants & Landlords</h1>
             </HomeSubtitle>
             {/* <HomeSlogan>
                 MOGUL
