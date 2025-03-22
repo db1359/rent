@@ -154,17 +154,17 @@ const LayoutHeader = () => {
                                     <MenuOutlined/>
                                 </HamburgerButton>
                                 <Drawer
-                                    // backgroundColor="#9701fc"
+                                    placement="right"
                                     visible={visible}
                                     onClose={() => {setVisible(false);}}
                                     title={
-                                        // <LogoTextLight
-                                        //     onClick={() => {setVisible(false);}}
-                                        //     style={{color: "#9701fc!important"}}
-                                        //     >
-                                        //     <Link to="/">Renter.com</Link>
-                                        // </LogoTextLight>
-                                        <Link to="/"><img src={Logo2} style={{height: '30px', marginTop: '9px'}} alt="DYI"/></Link>
+                                        <LogoTextLight
+                                            onClick={() => {setVisible(false);}}
+                                            style={{color: "#000000!important"}}
+                                            >
+                                            <Link to="/">MOGUL</Link>
+                                        </LogoTextLight>
+                                        // <Link to="/"><img src={Logo2} style={{height: '30px', marginTop: '9px'}} alt="MOGUL"/></Link>
                                     }
                                     closeIcon={<></>}
                                     >

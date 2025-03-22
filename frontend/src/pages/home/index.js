@@ -31,7 +31,7 @@ const HomePage = () => {
                 <img src={ChartImage} alt="Mogul - Ai Rental Service for Tenants & Landlords"/>
             </div>
             {/* <HomeSlogan2>
-            MOGUL
+                MOGUL
             </HomeSlogan2> */}
             {/* <HomeSlogan>
                 MOGUL

@@ -12,11 +12,12 @@ a {
 
 export const LogoTextLight = styled.h1`
   margin: 0;
+  margin-left: 0;
   line-height: 1;
-  text-align: center;
+  text-align: left;
   a {
-    color: #9701fc;
-    font-family: 'Kaushan Script', cursive;
+    color: #000000;
+    font-family: 'arial black',sans-serif;
     font-size: 32px;
     :focus, :hover {
       text-decoration: none;
