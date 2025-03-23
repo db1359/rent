@@ -103,7 +103,7 @@ const LayoutHeader = () => {
                                 )}
                             </Col>
 
-                            <Col>
+                            {/* <Col>
                                 {user ? (
                                     <nbsp/>
                                 ) : (
@@ -116,7 +116,7 @@ const LayoutHeader = () => {
                                         Donate
                                     </Button>
                                 )}
-                            </Col>
+                            </Col> */}
 
                             {/* <Col>
                                 {user ? (

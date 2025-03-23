@@ -6,7 +6,7 @@ import {Button, Card, Col, Row, Space} from "antd";
 import VideoPlayer from "../../../../components/player";
 import CardTitle from "../../../../components/heading/card";
 import P1 from "../../../../components/paragraph";
-import ChartImage from '../../../../assets/img/edn_about.png'
+import ChartImage from '../../../../assets/img/aboutmogul.png'
 import styled from "styled-components"
 import {Icon} from '@iconify/react';
 

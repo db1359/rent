@@ -5,6 +5,7 @@ import LandingLayoutHeader from "./header";
 import LandingLayoutFooter from "./footer/";
 import AuthHeader from "./header/auth";
 import AuthFooter from "./footer/auth";
+import HomeFooter from "./footer/homefooter";
 import HomePage from "../pages/home";
 import SignupPage from "../pages/signup";
 import LoginPage from "../pages/login";
@@ -38,6 +39,8 @@ const {Content} = Layout
 
 const LandingLayout = () => {
     const auth = useSelector((state) => state.auth)
+    const home = useSelector((state) => state.home)
+    const homefooter = useSelector((state) => state.homefooter)
 
     return (
         <Layout>
@@ -48,9 +51,23 @@ const LandingLayout = () => {
                     <LandingLayoutHeader/>
                 )
             }
+
+            {/* {
+                auth.isAuth ? (
+                    <AuthHeader />
+                ) : (
+                home.isHomePage ? (
+                    <HomePage />
+                ) : (
+                    <LandingLayoutHeader />
+                )
+                )
+            } */}
+
             <Content>
                 <Routes>
                     <Route path="/" element={auth?.isAuth ? <MyPostPage/> : <HomePage/>}/>
+                    <Route path="/home/" element={<HomePage/>}/>
                     <Route path="/email-verification" element={<EmailVerificationPage/>}/>
                     <Route path="/about" element={<AboutPage/>}/>
                     <Route path="/about/privacy" element={<PrivacyPage/>}/>
@@ -85,6 +102,18 @@ const LandingLayout = () => {
                     <LandingLayoutFooter/>
                 )
             }
+
+            {/* {
+                auth.isAuth ? (
+                    <AuthFooter />
+                ) : (
+                homefooter.isHomeFooter ? (
+                    <HomeFooter />
+                ) : (
+                    <LandingLayoutFooter />
+                )
+                )
+            } */}
     </Layout>
     );
 };
