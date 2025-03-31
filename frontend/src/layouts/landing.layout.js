@@ -30,8 +30,9 @@ import TermsPage from "../pages/about/terms";
 import ResourcePage from "../pages/resources";
 import WebinarPage from "../pages/resources/webinars";
 import FormsPage from "../pages/resources/forms";
-import RentalsPage from "../pages/rentals/listings";
-import RentalsListingsPage from "../pages/rentals";
+import RentalsPage from "../pages/rentals";
+import RentalsListPage from "../pages/rentals/list";
+import RentalsPropertyPage from "../pages/rentals/property";
 import ChannelPage from "../pages/mychannel";
 import WaitVerifyPage from "../pages/wait-verify";
 
@@ -87,7 +88,8 @@ const LandingLayout = () => {
                     <Route path="/resources/forms" element={<FormsPage/>}/>
                     <Route path="/resources/webinars" element={<WebinarPage/>}/>
                     <Route path="/rentals" element={<RentalsPage/>}/>
-                    <Route path="/rentals/listings" element={<RentalsListingsPage/>}/>
+                    <Route path="/rentals/list" element={<RentalsListPage/>}/>
+                    <Route path="/rentals/property" element={<RentalsPropertyPage/>}/>
                     <Route path="/:username" element={<ProfilePage/>}/>
                     <Route path="/:username/settings" element={<MySettings/>}/>
                     {/* <Route path="/:username/status/:id" element={<FeedPage/>}/> */}

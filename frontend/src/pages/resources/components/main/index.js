@@ -25,8 +25,7 @@ const AboutMain = () => {
                                         position: 'relative',
                                         paddingTop: '0%',
                                     }}>
-                                    <img src={ChartImage} alt=""/>
-                                    
+                                    <img src={ChartImage} alt="Mogul"/>
                                 </div>
                             </Space>
                         </Col>

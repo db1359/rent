@@ -80,7 +80,22 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/rentals/listings");
+                                            navigate("/rentals/property");
+                                        }}
+                                        className={location.pathname === "/rentals/property" && "active"}>
+                                        Property
+                                    </Button>
+                                )}
+                            </Col>
+
+                            <Col>
+                                {user ? (
+                                    <nbsp/>
+                                ) : (
+                                    <Button
+                                        type="communitylink"
+                                        onClick={() => {
+                                            navigate("/rentals/list");
                                         }}
                                         className={location.pathname === "/rentals/listings" && "active"}>
                                         List Rentals

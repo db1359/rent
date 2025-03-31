@@ -22,7 +22,7 @@ const AboutMain = () => {
                                         position: 'relative',
                                         paddingTop: '0%',
                                     }}>
-                                    <img src={ChartImage} alt=""/>
+                                    <img src={ChartImage} alt="Mogul"/>
                                     {/* <P1 style={{textAlign: 'center'}}>
                                         CourtWatch is a group collaboration app for users to share ideas, discuss and interact.
                                     </P1> */}
