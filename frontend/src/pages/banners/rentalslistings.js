@@ -9,11 +9,11 @@ const Banner = () => {
         <BannerWrap>
             <Container>
                 <P1></P1>
-                <h4>Rental Listings</h4>
+                <h4>List Rental Property</h4>
                 <SectionTitle>
-                Find Rental Listings In Your Area
+                List & Get Tenants For Your Property
                 </SectionTitle>
-                <h1 style={{paddingTop: 10, paddingBottom: 0}}>Rentals That Fit Your Budget</h1>
+                <h1 style={{paddingTop: 10, paddingBottom: 0}}>See Listing Terms Below</h1>
             </Container>
         </BannerWrap>
     );
