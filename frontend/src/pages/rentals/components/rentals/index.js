@@ -4,7 +4,7 @@ import KidsVideosWrap from "../style/wrap";
 import Container from "../../../../components/paper/container";
 import {Col, Row, Space} from "antd";
 import P1 from "../../../../components/paragraph";
-import ChartImage from '../../../../assets/img/rentals1.png'
+import ChartImage from '../../../../assets/img/rentals1.jpg'
 
 const KidsVideos = () => {
     return (
