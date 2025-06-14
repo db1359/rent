@@ -1,14 +1,39 @@
 import React, {Fragment} from 'react';
-import AboutMain from "./components/main/index";
 import TopNav from "../../layouts/navs/auth-toptenants";
-import BannerTenants from "../banners/tenants";
+import BannerHome from "../banners/tenanthome";
+import BannerSearch from "../banners/tenantsearch";
+import BannerEasyApply from "../banners/tenantapply";
+import BannerID from "../banners/tenantid";
+import BannerApprove from "../banners/tenantapprove";
+import BannerExpense from "../banners/tenantexpense";
+import TenantHome from "./components/main/home";
+import TenantSearch from "./components/main/search";
+import TenantEasyApply from "./components/main/apply";
+import TenantID from "./components/main/id";
+import TenantApprove from "./components/main/approve";
+import TenantExpense from "./components/main/expense";
 
 const AboutPage = () => {
     return (
         <Fragment>
             <TopNav/>
-            <BannerTenants/>
-            <AboutMain/>
+            <BannerHome/>
+            <TenantHome/>
+
+            <BannerSearch/>
+            <TenantSearch/>
+
+            <BannerEasyApply/>
+            <TenantEasyApply/>
+
+            <BannerID/>
+            <TenantID/>
+
+            <BannerApprove/>
+            <TenantApprove/>
+
+            <BannerExpense/>
+            <TenantExpense/>
         </Fragment>
     );
 };

@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import AboutMain from "./components/main/maintenance";
 import TopNav from "../../layouts/navs/auth-toptenants";
-import BannerEvictions from "../banners/tenants";
+//import BannerEvictions from "../banners/tenantapply";
 
 const AboutPage = () => {
     return (

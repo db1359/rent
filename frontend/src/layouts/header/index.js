@@ -8,9 +8,9 @@ import axios from "axios";
 import config from "../../config";
 import {MenuOutlined} from "@ant-design/icons";
 // import Logo from "../../assets/img/fontbolt_transparent.png";
+// import Logo2 from "../../assets/img/fontbolt_9701_F_C.png";
 import Logo from "../../assets/img/renter_logo.png";
 import Logo2 from "../../assets/img/renter_logo2.png";
-// import Logo2 from "../../assets/img/fontbolt_9701_F_C.png";
 
 const {useBreakpoint} = Grid;
 
@@ -86,7 +86,7 @@ const LayoutHeader = () => {
                                     )}
                                 </Col>
 
-                                <Col>
+                                {/* <Col>
                                     {user ? (
                                         <nbsp/>
                                     ) : (
@@ -96,7 +96,7 @@ const LayoutHeader = () => {
                                             Evictions
                                         </Button>
                                     )}
-                                </Col>
+                                </Col> */}
 
                                 <Col>
                                     {user ? (

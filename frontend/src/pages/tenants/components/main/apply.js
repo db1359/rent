@@ -5,11 +5,7 @@ import SectionTitle from "../../../../components/heading/section";
 import {Button, Card, Col, Row, Space} from "antd";
 import VideoPlayer from "../../../../components/player";
 import CardTitle from "../../../../components/heading/card";
-// import P1 from "../../../../components/paragraph";
-// import Img1 from "../../../../assets/img/painting.jpg"
-// import Img2 from "../../../../assets/img/arianna-poster200.png"
-// import Img3 from "../../../../assets/img/isaac.jpg"
-import ChartImage from '../../../../assets/img/rentalapp.jpg'
+import ChartImage from '../../../../assets/img/tenanteasyapply.png'
 import styled from "styled-components"
 import {Icon} from '@iconify/react';
 
@@ -60,5 +56,4 @@ const ActionFormCard = styled(Card)`
     padding: 0;
   }
 `
-
 export default AboutMain;
