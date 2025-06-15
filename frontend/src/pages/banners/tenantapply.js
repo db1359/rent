@@ -6,13 +6,13 @@ import P1 from "../../components/paragraph";
 
 const Banner = () => {
     return (
-        <BannerWrap>
+    <BannerWrap>
         <Container>
             <P1></P1>
-            <h4>Apply To Hundreds Of Rentals In One Click</h4>
-            {/* <SectionTitle>
-            Simple, Easy, Fast
-            </SectionTitle> */}
+            {/* <h4>Setup Your ID Once, Use It Over & Over</h4> */}
+            <SectionTitle>
+            Apply To Hundreds Of Rentals In One Click
+            </SectionTitle>
             {/* <h1 style={{paddingTop: 10, paddingBottom: 0}}>Online Rental Application</h1> */}
         </Container>
     </BannerWrap>

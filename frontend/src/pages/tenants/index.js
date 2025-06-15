@@ -17,6 +17,7 @@ const AboutPage = () => {
     return (
         <Fragment>
             <TopNav/>
+            <p></p>
             <BannerHome/>
             <TenantHome/>
 
