@@ -61,7 +61,7 @@ const LoginPage = () => {
     return (
         <Container>
             <Row>
-                <Col span={10} offset={7}>
+                <Col span={100} offset={7}>
                     <AuthWrap>
                         {contextHolder}
                         <Form

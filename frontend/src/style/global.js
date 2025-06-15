@@ -71,7 +71,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 16px;
 
       :hover, &.active {
-        color:rgb(0, 0, 0);
+        color: #f7ce07;
       }
     }
 
@@ -459,7 +459,7 @@ const GlobalStyle = createGlobalStyle`
               background-color: #9701fc;
 
               .ant-tabs-tab-btn {
-                color: #ffffff;
+                color: #f7ce07;
               }
             }
 

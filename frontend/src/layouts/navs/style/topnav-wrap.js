@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 const TopNavWrap = styled.div`
-background-color: #f7ce07;
+background-color: #9701fc;
+hover: #f7ce07;
+  
   // text-align: center;
   // padding-top: 18px;
   // padding-bottom: 18px;

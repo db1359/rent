@@ -33,17 +33,18 @@ const AboutMain = () => {
                             <CardTitle style={{paddingBottom: 20,}}>
                                     <Button
                                     target='_blank'
-                                    href='/channel/AbolishFamilyCourt'
+                                    href='/tenantsignup'
                                     shape="rectangle"
                                     type="primary"
                                     color="pink"
                                     size="large"
                                     style={{
                                         color: "#ffffff",
+                                        hover: "#f7ce07",
                                         backgroundColor: "#9701fc",
                                         marginTop: 0,
                                     }}>
-                                    Start Intake
+                                    Sign Up
                                 </Button>
                             </CardTitle>
 
