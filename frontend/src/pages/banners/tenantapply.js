@@ -9,7 +9,7 @@ const Banner = () => {
         <BannerWrap>
         <Container>
             <P1></P1>
-            <h4>Apply To Hundreds Of Rentals With One Click</h4>
+            <h4>Apply To Hundreds Of Rentals In One Click</h4>
             {/* <SectionTitle>
             Simple, Easy, Fast
             </SectionTitle> */}

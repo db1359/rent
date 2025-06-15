@@ -9,7 +9,7 @@ const Banner = () => {
     <BannerWrap>
         <Container>
             <P1></P1>
-            <h4>Verify Your ID Once</h4>
+            <h4>Setup Your ID Once, Use It Over & Over</h4>
             {/* <SectionTitle>
             Simple, Easy, Fast
             </SectionTitle>

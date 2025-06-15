@@ -23,11 +23,11 @@ const AboutPage = () => {
             <BannerSearch/>
             <TenantSearch/>
 
-            <BannerEasyApply/>
-            <TenantEasyApply/>
-
             <BannerID/>
             <TenantID/>
+
+            <BannerEasyApply/>
+            <TenantEasyApply/>
 
             <BannerApprove/>
             <TenantApprove/>
