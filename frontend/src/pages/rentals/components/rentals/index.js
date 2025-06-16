@@ -4,13 +4,13 @@ import KidsVideosWrap from "../style/wrap";
 import Container from "../../../../components/paper/container";
 import {Col, Row, Space} from "antd";
 import P1 from "../../../../components/paragraph";
-import ChartImage from '../../../../assets/img/rentals1.jpg'
+import ChartImage from '../../../../assets/img/rentals1.png'
 
 const KidsVideos = () => {
     return (
         <KidsVideosWrap>
             <Container>
-                <Space direction='vertical' size={32} style={{width: '100%', paddingTop: '20px'}}>
+                <Space direction='vertical' size={32} style={{width: '100%', paddingTop: '0px'}}>
                     <Row gutter={[32, 32]}>
                         <Col lg={{span: 24}} span={24}>
                             <Space direction='vertical' style={{width: '100%'}} size={32}>

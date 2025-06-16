@@ -6,13 +6,12 @@ const KidsHeroWrap = styled.div`
   padding: 32px 0;
   text-align: center;
   h4 {
-    margin-top: -20px;
+    margin-top: 0px;
     font-size: 45px;
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
   }
 `
-
 export default KidsHeroWrap
