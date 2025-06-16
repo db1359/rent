@@ -8,12 +8,12 @@ const Banner = () => {
     return (
         <BannerWrap>
             <Container>
-                <P1></P1>
-                <h4>Rental Listings</h4>
+                {/* <P1></P1>
+                <h4>Rental Listings</h4> */}
                 <SectionTitle>
-                Find Rental Listings In Your Area
+                Find Rentals In Your Area That Fit Your Budget
                 </SectionTitle>
-                <h1 style={{paddingTop: 10, paddingBottom: 0}}>Rentals That Fit Your Budget</h1>
+                {/* <h1 style={{paddingTop: 10, paddingBottom: 0}}>Rentals That Fit Your Budget</h1> */}
             </Container>
         </BannerWrap>
     );
