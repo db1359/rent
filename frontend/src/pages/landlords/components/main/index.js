@@ -6,9 +6,12 @@ import {Button, Card, Col, Row, Space} from "antd";
 import VideoPlayer from "../../../../components/player";
 import CardTitle from "../../../../components/heading/card";
 import P1 from "../../../../components/paragraph";
-import ChartImage from '../../../../assets/img/landlord.png'
+import ChartImage1 from '../../../../assets/img/landlord1.png'
+import ChartImage2 from '../../../../assets/img/landlord2.png'
+import ChartImage3 from '../../../../assets/img/landlord3.png'
 import styled from "styled-components"
 import {Icon} from '@iconify/react';
+import AuthLayout from '../../../../layouts/auth.layout';
 
 const AboutMain = () => {
     return (
@@ -16,13 +19,35 @@ const AboutMain = () => {
             <Container>
                 <Space direction='vertical' size={32} style={{width: '100%', paddingTop: '0px'}}>
                     <Row gutter={[32, 32]}>
-                        <Col lg={{span: 24}} span={24}>
+                        <Col lg={{span: 8}} span={AuthLayout}>
                             <Space direction='vertical' style={{width: '100%'}} size={32}>
                                 <div style={{
                                         position: 'relative',
                                         paddingTop: '0%',
                                     }}>
-                                    <img src={ChartImage} alt=""/>
+                                    <img src={ChartImage1} alt=""/>
+                                    
+                                </div>
+                            </Space>
+                        </Col>
+                        <Col lg={{span: 8}} span={AuthLayout}>
+                            <Space direction='vertical' style={{width: '100%'}} size={32}>
+                                <div style={{
+                                        position: 'relative',
+                                        paddingTop: '0%',
+                                    }}>
+                                    <img src={ChartImage2} alt=""/>
+                                    
+                                </div>
+                            </Space>
+                        </Col>
+                        <Col lg={{span: 8}} span={AuthLayout}>
+                            <Space direction='vertical' style={{width: '100%'}} size={32}>
+                                <div style={{
+                                        position: 'relative',
+                                        paddingTop: '0%',
+                                    }}>
+                                    <img src={ChartImage3} alt=""/>
                                     
                                 </div>
                             </Space>
