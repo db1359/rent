@@ -9,7 +9,7 @@ import P1 from "../../../../components/paragraph";
 // import Img1 from "../../../../assets/img/painting.jpg"
 // import Img2 from "../../../../assets/img/arianna-poster200.png"
 // import Img3 from "../../../../assets/img/isaac.jpg"
-import ChartImage from '../../../../assets/img/rentalapp.jpg'
+import ChartImage from '../../../../assets/img/landlord.png'
 import styled from "styled-components"
 import {Icon} from '@iconify/react';
 
@@ -17,7 +17,7 @@ const AboutMain = () => {
     return (
         <AboutMainWrap>
             <Container>
-                <Space direction='vertical' size={32} style={{width: '100%', paddingTop: '20px'}}>
+                <Space direction='vertical' size={32} style={{width: '100%', paddingTop: '0px'}}>
                     <Row gutter={[32, 32]}>
                         <Col lg={{span: 24}} span={24}>
                             <Space direction='vertical' style={{width: '100%'}} size={32}>

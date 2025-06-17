@@ -8,12 +8,12 @@ const Banner = () => {
     return (
         <BannerWrap>
             <Container>
-                <P1></P1>
-                <h4>Automate</h4>
+                {/* <P1></P1>
+                <h4>Automate</h4> */}
                 <SectionTitle>
-                Your Rental Application Intake Process
+                AI Property Management System
                 </SectionTitle>
-                <h1 style={{paddingTop: 10, paddingBottom: 0}}>Online Rental Application</h1>
+                {/* <h1 style={{paddingTop: 10, paddingBottom: 0}}>Online Rental Application</h1> */}
             </Container>
         </BannerWrap>
     );

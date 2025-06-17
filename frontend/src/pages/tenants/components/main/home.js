@@ -13,7 +13,7 @@ const AboutMain = () => {
     return (
         <AboutMainWrap>
             <Container>
-                <Space direction='vertical' size={32} style={{width: '100%', paddingTop: '20px'}}>
+                <Space direction='vertical' size={32} style={{width: '100%', paddingTop: '0px'}}>
                     <Row gutter={[32, 32]}>
                         <Col lg={{span: 24}} span={24}>
                             <Space direction='vertical' style={{width: '100%'}} size={32}>
