@@ -17,11 +17,11 @@ const AboutPage = () => {
     return (
         <Fragment>
             <TopNav/>
-            <p></p>
+            
             <BannerHome/>
             <TenantHome/>
 
-            <BannerSearch/>
+            {/* <BannerSearch/>
             <TenantSearch/>
 
             <BannerID/>
@@ -34,7 +34,7 @@ const AboutPage = () => {
             <TenantApprove/>
 
             <BannerExpense/>
-            <TenantExpense/>
+            <TenantExpense/> */}
         </Fragment>
     );
 };

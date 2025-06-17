@@ -5,9 +5,14 @@ import SectionTitle from "../../../../components/heading/section";
 import {Button, Card, Col, Row, Space} from "antd";
 import VideoPlayer from "../../../../components/player";
 import CardTitle from "../../../../components/heading/card";
-import ChartImage from '../../../../assets/img/tenant.png'
+import ChartImage1 from '../../../../assets/img/tenant1.png'
+import ChartImage2 from '../../../../assets/img/tenant2.png'
+import ChartImage3 from '../../../../assets/img/tenant3.png'
+import ChartImage4 from '../../../../assets/img/tenant4.png'
+import ChartImage5 from '../../../../assets/img/tenant5.png'
 import styled from "styled-components"
 import {Icon} from '@iconify/react';
+import AuthLayout from '../../../../layouts/auth.layout';
 
 const AboutMain = () => {
     return (
@@ -15,15 +20,66 @@ const AboutMain = () => {
             <Container>
                 <Space direction='vertical' size={32} style={{width: '100%', paddingTop: '0px'}}>
                     <Row gutter={[32, 32]}>
-                        <Col lg={{span: 24}} span={24}>
+                        <Col lg={{span: 2}} span={AuthLayout}>
+                            
+                        </Col>
+                        <Col lg={{span: 4}} span={AuthLayout}>
                             <Space direction='vertical' style={{width: '100%'}} size={32}>
                                 <div style={{
                                         position: 'relative',
                                         paddingTop: '0%',
                                     }}>
-                                    <img src={ChartImage} alt=""/>
+                                    <img src={ChartImage1} alt=""/>
+                                    
                                 </div>
                             </Space>
+                        </Col>
+                        <Col lg={{span: 4}} span={AuthLayout}>
+                            <Space direction='vertical' style={{width: '100%'}} size={32}>
+                                <div style={{
+                                        position: 'relative',
+                                        paddingTop: '0%',
+                                    }}>
+                                    <img src={ChartImage2} alt=""/>
+                                    
+                                </div>
+                            </Space>
+                        </Col>
+                        <Col lg={{span: 4}} span={AuthLayout}>
+                            <Space direction='vertical' style={{width: '100%'}} size={32}>
+                                <div style={{
+                                        position: 'relative',
+                                        paddingTop: '0%',
+                                    }}>
+                                    <img src={ChartImage3} alt=""/>
+                                    
+                                </div>
+                            </Space>
+                        </Col>
+                        <Col lg={{span: 4}} span={AuthLayout}>
+                            <Space direction='vertical' style={{width: '100%'}} size={32}>
+                                <div style={{
+                                        position: 'relative',
+                                        paddingTop: '0%',
+                                    }}>
+                                    <img src={ChartImage4} alt=""/>
+                                    
+                                </div>
+                            </Space>
+                        </Col>
+                        <Col lg={{span: 4}} span={AuthLayout}>
+                            <Space direction='vertical' style={{width: '100%'}} size={32}>
+                                <div style={{
+                                        position: 'relative',
+                                        paddingTop: '0%',
+                                    }}>
+                                    <img src={ChartImage5} alt=""/>
+                                    
+                                </div>
+                            </Space>
+                        </Col>
+                        <Col lg={{span: 2}} span={AuthLayout}>
+                            
                         </Col>
                     </Row>
                 </Space>
