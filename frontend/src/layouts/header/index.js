@@ -160,7 +160,7 @@ const LayoutHeader = () => {
                                     title={
                                         <LogoTextLight
                                             onClick={() => {setVisible(false);}}
-                                            style={{color: "#000000!important"}}
+                                            style={{color: "#9701fc!important"}}
                                             >
                                             <Link to="/">MOGUL</Link>
                                         </LogoTextLight>

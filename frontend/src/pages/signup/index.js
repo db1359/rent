@@ -8,6 +8,7 @@ import AuthWrap from "../../style/auth-wrap";
 import {loginAction} from "../../redux/actions/auth";
 import {registerApi} from "../../api";
 import {openError, openSuccess} from "../../utils/helper/message";
+import AuthLayout from '../../layouts/auth.layout';
 
 const {Item, useForm} = Form;
 const {Option} = Select;
@@ -76,7 +77,10 @@ const SignupPage = () => {
         <Container>
             {contextHolder}
             <Row>
-                <Col span={10} offset={7}>
+                <Col lg={{span: 8}} span={AuthLayout}>
+                    
+                </Col>
+                <Col lg={{span: 8}} span={AuthLayout}>
                     <AuthWrap>
                         <Form
                             layout="vertical"
@@ -201,6 +205,9 @@ const SignupPage = () => {
                             </Button>
                         </Form>
                     </AuthWrap>
+                </Col>
+                <Col lg={{span: 8}} span={AuthLayout}>
+                    
                 </Col>
             </Row>
         </Container>

@@ -168,7 +168,7 @@ const GlobalStyle = createGlobalStyle`
       }
 
       a {
-        color: #000000;
+        color: #9701fc;
         // font-weight: 500;
         font-size: 15px;
 

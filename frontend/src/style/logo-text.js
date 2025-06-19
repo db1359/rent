@@ -16,7 +16,7 @@ export const LogoTextLight = styled.h1`
   line-height: 1;
   text-align: left;
   a {
-    color: #000000;
+    color: #9701fc;
     font-family: 'arial black',sans-serif;
     font-size: 32px;
     :focus, :hover {

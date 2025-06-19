@@ -6,6 +6,7 @@ import {useNavigate, useSearchParams} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import {loginAction} from "../../redux/actions/auth";
 import {loginApi} from "../../api";
+import AuthLayout from '../../layouts/auth.layout';
 
 const {Item, useForm} = Form;
 
@@ -61,7 +62,10 @@ const LoginPage = () => {
     return (
         <Container>
             <Row>
-                <Col span={10} offset={7}>
+                <Col lg={{span: 8}} span={AuthLayout}>
+                    
+                </Col>
+                <Col lg={{span: 8}} span={AuthLayout}>
                     <AuthWrap>
                         {contextHolder}
                         <Form
@@ -129,6 +133,9 @@ const LoginPage = () => {
                             </Button>
                         </Form>
                     </AuthWrap>
+                </Col>
+                <Col lg={{span: 8}} span={AuthLayout}>
+                    
                 </Col>
             </Row>
         </Container>
