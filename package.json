@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/db1359/rent/issues"
   },
-  "homepage": "https://github.com/db1359/rent#readme"
+  "homepage": "https://github.com/db1359/rent#readme",
+  "dependencies": {
+    "prop-types": "^15.8.1"
+  }
 }

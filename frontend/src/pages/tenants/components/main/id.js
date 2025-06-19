@@ -37,9 +37,7 @@ const AboutMain = () => {
                                     {/* Setup your ID once and use it over and over when applying for rentals.<br/><br/> */}
                                     {/* No more filling out the same information over and over again. */}
 
-                                    <b>Identity Verification and Protection</b> is a critical component of modern business operations, offering a wide range of benefits that enhance security, compliance and efficiency.
-
-                                    It offers numerous benefits such as:<br/><br/>
+<b>Identity Verification and Protection</b> is a critical component of modern business operations, offering a wide range of benefits that enhance security, compliance and efficiency. It offers numerous benefits such as:<br/><br/>
 
 <b>1. Saves Time</b><br/>
 Automates the verification process, reducing the need for manually enter personal details over and over.
