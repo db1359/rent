@@ -28,6 +28,7 @@ import EmailVerificationPage from "../pages/email-verfication";
 import AboutPage from "../pages/about";
 import PrivacyPage from "../pages/about/privacy";
 import TermsPage from "../pages/about/terms";
+import IDVerify from "../pages/tenants/id";
 import ResourcePage from "../pages/resources";
 import WebinarPage from "../pages/resources/webinars";
 import FormsPage from "../pages/resources/forms";
@@ -79,6 +80,7 @@ const LandingLayout = () => {
                     <Route path="/tenants/evictions" element={<EvictionsPage/>}/>
                     <Route path="/tenants/maintenance" element={<MaintenancePage/>}/>
                     <Route path="/tenants/success" element={<SuccessPage/>}/>
+                    <Route path="/tenants/id" element={<IDVerify/>}/>
                     <Route path="/landlords/" element={<LandlordsPage/>}/>
                     <Route path="/signup" element={<SignupPage/>}/>
                     <Route path="/verify" element={<WaitVerifyPage/>}/>

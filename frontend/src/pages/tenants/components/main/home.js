@@ -29,17 +29,6 @@ const AboutMain = () => {
                                         position: 'relative',
                                         paddingTop: '0%',
                                     }}>
-                                    <img src={ChartImage1} alt=""/>
-                                    
-                                </div>
-                            </Space>
-                        </Col>
-                        <Col lg={{span: 4}} span={AuthLayout}>
-                            <Space direction='vertical' style={{width: '100%'}} size={32}>
-                                <div style={{
-                                        position: 'relative',
-                                        paddingTop: '0%',
-                                    }}>
                                     <img src={ChartImage2} alt=""/>
                                     
                                 </div>
@@ -63,6 +52,17 @@ const AboutMain = () => {
                                         paddingTop: '0%',
                                     }}>
                                     <img src={ChartImage4} alt=""/>
+                                    
+                                </div>
+                            </Space>
+                        </Col>
+                        <Col lg={{span: 4}} span={AuthLayout}>
+                            <Space direction='vertical' style={{width: '100%'}} size={32}>
+                                <div style={{
+                                        position: 'relative',
+                                        paddingTop: '0%',
+                                    }}>
+                                    <a href="tenants/id"><img src={ChartImage1} alt=""/></a>
                                     
                                 </div>
                             </Space>
