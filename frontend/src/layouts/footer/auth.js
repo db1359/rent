@@ -55,18 +55,7 @@ const AuthFooter = () => {
                             <Col>
                                 <Link to="/">Home</Link>
                             </Col>
-                            {/* <Col>
-                                <Link to="/about">About</Link>
-                            </Col> */}
-                            {/* <Col>
-                                <Link to="/story">Arianna's Story</Link>
-                            </Col> */}
-                            <Col>
-                                <Link to="/channels/abolishfamilycourt">Causes</Link>
-                            </Col>
-                            <Col>
-                                <Link to="/donate">Donate</Link>
-                            </Col>
+                            
                             <Col>
                                 <Link to="/about/privacy">Privacy</Link>
                             </Col>

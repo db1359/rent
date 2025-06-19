@@ -87,77 +87,139 @@ const AuthHeader = () => {
     ]
 
     return (
-        <Header className="auth-header">
+        <Header style={location.pathname === "/" && scroll < 150
+                    ? {position: "absolute", width: "100%", height: "100%",
+                        backgroundColor: "transparent"}
+                    : {}}>
             <Container>
-                <Row
-                    justify="space-between"
-                    align="middle"
-                    style={{height: "100%", marginTop: '0px'}}>
+                <Row justify="space-between" align="middle">
                     <Col>
                         {/* <LogoText>
-                            <Link to="/">CourtWatch</Link>
+                            <Link to="/">MOGUL</Link>
                         </LogoText> */}
                         <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '0px'}} alt="Boycott"/></Link>
                     </Col>
                     <Col>
-                        <Space size={36}>
-                            <Button type="communitylink"
-                                    onClick={() => {navigate("/");}}
-                                    className={location.pathname === "/" && "active"}>
-                                    Home
-                            </Button>
-                            <Button type="communitylink"
-                                    onClick={() => {navigate("/companies");}}
-                                    className={location.pathname === "/companies" && "active"}>
-                                    Companies
-                            </Button>
-                            <Dropdown
-                                placement="bottomRight"
-                                menu={{
-                                    items: items2,
-                                    onClick: menuChangeHandle,
-                                }}>
-                                <Button
+                        {breakpoints.lg ? (
+                            <Row gutter={20} style={{marginTop: '7px'}}>
+
+                                <Col>
+                                    {user ? (
+                                        <nbsp/>
+                                    ) : (
+                                        <Button type="headerlink"
+                                            onClick={() => {navigate("/tenants");}}
+                                            className={location.pathname === "/tenants" && "active"}>
+                                            Tenants
+                                        </Button>
+                                    )}
+                                </Col>
+
+                                {/* <Col>
+                                    {user ? (
+                                        <nbsp/>
+                                    ) : (
+                                        <Button type="headerlink"
+                                            onClick={() => {navigate("/tenants/evictions");}}
+                                            className={location.pathname === "/tenants/evictions" && "active"}>
+                                            Evictions
+                                        </Button>
+                                    )}
+                                </Col> */}
+
+                                <Col>
+                                    {user ? (
+                                        <nbsp/>
+                                    ) : (
+                                        <Button type="headerlink"
+                                            onClick={() => {navigate("/rentals");}}
+                                            className={location.pathname === "/rentals" && "active"}>
+                                            Rentals
+                                        </Button>
+                                    )}
+                                </Col>
+
+                                <Col>                           
+                                    {user ? (
+                                        <nbsp/>
+                                    ) : (
+                                        <Button type="headerlink"
+                                            onClick={() => {navigate("/landlords");}}
+                                            className={location.pathname === "/landlords" && "active"}>
+                                            Landlords
+                                        </Button>
+                                    )}
+                                </Col>
+
+                                <Col>
+                                    {user ? (
+                                        <nbsp/>
+                                    ) : (
+                                        <Button type="donate" style={{marginLeft: 18}}
+                                            onClick={() => {navigate("/signup");}}>
+                                            SIGN UP
+                                        </Button>
+                                    )}
+                                </Col>
+
+                                <Col>
+                                    {user ? (
+                                        <nbsp/>
+                                    ) : (
+                                        <Button type="headerlink"
+                                        onClick={() => {navigate("/login");}}
+                                        className={location.pathname === "/login" && "active"}>
+                                        Login
+                                    </Button>
+                                    )}
+                                </Col>
+                            </Row>
+                        ) : (
+                            <Fragment>
+                                <HamburgerButton
+                                    type="primary"
                                     size="large"
-                                    style={{
-                                        border: "none",
-                                        cursor: "pointer",                                        
-                                    }}
-                                    src={auth?.user?.photo}>
-                                    Causes
-                                </Button>
-                            </Dropdown>
-                            <Button type="communitylink"
-                                    onClick={() => {navigate("/criminals");}}
-                                    className={location.pathname === "/criminals" && "active"}>
-                                    Criminals
-                            </Button>
-                            {/* <Button type="communitylink"
-                                    onClick={() => {navigate("/trending");}}
-                                    className={location.pathname === "/trending" && "active"}>
-                                    Trending
-                            </Button> */}
-                            <Link to="/"></Link>
-                        </Space>
-                        <Space size={36}>
-                            <Dropdown
-                                placement="bottomRight"
-                                menu={{
-                                    items: items,
-                                    onClick: menuChangeHandle,
-                                }}>
-                                <Avatar
-                                    size="large"
-                                    style={{
-                                        fontSize: 20,
-                                        cursor: "pointer",
-                                        background: "#9701fc"
-                                    }}
-                                    src={auth?.user?.photo}>
-                                    {auth?.user?.firstname?.[0]}
-                                </Avatar>
-                            </Dropdown>
-                        </Space>
+                                    onClick={() => {setVisible(true);}}>
+                                    <MenuOutlined/>
+                                </HamburgerButton>
+                                <Drawer
+                                    placement="right"
+                                    visible={visible}
+                                    onClose={() => {setVisible(false);}}
+                                    title={
+                                        <LogoTextLight
+                                            onClick={() => {setVisible(false);}}
+                                            style={{color: "#9701fc!important"}}
+                                            >
+                                            <Link to="/">MOGUL</Link>
+                                        </LogoTextLight>
+                                        // <Link to="/"><img src={Logo2} style={{height: '30px', marginTop: '9px'}} alt="MOGUL"/></Link>
+                                    }
+                                    closeIcon={<></>}
+                                    >
+                                    <Menu
+                                        onClick={navigateHandler}
+                                        selectedKeys={[
+                                            ...location.pathname.split("/"),
+                                            ...location.hash.split(" "),
+                                        ]}
+                                        >
+                                        {/* <NavHashLink to="/arianna">Arianna's Story</NavHashLink> */}
+                                        <Menu.Item key="signup">
+                                            <Button type="donate" style={{marginLeft: -3}}
+                                                onClick={() => {navigate("/signup");}}>
+                                                SIGN UP
+                                            </Button>
+                                        </Menu.Item>
+                                        <Menu.Item key="tenants">Tenants</Menu.Item>
+                                        <Menu.Item key="rentals">Rentals</Menu.Item>
+                                        <Menu.Item key="landlords">Landlords</Menu.Item>
+                                        {/* <Menu.Item key="donate" className="btn">DONATE</Menu.Item> */}
+                                        <Menu.Item key="login">Login</Menu.Item>
+                                    </Menu>
+                                </Drawer>
+                            </Fragment>
+                        )}
                     </Col>
                 </Row>
             </Container>
