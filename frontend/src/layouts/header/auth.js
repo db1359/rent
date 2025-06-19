@@ -20,7 +20,7 @@ const AuthHeader = () => {
     const menuChangeHandle = (e) => {
         if(e.key === 'logout') {
             dispatch(logoutAction())
-            navigate('/login')
+            navigate('/signin')
         } else if(e.key==='myprofile') {
             navigate(`/${auth?.user?.username}`)
         } else if(e.key==='channels/abolishfamilycourt') {

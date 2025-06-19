@@ -9,7 +9,7 @@ import HomePageFooter from "./footer/home";
 import HomePageHeader from "./footer/home";
 import HomePage from "../pages/home";
 import SignupPage from "../pages/signup";
-import LoginPage from "../pages/login";
+import LoginPage from "../pages/signin";
 import TenantsPage from "../pages/tenants/index";
 import CourtWatch from "../pages/tenants/courtwatch";
 import EvictionsPage from "../pages/tenants/evictions";
@@ -83,8 +83,8 @@ const LandingLayout = () => {
                     <Route path="/tenants/id" element={<IDVerify/>}/>
                     <Route path="/landlords/" element={<LandlordsPage/>}/>
                     <Route path="/signup" element={<SignupPage/>}/>
+                    <Route path="/signin" element={<LoginPage/>}/>
                     <Route path="/verify" element={<WaitVerifyPage/>}/>
-                    <Route path="/login" element={<LoginPage/>}/>
                     <Route path="/donate" element={<DonatePage/>}/>
                     <Route path="/intake" element={<IntakePage/>}/>
                     <Route path="/resources" element={<ResourcePage/>}/>

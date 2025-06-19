@@ -138,9 +138,9 @@ const LayoutHeader = () => {
                                         <nbsp/>
                                     ) : (
                                         <Button type="headerlink"
-                                        onClick={() => {navigate("/login");}}
-                                        className={location.pathname === "/login" && "active"}>
-                                        Login
+                                        onClick={() => {navigate("/signin");}}
+                                        className={location.pathname === "/signin" && "active"}>
+                                        Sign In
                                     </Button>
                                     )}
                                 </Col>
@@ -186,7 +186,7 @@ const LayoutHeader = () => {
                                         <Menu.Item key="rentals">Rentals</Menu.Item>
                                         <Menu.Item key="landlords">Landlords</Menu.Item>
                                         {/* <Menu.Item key="donate" className="btn">DONATE</Menu.Item> */}
-                                        <Menu.Item key="login">Login</Menu.Item>
+                                        <Menu.Item key="signin">Sign In</Menu.Item>
                                     </Menu>
                                 </Drawer>
                             </Fragment>

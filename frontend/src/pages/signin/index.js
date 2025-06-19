@@ -61,7 +61,7 @@ const LoginPage = () => {
 
     return (
         <Container>
-            <Row>
+            <Row style={{justifyContent: "center", alignItems: "center"}}>
                 <Col lg={{span: 8}} span={AuthLayout}>
                     
                 </Col>
@@ -74,7 +74,7 @@ const LoginPage = () => {
                             onFinish={onFinish}>
                             <Item>
                                 <h2>
-                                    Log in
+                                    Sign In
                                 </h2>
                             </Item>
                             <Item

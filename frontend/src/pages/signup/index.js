@@ -76,7 +76,7 @@ const SignupPage = () => {
     return (
         <Container>
             {contextHolder}
-            <Row>
+            <Row style={{justifyContent: "center", alignItems: "center"}}>
                 <Col lg={{span: 8}} span={AuthLayout}>
                     
                 </Col>
@@ -88,7 +88,7 @@ const SignupPage = () => {
                             initialValues={{require: true}}
                             onFinish={onFinish}>
                             <h2>
-                                Register
+                                Sign Up
                             </h2>
                             <Item
                                 name="username"
@@ -199,9 +199,9 @@ const SignupPage = () => {
                                 type="link"
                                 size="large"
                                 onClick={() => {
-                                    navigate(redirect ? `/login/?redirect=${redirect}` : "/login")
+                                    navigate(redirect ? `/signin/?redirect=${redirect}` : "/signin")
                                 }}>
-                                Login
+                                Sign In
                             </Button>
                         </Form>
                     </AuthWrap>
