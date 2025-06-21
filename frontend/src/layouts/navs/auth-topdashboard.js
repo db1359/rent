@@ -107,7 +107,7 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/tenants/id");
+                                            navigate("#");
                                         }}
                                         className={location.pathname === "#" && "active"}>
                                         Applicants
