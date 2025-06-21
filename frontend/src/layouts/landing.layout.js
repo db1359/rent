@@ -17,6 +17,10 @@ import MaintenancePage from "../pages/tenants/maintenance";
 import SuccessPage from "../pages/tenants/success";
 import LandlordsPage from "../pages/landlords";
 import NotFoundPage from "../pages/404";
+import DashboardPage from "../pages/dashboard/";
+import UnitsPage from "../pages/dashboard/units/all";
+import UnitsDetailsPage from "../pages/dashboard/units/details";
+import LeaseDetailsPage from "../pages/dashboard/lease/";
 import ProfilePage from "../pages/myprofile";
 import MySettings from "../pages/mysettings";
 import MyPostPage from "../pages/mypost";
@@ -97,6 +101,10 @@ const LandingLayout = () => {
                     <Route path="/:username/settings" element={<MySettings/>}/>
                     {/* <Route path="/:username/status/:id" element={<FeedPage/>}/> */}
                     <Route path="/channel" element={<ChannelPage/>}/>
+                    <Route path="/dashboard" element={<DashboardPage/>}/>
+                    <Route path="/dashboard/units/all" element={<UnitsPage/>}/>
+                    <Route path="/dashboard/units/details" element={<UnitsDetailsPage/>}/>
+                    <Route path="/dashboard/lease/" element={<LeaseDetailsPage/>}/>
                     <Route path="/*" element={<NotFoundPage/>}/>
                 </Routes>
             </Content>

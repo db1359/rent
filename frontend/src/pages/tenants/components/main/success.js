@@ -6,7 +6,6 @@ import {Button, Card, Col, Row, Space} from "antd";
 import VideoPlayer from "../../../../components/player";
 import CardTitle from "../../../../components/heading/card";
 import P1 from "../../../../components/paragraph";
-import ChartImage from '../../../../assets/img/home.jpg'
 import styled from "styled-components"
 import {Icon} from '@iconify/react';
 
@@ -22,7 +21,7 @@ const AboutMain = () => {
                                         position: 'relative',
                                         paddingTop: '0%',
                                     }}>
-                                    <img src={ChartImage} alt=""/>
+                                    {/* <img src={ChartImage} alt=""/> */}
                                     <P1><br></br>
                                     Eviction is a legal process where a landlord seeks to remove a tenant from a rental property, typically after a notice period and potentially a court case. Eviction notices can be for various reasons, including non-payment of rent, lease violations, or no-fault reasons like owner move-in or property withdrawal. 
                                     </P1>

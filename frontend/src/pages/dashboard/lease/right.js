@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Avatar, Button, Card, Grid, Form, List, Input, Col, Row, notification, Modal, Space} from "antd";
 import {CloseOutlined, CopyOutlined, DeleteOutlined, PlusOutlined, ShareAltOutlined} from "@ant-design/icons";
 import {Link} from "react-router-dom";
-import {createGroupApi, deleteGroupApi, getMyGroupsApi} from "../../api"
+import {createGroupApi, deleteGroupApi, getMyGroupsApi} from "../../../api"
 import {Icon} from "@iconify/react";
 
 const GroupRight = () => {
@@ -232,7 +232,7 @@ const GroupRight = () => {
                         <Link to="/about">About</Link>
                     </Col>
                     <Col>
-                        <Link to="/channels/abolishfamilycourt">Channels</Link>
+                        <Link to="/channels/">Channels</Link>
                     </Col>
                     <Col>
                         <Link to="/donate">Donate</Link>
