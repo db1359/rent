@@ -109,7 +109,7 @@ const LayoutHeader = () => {
                                         onClick={() => {
                                             navigate("/tenants/id");
                                         }}
-                                        className={location.pathname === "/tenants/id" && "active"}>
+                                        className={location.pathname === "#" && "active"}>
                                         Applicants
                                     </Button>
                                 )}
@@ -122,10 +122,10 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/tenants/maintenance");
+                                            navigate("#");
                                         }}
-                                        className={location.pathname === "/tenants/maintenance" && "active"}>
-                                        Maintenance Requests
+                                        className={location.pathname === "#" && "active"}>
+                                        Maintenance
                                     </Button>
                                 )}
                             </Col>
@@ -137,9 +137,9 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/channel");
+                                            navigate("#");
                                         }}
-                                        className={location.pathname === "/channel" && "active"}>
+                                        className={location.pathname === "#" && "active"}>
                                         Payment
                                     </Button>
                                 )}
