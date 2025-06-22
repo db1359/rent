@@ -86,18 +86,6 @@ const LayoutHeader = () => {
                                     )}
                                 </Col>
 
-                                {/* <Col>
-                                    {user ? (
-                                        <nbsp/>
-                                    ) : (
-                                        <Button type="headerlink"
-                                            onClick={() => {navigate("/tenants/evictions");}}
-                                            className={location.pathname === "/tenants/evictions" && "active"}>
-                                            Evictions
-                                        </Button>
-                                    )}
-                                </Col> */}
-
                                 <Col>
                                     {user ? (
                                         <nbsp/>

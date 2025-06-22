@@ -3,6 +3,7 @@ import {Layout} from "antd";
 import {Route, Routes} from "react-router-dom";
 import LandingLayoutHeader from "./header";
 import LandingLayoutFooter from "./footer/";
+import AuthDashboard from "./header/auth";
 import AuthHeader from "./header/auth";
 import AuthFooter from "./footer/auth";
 import HomePageFooter from "./footer/home";
@@ -56,6 +57,7 @@ const LandingLayout = () => {
                     <AuthHeader/>
                 ) : (
                     <LandingLayoutHeader/>
+                    // <AuthDashboard />
                 )
             }
 
