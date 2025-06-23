@@ -3,7 +3,7 @@ import AuthLayout from "../../layouts/auth.dashboard";
 import {Avatar, Button, Form, Input, List, Modal, notification, Space, Card, Col, Row} from "antd";
 import {CloseOutlined, CopyOutlined, DeleteOutlined, PlusOutlined, ShareAltOutlined} from "@ant-design/icons";
 import GroupRight from "./units/right";
-import GroupLeft from "./units/left";
+import GroupLeft from "./units/left_all";
 import {createGroupApi, deleteGroupApi, getMyGroupsApi} from "../../api";
 import {Link} from "react-router-dom";
 import CardTitle from "../../components/heading/card";
