@@ -22,17 +22,17 @@ const AuthLeftNav = () => {
                 <Button 
                     type="leftcolumnlink"
                     onClick={() => {
-                        navigate("/channel");
+                        navigate("#");
                     }}
-                    className={location.pathname === "/channel" && "active"}>
+                    className={location.pathname === "#" && "active"}>
                     <Icon style={{marginRight: 0, fontSize: 40}} icon="iconamoon:home"/> All Units
                 </Button>
                 <Button 
                     type="leftcolumnlink"
                     onClick={() => {
-                        navigate("/channel");
+                        navigate("#");
                     }}
-                    className={location.pathname === "/channel" && "active"}>
+                    className={location.pathname === "#" && "active"}>
                     <Icon style={{marginRight: 0, fontSize: 40}} icon="iconamoon:sign-plus-bold"/> Add Unit
                 </Button>
             </AuthLeftNavWrap>

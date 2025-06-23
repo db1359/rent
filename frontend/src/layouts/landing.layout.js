@@ -22,6 +22,7 @@ import DashboardPage from "../pages/dashboard/";
 import UnitsPage from "../pages/dashboard/units/all";
 import UnitsDetailsPage from "../pages/dashboard/units/details";
 import LeaseDetailsPage from "../pages/dashboard/lease/";
+import ApplicantsPage from "../pages/dashboard/applicants/";
 import ProfilePage from "../pages/myprofile";
 import MySettings from "../pages/mysettings";
 import MyPostPage from "../pages/mypost";
@@ -107,6 +108,8 @@ const LandingLayout = () => {
                     <Route path="/dashboard/units/all" element={<UnitsPage/>}/>
                     <Route path="/dashboard/units/details" element={<UnitsDetailsPage/>}/>
                     <Route path="/dashboard/lease/" element={<LeaseDetailsPage/>}/>
+                    <Route path="/dashboard/applicants/" element={<ApplicantsPage/>}/>
+
                     <Route path="/*" element={<NotFoundPage/>}/>
                 </Routes>
             </Content>
