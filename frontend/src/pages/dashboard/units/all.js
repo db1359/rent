@@ -19,7 +19,7 @@ const DashPage = () => {
     return (
         <AuthLayout side={<GroupLeft/>}>
              
-   <a href="details">Unit # 105</a>         
+   <a href="details"><h1>Unit # 105 - Click Me</h1></a>        
 
         </AuthLayout>
     );

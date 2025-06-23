@@ -14,7 +14,7 @@ const AuthLayout = (props) => {
                     <Col span={5}>
                         {side}
                     </Col>
-                    <Col span={13}>
+                    <Col span={19}>
                         <div style={{marginTop: 24, paddingBottom: 102}}>
                             {children}
                         </div>
