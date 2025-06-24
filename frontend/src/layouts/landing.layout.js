@@ -14,7 +14,7 @@ import LoginPage from "../pages/signin";
 import TenantsPage from "../pages/tenants/index";
 import CourtWatch from "../pages/tenants/courtwatch";
 import EvictionsPage from "../pages/tenants/evictions";
-import MaintenancePage from "../pages/tenants/maintenance";
+import TenantsMaintenancePage from "../pages/tenants/maintenance";
 import SuccessPage from "../pages/tenants/success";
 import LandlordsPage from "../pages/landlords";
 import NotFoundPage from "../pages/404";
@@ -23,6 +23,8 @@ import UnitsPage from "../pages/dashboard/units/all";
 import UnitsDetailsPage from "../pages/dashboard/units/details";
 import LeaseDetailsPage from "../pages/dashboard/lease/";
 import ApplicantsPage from "../pages/dashboard/applicants/";
+import MaintenancePage from "../pages/dashboard/maintenance/";
+import PaymentsPage from "../pages/dashboard/payments/";
 import ProfilePage from "../pages/myprofile";
 import MySettings from "../pages/mysettings";
 import MyPostPage from "../pages/mypost";
@@ -84,7 +86,7 @@ const LandingLayout = () => {
                     <Route path="/tenants/" element={<TenantsPage/>}/>
                     <Route path="/tenants/courtwatch" element={<CourtWatch/>}/>
                     <Route path="/tenants/evictions" element={<EvictionsPage/>}/>
-                    <Route path="/tenants/maintenance" element={<MaintenancePage/>}/>
+                    <Route path="/tenants/maintenance" element={<TenantsMaintenancePage/>}/>
                     <Route path="/tenants/success" element={<SuccessPage/>}/>
                     <Route path="/tenants/id" element={<IDVerify/>}/>
                     <Route path="/landlords/" element={<LandlordsPage/>}/>
@@ -107,7 +109,8 @@ const LandingLayout = () => {
                     <Route path="/dashboard/units/details" element={<UnitsDetailsPage/>}/>
                     <Route path="/dashboard/lease/" element={<LeaseDetailsPage/>}/>
                     <Route path="/dashboard/applicants/" element={<ApplicantsPage/>}/>
-
+                    <Route path="/dashboard/maintenance/" element={<MaintenancePage/>}/>
+                    <Route path="/dashboard/payments/" element={<PaymentsPage/>}/>
                     <Route path="/*" element={<NotFoundPage/>}/>
                 </Routes>
             </Content>

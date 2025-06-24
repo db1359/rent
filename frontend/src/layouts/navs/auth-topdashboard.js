@@ -122,9 +122,9 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("#");
+                                            navigate("/dashboard/maintenance/");
                                         }}
-                                        className={location.pathname === "#" && "active"}>
+                                        className={location.pathname === "/dashboard/maintenance/" && "active"}>
                                         Maintenance
                                     </Button>
                                 )}
@@ -137,9 +137,9 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("#");
+                                            navigate("/dashboard/payments/");
                                         }}
-                                        className={location.pathname === "#" && "active"}>
+                                        className={location.pathname === "/dashboard/payments/" && "active"}>
                                         Payments
                                     </Button>
                                 )}
