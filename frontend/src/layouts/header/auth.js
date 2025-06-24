@@ -1,13 +1,14 @@
 import React from 'react';
 import Container from "../../style/container";
 import {Button, Avatar, Col, Dropdown, Layout, Row, Space} from "antd";
-import LogoText from "../../style/logo-text";
+import LogoText, {LogoTextLight} from "../../style/logo-text";
 import {Link, useLocation, useNavigate} from "react-router-dom";
 import {logoutAction} from "../../redux/actions/auth";
 import {useDispatch, useSelector} from "react-redux";
 import {Icon} from "@iconify/react";
 // import Logo from "../../assets/img/fontbolt_9701fc.png";
-import Logo from "../../assets/img/fontbolt.png";
+//import Logo from "../../assets/img/fontbolt.png";
+import Logo from "../../assets/img/renter_logo_120_arialblack.png";
 
 const { Header } = Layout
 
@@ -62,50 +63,44 @@ const AuthHeader = () => {
     const items2 = [
         {
             key: 'channels/courtwatch',
-            label: <span style={{fontSize: 14, fontWeight: 600}}>CourtWatch</span>
+            label: <span style={{fontSize: 14, fontWeight: 600}}>Search</span>
         },
         {
             type: 'divider',
         },
         {
             key: 'channels/abolishfamilycourt',
-            label: <span style={{fontSize: 14, fontWeight: 600}}>Family Court</span>
+            label: <span style={{fontSize: 14, fontWeight: 600}}>Apply</span>
         },
         {
             type: 'divider',
         },
-        {
-            key: 'channels/legalabusesyndrome',
-            label: <span style={{fontSize: 14, fontWeight: 600}}>Legal Abuse</span>
-        },
-        {
-            type: 'divider',
-        },
-        {
-            key: 'channel',
-            label: <span style={{fontSize: 14, fontWeight: 600}}>More Channels</span>
-        }
+        // {
+        //     key: 'channels/legalabusesyndrome',
+        //     label: <span style={{fontSize: 14, fontWeight: 600}}>Test</span>
+        // },
+        // {
+        //     type: 'divider',
+        // },
+        // {
+        //     key: 'channel',
+        //     label: <span style={{fontSize: 14, fontWeight: 600}}>More Channels</span>
+        // }
     ]
 
     return (
         <Header className="auth-header">
             <Container>
-                <Row
-                    justify="space-between"
-                    align="middle"
-                    style={{height: "100%", marginTop: '0px'}}>
+                <Row justify="space-between" align="middle">
                     <Col>
-                        {/* <LogoText>
-                            <Link to="/">CourtWatch</Link>
-                        </LogoText> */}
-                        <Link to="/"><img src={Logo} style={{height: '30px', marginTop: '0px'}} alt="Boycott"/></Link>
+                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '0px'}} alt="MOGUL"/></Link>
                     </Col>
                     <Col>
                         <Space size={36}>
-                            <Button type="communitylink"
+                            <Button type="headerdashboardlink"
                                     onClick={() => {navigate("/");}}
                                     className={location.pathname === "/" && "active"}>
-                                    Home
+                                    Tenants
                             </Button>
                             <Dropdown
                                 placement="bottomRight"
@@ -113,7 +108,7 @@ const AuthHeader = () => {
                                     items: items2,
                                     onClick: menuChangeHandle,
                                 }}>
-                                <Button
+                                <Button type="headerdashboardlink"
                                     size="large"
                                     style={{
                                         border: "none",
@@ -121,19 +116,14 @@ const AuthHeader = () => {
                                         
                                     }}
                                     src={auth?.user?.photo}>
-                                    Channels
+                                    Rentals
                                 </Button>
                             </Dropdown>
-                            <Button type="communitylink"
+                            <Button type="headerdashboardlink"
                                     onClick={() => {navigate("/dir");}}
                                     className={location.pathname === "/dir" && "active"}>
-                                    Directory
+                                    Landlords
                             </Button>
-                            {/* <Button type="communitylink"
-                                    onClick={() => {navigate("/trending");}}
-                                    className={location.pathname === "/trending" && "active"}>
-                                    Trending
-                            </Button> */}
                             <Link to="/"></Link>
                         </Space>
                         <Space size={36}>
@@ -148,7 +138,7 @@ const AuthHeader = () => {
                                     style={{
                                         fontSize: 20,
                                         cursor: "pointer",
-                                        background: "rgb(249, 147, 4)"
+                                        background: " #9701fc"
                                     }}
                                     src={auth?.user?.photo}>
                                     {auth?.user?.firstname?.[0]}

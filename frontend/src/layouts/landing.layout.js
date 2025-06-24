@@ -28,7 +28,6 @@ import MySettings from "../pages/mysettings";
 import MyPostPage from "../pages/mypost";
 import {useSelector} from "react-redux"
 import DonatePage from "../pages/donate";
-import IntakePage from "../pages/intake";
 import EmailVerificationPage from "../pages/email-verfication";
 // import FeedPage from "../pages/feed";
 import AboutPage from "../pages/about";
@@ -93,7 +92,6 @@ const LandingLayout = () => {
                     <Route path="/signin" element={<LoginPage/>}/>
                     <Route path="/verify" element={<WaitVerifyPage/>}/>
                     <Route path="/donate" element={<DonatePage/>}/>
-                    <Route path="/intake" element={<IntakePage/>}/>
                     <Route path="/resources" element={<ResourcePage/>}/>
                     <Route path="/resources/forms" element={<FormsPage/>}/>
                     <Route path="/resources/webinars" element={<WebinarPage/>}/>

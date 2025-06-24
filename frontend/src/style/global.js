@@ -58,6 +58,18 @@ const GlobalStyle = createGlobalStyle`
       }
     }
 
+    &.ant-btn-headerdashboardlink {
+      color: #9701fc;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 15px;ƒ
+      padding: 0 8px;
+
+      :hover, &.active {
+        color: #000000;
+      }
+    }
+
     &.ant-btn-communitylink {
       // background-color: #F0F2F5;
       text-align: center;

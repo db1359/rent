@@ -2,12 +2,14 @@ import React, {Fragment} from 'react';
 import {Col, Row} from "antd";
 import Container from "../style/container";
 import TopNav from "./navs/auth-topdashboard";
+import HeaderDashboard from "../layouts/header/auth";
 
 const AuthLayout = (props) => {
     const { children, side, side1 } = props;
 
     return (
         <Fragment>
+            <HeaderDashboard/>
             <TopNav/> 
             <Container>
                 <Row gutter={[40, 24]}>

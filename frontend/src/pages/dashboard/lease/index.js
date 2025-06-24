@@ -8,7 +8,8 @@ import {createGroupApi, deleteGroupApi, getMyGroupsApi} from "../../../api";
 import {Link} from "react-router-dom";
 import CardTitle from "../../../components/heading/card";
 import Container from "../../../components/paper/container";
-import ChartImage1 from '../../../assets/img/lease.png'
+import ChartImage1 from '../../../assets/img/part1.png';
+import ChartImage2 from '../../../assets/img/part2.png';
 
 const {Item} = Form;
 
@@ -31,6 +32,7 @@ const DashPage = () => {
                                         paddingTop: '0%',
                                     }}>
                                     <img src={ChartImage1} alt=""/>
+                                    <img src={ChartImage2} alt=""/>
                                     
                                 </div>
                             </Space>

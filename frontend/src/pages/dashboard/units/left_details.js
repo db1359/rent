@@ -20,12 +20,8 @@ const AuthLeftNav = () => {
         <div>
             <AuthLeftNavWrap>
                 <Button 
-                    type="leftcolumnlink"
-                    onClick={() => {
-                        navigate("#");
-                    }}
-                    className={location.pathname === "#" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="iconamoon:home"/> All Units
+                    type="leftcolumnlink">
+                    <Icon style={{marginRight: 0, fontSize: 40}} icon="iconamoon:open"/> Unit 105 Details
                 </Button>
                 <Button 
                     type="leftcolumnlink"
@@ -33,7 +29,23 @@ const AuthLeftNav = () => {
                         navigate("#");
                     }}
                     className={location.pathname === "#" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="iconamoon:open"/> Unit 105 Details
+                    <Icon style={{marginRight: 0, fontSize: 40}} icon="iconamoon:arrow-left-2-fill"/> Back
+                </Button>
+                <Button 
+                    type="leftcolumnlink"
+                    onClick={() => {
+                        navigate("#");
+                    }}
+                    className={location.pathname === "#" && "active"}>
+                    <Icon style={{marginRight: 0, fontSize: 40}} icon="humbleicons:bulb"/> Maintenance
+                </Button>
+                <Button 
+                    type="leftcolumnlink"
+                    onClick={() => {
+                        navigate("#");
+                    }}
+                    className={location.pathname === "#" && "active"}>
+                    <Icon style={{marginRight: 0, fontSize: 40}} icon="humbleicons:currency-dollar-circle"/> Payments
                 </Button>
             </AuthLeftNavWrap>
         </div>

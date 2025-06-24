@@ -140,7 +140,7 @@ const LayoutHeader = () => {
                                             navigate("#");
                                         }}
                                         className={location.pathname === "#" && "active"}>
-                                        Payment
+                                        Payments
                                     </Button>
                                 )}
                             </Col>
