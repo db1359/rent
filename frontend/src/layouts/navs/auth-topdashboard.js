@@ -61,16 +61,16 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/dashboard/");
+                                            navigate("/landlord/dashboard/");
                                         }}
-                                        className={location.pathname === "/dashboard/" && "active"}
+                                        className={location.pathname === "/landlord/dashboard/" && "active"}
                                     >
                                         Dashboard
                                     </Button>
                                 )}
                             </Col>
                             
-                            <Col>
+                            {/* <Col>
                                 {user ? (
                                     <nbsp/>
                                 ) : (
@@ -83,7 +83,7 @@ const LayoutHeader = () => {
                                         Units
                                     </Button>
                                 )}
-                            </Col>
+                            </Col> */}
 
                             <Col>
                                 {user ? (
@@ -92,9 +92,9 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/dashboard/lease");
+                                            navigate("/landlord/lease/");
                                         }}
-                                        className={location.pathname === "/dashboard/lease" && "active"}>
+                                        className={location.pathname === "/landlord/lease/" && "active"}>
                                         Lease
                                     </Button>
                                 )}
@@ -107,9 +107,9 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/dashboard/applicants/");
+                                            navigate("/landlord/applicants/");
                                         }}
-                                        className={location.pathname === "/dashboard/applicants/" && "active"}>
+                                        className={location.pathname === "/landlord/applicants/" && "active"}>
                                         Applicants
                                     </Button>
                                 )}
@@ -122,9 +122,9 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/dashboard/maintenance/");
+                                            navigate("/landlord/maintenance/");
                                         }}
-                                        className={location.pathname === "/dashboard/maintenance/" && "active"}>
+                                        className={location.pathname === "/landlord/maintenance/" && "active"}>
                                         Maintenance
                                     </Button>
                                 )}
@@ -137,9 +137,9 @@ const LayoutHeader = () => {
                                     <Button
                                         type="communitylink"
                                         onClick={() => {
-                                            navigate("/dashboard/payments/");
+                                            navigate("/landlord/payments/");
                                         }}
-                                        className={location.pathname === "/dashboard/payments/" && "active"}>
+                                        className={location.pathname === "/landlord/payments/" && "active"}>
                                         Payments
                                     </Button>
                                 )}

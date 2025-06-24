@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from 'react';
-import AuthLayout from "../../layouts/auth.dashboard";
+import AuthLayout from "../../../layouts/auth.dashboard";
 import {Avatar, Button, Form, Input, List, Modal, notification, Space, Card, Col, Row} from "antd";
 import {CloseOutlined, CopyOutlined, DeleteOutlined, PlusOutlined, ShareAltOutlined} from "@ant-design/icons";
-import GroupRight from "./units/right";
-import GroupLeft from "./units/left_all";
-import {createGroupApi, deleteGroupApi, getMyGroupsApi} from "../../api";
+import GroupRight from "./right";
+import GroupLeft from "./left_all";
+import {createGroupApi, deleteGroupApi, getMyGroupsApi} from "../../../api";
 import {Link} from "react-router-dom";
-import CardTitle from "../../components/heading/card";
-import Container from "../../components/paper/container";
-import ChartImage1 from '../../assets/img/dashboard.png'
+import CardTitle from "../../../components/heading/card";
+import Container from "../../../components/paper/container";
+import ChartImage1 from '../../../assets/img/dashboard.png'
 
 
 const {Item} = Form;
@@ -20,7 +20,7 @@ const DashPage = () => {
     }, [])
 
     return (
-        <AuthLayout>
+        <AuthLayout side={<GroupLeft/>}>
             <Container>
                 <Space direction='vertical' size={32} style={{width: '100%', paddingTop: '0px'}}>
                     <Row gutter={[32, 32]}>
@@ -33,6 +33,9 @@ const DashPage = () => {
                                     }}>
                                     <img src={ChartImage1} alt=""/>
                                     
+                                </div>
+                                <div>
+                                    <a href="unit"><h1>Unit # 105 - Click Me</h1></a>
                                 </div>
                             </Space>
                         </Col>
