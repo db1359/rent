@@ -132,7 +132,7 @@ const menuChangeHandle = (e) => {
             <Container>
                 <Row justify="space-between" align="middle">
                     <Col>
-                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '0px'}} alt="MOGUL"/></Link>
+                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '0px', marginBottom: 5}} alt="MOGUL"/></Link>
                     </Col>
                     <Col>
                         {breakpoints.lg ? (
@@ -170,6 +170,30 @@ const menuChangeHandle = (e) => {
                                             onClick={() => {navigate("/landlords");}}
                                             className={location.pathname === "/landlords" && "active"}>
                                             Landlords
+                                        </Button>
+                                    )}
+                                </Col>
+
+                                <Col>                           
+                                    {user ? (
+                                        <nbsp/>
+                                    ) : (
+                                        <Button type="headerdashboardlink"
+                                            onClick={() => {navigate("#");}}
+                                            className={location.pathname === "#" && "active"}>
+                                            <Icon style={{marginTop: 30, fontSize: 30}} icon="iconamoon:notification"/>
+                                        </Button>
+                                    )}
+                                </Col>
+
+                                <Col>                           
+                                    {user ? (
+                                        <nbsp/>
+                                    ) : (
+                                        <Button type="headerdashboardlink"
+                                            onClick={() => {navigate("#");}}
+                                            className={location.pathname === "#" && "active"}>
+                                            <Icon style={{marginTop: 30, fontSize: 30}} icon="iconamoon:email"/>
                                         </Button>
                                     )}
                                 </Col>
