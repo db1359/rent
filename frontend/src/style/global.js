@@ -62,7 +62,7 @@ const GlobalStyle = createGlobalStyle`
       color: #9701fc;
       font-weight: 600;
       letter-spacing: 1px;
-      font-size: 15px;ƒ
+      font-size: 14px;ƒ
       padding: 0 8px;
 
       :hover, &.active {
