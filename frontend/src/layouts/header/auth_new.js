@@ -132,7 +132,7 @@ const menuChangeHandle = (e) => {
             <Container>
                 <Row justify="space-between" align="middle">
                     <Col>
-                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '0px', marginBottom: 5}} alt="MOGUL"/></Link>
+                        <Link to="/"><img src={Logo} style={{height: '40px', marginTop: '0px', marginBottom: 7}} alt="MOGUL"/></Link>
                     </Col>
                     <Col>
                         {breakpoints.lg ? (
@@ -178,7 +178,8 @@ const menuChangeHandle = (e) => {
                                     {user ? (
                                         <nbsp/>
                                     ) : (
-                                        <Button type="headerdashboardlink"
+                                        <Button type="headerdashboardlink" 
+                                        style={{paddingLeft: 0, paddingRight: 0}}
                                             onClick={() => {navigate("#");}}
                                             className={location.pathname === "#" && "active"}>
                                             <Icon style={{marginTop: 30, fontSize: 30}} icon="iconamoon:notification"/>
