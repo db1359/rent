@@ -25,7 +25,7 @@ const AuthLeftNav = () => {
                         navigate("#");
                     }}
                     className={location.pathname === "#" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="humbleicons:bulb"/> Maintenance
+                    <Icon style={{marginRight: 0, fontSize: 40}} icon="material-symbols:tools-wrench-outline"/> Maintenance
                 </Button>
             </AuthLeftNavWrap>
         </div>

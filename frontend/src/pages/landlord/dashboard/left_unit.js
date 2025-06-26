@@ -21,7 +21,7 @@ const AuthLeftNav = () => {
             <AuthLeftNavWrap>
                 <Button 
                     type="leftcolumnlink">
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="iconamoon:open"/> Unit 105 Details
+                    <Icon style={{marginRight: 0, fontSize: 35}} icon="iconamoon:open"/> Unit 105 Details
                 </Button>
                 <Button 
                     type="leftcolumnlink"
@@ -29,7 +29,7 @@ const AuthLeftNav = () => {
                         navigate("/landlord/dashboard/");
                     }}
                     className={location.pathname === "/landlord/dashboard/" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="iconamoon:arrow-left-2-fill"/> Back
+                    <Icon style={{marginRight: 0, fontSize: 35}} icon="iconamoon:arrow-left-2-fill"/> Back
                 </Button>
                 <Button 
                     type="leftcolumnlink"
@@ -37,7 +37,7 @@ const AuthLeftNav = () => {
                         navigate("#");
                     }}
                     className={location.pathname === "#" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="humbleicons:bulb"/> Maintenance
+                    <Icon style={{marginRight: 0, fontSize: 35}} icon="material-symbols:tools-wrench-outline"/> Maintenance
                 </Button>
                 <Button 
                     type="leftcolumnlink"
