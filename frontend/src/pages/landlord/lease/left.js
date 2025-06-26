@@ -25,7 +25,7 @@ const AuthLeftNav = () => {
                         navigate("/channel");
                     }}
                     className={location.pathname === "/channel" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="iconamoon:file-document"/> Lease Term<br/>
+                    <Icon style={{marginRight: 0, fontSize: 35}} icon="iconamoon:file-document"/> Lease Term<br/>
         
 
                 </Button>
@@ -35,7 +35,7 @@ const AuthLeftNav = () => {
                         navigate("/channel");
                     }}
                     className={location.pathname === "/channel" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="iconamoon:folder-check"/> 
+                    <Icon style={{marginRight: 0, fontSize: 35}} icon="iconamoon:folder-check"/> 
         
 Rent, Deposit & Fees<br/>
 
@@ -47,7 +47,7 @@ Rent, Deposit & Fees<br/>
                         navigate("/channel");
                     }}
                     className={location.pathname === "/channel" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="iconamoon:3d"/> 
+                    <Icon style={{marginRight: 0, fontSize: 35}} icon="iconamoon:3d"/> 
         
 
 Options<br/>
@@ -60,7 +60,7 @@ Options<br/>
                         navigate("/channel");
                     }}
                     className={location.pathname === "/channel" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="material-symbols:ink-pen-outline-sharp"/> 
+                    <Icon style={{marginRight: 0, fontSize: 35}} icon="material-symbols:ink-pen-outline-sharp"/> 
         
 
 Clauses & Rules<br/>
@@ -73,7 +73,7 @@ Clauses & Rules<br/>
                         navigate("/channel");
                     }}
                     className={location.pathname === "/channel" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="material-symbols:folder-open-outline"/> 
+                    <Icon style={{marginRight: 0, fontSize: 35}} icon="material-symbols:folder-open-outline"/> 
         
 
 Disclosures<br/>
@@ -86,7 +86,7 @@ Disclosures<br/>
                         navigate("/channel");
                     }}
                     className={location.pathname === "/channel" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="iconamoon:attachment-fill"/> 
+                    <Icon style={{marginRight: 0, fontSize: 35}} icon="iconamoon:attachment-fill"/> 
         
 
 Attachments<br/>
@@ -98,7 +98,7 @@ Attachments<br/>
                         navigate("/channel");
                     }}
                     className={location.pathname === "/channel" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="iconamoon:certificate-badge"/> 
+                    <Icon style={{marginRight: 0, fontSize: 35}} icon="iconamoon:certificate-badge"/> 
         
 
 Lessor Info<br/>
@@ -111,7 +111,7 @@ Lessor Info<br/>
                         navigate("/channel");
                     }}
                     className={location.pathname === "/channel" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="material-symbols:lab-profile-outline"/> 
+                    <Icon style={{marginRight: 0, fontSize: 35}} icon="material-symbols:lab-profile-outline"/> 
         
 
 

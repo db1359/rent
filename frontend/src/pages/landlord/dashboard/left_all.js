@@ -35,6 +35,14 @@ const AuthLeftNav = () => {
                     className={location.pathname === "#" && "active"}>
                     <Icon style={{marginRight: 0, fontSize: 35}} icon="iconamoon:sign-plus-bold"/> Add Unit
                 </Button>
+                <Button 
+                    type="leftcolumnlink"
+                    onClick={() => {
+                        navigate("#");
+                    }}
+                    className={location.pathname === "#" && "active"}>
+                    <Icon style={{marginRight: 0, fontSize: 35}} icon="iconamoon:settings"/> Property
+                </Button>
             </AuthLeftNavWrap>
         </div>
     );
