@@ -25,7 +25,7 @@ const AuthLeftNav = () => {
                         navigate("/landlord/dashboard/");
                     }}
                     className={location.pathname === "/landlord/dashboard/" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="iconamoon:home"/> All Units
+                    <Icon style={{marginRight: 0, fontSize: 35}} icon="iconamoon:home"/> All Units
                 </Button>
                 <Button 
                     type="leftcolumnlink"
@@ -33,7 +33,7 @@ const AuthLeftNav = () => {
                         navigate("#");
                     }}
                     className={location.pathname === "#" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 40}} icon="iconamoon:sign-plus-bold"/> Add Unit
+                    <Icon style={{marginRight: 0, fontSize: 35}} icon="iconamoon:sign-plus-bold"/> Add Unit
                 </Button>
             </AuthLeftNavWrap>
         </div>

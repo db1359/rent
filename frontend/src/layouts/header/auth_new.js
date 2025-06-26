@@ -250,9 +250,9 @@ const menuChangeHandle = (e) => {
                                             ...location.hash.split(" "),
                                         ]}
                                         >
-                                        {/* <Menu.Item key="tenants">Tenants</Menu.Item>
-                                        <Menu.Item key="rentals">Rentals</Menu.Item>
-                                        <Menu.Item key="landlords">Landlords</Menu.Item> */}
+                                        {/* <Menu.Item key="tenants">Tenants</Menu.Item> */}
+                                        <Menu.Item key="rentals">Messages</Menu.Item>
+                                        <Menu.Item key="landlords">Notifications</Menu.Item> 
                                         <Menu.Item key="profile">Profile</Menu.Item>
                                         <Menu.Item key="signout">Sign Out</Menu.Item>
                                     </Menu>
