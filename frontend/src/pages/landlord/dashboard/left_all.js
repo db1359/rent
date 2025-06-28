@@ -38,10 +38,10 @@ const AuthLeftNav = () => {
                 <Button 
                     type="leftcolumnlink"
                     onClick={() => {
-                        navigate("#");
+                        navigate("/landlord/dashboard/property/");
                     }}
-                    className={location.pathname === "#" && "active"}>
-                    <Icon style={{marginRight: 0, fontSize: 35}} icon="iconamoon:settings"/> Property
+                    className={location.pathname === "/landlord/dashboard/property/" && "active"}>
+                    <Icon style={{marginRight: 0, fontSize: 33}} icon="mdi:office-building-outline"/> Property
                 </Button>
             </AuthLeftNavWrap>
         </div>

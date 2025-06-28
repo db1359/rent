@@ -20,6 +20,7 @@ import LandlordsPage from "../pages/landlords";
 import NotFoundPage from "../pages/404";
 import DashboardPage from "../pages/landlord/dashboard/";
 import UnitsDetailsPage from "../pages/landlord/dashboard/unit";
+import PropertyDetailsPage from "../pages/landlord/dashboard/property";
 import LeaseDetailsPage from "../pages/landlord/lease";
 import ApplicantsPage from "../pages/landlord/applicants";
 import MaintenancePage from "../pages/landlord/maintenance";
@@ -105,6 +106,7 @@ const LandingLayout = () => {
                     <Route path="/channel" element={<ChannelPage/>}/>
                     <Route path="/landlord/dashboard/" element={<DashboardPage/>}/>
                     <Route path="/landlord/dashboard/unit" element={<UnitsDetailsPage/>}/>
+                    <Route path="/landlord/dashboard/property" element={<PropertyDetailsPage/>}/>
                     <Route path="/landlord/lease/" element={<LeaseDetailsPage/>}/>
                     <Route path="/landlord/applicants/" element={<ApplicantsPage/>}/>
                     <Route path="/landlord/maintenance/" element={<MaintenancePage/>}/>

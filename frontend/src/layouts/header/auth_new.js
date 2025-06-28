@@ -24,13 +24,14 @@ const items = [
         {
             type: 'divider',
         },
-        // {
-        //     key: '${auth?.user?.username}/settings',
-        //     label: <span style={{fontSize: 14, fontWeight: 600}}>Settings</span>
-        // },
-        // {
-        //     type: 'divider',
-        // },
+        {
+            key: '${auth?.user?.username}/settings',
+            icon: <Icon style={{fontSize: 16}} icon="mdi:settings-outline"/>,
+            label: <span style={{fontSize: 14, fontWeight: 600}}>Settings</span>
+        },
+        {
+            type: 'divider',
+        },
         {
             key: 'logout',
             icon: <Icon style={{fontSize: 16}} icon="icon-park-outline:logout"/>,
@@ -38,33 +39,33 @@ const items = [
         }
     ]
 
-    const items2 = [
-        {
-            key: 'channels/courtwatch',
-            label: <span style={{fontSize: 14, fontWeight: 600}}>Search</span>
-        },
-        {
-            type: 'divider',
-        },
-        {
-            key: 'channels/abolishfamilycourt',
-            label: <span style={{fontSize: 14, fontWeight: 600}}>Apply</span>
-        },
-        {
-            type: 'divider',
-        },
-        // {
-        //     key: 'channels/legalabusesyndrome',
-        //     label: <span style={{fontSize: 14, fontWeight: 600}}>Test</span>
-        // },
-        // {
-        //     type: 'divider',
-        // },
-        // {
-        //     key: 'channel',
-        //     label: <span style={{fontSize: 14, fontWeight: 600}}>More Channels</span>
-        // }
-    ]
+    // const items2 = [
+    //     {
+    //         key: 'channels/courtwatch',
+    //         label: <span style={{fontSize: 14, fontWeight: 600}}>Search</span>
+    //     },
+    //     {
+    //         type: 'divider',
+    //     },
+    //     {
+    //         key: 'channels/abolishfamilycourt',
+    //         label: <span style={{fontSize: 14, fontWeight: 600}}>Apply</span>
+    //     },
+    //     {
+    //         type: 'divider',
+    //     },
+    //     {
+    //         key: 'channels/legalabusesyndrome',
+    //         label: <span style={{fontSize: 14, fontWeight: 600}}>Test</span>
+    //     },
+    //     {
+    //         type: 'divider',
+    //     },
+    //     {
+    //         key: 'channel',
+    //         label: <span style={{fontSize: 14, fontWeight: 600}}>More Channels</span>
+    //     }
+    // ]
 
 const menuChangeHandle = (e) => {
         if(e.key === 'logout') {
@@ -254,6 +255,7 @@ const menuChangeHandle = (e) => {
                                         <Menu.Item key="rentals">Messages</Menu.Item>
                                         <Menu.Item key="landlords">Notifications</Menu.Item> 
                                         <Menu.Item key="profile">Profile</Menu.Item>
+                                        <Menu.Item key="settings">Settings</Menu.Item>
                                         <Menu.Item key="signout">Sign Out</Menu.Item>
                                     </Menu>
                                 </Drawer>
