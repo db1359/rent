@@ -12,10 +12,7 @@ import HomePage from "../pages/home";
 import SignupPage from "../pages/signup";
 import LoginPage from "../pages/signin";
 import TenantsPage from "../pages/tenants/index";
-import CourtWatch from "../pages/tenants/courtwatch";
-import EvictionsPage from "../pages/tenants/evictions";
 import TenantsMaintenancePage from "../pages/tenants/maintenance";
-import SuccessPage from "../pages/tenants/success";
 import LandlordsPage from "../pages/landlords";
 import NotFoundPage from "../pages/404";
 import DashboardPage from "../pages/landlord/dashboard/";
@@ -36,9 +33,6 @@ import AboutPage from "../pages/about";
 import PrivacyPage from "../pages/about/privacy";
 import TermsPage from "../pages/about/terms";
 import IDVerify from "../pages/tenants/id";
-import ResourcePage from "../pages/resources";
-import WebinarPage from "../pages/resources/webinars";
-import FormsPage from "../pages/resources/forms";
 import RentalsPage from "../pages/rentals";
 import RentalsListPage from "../pages/rentals/list";
 import RentalsPropertyPage from "../pages/rentals/property";
@@ -65,7 +59,7 @@ const LandingLayout = () => {
 
             {/* {
                 auth.isAuth ? (
-                    <AuthHeader />
+                    <AuthDashboard />
                 ) : (
                 home.isHomePage ? (
                     <HomePage />
@@ -84,19 +78,13 @@ const LandingLayout = () => {
                     <Route path="/about/privacy" element={<PrivacyPage/>}/>
                     <Route path="/about/terms" element={<TermsPage/>}/>
                     <Route path="/tenants/" element={<TenantsPage/>}/>
-                    <Route path="/tenants/courtwatch" element={<CourtWatch/>}/>
-                    <Route path="/tenants/evictions" element={<EvictionsPage/>}/>
                     <Route path="/tenants/maintenance" element={<TenantsMaintenancePage/>}/>
-                    <Route path="/tenants/success" element={<SuccessPage/>}/>
                     <Route path="/tenants/id" element={<IDVerify/>}/>
                     <Route path="/landlords/" element={<LandlordsPage/>}/>
                     <Route path="/signup" element={<SignupPage/>}/>
                     <Route path="/signin" element={<LoginPage/>}/>
                     <Route path="/verify" element={<WaitVerifyPage/>}/>
                     <Route path="/donate" element={<DonatePage/>}/>
-                    <Route path="/resources" element={<ResourcePage/>}/>
-                    <Route path="/resources/forms" element={<FormsPage/>}/>
-                    <Route path="/resources/webinars" element={<WebinarPage/>}/>
                     <Route path="/rentals" element={<RentalsPage/>}/>
                     <Route path="/rentals/list" element={<RentalsListPage/>}/>
                     <Route path="/rentals/property" element={<RentalsPropertyPage/>}/>

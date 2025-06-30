@@ -205,9 +205,7 @@ const AuthRightNav = (props) => {
                     <Col>
                         <Link to="/about">About</Link>
                     </Col>
-                    {/* <Col>
-                        <Link to="/story">Arianna's Story</Link>
-                    </Col> */}
+        
                     <Col>
                         <Link to="/channels/abolishfamilycourt">Channels</Link>
                     </Col>

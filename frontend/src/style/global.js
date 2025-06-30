@@ -170,7 +170,7 @@ const GlobalStyle = createGlobalStyle`
 
     .ant-layout-footer {
       min-height: 82px;
-      background: #f0f2f5;
+      background:#d5d7da;
 
       &.fixed-footer {
         background: none;

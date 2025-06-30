@@ -160,7 +160,6 @@ const LayoutHeader = () => {
                                             ...location.hash.split(" "),
                                         ]}
                                         >
-                                        {/* <NavHashLink to="/arianna">Arianna's Story</NavHashLink> */}
                                         <Menu.Item key="signup">
                                             <Button type="donate" style={{marginLeft: -3}}
                                                 onClick={() => {navigate("/signup");}}>

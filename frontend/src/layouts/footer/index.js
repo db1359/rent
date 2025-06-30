@@ -4,7 +4,9 @@ import {Link, useLocation} from "react-router-dom";
 import Container from "../../style/container";
 import {Icon} from '@iconify/react';
 import Copyright from "./style/copyright";
+import Link1 from "./style/link1";
 import {useSelector} from "react-redux";
+import { genHoverStyle } from 'antd/es/input/style';
 
 const {Footer} = Layout
 
@@ -36,9 +38,6 @@ const LandingLayoutFooter = () => {
                             <Col>
                                 <Link to="/about/terms">Terms</Link>
                             </Col>
-                            {/* <Col>
-                                <Link to="/donate">Donate</Link>
-                            </Col> */}
                         </Row>
                     </Col>
                     <Col lg={{span: 2}} span={24}>

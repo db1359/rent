@@ -40,32 +40,28 @@ const items = [
     ]
 
     // const items2 = [
-    //     {
-    //         key: 'channels/courtwatch',
-    //         label: <span style={{fontSize: 14, fontWeight: 600}}>Search</span>
-    //     },
-    //     {
-    //         type: 'divider',
-    //     },
-    //     {
-    //         key: 'channels/abolishfamilycourt',
-    //         label: <span style={{fontSize: 14, fontWeight: 600}}>Apply</span>
-    //     },
-    //     {
-    //         type: 'divider',
-    //     },
-    //     {
-    //         key: 'channels/legalabusesyndrome',
-    //         label: <span style={{fontSize: 14, fontWeight: 600}}>Test</span>
-    //     },
-    //     {
-    //         type: 'divider',
-    //     },
-    //     {
-    //         key: 'channel',
-    //         label: <span style={{fontSize: 14, fontWeight: 600}}>More Channels</span>
-    //     }
-    // ]
+            // {
+            //         key: 'myprofile',
+            //         icon: <Icon style={{fontSize: 18}} icon="mdi:user-outline"/>,
+            //         label: <span style={{fontSize: 14, fontWeight: 600}}>My Profile</span>
+            //     },
+            //     {
+            //         type: 'divider',
+            //     },
+            //     {
+            //         key: '${auth?.user?.username}/settings',
+            //         icon: <Icon style={{fontSize: 16}} icon="mdi:settings-outline"/>,
+            //         label: <span style={{fontSize: 14, fontWeight: 600}}>Settings</span>
+            //     },
+            //     {
+            //         type: 'divider',
+            //     },
+            //     {
+            //         key: 'logout',
+            //         icon: <Icon style={{fontSize: 16}} icon="icon-park-outline:logout"/>,
+            //         label: <span style={{fontSize: 14, fontWeight: 600}}>Logout</span>
+            //     }
+        // ]
 
 const menuChangeHandle = (e) => {
         if(e.key === 'logout') {
@@ -73,7 +69,7 @@ const menuChangeHandle = (e) => {
             navigate('/signin')
         } else if(e.key==='myprofile') {
             navigate(`/${auth?.user?.username}`)
-        } else if(e.key==='channels/abolishfamilycourt') {
+        } else if(e.key==='landlord/dashboard') {
             navigate(`/channels/abolishfamilycourt`)
         } else if(e.key==='/courtwatch') {
             navigate(`/courtwatch`)    
