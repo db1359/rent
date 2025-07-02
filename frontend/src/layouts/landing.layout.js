@@ -1,13 +1,13 @@
 import React from 'react';
 import {Layout} from "antd";
 import {Route, Routes} from "react-router-dom";
-import LandingLayoutHeader from "./header";
+import LandingLayoutHeader from "./header/home";
 import LandingLayoutFooter from "./footer/";
 import AuthDashboard from "./header/auth_new";
 import AuthHeader from "./header/auth";
 import AuthFooter from "./footer/auth";
-import HomePageFooter from "./footer/home";
-import HomePageHeader from "./footer/home";
+import HomeFooter from "./footer/home";
+import HomeHeader from "./footer/home";
 import HomePage from "../pages/home";
 import SignupPage from "../pages/signup";
 import LoginPage from "../pages/signin";
@@ -43,8 +43,8 @@ const {Content} = Layout
 
 const LandingLayout = () => {
     const auth = useSelector((state) => state.auth)
-    const home = useSelector((state) => state.home)
-    const homefooter = useSelector((state) => state.homefooter)
+    const homeheader = useSelector((state) => state.home)
+    const homefooter = useSelector((state) => state.home)
 
     return (
         <Layout>
@@ -57,12 +57,13 @@ const LandingLayout = () => {
                     //<AuthHeader />
                 )
             }
+            
 
             {/* {
                 auth.isAuth ? (
                     <AuthDashboard />
                 ) : (
-                home.isHomePage ? (
+                homeheader.isHomePage ? (
                     <HomePage />
                 ) : (
                     <LandingLayoutHeader />
