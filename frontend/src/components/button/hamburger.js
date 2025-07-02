@@ -13,12 +13,12 @@ const HamburgerButton = styled(Button)`
   box-shadow: none;
   span {
     font-size: 24px;
-    color: #ffffff;
+    color: #9701fc;
     transition: all 0.3s;
   }
   :hover {
     span {
-      color: #f7ce07;
+      color: #000000;
       transition: all 0.3s;
     }
   }

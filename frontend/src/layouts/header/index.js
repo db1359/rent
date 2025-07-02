@@ -7,10 +7,8 @@ import HamburgerButton from "../../components/button/hamburger";
 import axios from "axios";
 import config from "../../config";
 import {MenuOutlined} from "@ant-design/icons";
-// import Logo from "../../assets/img/fontbolt_transparent.png";
-// import Logo2 from "../../assets/img/fontbolt_9701_F_C.png";
-import Logo from "../../assets/img/renter_logo.png";
-import Logo2 from "../../assets/img/renter_logo2.png";
+//import Logo from "../../assets/img/renter_logo.png";
+import Logo from "../../assets/img/renter_logo_120_arialblack.png";
 
 const {useBreakpoint} = Grid;
 
@@ -75,7 +73,7 @@ const LayoutHeader = () => {
                                     {user ? (
                                         <nbsp/>
                                     ) : (
-                                        <Button type="headerlink"
+                                        <Button type="headerdashboardlink"
                                             onClick={() => {navigate("/tenants");}}
                                             className={location.pathname === "/tenants" && "active"}>
                                             Tenants
@@ -87,7 +85,7 @@ const LayoutHeader = () => {
                                     {user ? (
                                         <nbsp/>
                                     ) : (
-                                        <Button type="headerlink"
+                                        <Button type="headerdashboardlink"
                                             onClick={() => {navigate("/rentals");}}
                                             className={location.pathname === "/rentals" && "active"}>
                                             Rentals
@@ -99,7 +97,7 @@ const LayoutHeader = () => {
                                     {user ? (
                                         <nbsp/>
                                     ) : (
-                                        <Button type="headerlink"
+                                        <Button type="headerdashboardlink"
                                             onClick={() => {navigate("/landlords");}}
                                             className={location.pathname === "/landlords" && "active"}>
                                             Landlords
@@ -122,7 +120,7 @@ const LayoutHeader = () => {
                                     {user ? (
                                         <nbsp/>
                                     ) : (
-                                        <Button type="headerlink"
+                                        <Button type="headerdashboardlink"
                                         onClick={() => {navigate("/signin");}}
                                         className={location.pathname === "/signin" && "active"}>
                                         Sign In

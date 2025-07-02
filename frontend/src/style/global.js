@@ -134,7 +134,7 @@ const GlobalStyle = createGlobalStyle`
 
   .ant-layout {
     .ant-layout-header {
-      background: #000000;
+      background: #ffffff;
       padding: 0;
       min-height: 72px;
 
