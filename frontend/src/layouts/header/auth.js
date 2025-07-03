@@ -9,7 +9,7 @@ import axios from "axios";
 import config from "../../config";
 import {Icon} from "@iconify/react";
 import {MenuOutlined} from "@ant-design/icons";
-import Logo from "../../assets/img/renter_logo_120_arialblack.png";
+import Logo from "../../assets/img/logo_purple_arialblack120.png";
 
 const {useBreakpoint} = Grid;
 

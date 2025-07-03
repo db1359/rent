@@ -7,8 +7,7 @@ import HamburgerButton from "../../components/button/hamburger";
 import axios from "axios";
 import config from "../../config";
 import {MenuOutlined} from "@ant-design/icons";
-//import Logo from "../../assets/img/renter_logo.png";
-import Logo from "../../assets/img/renter_logo_120_arialblack.png";
+import Logo from "../../assets/img/logo_purple_arialblack120.png";
 
 const {useBreakpoint} = Grid;
 
