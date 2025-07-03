@@ -27,7 +27,7 @@ const HomePage = () => {
             <div style={{
                     position: 'relative',
                     paddingTop: '0%',
-                }}>
+}}>
                 <img src={ChartImage} alt="Mogul - AI Rental Service for Tenants & Landlords"/>
             </div>
             {/* <HomeSlogan2>
